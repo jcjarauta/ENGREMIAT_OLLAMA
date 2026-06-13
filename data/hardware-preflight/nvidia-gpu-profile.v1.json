@@ -1,0 +1,15 @@
+﻿{
+    "objective":  "ENGREMIAT_OLLAMA_GPU_PREFLIGHT",
+    "generated_at":  "2026-06-13T17:54:32.8780802+02:00",
+    "source":  "NVIDIA_SMI",
+    "gpu_name":  "NVIDIA GeForce RTX 4060 Ti",
+    "memory_total_mb":  16380,
+    "memory_total_gb":  16,
+    "memory_free_mb":  15529,
+    "memory_free_gb":  15.17,
+    "driver_version":  "596.49",
+    "compute_capability":  "8.9",
+    "suggested_model_tier":  "MEDIUM_8B_TO_14B_QUANTIZED",
+    "model_selected":  false,
+    "model_downloaded":  false
+}

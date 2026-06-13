@@ -1,0 +1,17 @@
+﻿{
+    "objective":  "ENGREMIAT_OLLAMA_CONTEXT_VALIDATION",
+    "generated_at":  "2026-06-13T18:21:14.3893098+02:00",
+    "model":  "qwen3:14b",
+    "requested_context":  32768,
+    "runtime_context":  "32768",
+    "gpu_mode":  "FULL_GPU",
+    "response":  "ENGREMIAT_CTX_32768_OK",
+    "expected_token_found":  true,
+    "elapsed_seconds":  4.2,
+    "runtime":  "qwen3:14b bdbd181c33f2 14 GB 100% GPU 32768 4 minutes from now",
+    "done":  true,
+    "eval_count":  13,
+    "model_started":  true,
+    "cline_started":  false,
+    "repository_code_modified":  false
+}

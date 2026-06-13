@@ -1,0 +1,17 @@
+﻿{
+    "objective":  "ENGREMIAT_OLLAMA_MODEL_SMOKE",
+    "generated_at":  "2026-06-13T18:20:14.6775909+02:00",
+    "model":  "qwen3:14b",
+    "response":  "ENGREMIAT_OLLAMA_OK",
+    "expected_token_found":  true,
+    "elapsed_seconds":  50.43,
+    "done":  true,
+    "done_reason":  "stop",
+    "total_duration_ns":  50412913000,
+    "load_duration_ns":  20228739800,
+    "prompt_eval_count":  29,
+    "eval_count":  9,
+    "model_started":  true,
+    "cline_started":  false,
+    "repository_code_modified":  false
+}
