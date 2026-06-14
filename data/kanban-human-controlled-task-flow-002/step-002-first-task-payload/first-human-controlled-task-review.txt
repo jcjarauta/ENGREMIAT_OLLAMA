@@ -1,0 +1,24 @@
+﻿PRIMERA TAREA CONTROLADA DE KANBAN
+
+TASK_ID: TASK-KANBAN-002-001
+TITULO: Documentar y validar el primer flujo humano controlado del Kanban
+
+OBJETIVO:
+Comprobar que una tarea puede prepararse, revisarse y crearse en Backlog sin iniciar agentes ni ejecución automática.
+
+ACCION HUMANA DEL SIGUIENTE PASO:
+Revisar este payload y elegir APPROVE o REJECT para la creación de una única tarjeta en Backlog.
+
+ESTADO DE SEGURIDAD:
+task_creation_allowed=False
+execution_allowed=False
+agent_allowed=False
+auto_approve=False
+git_write=False
+external_network=False
+
+NO se ha creado todavía ninguna tarjeta.
+NO se ha iniciado ningún agente.
+NO se ha iniciado ninguna tarea.
+
+NEXT=STEP_003_HUMAN_REVIEW_AND_TASK_CREATION_DECISION

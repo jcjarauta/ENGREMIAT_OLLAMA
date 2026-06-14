@@ -1,0 +1,64 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "recorded_at":  "2026-06-14T06:52:48.3062543+02:00",
+    "source":  "CLINE_KANBAN_REAL_BACKLOG_CARD_CREATION",
+    "directory":  "data/kanban-human-controlled-task-flow-002",
+    "created_by_external_tool":  true,
+    "expected_before_test":  false,
+    "observed_after_card_creation":  true,
+    "interpretation":  "Persistencia local generada por Cline Kanban al crear la tarjeta de prueba.",
+    "files_count":  7,
+    "total_bytes":  18477,
+    "dangerous_files":  0,
+    "oversized_files":  0,
+    "reparse_points":  0,
+    "agent_started":  false,
+    "task_started":  false,
+    "repository_execution":  false,
+    "accepted_as_objective_evidence":  true,
+    "commit_scope_extended":  true,
+    "artifacts":  [
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-001-flow-contract/human-controlled-kanban-task-flow.v1.json",
+                          "bytes":  6841,
+                          "extension":  ".json",
+                          "sha256":  "c0fb7558a9a2ceb63a473e101f8068b9f8cf9be3cd7e3f1e9ab1fa349dbcdf27"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-001-flow-contract/human-controlled-kanban-task-flow-summary.txt",
+                          "bytes":  381,
+                          "extension":  ".txt",
+                          "sha256":  "7a6d61fc850d485597cb71238d60ac44d9bd2a9c865dd795cc7672d654b82d4b"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-002-first-task-payload/first-human-controlled-task.v1.json",
+                          "bytes":  3533,
+                          "extension":  ".json",
+                          "sha256":  "d59fa1935f2677bf4cfb9f16e7540fa0a53f41e364d079ded5134e15124e465e"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-002-first-task-payload/first-human-controlled-task-review.txt",
+                          "bytes":  748,
+                          "extension":  ".txt",
+                          "sha256":  "dff12f5ddcf87bd0d9dfcf797947fccff1071bc205c3ee03b554043dbe116353"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-003-human-decision/task-creation-human-decision.v1.json",
+                          "bytes":  1460,
+                          "extension":  ".json",
+                          "sha256":  "68a8ac25df6b407c8eb9244248d51d4d4b3256c94ba099d1a9d8a21e85230466"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-004-manual-task-creation/manual-single-task-creation-instructions.txt",
+                          "bytes":  2519,
+                          "extension":  ".txt",
+                          "sha256":  "4cd7e0bb4798f2cfb8dc85f8b4df950c0048938f04b237feb13396db65d0e3a9"
+                      },
+                      {
+                          "path":  "data/kanban-human-controlled-task-flow-002/step-004-manual-task-creation/manual-single-task-creation-packet.v1.json",
+                          "bytes":  2995,
+                          "extension":  ".json",
+                          "sha256":  "06148a3deb4c3671cf7125242d365c25a4185dc73c5f602b066d23b19b34d902"
+                      }
+                  ]
+}

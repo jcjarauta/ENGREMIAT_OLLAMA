@@ -1,0 +1,21 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "validated_at":  "2026-06-14T06:27:39.5369993+02:00",
+    "prototype":  "data/engremiat-human-ux-and-kanban-001/prototype/index.html",
+    "checks":  {
+                   "board_understandable":  false,
+                   "card_detail_works":  true,
+                   "human_gate_queue_visible":  false,
+                   "security_status_visible":  true,
+                   "no_execution_controls_visible":  true
+               },
+    "checks_total":  5,
+    "checks_passed":  3,
+    "all_checks_passed":  false,
+    "human_decision":  "REVISE",
+    "execution_performed":  false,
+    "cline_started":  false,
+    "agent_started":  false,
+    "automatic_execution":  false,
+    "next":  "STEP_004R_REVISE_LOCAL_PROTOTYPE"
+}

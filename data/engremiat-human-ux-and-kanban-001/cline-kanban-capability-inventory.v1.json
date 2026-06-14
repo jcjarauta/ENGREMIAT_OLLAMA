@@ -1,0 +1,48 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:14:11.5101510+02:00",
+    "cline_command":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.cmd",
+    "cline_version":  "3.0.24",
+    "npm_global_root":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules",
+    "cline_package_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline",
+    "cline_package_detected":  true,
+    "main_help_exit_code":  0,
+    "main_help_mentions_kanban":  true,
+    "kanban_help_exit_code":  0,
+    "kanban_help_recognized":  true,
+    "package_mentions_kanban":  true,
+    "package_reference_count":  1,
+    "package_references":  [
+                               {
+                                   "path":  "README.md",
+                                   "line":  241,
+                                   "excerpt":  "| `--kanban` | Run the external `kanban` app |"
+                               }
+                           ],
+    "detected_capabilities":  [
+                                  "KANBAN_LISTED_IN_MAIN_HELP",
+                                  "KANBAN_HELP_AVAILABLE",
+                                  "KANBAN_REFERENCES_IN_INSTALLED_PACKAGE"
+                              ],
+    "availability_decision":  "CLI_SUBCOMMAND_AVAILABLE",
+    "server_started":  false,
+    "agent_started":  false,
+    "task_execution":  false,
+    "browser_opened":  false,
+    "network_requested":  false,
+    "external_install":  false,
+    "git":  false,
+    "safety":  {
+                   "local_read_only_inventory":  true,
+                   "cline_agent_execution":  false,
+                   "automatic_task_execution":  false,
+                   "auto_approve":  false,
+                   "external_network":  false
+               },
+    "artifacts":  [
+                      "data/engremiat-human-ux-and-kanban-001/cline-help.txt",
+                      "data/engremiat-human-ux-and-kanban-001/cline-kanban-help.txt",
+                      "data/engremiat-human-ux-and-kanban-001/npm-root.txt"
+                  ],
+    "next":  "STEP_003_DESIGN_HUMAN_UX_MODEL_AND_KANBAN_CONTRACT"
+}

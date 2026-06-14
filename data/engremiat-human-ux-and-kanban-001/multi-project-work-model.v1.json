@@ -1,0 +1,408 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:28:45.3261414+02:00",
+    "mode":  "LOCAL_STATIC_MULTIPROJECT_READ_ONLY",
+    "projects":  [
+                     {
+                         "project_id":  "ENGREMIAT_CORE",
+                         "name":  "ENGREMIAT Core",
+                         "summary":  "Gobierno, arquitectura y coordinación global del sistema.",
+                         "status":  "ACTIVE",
+                         "health":  "AT_RISK",
+                         "progress":  72,
+                         "risk":  "MEDIUM",
+                         "active_tasks":  3,
+                         "blocked_tasks":  1,
+                         "pending_gates":  1,
+                         "evidence_completion":  84,
+                         "workers_available":  "3/4",
+                         "last_activity":  "Hace 12 min",
+                         "priority":  "P1"
+                     },
+                     {
+                         "project_id":  "ENGREMIAT_OLLAMA",
+                         "name":  "ENGREMIAT Ollama",
+                         "summary":  "Worker local de IA, UX humana y generación gobernada.",
+                         "status":  "ACTIVE",
+                         "health":  "HEALTHY",
+                         "progress":  48,
+                         "risk":  "LOW",
+                         "active_tasks":  3,
+                         "blocked_tasks":  0,
+                         "pending_gates":  1,
+                         "evidence_completion":  92,
+                         "workers_available":  "3/3",
+                         "last_activity":  "Ahora",
+                         "priority":  "P1"
+                     },
+                     {
+                         "project_id":  "ENGREMIAT_NODE",
+                         "name":  "ENGREMIAT Node",
+                         "summary":  "Nodos, capacidades de ejecución y futura red distribuida.",
+                         "status":  "ACTIVE",
+                         "health":  "WAITING_HUMAN",
+                         "progress":  31,
+                         "risk":  "MEDIUM",
+                         "active_tasks":  2,
+                         "blocked_tasks":  1,
+                         "pending_gates":  1,
+                         "evidence_completion":  68,
+                         "workers_available":  "2/3",
+                         "last_activity":  "Hace 35 min",
+                         "priority":  "P2"
+                     }
+                 ],
+    "workers":  [
+                    {
+                        "worker_id":  "HUMAN:JC",
+                        "worker_type":  "HUMAN",
+                        "display_name":  "Humano · Operador",
+                        "status":  "AVAILABLE",
+                        "capabilities":  [
+                                             "Definir objetivos",
+                                             "Aprobar gates",
+                                             "Revisar evidencias",
+                                             "Tomar decisiones"
+                                         ],
+                        "active_tasks":  2,
+                        "queue":  3,
+                        "load":  "MEDIUM",
+                        "node_id":  null
+                    },
+                    {
+                        "worker_id":  "IA:CHATGPT",
+                        "worker_type":  "AI",
+                        "display_name":  "IA · ChatGPT",
+                        "status":  "AVAILABLE",
+                        "capabilities":  [
+                                             "Planificación",
+                                             "Diseño",
+                                             "Revisión",
+                                             "Generación de contratos"
+                                         ],
+                        "active_tasks":  1,
+                        "queue":  2,
+                        "load":  "LOW",
+                        "node_id":  null
+                    },
+                    {
+                        "worker_id":  "IA:OLLAMA",
+                        "worker_type":  "AI",
+                        "display_name":  "IA · Ollama qwen3:14b",
+                        "status":  "AVAILABLE",
+                        "capabilities":  [
+                                             "Generación local",
+                                             "Síntesis",
+                                             "Clasificación",
+                                             "Propuestas en cuarentena"
+                                         ],
+                        "active_tasks":  1,
+                        "queue":  1,
+                        "load":  "LOW",
+                        "node_id":  "NODE:MAIN-PC"
+                    },
+                    {
+                        "worker_id":  "NODE:MAIN-PC",
+                        "worker_type":  "NODE",
+                        "display_name":  "Node · MAIN-PC",
+                        "status":  "ONLINE",
+                        "capabilities":  [
+                                             "Ollama",
+                                             "Validación",
+                                             "Git local",
+                                             "Scripts autorizados"
+                                         ],
+                        "active_tasks":  2,
+                        "queue":  1,
+                        "load":  "MEDIUM",
+                        "node_id":  "NODE:MAIN-PC"
+                    },
+                    {
+                        "worker_id":  "NODE:BACKUP",
+                        "worker_type":  "NODE",
+                        "display_name":  "Node · Raspberry Backup",
+                        "status":  "PLANNED",
+                        "capabilities":  [
+                                             "Backup",
+                                             "Monitorización",
+                                             "Persistencia"
+                                         ],
+                        "active_tasks":  0,
+                        "queue":  1,
+                        "load":  "NONE",
+                        "node_id":  "NODE:BACKUP"
+                    }
+                ],
+    "tasks":  [
+                  {
+                      "task_id":  "TASK-CORE-001",
+                      "project_id":  "ENGREMIAT_CORE",
+                      "objective_id":  "CORE_GLOBAL_ARCHITECTURE_001",
+                      "title":  "Consolidar arquitectura global de ENGREMIAT",
+                      "status":  "IN_PROGRESS",
+                      "priority_global":  "P1",
+                      "priority_project":  "P1",
+                      "urgency":  "HIGH",
+                      "impact":  "HIGH",
+                      "risk":  "MEDIUM",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "GRANTED",
+                      "progress":  65,
+                      "evidence_count":  6,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+
+                                     ],
+                      "blocks":  [
+                                     "TASK-NODE-002"
+                                 ],
+                      "next_action":  "Validar mapa global de proyectos y workers"
+                  },
+                  {
+                      "task_id":  "TASK-CORE-002",
+                      "project_id":  "ENGREMIAT_CORE",
+                      "objective_id":  "CORE_GOVERNANCE_002",
+                      "title":  "Unificar contratos de seguridad y gates",
+                      "status":  "BLOCKED",
+                      "priority_global":  "P1",
+                      "priority_project":  "P2",
+                      "urgency":  "MEDIUM",
+                      "impact":  "HIGH",
+                      "risk":  "HIGH",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "PENDING",
+                      "progress":  40,
+                      "evidence_count":  3,
+                      "blocked_reason":  "Pendiente de modelo canónico de workers",
+                      "depends_on":  [
+                                         "TASK-UX-002"
+                                     ],
+                      "blocks":  [
+
+                                 ],
+                      "next_action":  "Resolver contrato común de workers"
+                  },
+                  {
+                      "task_id":  "TASK-UX-001",
+                      "project_id":  "ENGREMIAT_OLLAMA",
+                      "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                      "title":  "Diseñar UX humana multiproyecto",
+                      "status":  "IN_PROGRESS",
+                      "priority_global":  "P1",
+                      "priority_project":  "P1",
+                      "urgency":  "HIGH",
+                      "impact":  "HIGH",
+                      "risk":  "LOW",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "NOT_REQUIRED",
+                      "progress":  62,
+                      "evidence_count":  5,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+
+                                     ],
+                      "blocks":  [
+                                     "TASK-UX-002"
+                                 ],
+                      "next_action":  "Validar portfolio, prioridades y navegación"
+                  },
+                  {
+                      "task_id":  "TASK-UX-002",
+                      "project_id":  "ENGREMIAT_OLLAMA",
+                      "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                      "title":  "Definir modelo canónico de workers",
+                      "status":  "READY",
+                      "priority_global":  "P1",
+                      "priority_project":  "P1",
+                      "urgency":  "HIGH",
+                      "impact":  "HIGH",
+                      "risk":  "LOW",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "NOT_REQUIRED",
+                      "progress":  20,
+                      "evidence_count":  2,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+                                         "TASK-UX-001"
+                                     ],
+                      "blocks":  [
+                                     "TASK-CORE-002"
+                                 ],
+                      "next_action":  "Validar campos accountable, generation, execution y review"
+                  },
+                  {
+                      "task_id":  "TASK-UX-003",
+                      "project_id":  "ENGREMIAT_OLLAMA",
+                      "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                      "title":  "Autorizar prueba local de Cline Kanban",
+                      "status":  "HUMAN_REVIEW",
+                      "priority_global":  "P2",
+                      "priority_project":  "P2",
+                      "urgency":  "MEDIUM",
+                      "impact":  "MEDIUM",
+                      "risk":  "MEDIUM",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  null,
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "PENDING",
+                      "progress":  0,
+                      "evidence_count":  1,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+                                         "TASK-UX-001"
+                                     ],
+                      "blocks":  [
+
+                                 ],
+                      "next_action":  "Revisar gate de inicio sin agentes"
+                  },
+                  {
+                      "task_id":  "TASK-NODE-001",
+                      "project_id":  "ENGREMIAT_NODE",
+                      "objective_id":  "NODE_NETWORK_FOUNDATION_001",
+                      "title":  "Registrar capacidades del MAIN-PC",
+                      "status":  "VERIFIED",
+                      "priority_global":  "P2",
+                      "priority_project":  "P1",
+                      "urgency":  "MEDIUM",
+                      "impact":  "HIGH",
+                      "risk":  "LOW",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "GRANTED",
+                      "progress":  100,
+                      "evidence_count":  8,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+
+                                     ],
+                      "blocks":  [
+                                     "TASK-NODE-002"
+                                 ],
+                      "next_action":  "Cerrar evidencia de capacidades"
+                  },
+                  {
+                      "task_id":  "TASK-NODE-002",
+                      "project_id":  "ENGREMIAT_NODE",
+                      "objective_id":  "NODE_NETWORK_FOUNDATION_001",
+                      "title":  "Crear registro automático de nodos",
+                      "status":  "BLOCKED",
+                      "priority_global":  "P1",
+                      "priority_project":  "P1",
+                      "urgency":  "HIGH",
+                      "impact":  "HIGH",
+                      "risk":  "MEDIUM",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "PENDING",
+                      "progress":  15,
+                      "evidence_count":  2,
+                      "blocked_reason":  "Depende de arquitectura global y contrato de identidad",
+                      "depends_on":  [
+                                         "TASK-CORE-001",
+                                         "TASK-NODE-001"
+                                     ],
+                      "blocks":  [
+                                     "TASK-NODE-003"
+                                 ],
+                      "next_action":  "Completar contrato de identidad de nodo"
+                  },
+                  {
+                      "task_id":  "TASK-NODE-003",
+                      "project_id":  "ENGREMIAT_NODE",
+                      "objective_id":  "NODE_NETWORK_VISUALIZATION_002",
+                      "title":  "Visualizar red de máquinas y workers",
+                      "status":  "BACKLOG",
+                      "priority_global":  "P2",
+                      "priority_project":  "P2",
+                      "urgency":  "LOW",
+                      "impact":  "HIGH",
+                      "risk":  "MEDIUM",
+                      "accountable_worker":  "HUMAN:JC",
+                      "generation_worker":  "IA:CHATGPT",
+                      "execution_worker":  "NODE:MAIN-PC",
+                      "review_worker":  "HUMAN:JC",
+                      "authorization":  "NOT_REQUIRED",
+                      "progress":  0,
+                      "evidence_count":  0,
+                      "blocked_reason":  null,
+                      "depends_on":  [
+                                         "TASK-NODE-002"
+                                     ],
+                      "blocks":  [
+
+                                 ],
+                      "next_action":  "Esperar registro automático de nodos"
+                  }
+              ],
+    "priorities":  [
+                       {
+                           "id":  "P0",
+                           "label":  "Emergencia",
+                           "score":  500
+                       },
+                       {
+                           "id":  "P1",
+                           "label":  "Crítica",
+                           "score":  400
+                       },
+                       {
+                           "id":  "P2",
+                           "label":  "Alta",
+                           "score":  300
+                       },
+                       {
+                           "id":  "P3",
+                           "label":  "Normal",
+                           "score":  200
+                       },
+                       {
+                           "id":  "P4",
+                           "label":  "Baja",
+                           "score":  100
+                       }
+                   ],
+    "status_order":  [
+                         "BACKLOG",
+                         "READY",
+                         "IN_PROGRESS",
+                         "BLOCKED",
+                         "HUMAN_REVIEW",
+                         "VERIFIED",
+                         "CLOSED"
+                     ],
+    "worker_types":  [
+                         "HUMAN",
+                         "AI",
+                         "NODE"
+                     ],
+    "safety":  {
+                   "local_only":  true,
+                   "static_data":  true,
+                   "execution_engine":  false,
+                   "drag_and_drop":  false,
+                   "run_buttons":  false,
+                   "cline_started":  false,
+                   "ollama_called":  false,
+                   "external_network":  false,
+                   "git":  false
+               },
+    "next":  "STEP_005_VALIDATE_ENHANCED_HUMAN_UX"
+}

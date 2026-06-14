@@ -1,0 +1,183 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "closed_at":  "2026-06-14T06:52:05.4033175+02:00",
+    "readiness":  100,
+    "decision":  "OBJECTIVE_CLOSED_HUMAN_UX_AND_REAL_KANBAN_REFERENCE_VALIDATED",
+    "purpose":  "Priorizar UX, interfaz y visión humana multiproyecto para ENGREMIAT.",
+    "results":  {
+                    "multiproject_portfolio":  true,
+                    "global_priority_work_view":  true,
+                    "worker_types":  [
+                                         "HUMAN",
+                                         "AI",
+                                         "NODE"
+                                     ],
+                    "worker_dimensions":  [
+                                              "ACCOUNTABLE",
+                                              "GENERATION",
+                                              "EXECUTION",
+                                              "REVIEW"
+                                          ],
+                    "project_health":  true,
+                    "task_dependencies":  true,
+                    "human_decision_queue":  true,
+                    "static_local_prototype":  true,
+                    "real_cline_kanban_ui_validated":  true,
+                    "backlog_test_card_created":  true
+                },
+    "human_validation":  {
+                             "enhanced_ux_checks":  "10/10",
+                             "real_kanban_checks":  "5/5",
+                             "final_decision":  "PASS"
+                         },
+    "safety":  {
+                   "agent_started":  false,
+                   "task_started":  false,
+                   "run_clicked":  false,
+                   "auto_approve":  false,
+                   "repository_execution":  false,
+                   "git_write_by_kanban":  false,
+                   "kanban_process_stopped":  true
+               },
+    "deviation":  {
+                      "observed":  true,
+                      "id":  "CLINE_KANBAN_AUTO_INSTALLED_RUNTIME_DEPENDENCIES",
+                      "package":  "kanban@latest",
+                      "packages_reported":  308,
+                      "planned":  false,
+                      "external_network_used":  true,
+                      "consequence":  "Cline Kanban must not be treated as dependency-free or offline-first on first launch."
+                  },
+    "architectural_decisions":  [
+                                    "ENGREMIAT will use its own multiproject human supervision interface as the primary UX",
+                                    "Cline Kanban remains a reference UI and optional future adapter",
+                                    "Moving cards must not execute real actions automatically",
+                                    "Projects, objectives, tasks, workers, priorities, dependencies, gates and evidence require a canonical ENGREMIAT model",
+                                    "Real worker execution remains separated behind explicit human authorization"
+                                ],
+    "next_objective_proposal":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "artifact_count":  21,
+    "artifacts":  [
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-help.txt",
+                          "sha256":  "e646c25586138ace03aee24bc6e0e2d9ed6ff4eba8c5a5ac626a57fd1dbad8c1",
+                          "bytes":  3622
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-backlog-card-evidence.v1.json",
+                          "sha256":  "52fdd54e1cc8844b5e4c5b1513d4dffc4fc97b1b645d82a05d178f67bf9a3693",
+                          "bytes":  1494
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-capability-inventory.v1.json",
+                          "sha256":  "4b5fc47de7d25423f31072bd74af60999dba67733739b9b5b12c239e333f891a",
+                          "bytes":  2175
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-comparison.v1.json",
+                          "sha256":  "12506fd7d577e2d992f4947dba75e203abb7a86e615c2ee2e8e5d00f8876693b",
+                          "bytes":  3294
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-help.txt",
+                          "sha256":  "0acacaba685c2822e74017706d23e0a4bd164e6ff43bfaea4da2771d42ea56b5",
+                          "bytes":  101
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-launch-gate.v1.json",
+                          "sha256":  "67c6a53e048f444c8e977fac4122d294f5025ab35812b290f608eda4f0aa127d",
+                          "bytes":  1252
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-local-ui-execution.v1.json",
+                          "sha256":  "383e64c9cb278af1bbc753cb99faaa3723b4597b99863a6fd2c077f8740d3fda",
+                          "bytes":  1385
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-real-ui-validation.v1.json",
+                          "sha256":  "6ab4944c8fae01f7b9765b53b5584ea386b7cd5be96dbbb3c486aa0a1959991e",
+                          "bytes":  649
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/cline-kanban-safe-launch-plan.v1.json",
+                          "sha256":  "c16ecb8f5d1f46170106fc403be8d00117fc7f38785e703e1c15cf29f051d8d4",
+                          "bytes":  2350
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/enhanced-human-ux-validation.v1.json",
+                          "sha256":  "c162a5d734e22449e01dc2f173a5434a7f9f25f8fde11009ca9874e8f52b7d90",
+                          "bytes":  2306
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/human-navigation-validation.v1.json",
+                          "sha256":  "334b66cdc38af2c5ac0059bb7600d130cd6b9c0ef591abc2df364a4fc21a2ab3",
+                          "bytes":  812
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/human-ux-gap-analysis.v1.json",
+                          "sha256":  "278e1ac6cc2de9f086bbbd49b7e2a50dc66d513b1c42767a6a1b0a5f60bbb6c1",
+                          "bytes":  2342
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/human-ux-model.v1.json",
+                          "sha256":  "ee6bfcaf9c574b9689f1fcf05809878aeca7b042d8dd90545e4ebcdb1aa43e37",
+                          "bytes":  10590
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/kanban-board-contract.v1.json",
+                          "sha256":  "3b74ae7f31ffb93434338caebfdd6a1d30a89c8bfdb53137bb7bd87ee3ccaace",
+                          "bytes":  14040
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/multi-project-work-model.v1.json",
+                          "sha256":  "5fc4670446cc00e652e08924039e49f63d5708406330e259f2d20fcb701d8c63",
+                          "bytes":  18884
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/npm-root.txt",
+                          "sha256":  "ed6831028ea5c67322f0208c92d8cdceadd7ca874618d5d93faedf93ae32dab0",
+                          "bytes":  44
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/objective-contract.v1.json",
+                          "sha256":  "47b7eb0b7b9717d2ebc162c98f5a91aadf582ad2f30701786bd0fe3a50d16563",
+                          "bytes":  6802
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/prototype/index.html",
+                          "sha256":  "7dc003653c7ef0ac2cc1d82657eabdaba3c33b0cef878d8dd91d257fe99b9c1f",
+                          "bytes":  22762
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/prototype/prototype-manifest.v1.json",
+                          "sha256":  "ce1655d878e43770a8cd273c7c265db939c163cfdc511c5768524a482caea167",
+                          "bytes":  1881
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/prototype/prototype-manifest.v2.json",
+                          "sha256":  "054a9ddfffa96421bb6484f8b83a96b649bdeec95bcf1b4b4b263eba1034c186",
+                          "bytes":  1742
+                      },
+                      {
+                          "path":  "data/engremiat-human-ux-and-kanban-001/step-006-objective-close/objective-close.v1.json",
+                          "sha256":  "4226e03e281da3f8568c486ab9ba37b0c1b85ad76477e6c2276ca9ca18ef2ef4",
+                          "bytes":  1810
+                      }
+                  ],
+    "commit":  true,
+    "push":  false,
+    "commit_scope":  [
+                         "data/engremiat-human-ux-and-kanban-001",
+                         "data/kanban-human-controlled-task-flow-002",
+                         "scripts/start-cline-kanban-safe.ps1"
+                     ],
+    "kanban_created_data_observed":  true,
+    "kanban_created_data_path":  "data/kanban-human-controlled-task-flow-002",
+    "kanban_created_data_files":  7,
+    "kanban_created_data_interpretation":  "REAL_LOCAL_PERSISTENCE_FROM_BACKLOG_CARD_CREATION",
+    "commit_message":  "feat: add multiproject human UX and Kanban reference",
+    "commit_sha":  "709c4eb9d2b465727cd42af58529ba596d083907",
+    "committed_at":  "2026-06-14T06:52:48.7542839+02:00",
+    "final_decision":  "OBJECTIVE_CLOSED_WITH_REAL_KANBAN_PERSISTENCE_EVIDENCE",
+    "next":  "DEFINE_NEXT_OBJECTIVE"
+}

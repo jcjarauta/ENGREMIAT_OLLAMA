@@ -1,0 +1,7 @@
+Usage: cline kanban [options]
+
+Run the kanban app
+
+Options:
+  -h, --help  display help for command
+

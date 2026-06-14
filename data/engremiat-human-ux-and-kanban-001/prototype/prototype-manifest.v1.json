@@ -1,0 +1,46 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:16:18.4729548+02:00",
+    "prototype":  "data/engremiat-human-ux-and-kanban-001/prototype/index.html",
+    "prototype_sha256":  "6f2a436efca56698b4cc7250bfbf23e4d0d23a104fe6d493c3967ddf6523e4fd",
+    "mode":  "LOCAL_STATIC_INTERACTIVE_READ_ONLY",
+    "columns":  7,
+    "sample_cards":  3,
+    "views":  [
+                  "OBJECTIVE_OVERVIEW",
+                  "KANBAN_BOARD",
+                  "HUMAN_DECISION_QUEUE",
+                  "TASK_DETAIL",
+                  "SYSTEM_STATUS"
+              ],
+    "interactions":  [
+                         "NAVIGATE_VIEWS",
+                         "OPEN_CARD_DETAIL",
+                         "VIEW_HUMAN_GATES"
+                     ],
+    "execution_capabilities":  [
+
+                               ],
+    "cline_started":  false,
+    "ollama_started":  false,
+    "agent_started":  false,
+    "automatic_execution":  false,
+    "external_network":  false,
+    "git":  false,
+    "validation":  {
+                       "html_exists":  true,
+                       "utf8_valid":  true,
+                       "seven_columns":  true,
+                       "board_payload_present":  true,
+                       "sample_cards_present":  true,
+                       "human_gate_queue_present":  true,
+                       "detail_view_present":  true,
+                       "external_urls_absent":  true,
+                       "fetch_absent":  true,
+                       "websocket_absent":  true,
+                       "execution_buttons_absent":  true,
+                       "auto_approve_absent":  true
+                   },
+    "decision":  "SAFE_LOCAL_UX_PROTOTYPE_READY_FOR_HUMAN_VALIDATION",
+    "next":  "STEP_005_VALIDATE_HUMAN_NAVIGATION_AND_COMPARE_WITH_CLINE_KANBAN"
+}

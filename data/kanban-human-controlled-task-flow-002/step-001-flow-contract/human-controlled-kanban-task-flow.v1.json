@@ -1,0 +1,136 @@
+﻿{
+    "schema":  "engremiat-human-controlled-kanban-task-flow.v1",
+    "objective":  "KANBAN_HUMAN_CONTROLLED_TASK_FLOW_002",
+    "step":  "001",
+    "created_at_utc":  "2026-06-14T04:41:43.3772498Z",
+    "purpose":  "Define the first safe human-controlled task lifecycle in the real Cline Kanban UI",
+    "source_objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "source_close":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\step-006-objective-close\\objective-close.v1.json",
+    "ui":  {
+               "provider":  "CLINE_KANBAN",
+               "endpoint":  "http://127.0.0.1:3484/engremiat-ollama",
+               "project":  "ENGREMIAT_OLLAMA",
+               "columns":  [
+                               "Backlog",
+                               "In Progress",
+                               "Review",
+                               "Done"
+                           ],
+               "real_ui_verified":  true
+           },
+    "lifecycle":  [
+                      {
+                          "order":  1,
+                          "state":  "DRAFT_LOCAL",
+                          "actor":  "SYSTEM",
+                          "action":  "Prepare task payload locally",
+                          "real_ui_write":  false,
+                          "authorization_required":  false
+                      },
+                      {
+                          "order":  2,
+                          "state":  "HUMAN_REVIEW",
+                          "actor":  "HUMAN",
+                          "action":  "Review title, objective, scope, risks, acceptance criteria and prohibited actions",
+                          "real_ui_write":  false,
+                          "authorization_required":  true
+                      },
+                      {
+                          "order":  3,
+                          "state":  "BACKLOG_CREATED",
+                          "actor":  "HUMAN_OR_AUTHORIZED_ADAPTER",
+                          "action":  "Create exactly one Kanban task in Backlog",
+                          "real_ui_write":  true,
+                          "authorization_required":  true
+                      },
+                      {
+                          "order":  4,
+                          "state":  "READY_FOR_EXECUTION_REVIEW",
+                          "actor":  "HUMAN",
+                          "action":  "Decide whether execution may be prepared",
+                          "real_ui_write":  false,
+                          "authorization_required":  true
+                      },
+                      {
+                          "order":  5,
+                          "state":  "EXECUTION_BLOCKED_DEFAULT",
+                          "actor":  "SYSTEM",
+                          "action":  "Keep agent and task execution blocked until a separate explicit authorization",
+                          "real_ui_write":  false,
+                          "authorization_required":  true
+                      },
+                      {
+                          "order":  6,
+                          "state":  "RESULT_REVIEW",
+                          "actor":  "HUMAN",
+                          "action":  "Review evidence before moving task to Done",
+                          "real_ui_write":  true,
+                          "authorization_required":  true
+                      }
+                  ],
+    "required_task_fields":  [
+                                 "task_id",
+                                 "title",
+                                 "objective",
+                                 "description",
+                                 "scope_in",
+                                 "scope_out",
+                                 "risk",
+                                 "acceptance_criteria",
+                                 "rollback",
+                                 "authorization_required",
+                                 "execution_allowed",
+                                 "agent_allowed",
+                                 "auto_approve",
+                                 "git_write",
+                                 "external_network",
+                                 "evidence_required"
+                             ],
+    "safety":  {
+                   "authorization_required":  true,
+                   "authorization_status":  "PENDING_EXPLICIT_HUMAN_AUTHORIZATION",
+                   "requires_human_authorization":  true,
+                   "task_creation_authorized":  false,
+                   "task_execution_authorized":  false,
+                   "agent_execution_authorized":  false,
+                   "auto_approve":  false,
+                   "git_write":  false,
+                   "external_network":  false,
+                   "browser_automation":  false,
+                   "keyboard_automation":  false,
+                   "mouse_automation":  false,
+                   "clipboard_access":  false,
+                   "default_decision":  "NO_GO_UNTIL_EXPLICIT_HUMAN_AUTHORIZATION"
+               },
+    "first_task_policy":  {
+                              "tasks_allowed":  1,
+                              "initial_column":  "Backlog",
+                              "execution_mode":  "NOT_AUTHORIZED",
+                              "agent_mode":  "NOT_CONFIGURED",
+                              "movement_policy":  "HUMAN_CONTROLLED",
+                              "completion_policy":  "EVIDENCE_AND_HUMAN_APPROVAL_REQUIRED"
+                          },
+    "boundaries":  {
+                       "allowed_now":  [
+                                           "LOCAL_JSON_WRITE",
+                                           "LOCAL_TEXT_SUMMARY",
+                                           "READ_PREVIOUS_EVIDENCE"
+                                       ],
+                       "blocked_now":  [
+                                           "KANBAN_TASK_CREATE",
+                                           "AGENT_START",
+                                           "TASK_START",
+                                           "AUTO_APPROVE",
+                                           "GIT_WRITE",
+                                           "EXTERNAL_NETWORK",
+                                           "BROWSER_AUTOMATION",
+                                           "KEYBOARD_AUTOMATION",
+                                           "MOUSE_AUTOMATION",
+                                           "CLIPBOARD_ACCESS"
+                                       ]
+                   },
+    "contract_verified":  true,
+    "readiness":  100,
+    "decision":  "FIRST_HUMAN_CONTROLLED_KANBAN_TASK_FLOW_DEFINED_EXECUTION_BLOCKED",
+    "next":  "STEP_002_PREPARE_FIRST_TASK_PAYLOAD"
+}

@@ -1,0 +1,74 @@
+﻿CREACION MANUAL DE UNA UNICA TARJETA
+
+OBJETIVO
+Crear manualmente una sola tarjeta en la columna Backlog del proyecto ENGREMIAT_OLLAMA.
+
+AUTORIZACION
+APPROVED_FOR_SINGLE_BACKLOG_TASK_CREATION_ONLY
+
+PASOS
+1. Mantén abierta la interfaz Cline Kanban: http://127.0.0.1:3484/engremiat-ollama
+2. En la columna Backlog, pulsa el botón + para crear una tarjeta.
+3. Copia exactamente el título indicado abajo.
+4. Copia la descripción completa indicada abajo.
+5. Guarda la tarjeta.
+6. No pulses botones de agente, ejecución, auto-approve ni acciones adicionales.
+7. Comprueba que solo existe una tarjeta con este TASK_ID.
+
+TITULO
+Documentar y validar el primer flujo humano controlado del Kanban
+
+DESCRIPCION
+Crear una única tarjeta de prueba en el Kanban de Cline para representar un flujo gobernado por el humano. La tarjeta servirá como evidencia visual y funcional del ciclo Draft local, revisión humana y creación autorizada en Backlog.
+
+TASK_ID: TASK-KANBAN-002-001
+
+OBJETIVO: Comprobar que una tarea puede prepararse, revisarse y crearse en Backlog sin iniciar agentes ni ejecución automática
+
+ALCANCE INCLUIDO:
+- Revisar el contenido del payload
+- Autorizar o rechazar la creación de una única tarjeta
+- Crear la tarjeta únicamente en Backlog tras autorización explícita
+- Verificar visualmente título y estado
+- Registrar evidencia local del resultado
+
+FUERA DE ALCANCE:
+- Iniciar un agente
+- Ejecutar la tarea
+- Mover automáticamente la tarjeta
+- Activar auto-approve
+- Modificar código
+- Realizar Git commit o push
+- Usar automatización de teclado, ratón o portapapeles
+- Realizar nuevas instalaciones o tráfico de red
+
+CRITERIOS DE ACEPTACION:
+- Existe como máximo una tarjeta con task_id TASK-KANBAN-002-001
+- La tarjeta aparece en Backlog
+- El título coincide con el payload aprobado
+- No se inicia ningún agente
+- No se inicia ninguna ejecución
+- Auto-approve permanece desactivado
+- No se modifica Git
+- Se genera evidencia de revisión humana
+
+SEGURIDAD:
+- No iniciar agente.
+- No iniciar tarea.
+- No activar auto-approve.
+- No modificar Git.
+- No realizar instalaciones.
+- No realizar automatizaciones.
+
+RESULTADO ESPERADO
+- Una única tarjeta creada.
+- Columna: Backlog.
+- TASK_ID: 
+TASK-KANBAN-002-001
+- Agente iniciado: NO.
+- Tarea ejecutada: NO.
+- Auto-approve: NO.
+- Git modificado: NO.
+
+SIGUIENTE
+Después de crearla, vuelve a la terminal. El siguiente paso registrará y validará el resultado humano.

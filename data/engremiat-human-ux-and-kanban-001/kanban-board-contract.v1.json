@@ -1,0 +1,264 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "version":  "1.0.0",
+    "generated_at":  "2026-06-14T06:15:23.7581661+02:00",
+    "board_id":  "ENGREMIAT_HUMAN_WORK_BOARD_001",
+    "title":  "ENGREMIAT · Trabajo humano gobernado",
+    "purpose":  "Representar objetivos, tareas, gates y evidencias sin ejecutar acciones automáticamente.",
+    "columns":  [
+                    {
+                        "id":  "BACKLOG",
+                        "order":  1,
+                        "wip_limit":  null,
+                        "accepts":  [
+                                        "OBJECTIVE",
+                                        "STAGE",
+                                        "TASK"
+                                    ],
+                        "entry_rule":  "ITEM_IDENTIFIED",
+                        "exit_rule":  "MINIMUM_CONTRACT_DEFINED"
+                    },
+                    {
+                        "id":  "READY",
+                        "order":  2,
+                        "wip_limit":  10,
+                        "accepts":  [
+                                        "STAGE",
+                                        "TASK"
+                                    ],
+                        "entry_rule":  "CONTRACT_AND_REQUIREMENTS_VALIDATED",
+                        "exit_rule":  "EXPLICIT_START_DECISION"
+                    },
+                    {
+                        "id":  "IN_PROGRESS",
+                        "order":  3,
+                        "wip_limit":  3,
+                        "accepts":  [
+                                        "TASK",
+                                        "STEP"
+                                    ],
+                        "entry_rule":  "HUMAN_OR_GOVERNED_SYSTEM_MARKS_ACTIVE",
+                        "exit_rule":  "RESULT_OR_BLOCKER_RECORDED"
+                    },
+                    {
+                        "id":  "BLOCKED",
+                        "order":  4,
+                        "wip_limit":  null,
+                        "accepts":  [
+                                        "OBJECTIVE",
+                                        "STAGE",
+                                        "TASK",
+                                        "STEP"
+                                    ],
+                        "entry_rule":  "BLOCKER_PRESENT",
+                        "exit_rule":  "BLOCKER_RESOLVED_WITH_EVIDENCE"
+                    },
+                    {
+                        "id":  "HUMAN_REVIEW",
+                        "order":  5,
+                        "wip_limit":  5,
+                        "accepts":  [
+                                        "TASK",
+                                        "GATE",
+                                        "EVIDENCE"
+                                    ],
+                        "entry_rule":  "HUMAN_DECISION_REQUIRED",
+                        "exit_rule":  "APPROVE_REVISE_OR_REJECT_RECORDED"
+                    },
+                    {
+                        "id":  "VERIFIED",
+                        "order":  6,
+                        "wip_limit":  10,
+                        "accepts":  [
+                                        "TASK",
+                                        "EVIDENCE"
+                                    ],
+                        "entry_rule":  "VALIDATION_PASSED",
+                        "exit_rule":  "CLOSE_CRITERIA_MET"
+                    },
+                    {
+                        "id":  "CLOSED",
+                        "order":  7,
+                        "wip_limit":  null,
+                        "accepts":  [
+                                        "OBJECTIVE",
+                                        "STAGE",
+                                        "TASK"
+                                    ],
+                        "entry_rule":  "EVIDENCE_COMPLETE_AND_CLOSE_DECISION",
+                        "exit_rule":  "NONE"
+                    }
+                ],
+    "card_schema":  {
+                        "required_fields":  [
+                                                "id",
+                                                "entity_type",
+                                                "title",
+                                                "objective_id",
+                                                "status",
+                                                "risk",
+                                                "owner",
+                                                "authorization",
+                                                "next_action"
+                                            ],
+                        "optional_fields":  [
+                                                "stage_id",
+                                                "parent_id",
+                                                "summary",
+                                                "progress",
+                                                "blocked_reason",
+                                                "evidence_count",
+                                                "evidence_refs",
+                                                "validation",
+                                                "rollback",
+                                                "created_at",
+                                                "updated_at",
+                                                "tags"
+                                            ],
+                        "entity_types":  [
+                                             "OBJECTIVE",
+                                             "STAGE",
+                                             "TASK",
+                                             "STEP",
+                                             "GATE",
+                                             "EVIDENCE",
+                                             "ALERT"
+                                         ],
+                        "owners":  [
+                                       "HUMAN",
+                                       "CHATGPT",
+                                       "OLLAMA",
+                                       "CLINE",
+                                       "LOCAL_WORKER",
+                                       "SYSTEM"
+                                   ],
+                        "risk_levels":  [
+                                            "LOW",
+                                            "MEDIUM",
+                                            "HIGH",
+                                            "CRITICAL"
+                                        ],
+                        "authorization_states":  [
+                                                     "NOT_REQUIRED",
+                                                     "PENDING",
+                                                     "GRANTED",
+                                                     "DENIED",
+                                                     "EXPIRED"
+                                                 ],
+                        "invariant_rules":  [
+                                                "status=HUMAN_REVIEW requires authorization=PENDING or evidence review",
+                                                "status=VERIFIED requires validation=PASS",
+                                                "status=CLOSED requires evidence_count greater than zero",
+                                                "risk=HIGH or CRITICAL requires owner=HUMAN for final decision",
+                                                "entity_type=GATE cannot enter IN_PROGRESS",
+                                                "entity_type=EVIDENCE cannot enter BACKLOG"
+                                            ]
+                    },
+    "card_display":  {
+                         "compact_fields":  [
+                                                "title",
+                                                "entity_type",
+                                                "risk",
+                                                "owner",
+                                                "authorization",
+                                                "next_action"
+                                            ],
+                         "detail_sections":  [
+                                                 "SUMMARY",
+                                                 "CONTRACT",
+                                                 "SECURITY",
+                                                 "EVIDENCE",
+                                                 "VALIDATION",
+                                                 "ROLLBACK",
+                                                 "HISTORY"
+                                             ],
+                         "badges":  [
+                                        "RISK",
+                                        "OWNER",
+                                        "AUTHORIZATION",
+                                        "EVIDENCE",
+                                        "BLOCKER"
+                                    ],
+                         "progress_visible_for":  [
+                                                      "OBJECTIVE",
+                                                      "STAGE",
+                                                      "TASK"
+                                                  ]
+                     },
+    "sample_cards":  [
+                         {
+                             "id":  "OBJ-HUXK-001",
+                             "entity_type":  "OBJECTIVE",
+                             "title":  "Diseñar UX humana y Kanban",
+                             "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                             "status":  "IN_PROGRESS",
+                             "risk":  "LOW",
+                             "owner":  "HUMAN",
+                             "authorization":  "NOT_REQUIRED",
+                             "progress":  35,
+                             "evidence_count":  2,
+                             "next_action":  "Diseñar prototipo local seguro"
+                         },
+                         {
+                             "id":  "TASK-HUXK-003",
+                             "entity_type":  "TASK",
+                             "title":  "Crear modelo humano y contrato Kanban",
+                             "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                             "stage_id":  "STAGE_002",
+                             "status":  "VERIFIED",
+                             "risk":  "LOW",
+                             "owner":  "CHATGPT",
+                             "authorization":  "NOT_REQUIRED",
+                             "progress":  100,
+                             "evidence_count":  2,
+                             "next_action":  "Preparar prototipo local"
+                         },
+                         {
+                             "id":  "GATE-HUXK-001",
+                             "entity_type":  "GATE",
+                             "title":  "Autorizar inicio local de Cline Kanban",
+                             "objective_id":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+                             "status":  "HUMAN_REVIEW",
+                             "risk":  "MEDIUM",
+                             "owner":  "HUMAN",
+                             "authorization":  "PENDING",
+                             "evidence_count":  1,
+                             "next_action":  "Revisar comando y confirmar que no inicia agentes"
+                         }
+                     ],
+    "integration":  {
+                        "cline_kanban_role":  "LOCAL_PROTOTYPE_AND_REFERENCE_IMPLEMENTATION",
+                        "engremiat_canvas_role":  "FUTURE_PRIMARY_HUMAN_SYSTEM_VIEW",
+                        "reuse_from_cline_kanban":  [
+                                                        "Board navigation",
+                                                        "Task cards",
+                                                        "Status columns",
+                                                        "Task detail",
+                                                        "Diff review",
+                                                        "Dependency visualization where available"
+                                                    ],
+                        "build_in_engremiat":  [
+                                                   "Objective hierarchy",
+                                                   "Human decision queue",
+                                                   "Risk and authorization badges",
+                                                   "Evidence and validation views",
+                                                   "Node and agent topology",
+                                                   "Real-time system status",
+                                                   "Alerts and anomaly handling",
+                                                   "Cross-project global view"
+                                               ],
+                        "execution_binding":  "DISABLED_IN_CURRENT_OBJECTIVE"
+                    },
+    "safety":  {
+                   "visual_state_changes_only":  true,
+                   "drag_and_drop_execution":  false,
+                   "task_run_buttons_disabled_or_not_used":  true,
+                   "cline_agent_execution":  false,
+                   "auto_approve":  false,
+                   "external_network":  false,
+                   "git_write":  false,
+                   "human_gate_before_any_real_execution":  true
+               },
+    "decision":  "KANBAN_CONTRACT_READY_FOR_SAFE_LOCAL_PROTOTYPE",
+    "next":  "STEP_004_PREPARE_SAFE_LOCAL_KANBAN_PROTOTYPE"
+}

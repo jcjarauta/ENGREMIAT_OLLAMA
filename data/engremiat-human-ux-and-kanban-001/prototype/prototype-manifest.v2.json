@@ -1,0 +1,49 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:28:45.3393043+02:00",
+    "prototype":  "data/engremiat-human-ux-and-kanban-001/prototype/index.html",
+    "prototype_sha256":  "7dc003653c7ef0ac2cc1d82657eabdaba3c33b0cef878d8dd91d257fe99b9c1f",
+    "model":  "data/engremiat-human-ux-and-kanban-001/multi-project-work-model.v1.json",
+    "mode":  "LOCAL_STATIC_MULTIPROJECT_READ_ONLY",
+    "projects":  3,
+    "tasks":  8,
+    "workers":  5,
+    "priorities":  5,
+    "views":  [
+                  "SUMMARY",
+                  "GLOBAL_WORK",
+                  "KANBAN",
+                  "WORKERS",
+                  "HUMAN_DECISIONS",
+                  "TASK_DETAIL",
+                  "SYSTEM"
+              ],
+    "filters":  [
+                    "PROJECT",
+                    "PRIORITY",
+                    "WORKER_TYPE",
+                    "STATUS",
+                    "SEARCH"
+                ],
+    "worker_dimensions":  [
+                              "ACCOUNTABLE",
+                              "GENERATION",
+                              "EXECUTION",
+                              "REVIEW"
+                          ],
+    "project_health":  true,
+    "dependencies":  true,
+    "cross_project_work_view":  true,
+    "utf8_valid":  true,
+    "replacement_character_found":  false,
+    "mojibake_found":  false,
+    "external_urls":  false,
+    "network_code":  false,
+    "execution_controls":  false,
+    "cline_started":  false,
+    "ollama_called":  false,
+    "automatic_execution":  false,
+    "git":  false,
+    "decision":  "MULTIPROJECT_HUMAN_UX_READY_FOR_VALIDATION",
+    "next":  "STEP_005_VALIDATE_ENHANCED_HUMAN_UX"
+}

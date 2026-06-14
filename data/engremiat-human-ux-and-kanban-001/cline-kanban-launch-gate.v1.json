@@ -1,0 +1,28 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "gate_id":  "CLINE_KANBAN_LOCAL_UI_GATE_001",
+    "created_at":  "2026-06-14T06:35:20.3157473+02:00",
+    "requested_action":  "START_CLINE_KANBAN_LOCAL_UI_ONLY",
+    "risk":  "MEDIUM",
+    "scope":  "LOCAL_UI_ONLY",
+    "authorization":  "APPROVED",
+    "authorized_by":  "HUMAN",
+    "authorized_at":  "2026-06-14T06:36:14.2307514+02:00",
+    "allowed_effects":  [
+                            "Local process",
+                            "Localhost listener",
+                            "Local browser view only when explicitly opened"
+                        ],
+    "prohibited_effects":  [
+                               "Agent execution",
+                               "Task execution",
+                               "Repository mutation",
+                               "Git write",
+                               "Package installation",
+                               "External network exposure"
+                           ],
+    "launcher":  "scripts/start-cline-kanban-safe.ps1",
+    "launcher_sha256":  "6037f18f07aa85a3d46c7c623d39a6e4136718883d4c4c85e831567d332ed955",
+    "execute_now":  true,
+    "next":  "START_LOCAL_CLINE_KANBAN_UI_ONLY"
+}

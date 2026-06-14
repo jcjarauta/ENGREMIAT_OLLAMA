@@ -1,0 +1,182 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "version":  "1.0.0",
+    "generated_at":  "2026-06-14T06:15:23.7581661+02:00",
+    "design_principle":  "HUMAN_UNDERSTANDS_BEFORE_SYSTEM_EXECUTES",
+    "primary_goal":  "Permitir que una persona comprenda en una sola vista qué intenta conseguir ENGREMIAT, qué está ocurriendo, qué está bloqueado y qué decisión humana se necesita.",
+    "information_hierarchy":  [
+                                  {
+                                      "level":  1,
+                                      "entity":  "OBJECTIVE",
+                                      "human_question":  "Qué resultado global queremos conseguir",
+                                      "visible_fields":  [
+                                                             "objective_id",
+                                                             "title",
+                                                             "purpose",
+                                                             "readiness",
+                                                             "risk",
+                                                             "current_stage",
+                                                             "next_decision"
+                                                         ]
+                                  },
+                                  {
+                                      "level":  2,
+                                      "entity":  "STAGE",
+                                      "human_question":  "En qué etapa del objetivo estamos",
+                                      "visible_fields":  [
+                                                             "stage_id",
+                                                             "title",
+                                                             "status",
+                                                             "progress",
+                                                             "blocked_reason",
+                                                             "next_step"
+                                                         ]
+                                  },
+                                  {
+                                      "level":  3,
+                                      "entity":  "TASK",
+                                      "human_question":  "Qué trabajo concreto existe",
+                                      "visible_fields":  [
+                                                             "task_id",
+                                                             "title",
+                                                             "status",
+                                                             "owner",
+                                                             "risk",
+                                                             "authorization",
+                                                             "evidence_count",
+                                                             "next_action"
+                                                         ]
+                                  },
+                                  {
+                                      "level":  4,
+                                      "entity":  "STEP",
+                                      "human_question":  "Qué acción mínima se está realizando",
+                                      "visible_fields":  [
+                                                             "step_id",
+                                                             "operation",
+                                                             "status",
+                                                             "input",
+                                                             "output",
+                                                             "validation",
+                                                             "rollback"
+                                                         ]
+                                  }
+                              ],
+    "human_views":  [
+                        {
+                            "id":  "VIEW_OBJECTIVE_OVERVIEW",
+                            "purpose":  "Ver objetivos activos, progreso, riesgo y siguiente decisión",
+                            "default":  true
+                        },
+                        {
+                            "id":  "VIEW_KANBAN_BOARD",
+                            "purpose":  "Mover visualmente tareas entre estados gobernados",
+                            "default":  false
+                        },
+                        {
+                            "id":  "VIEW_HUMAN_DECISION_QUEUE",
+                            "purpose":  "Mostrar únicamente gates pendientes de autorización humana",
+                            "default":  false
+                        },
+                        {
+                            "id":  "VIEW_TASK_DETAIL",
+                            "purpose":  "Mostrar contrato, evidencias, validaciones y rollback de una tarea",
+                            "default":  false
+                        },
+                        {
+                            "id":  "VIEW_EVIDENCE",
+                            "purpose":  "Consultar artefactos, hashes, logs, diffs y validaciones",
+                            "default":  false
+                        },
+                        {
+                            "id":  "VIEW_SYSTEM_STATUS",
+                            "purpose":  "Ver estado de Ollama, Cline, workers y seguridad",
+                            "default":  false
+                        }
+                    ],
+    "status_semantics":  [
+                             {
+                                 "status":  "BACKLOG",
+                                 "human_meaning":  "Existe, pero aún no está preparado",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "READY",
+                                 "human_meaning":  "Contrato y requisitos preparados",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "IN_PROGRESS",
+                                 "human_meaning":  "Trabajo activo y controlado",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "BLOCKED",
+                                 "human_meaning":  "No puede continuar hasta resolver un impedimento",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "HUMAN_REVIEW",
+                                 "human_meaning":  "Requiere inspección o decisión humana",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "VERIFIED",
+                                 "human_meaning":  "Resultado validado, aún pendiente de cierre",
+                                 "execution_allowed":  false
+                             },
+                             {
+                                 "status":  "CLOSED",
+                                 "human_meaning":  "Objetivo o tarea terminada con evidencia",
+                                 "execution_allowed":  false
+                             }
+                         ],
+    "visual_language":  {
+                            "success":  "GREEN",
+                            "error":  "RED",
+                            "warning":  "YELLOW",
+                            "information":  "CYAN",
+                            "next_action":  "MAGENTA",
+                            "risk_levels":  [
+                                                "LOW",
+                                                "MEDIUM",
+                                                "HIGH",
+                                                "CRITICAL"
+                                            ],
+                            "authorization_states":  [
+                                                         "NOT_REQUIRED",
+                                                         "PENDING",
+                                                         "GRANTED",
+                                                         "DENIED",
+                                                         "EXPIRED"
+                                                     ],
+                            "evidence_states":  [
+                                                    "NONE",
+                                                    "PARTIAL",
+                                                    "COMPLETE",
+                                                    "INVALID"
+                                                ]
+                        },
+    "interaction_rules":  [
+                              "Una tarjeta nunca ejecuta por el simple hecho de moverse de columna",
+                              "Mover una tarjeta cambia únicamente estado visual hasta que exista autorización explícita",
+                              "Toda acción real debe mostrar riesgo, impacto, autorización y rollback",
+                              "Los estados VERIFIED y CLOSED requieren evidencia",
+                              "Los gates humanos deben aparecer también en una cola separada",
+                              "El humano debe poder abrir detalle sin iniciar procesos",
+                              "La interfaz debe distinguir planificación, ejecución, revisión y cierre"
+                          ],
+    "safety":  {
+                   "board_is_control_surface":  true,
+                   "board_is_execution_engine":  false,
+                   "drag_and_drop_executes_actions":  false,
+                   "cline_agent_execution":  false,
+                   "automatic_task_execution":  false,
+                   "auto_approve":  false,
+                   "local_only":  true,
+                   "git_write":  false,
+                   "network":  false
+               },
+    "decision":  "HUMAN_UX_MODEL_DEFINED",
+    "next":  "CREATE_KANBAN_BOARD_CONTRACT"
+}

@@ -1,0 +1,125 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "version":  "1.0.0",
+    "created_at":  "2026-06-14T06:11:30.1258779+02:00",
+    "purpose":  "Diseñar y validar una primera experiencia visual humana para observar, comprender y gobernar el trabajo de ENGREMIAT mediante un tablero Kanban local.",
+    "strategic_priority":  "HUMAN_UX_FIRST",
+    "primary_user":  "HUMAN_OPERATOR",
+    "human_questions":  [
+                            "Qué objetivos existen",
+                            "Qué trabajo está pendiente",
+                            "Qué se está ejecutando",
+                            "Qué está bloqueado",
+                            "Qué necesita decisión humana",
+                            "Qué evidencias existen",
+                            "Qué resultado produjo cada tarea",
+                            "Cuál es el siguiente paso seguro"
+                        ],
+    "visual_model":  {
+                         "primary_view":  "KANBAN_BOARD",
+                         "complementary_views":  [
+                                                     "OBJECTIVE_OVERVIEW",
+                                                     "TASK_DETAIL",
+                                                     "HUMAN_DECISION_QUEUE",
+                                                     "EVIDENCE_VIEW",
+                                                     "SYSTEM_STATUS"
+                                                 ],
+                         "canonical_columns":  [
+                                                   "BACKLOG",
+                                                   "READY",
+                                                   "IN_PROGRESS",
+                                                   "BLOCKED",
+                                                   "HUMAN_REVIEW",
+                                                   "VERIFIED",
+                                                   "CLOSED"
+                                               ],
+                         "card_entities":  [
+                                               "OBJECTIVE",
+                                               "STAGE",
+                                               "TASK",
+                                               "GATE",
+                                               "EVIDENCE",
+                                               "ALERT"
+                                           ],
+                         "hierarchy":  [
+                                           "OBJECTIVE",
+                                           "STAGE",
+                                           "TASK",
+                                           "STEP"
+                                       ]
+                     },
+    "scope":  {
+                  "included":  [
+                                   "Inventariar capacidades locales de Cline Kanban",
+                                   "Definir modelo humano de objetivos y tareas",
+                                   "Crear contrato de columnas y tarjetas",
+                                   "Preparar prototipo local read-only o manual",
+                                   "Validar navegación humana",
+                                   "Registrar diferencias entre Cline Kanban y el futuro Canvas propio de ENGREMIAT"
+                               ],
+                  "excluded":  [
+                                   "Ejecución automática de agentes",
+                                   "Auto-approve",
+                                   "Escritura directa de modelos",
+                                   "Acciones Git automáticas",
+                                   "Push o red externa",
+                                   "Integración Telegram",
+                                   "Base de datos",
+                                   "Dashboard de red de nodos en tiempo real"
+                               ]
+              },
+    "safety":  {
+                   "local_only":  true,
+                   "cline_agent_execution":  false,
+                   "ollama_generation":  false,
+                   "automatic_task_execution":  false,
+                   "auto_approve":  false,
+                   "target_code_write":  false,
+                   "git_commit":  false,
+                   "git_push":  false,
+                   "external_network":  false,
+                   "human_authorization_required_before_execution":  true
+               },
+    "deliverables":  [
+                         "objective-contract.v1.json",
+                         "cline-kanban-capability-inventory.v1.json",
+                         "human-ux-model.v1.json",
+                         "kanban-board-contract.v1.json",
+                         "local-prototype-plan.v1.json",
+                         "validation-report.v1.json",
+                         "objective-close.v1.json"
+                     ],
+    "stages":  [
+                   {
+                       "id":  "STAGE_001",
+                       "name":  "DISCOVERY",
+                       "outcome":  "Inventario real de capacidades locales de Cline Kanban"
+                   },
+                   {
+                       "id":  "STAGE_002",
+                       "name":  "HUMAN_UX_MODEL",
+                       "outcome":  "Modelo canónico de objetivos, tarjetas, estados y decisiones humanas"
+                   },
+                   {
+                       "id":  "STAGE_003",
+                       "name":  "KANBAN_PROTOTYPE",
+                       "outcome":  "Prototipo local seguro sin ejecución automática"
+                   },
+                   {
+                       "id":  "STAGE_004",
+                       "name":  "VALIDATION_AND_CLOSE",
+                       "outcome":  "Validación humana, evidencias y decisión de siguiente objetivo"
+                   }
+               ],
+    "success_criteria":  [
+                             "El humano puede identificar el estado global en menos de una vista",
+                             "Cada tarjeta indica objetivo, estado, riesgo, responsable, evidencia y siguiente acción",
+                             "Los gates humanos son visibles y no ambiguos",
+                             "Ninguna acción se ejecuta automáticamente",
+                             "La interfaz diferencia claramente planificación, ejecución, revisión y cierre",
+                             "Queda documentado qué reutilizar de Cline Kanban y qué construir como Canvas propio"
+                         ],
+    "decision":  "OBJECTIVE_DEFINED_READY_FOR_LOCAL_CAPABILITY_INVENTORY",
+    "readiness":  15,
+    "next":  "STEP_002_INVENTORY_LOCAL_CLINE_KANBAN_CAPABILITIES"
+}

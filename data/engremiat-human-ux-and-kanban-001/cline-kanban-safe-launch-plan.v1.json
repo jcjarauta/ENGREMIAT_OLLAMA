@@ -1,0 +1,54 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:35:20.3157473+02:00",
+    "cline_version":  "3.0.24",
+    "command":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.cmd",
+    "arguments":  [
+                      "kanban"
+                  ],
+    "rendered_command":  "\u0026 \"C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.cmd\" kanban",
+    "bind_address":  "CLI_DEFAULT_UNVERIFIED",
+    "preferred_port":  null,
+    "help_support":  {
+                         "help_detected":  true,
+                         "host_option":  false,
+                         "port_option":  false,
+                         "no_open_option":  false,
+                         "open_option":  false
+                     },
+    "intended_mode":  "LOCAL_UI_ONLY",
+    "allowed":  [
+                    "Start local Kanban UI",
+                    "Read repository metadata required by Kanban",
+                    "Display task board locally after separate human authorization"
+                ],
+    "forbidden":  [
+                      "Launch agents",
+                      "Execute tasks",
+                      "Run terminal commands from cards",
+                      "Modify repository files",
+                      "Create commits",
+                      "Use auto-approve",
+                      "Expose service beyond localhost",
+                      "Install packages",
+                      "Use external network"
+                  ],
+    "safeguards":  [
+                       "Separate launcher script",
+                       "Explicit human gate before execution",
+                       "Bind to 127.0.0.1 when supported",
+                       "Prevent automatic browser opening when supported",
+                       "No task or agent command included",
+                       "Human closes process manually after validation"
+                   ],
+    "launcher":  "scripts/start-cline-kanban-safe.ps1",
+    "launcher_executed":  true,
+    "server_started":  true,
+    "browser_opened":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "git_write":  false,
+    "network_external":  false,
+    "decision":  "LOCAL_CLINE_KANBAN_UI_STARTED_PENDING_HUMAN_VISUAL_VALIDATION",
+    "next":  "STEP_005D_VALIDATE_REAL_CLINE_KANBAN_UI"
+}

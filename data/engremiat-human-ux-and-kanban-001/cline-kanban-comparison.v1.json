@@ -1,0 +1,58 @@
+﻿{
+    "objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "generated_at":  "2026-06-14T06:27:39.5390024+02:00",
+    "cline_version":  "3.0.24",
+    "cline_kanban_available":  true,
+    "evidence_source":  "LOCAL_CLI_HELP_AND_INSTALLED_PACKAGE",
+    "help_signals":  {
+                         "kanban_keyword_present":  true,
+                         "help_mentions_port":  false,
+                         "help_mentions_host":  false,
+                         "help_mentions_browser":  false,
+                         "help_mentions_task":  false,
+                         "help_mentions_agent":  false,
+                         "help_mentions_worktree":  false,
+                         "help_mentions_dependency":  false
+                     },
+    "cline_kanban_role":  "PROTOTYPE_AND_REFERENCE_IMPLEMENTATION",
+    "reusable_capabilities":  [
+                                  "Tablero visual por columnas",
+                                  "Tarjetas de tareas",
+                                  "Navegación por estado",
+                                  "Detalle de tarea",
+                                  "Referencia visual para flujo Kanban"
+                              ],
+    "engremiat_specific_capabilities":  [
+                                            "Jerarquía objetivo-etapa-tarea-paso",
+                                            "Cola separada de decisiones humanas",
+                                            "Riesgo y autorización visibles",
+                                            "Vista de evidencias, hashes y validaciones",
+                                            "Estado de nodos, workers y agentes",
+                                            "Topología de máquinas y relaciones",
+                                            "Alertas y anomalías",
+                                            "Vista global entre proyectos",
+                                            "Separación estricta entre estado visual y ejecución real"
+                                        ],
+    "current_prototype":  {
+                              "columns":  7,
+                              "sample_cards":  3,
+                              "read_only":  true,
+                              "human_gate_queue":  true,
+                              "card_detail":  true,
+                              "execution_engine":  false
+                          },
+    "current_limitations":  [
+                                "No hay persistencia operativa de movimientos",
+                                "No hay conexión con objetivos reales",
+                                "No hay sincronización con Git o workers",
+                                "No hay topología de nodos",
+                                "No hay ejecución gobernada desde el tablero",
+                                "No se ha iniciado todavía Cline Kanban real"
+                            ],
+    "architectural_decision":  "USE_CLINE_KANBAN_AS_REFERENCE_NOT_AS_FINAL_ENGREMIAT_INTERFACE",
+    "safe_next_step":  "Preparar un gate separado para iniciar Cline Kanban local sin lanzar agentes ni tareas",
+    "cline_execution_allowed":  false,
+    "automatic_execution":  false,
+    "network":  false,
+    "git":  false
+}
