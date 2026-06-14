@@ -1,0 +1,23 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "generated_at":  "2026-06-14T05:59:23.1879660+02:00",
+    "operation":  "CANONICAL_UTF8_FULL_REBUILD",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "candidate_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "headings_found":  10,
+    "canonical_order_valid":  true,
+    "replacement_character_found":  false,
+    "missing_required_terms":  [
+
+                               ],
+    "forbidden_terms_found":  [
+
+                              ],
+    "semantic_repairs_applied":  true,
+    "utf8_without_bom":  true,
+    "ollama_called":  false,
+    "cline_used":  false,
+    "target_absent":  true,
+    "quarantine_only":  true,
+    "next":  "STEP_006V_FINAL_REVALIDATE_CANONICAL_CANDIDATE"
+}

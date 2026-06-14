@@ -1,0 +1,56 @@
+﻿{
+    "contract_id":  "GENERATE_ONLY_OUTPUT_V1",
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "quarantine_file":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "target_file":  "docs/ARCHITECTURE.md",
+    "target_write_allowed":  false,
+    "quarantine_write_allowed":  true,
+    "required_format":  "MARKDOWN",
+    "required_sections":  [
+                              "Propósito de ENGREMIAT_OLLAMA",
+                              "Componentes validados",
+                              "Hardware local validado",
+                              "Modelo local y contexto",
+                              "Lanzador seguro de Cline",
+                              "Reglas y fronteras de seguridad",
+                              "Flujo de trabajo gobernado",
+                              "Estructura actual del repositorio",
+                              "Evidencias de validación",
+                              "Hoja de ruta hacia un worker local gobernado"
+                          ],
+    "required_terms":  [
+                           "ENGREMIAT_OLLAMA",
+                           "Ollama",
+                           "Cline CLI",
+                           "qwen3:14b",
+                           "32768",
+                           "NVIDIA GeForce RTX 4060 Ti",
+                           "16 GB",
+                           "100% GPU",
+                           "scripts/start-cline-safe.ps1",
+                           "auto-approve=false"
+                       ],
+    "forbidden_terms":  [
+                            "Frontend",
+                            "Backend",
+                            "Database",
+                            "APIs",
+                            "microservices",
+                            "microservicios"
+                        ],
+    "validation":  {
+                       "response_nonempty":  true,
+                       "exact_section_count":  10,
+                       "exact_order":  true,
+                       "required_terms_present":  true,
+                       "forbidden_terms_absent":  true,
+                       "target_file_absent":  true,
+                       "quarantine_only":  true
+                   },
+    "apply_gate":  {
+                       "human_review_required":  true,
+                       "explicit_authorization_required":  true,
+                       "automatic_apply":  false,
+                       "git_allowed":  false
+                   }
+}

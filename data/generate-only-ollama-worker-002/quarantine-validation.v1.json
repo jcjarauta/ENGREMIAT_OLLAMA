@@ -1,0 +1,29 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "generated_at":  "2026-06-14T05:51:45.3937657+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "target":  "docs/ARCHITECTURE.md",
+    "candidate_nonempty":  true,
+    "headings_found":  10,
+    "exact_section_count":  true,
+    "order_valid":  true,
+    "missing_sections":  [
+
+                         ],
+    "unexpected_sections":  [
+
+                            ],
+    "missing_required_terms":  [
+                                   "100% GPU",
+                                   "auto-approve=false"
+                               ],
+    "forbidden_terms_found":  [
+
+                              ],
+    "executable_code_fence_found":  false,
+    "target_absent":  true,
+    "deterministic_validation_passed":  false,
+    "decision":  "REJECT_KEEP_IN_QUARANTINE",
+    "automatic_apply":  false,
+    "human_review_required":  true
+}

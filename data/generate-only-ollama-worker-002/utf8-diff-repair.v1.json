@@ -1,0 +1,27 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "repaired_at":  "2026-06-14T06:03:22.3898644+02:00",
+    "target":  "docs/ARCHITECTURE.md",
+    "candidate_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "target_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "exact_hash_match":  true,
+    "exact_byte_match":  true,
+    "target_utf8_valid":  true,
+    "target_replacement_character_found":  false,
+    "target_mojibake_found":  false,
+    "target_required_markers_missing":  [
+
+                                        ],
+    "diff":  "data/generate-only-ollama-worker-002/approved-application.diff",
+    "diff_utf8_valid":  true,
+    "diff_replacement_character_found":  false,
+    "diff_mojibake_found":  false,
+    "diff_required_markers_missing":  [
+
+                                      ],
+    "diff_exit_code":  1,
+    "content_rewritten":  false,
+    "evidence_rebuilt":  true,
+    "commit":  false,
+    "next":  "STEP_009_VALIDATE_APPLIED_TARGET_AND_PREPARE_CLOSE"
+}

@@ -1,0 +1,74 @@
+﻿{
+    "contract_id":  "GENERATE_ONLY_INPUT_V1",
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "model":  "qwen3:14b",
+    "endpoint":  "http://127.0.0.1:11434/api/generate",
+    "mode":  "GENERATE_ONLY_NO_TOOLS",
+    "language":  "es",
+    "facts":  {
+                  "project":  "ENGREMIAT_OLLAMA",
+                  "purpose":  "Integrar Ollama y Cline CLI como worker local gobernado para ENGREMIAT",
+                  "ollama_version":  "0.30.8",
+                  "cline_version":  "3.0.24",
+                  "model":  "qwen3:14b",
+                  "context_tokens":  32768,
+                  "execution":  "LOCAL_ONLY",
+                  "cloud_models":  false,
+                  "token_cost":  "0_PER_LOCAL_INFERENCE",
+                  "gpu":  "NVIDIA GeForce RTX 4060 Ti",
+                  "vram_gb":  16,
+                  "gpu_offload":  "100_PERCENT_GPU",
+                  "ram_gb":  63.92,
+                  "safe_launcher":  "scripts/start-cline-safe.ps1",
+                  "auto_approve":  false
+              },
+    "exact_sections":  [
+                           "Propósito de ENGREMIAT_OLLAMA",
+                           "Componentes validados",
+                           "Hardware local validado",
+                           "Modelo local y contexto",
+                           "Lanzador seguro de Cline",
+                           "Reglas y fronteras de seguridad",
+                           "Flujo de trabajo gobernado",
+                           "Estructura actual del repositorio",
+                           "Evidencias de validación",
+                           "Hoja de ruta hacia un worker local gobernado"
+                       ],
+    "repository_structure":  [
+                                 "config/",
+                                 "data/hardware-preflight/",
+                                 "data/model-smoke/",
+                                 "data/generate-only-ollama-worker-002/",
+                                 "docs/",
+                                 "scripts/start-cline-safe.ps1",
+                                 "src/",
+                                 "tests/"
+                             ],
+    "governed_flow":  [
+                          "contrato",
+                          "lectura de datos estructurados",
+                          "generación sin herramientas",
+                          "cuarentena",
+                          "validación determinista",
+                          "revisión humana",
+                          "gate explícito de aplicación",
+                          "diff externo",
+                          "commit humano"
+                      ],
+    "forbidden_terms":  [
+                            "Frontend",
+                            "Backend",
+                            "Database",
+                            "APIs",
+                            "microservices",
+                            "microservicios"
+                        ],
+    "instructions":  [
+                         "Devuelve solo Markdown válido",
+                         "Usa exactamente las diez secciones en el orden indicado",
+                         "No inventes componentes",
+                         "No incluyas comandos ejecutables",
+                         "No afirmes haber escrito archivos",
+                         "No menciones herramientas no incluidas en los hechos"
+                     ]
+}

@@ -1,0 +1,35 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "review_id":  "ARCHITECTURE_CANDIDATE_REVIEW_001",
+    "created_at":  "2026-06-14T05:54:06.0697887+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "candidate_sha256":  "6f82c558c0c7f2e798493d419375dc75570600cf91f36b6cac71a3b3ad222c7d",
+    "candidate_bytes":  2388,
+    "headings":  [
+                     "Propósito de ENGREMIAT_OLLAMA",
+                     "Componentes validados",
+                     "Hardware local validado",
+                     "Modelo local y contexto",
+                     "Lanzador seguro de Cline",
+                     "Reglas y fronteras de seguridad",
+                     "Flujo de trabajo gobernado",
+                     "Estructura actual del repositorio",
+                     "Evidencias de validación",
+                     "Hoja de ruta hacia un worker local gobernado"
+                 ],
+    "deterministic_validation":  "PASS",
+    "human_decision":  "REVISE",
+    "allowed_decisions":  [
+                              "APPROVE",
+                              "REVISE",
+                              "REJECT"
+                          ],
+    "target":  "docs/ARCHITECTURE.md",
+    "target_write_allowed":  false,
+    "automatic_apply":  false,
+    "explicit_human_authorization_required":  true,
+    "review_instruction":  "Revisa el contenido abierto. No se copiará al archivo objetivo hasta una autorización humana explícita.",
+    "reviewed_at":  "2026-06-14T05:56:41.1940091+02:00",
+    "review_reason":  "SEMANTIC_CONTRADICTION_IN_AUTO_APPROVE_RULE_AND_COST_PRECISION_REQUIRED",
+    "next":  "REGENERATE_WITH_SEMANTIC_REPAIR"
+}

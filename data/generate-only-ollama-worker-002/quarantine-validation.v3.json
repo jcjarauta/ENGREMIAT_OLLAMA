@@ -1,0 +1,37 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "generated_at":  "2026-06-14T05:58:06.5876295+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "candidate_sha256":  "ac33f9aed5065239ab78ae6720c1ac18f1d2f1479a76794587b5a12897662dfd",
+    "target":  "docs/ARCHITECTURE.md",
+    "headings_found":  10,
+    "exact_section_count":  true,
+    "order_valid":  false,
+    "missing_sections":  [
+                             "Propósito de ENGREMIAT_OLLAMA",
+                             "Evidencias de validación"
+                         ],
+    "unexpected_sections":  [
+                                "Prop�sito de ENGREMIAT_OLLAMA",
+                                "Evidencias de validaci�n"
+                            ],
+    "missing_required_terms":  [
+
+                               ],
+    "forbidden_terms_found":  [
+
+                              ],
+    "bad_phrase_absent":  true,
+    "auto_approve_rule_correct":  true,
+    "local_cost_precision":  true,
+    "literal_100_percent_gpu":  true,
+    "literal_auto_approve_false":  true,
+    "executable_code_fence_found":  false,
+    "unauthorized_file_action_claims_found":  false,
+    "target_absent":  true,
+    "deterministic_validation_passed":  false,
+    "decision":  "REJECT_KEEP_IN_QUARANTINE",
+    "automatic_apply":  false,
+    "human_review_required":  true,
+    "next":  "STEP_006U_REPAIR_REMAINING_ISSUES"
+}

@@ -1,0 +1,19 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "gate_id":  "FINAL_HUMAN_APPROVAL_GATE_001",
+    "decided_at":  "2026-06-14T06:01:28.0688635+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "candidate_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "deterministic_validation":  "PASS",
+    "human_decision":  "APPROVE",
+    "human_approved":  true,
+    "target":  "docs/ARCHITECTURE.md",
+    "target_write_allowed":  true,
+    "target_write_executed":  true,
+    "automatic_apply":  false,
+    "explicit_human_authorization_recorded":  true,
+    "candidate_hash_stable":  true,
+    "applied_at":  "2026-06-14T06:02:08.3468222+02:00",
+    "applied_target_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "next":  "STEP_009_VALIDATE_APPLIED_TARGET_AND_PREPARE_CLOSE"
+}

@@ -1,0 +1,41 @@
+# ENGREMIAT_OLLAMA
+
+## Propósito de ENGREMIAT_OLLAMA
+
+ENGREMIAT_OLLAMA tiene como propósito integrar Ollama y Cline CLI como base de un worker local gobernado para ENGREMIAT. El sistema separa la generación de propuestas de cualquier escritura real y mantiene revisión humana antes de aplicar cambios.
+
+## Componentes validados
+
+Los componentes validados son Ollama 0.30.8 como motor local de inferencia, Cline CLI 3.0.24 como agente interactivo evaluado y el modelo local qwen3:14b. La prueba directa de escritura con Cline quedó registrada como NO_GO seguro, mientras que el flujo generate-only funciona sin herramientas del modelo.
+
+## Hardware local validado
+
+El equipo dispone de una NVIDIA GeForce RTX 4060 Ti con 16 GB de VRAM, aproximadamente 63.92 GB de RAM y espacio suficiente para modelos locales. La ejecución de qwen3:14b fue validada con 100% GPU.
+
+## Modelo local y contexto
+
+El modelo activo es qwen3:14b y se ha validado con un contexto de 32768 tokens. La inferencia se ejecuta localmente, sin modelos cloud y sin coste por token en la inferencia local; el equipo mantiene costes indirectos de electricidad y recursos de hardware.
+
+## Lanzador seguro de Cline
+
+El lanzador scripts/start-cline-safe.ps1 inicia Cline dentro del repositorio y fuerza auto-approve=false. Esta configuración es obligatoria para impedir aprobaciones automáticas y mantener cada acción sensible bajo autorización humana explícita.
+
+## Reglas y fronteras de seguridad
+
+auto-approve=false es obligatorio y toda acción sensible requiere aprobación humana explícita. El modelo no recibe acceso directo a Git, terminal, instalaciones, red externa ni escritura en archivos objetivo. Las propuestas se guardan primero en cuarentena y permanecen bloqueadas hasta superar validación determinista y revisión humana.
+
+## Flujo de trabajo gobernado
+
+El flujo establecido es: contrato, lectura de datos estructurados, generación sin herramientas, cuarentena, validación determinista, revisión humana, gate explícito de aplicación, diff externo y commit humano. Ninguna propuesta se aplica automáticamente.
+
+## Estructura actual del repositorio
+
+La estructura actual incluye config/, data/hardware-preflight/, data/model-smoke/, data/generate-only-ollama-worker-002/, docs/, scripts/start-cline-safe.ps1, src/ y tests/. Los contratos, candidatos, informes y evidencias se mantienen separados de los archivos finales.
+
+## Evidencias de validación
+
+Las evidencias incluyen el perfil de hardware, la detección precisa de VRAM mediante NVIDIA SMI, los smoke tests de qwen3:14b, la validación del contexto de 32768 tokens, la ejecución con 100% GPU, el NO_GO seguro de Cline y los informes de validación del candidato generate-only.
+
+## Hoja de ruta hacia un worker local gobernado
+
+La siguiente evolución consiste en completar el gate humano de aplicación, copiar únicamente candidatos aprobados mediante un proceso externo determinista, mostrar el diff antes del commit y convertir este flujo en un worker reutilizable para tareas acotadas de ENGREMIAT. Cline podrá reevaluarse posteriormente con otro modelo o con permisos más restrictivos, pero no se autoriza actualmente para escritura directa gobernada.

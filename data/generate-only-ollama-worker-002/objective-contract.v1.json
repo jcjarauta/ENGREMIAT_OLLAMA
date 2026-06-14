@@ -1,0 +1,52 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "purpose":  "Generate candidate content with Ollama without granting model tools or direct write access",
+    "mode":  "LOCAL_GENERATE_ONLY",
+    "model":  "qwen3:14b",
+    "endpoint":  "http://127.0.0.1:11434/api/generate",
+    "context_tokens":  32768,
+    "boundaries":  {
+                       "model_tools":  false,
+                       "terminal_commands":  false,
+                       "filesystem_read_by_model":  false,
+                       "filesystem_write_by_model":  false,
+                       "git":  false,
+                       "network_external":  false,
+                       "installs":  false,
+                       "target_file_write":  false,
+                       "quarantine_output_only":  true,
+                       "human_review_required":  true
+                   },
+    "pipeline":  [
+                     "human_contract",
+                     "local_prompt_builder",
+                     "ollama_generate",
+                     "quarantine_candidate",
+                     "deterministic_validation",
+                     "human_review",
+                     "explicit_apply_gate",
+                     "external_diff",
+                     "human_commit"
+                 ],
+    "first_use_case":  {
+                           "target":  "docs/ARCHITECTURE.md",
+                           "candidate_output":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+                           "source_contract":  "config/first-governed-cline-task-001.v2.json",
+                           "apply_allowed":  false
+                       },
+    "acceptance":  {
+                       "response_nonempty":  true,
+                       "exact_sections_required":  10,
+                       "forbidden_generic_terms":  [
+                                                       "Frontend",
+                                                       "Backend",
+                                                       "Database",
+                                                       "APIs"
+                                                   ],
+                       "no_target_file_created":  true,
+                       "candidate_saved_only_in_quarantine":  true,
+                       "human_gate_before_apply":  true
+                   },
+    "status":  "DEFINED_NOT_IMPLEMENTED",
+    "next":  "STEP_002_CREATE_INPUT_OUTPUT_CONTRACTS"
+}

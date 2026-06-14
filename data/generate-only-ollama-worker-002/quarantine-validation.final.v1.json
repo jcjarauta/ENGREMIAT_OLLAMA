@@ -1,0 +1,40 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "generated_at":  "2026-06-14T05:59:55.8366393+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "candidate_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "rebuild_hash_matches":  true,
+    "candidate_bytes":  3257,
+    "utf8_valid":  true,
+    "utf8_without_bom":  true,
+    "replacement_character_found":  false,
+    "headings_found":  10,
+    "exact_section_count":  true,
+    "canonical_order_valid":  true,
+    "missing_sections":  [
+
+                         ],
+    "unexpected_sections":  [
+
+                            ],
+    "missing_required_terms":  [
+
+                               ],
+    "forbidden_terms_found":  [
+
+                              ],
+    "bad_phrase_absent":  true,
+    "auto_approve_rule_correct":  true,
+    "local_cost_precision":  true,
+    "cline_no_go_documented":  true,
+    "generate_only_without_tools_documented":  true,
+    "executable_code_fence_found":  false,
+    "unauthorized_file_action_claims_found":  false,
+    "target_absent":  true,
+    "deterministic_validation_passed":  true,
+    "decision":  "PASS_READY_FOR_FINAL_HUMAN_APPROVAL",
+    "automatic_apply":  false,
+    "target_write_allowed":  false,
+    "human_approval_required":  true,
+    "next":  "STEP_007_OPEN_FINAL_HUMAN_APPROVAL_GATE"
+}

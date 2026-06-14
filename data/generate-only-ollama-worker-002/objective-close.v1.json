@@ -1,0 +1,126 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "closed_at":  "2026-06-14T06:04:21.6148767+02:00",
+    "readiness":  100,
+    "decision":  "OBJECTIVE_READY_FOR_SCOPED_LOCAL_COMMIT",
+    "worker_mode":  "LOCAL_GENERATE_ONLY_NO_TOOLS",
+    "model":  "qwen3:14b",
+    "target":  "docs/ARCHITECTURE.md",
+    "candidate_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "target_sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+    "exact_hash_match":  true,
+    "deterministic_validation":  "PASS",
+    "human_decision":  "APPROVE",
+    "explicit_human_authorization_recorded":  true,
+    "target_write_executed":  true,
+    "target_utf8_valid":  true,
+    "target_mojibake_found":  false,
+    "diff_utf8_valid":  true,
+    "cline_direct_write":  "NO_GO",
+    "automatic_apply":  false,
+    "artifact_count":  18,
+    "artifacts":  [
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/approved-application.diff",
+                          "sha256":  "205025043d2dad172075d9d0ed058e82344e952bc26b9498189b13ef142081ab",
+                          "bytes":  3709
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/approved-application.v1.json",
+                          "sha256":  "d7ad05781ea456dc2ac39e3935347ad9062478246ba9660ce7d250d71d6e02c9",
+                          "bytes":  887
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/canonical-rebuild.v1.json",
+                          "sha256":  "934b39e8e05882ea1199a6937390c7a092f3f5a11cf8d9b8e5bc50298f7ef87f",
+                          "bytes":  863
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/final-human-approval-gate.v1.json",
+                          "sha256":  "95488edb61862773255bb363e6ee75fc31ee40c0e978139f057e0b8f25ea79f2",
+                          "bytes":  925
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/human-review.v1.json",
+                          "sha256":  "e5ac6e95b1ff0fba299dbb2ee6ff237b59367bf7dcc95166153488bffccd3936",
+                          "bytes":  1739
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/input-contract.v1.json",
+                          "sha256":  "8dfe891a15f2d5fc2057e1e8f072155e32938ebfe8eea1067e4d174378bf115d",
+                          "bytes":  3481
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/objective-contract.v1.json",
+                          "sha256":  "27d9857d0e524892f48162384500e3443183162f10e49fc0058a67cd613d58be",
+                          "bytes":  2515
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/output-contract.v1.json",
+                          "sha256":  "2f70902f9008a679036145856cfee899b5e115417d9ef80988f9d880410e2ac5",
+                          "bytes":  2542
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+                          "sha256":  "8ddea559381e4ecf60fb8b1123733a429825f2adfc150061bfbf191bb6e2599a",
+                          "bytes":  3257
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.pre-canonical-rebuild.md",
+                          "sha256":  "ac33f9aed5065239ab78ae6720c1ac18f1d2f1479a76794587b5a12897662dfd",
+                          "bytes":  2462
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.pre-encoding-repair.md",
+                          "sha256":  "ac33f9aed5065239ab78ae6720c1ac18f1d2f1479a76794587b5a12897662dfd",
+                          "bytes":  2462
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.pre-repair.md",
+                          "sha256":  "6f82c558c0c7f2e798493d419375dc75570600cf91f36b6cac71a3b3ad222c7d",
+                          "bytes":  2388
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine-validation.final.v1.json",
+                          "sha256":  "876cdf16d0efc55ea80dc5d5d0e47017e4e82cd98021162f99b28efbaba7ea45",
+                          "bytes":  1442
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine-validation.v1.json",
+                          "sha256":  "520c9d990a2d7f031dfc7eebce65b622411e2a3b7acc057208dd0468402c3631",
+                          "bytes":  985
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine-validation.v2.json",
+                          "sha256":  "99134bd83eca7534dc4b066ccb69faf2e9707549358135104cf40dcf09e9861b",
+                          "bytes":  2257
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/quarantine-validation.v3.json",
+                          "sha256":  "393034765511c7d631166b931fdbc2e080af2a5b3b09d7c94880d073215879fc",
+                          "bytes":  1487
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/repair-contract.v1.json",
+                          "sha256":  "5d6afb2b4a352ea6f4d72a47cfc3fec334cf02cb87a47cbe9343a09bd80d84ef",
+                          "bytes":  1720
+                      },
+                      {
+                          "path":  "data/generate-only-ollama-worker-002/utf8-diff-repair.v1.json",
+                          "sha256":  "654505a6868309bce17e56a095c4754eef22335f767c8769efda667601d70ca9",
+                          "bytes":  1085
+                      }
+                  ],
+    "commit":  true,
+    "push":  false,
+    "commit_scope":  [
+                         "docs/ARCHITECTURE.md",
+                         "scripts/generate-only-ollama-worker.ps1",
+                         "data/generate-only-ollama-worker-002"
+                     ],
+    "commit_message":  "feat: add governed Ollama generate-only worker",
+    "commit_sha":  "ac4c957767c23abd53a6c4cd5abf6f7741455e52",
+    "committed_at":  "2026-06-14T06:05:02.0758248+02:00",
+    "final_decision":  "OBJECTIVE_CLOSED_LOCAL_COMMIT_VERIFIED",
+    "next":  "DEFINE_NEXT_OBJECTIVE"
+}

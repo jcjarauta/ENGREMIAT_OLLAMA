@@ -1,0 +1,54 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "generated_at":  "2026-06-14T05:53:41.0364378+02:00",
+    "candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "target":  "docs/ARCHITECTURE.md",
+    "candidate_bytes":  2388,
+    "headings":  [
+                     "Propósito de ENGREMIAT_OLLAMA",
+                     "Componentes validados",
+                     "Hardware local validado",
+                     "Modelo local y contexto",
+                     "Lanzador seguro de Cline",
+                     "Reglas y fronteras de seguridad",
+                     "Flujo de trabajo gobernado",
+                     "Estructura actual del repositorio",
+                     "Evidencias de validación",
+                     "Hoja de ruta hacia un worker local gobernado"
+                 ],
+    "headings_found":  10,
+    "expected_headings":  [
+                              "Propósito de ENGREMIAT_OLLAMA",
+                              "Componentes validados",
+                              "Hardware local validado",
+                              "Modelo local y contexto",
+                              "Lanzador seguro de Cline",
+                              "Reglas y fronteras de seguridad",
+                              "Flujo de trabajo gobernado",
+                              "Estructura actual del repositorio",
+                              "Evidencias de validación",
+                              "Hoja de ruta hacia un worker local gobernado"
+                          ],
+    "exact_section_count":  true,
+    "order_valid":  true,
+    "missing_sections":  [
+
+                         ],
+    "unexpected_sections":  [
+
+                            ],
+    "missing_required_terms":  [
+
+                               ],
+    "forbidden_terms_found":  [
+
+                              ],
+    "executable_code_fence_found":  false,
+    "unauthorized_file_action_claims_found":  false,
+    "target_absent":  true,
+    "deterministic_validation_passed":  true,
+    "decision":  "PASS_READY_FOR_HUMAN_REVIEW",
+    "automatic_apply":  false,
+    "human_review_required":  true,
+    "next":  "STEP_006_CREATE_HUMAN_REVIEW_ARTIFACT"
+}

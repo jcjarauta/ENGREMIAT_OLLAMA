@@ -1,0 +1,35 @@
+﻿{
+    "objective":  "GENERATE_ONLY_OLLAMA_WORKER_002",
+    "repair_id":  "ARCHITECTURE_CANDIDATE_REPAIR_001",
+    "source_candidate":  "data/generate-only-ollama-worker-002/quarantine/architecture-candidate.md",
+    "source_sha256":  "6f82c558c0c7f2e798493d419375dc75570600cf91f36b6cac71a3b3ad222c7d",
+    "target":  "docs/ARCHITECTURE.md",
+    "target_write_allowed":  false,
+    "decision":  "REVISE",
+    "required_replacements":  [
+                                  {
+                                      "remove":  "prohibición de auto-approve=false",
+                                      "require":  "auto-approve=false es obligatorio y toda acción sensible requiere aprobación humana explícita"
+                                  },
+                                  {
+                                      "remove":  "sin dependencias externas ni costos de token",
+                                      "require":  "sin coste por token en la inferencia local; el equipo mantiene costes indirectos de electricidad y recursos de hardware"
+                                  }
+                              ],
+    "preserve_exact_sections":  true,
+    "exact_section_count":  10,
+    "preserve_validated_terms":  true,
+    "forbidden":  [
+                      "Frontend",
+                      "Backend",
+                      "Database",
+                      "APIs",
+                      "microservices",
+                      "microservicios"
+                  ],
+    "model_tools":  false,
+    "target_apply":  false,
+    "quarantine_only":  true,
+    "human_review_required_after_repair":  true,
+    "next":  "STEP_006S_REGENERATE_SEMANTICALLY_REPAIRED_CANDIDATE"
+}
