@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  "2.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13I-R1",
+    "timestamp":  "2026-06-14T19:13:58.4407533+02:00",
+    "cline_task_id":  "17c7e",
+    "agent":  "Cline",
+    "provider":  "Ollama",
+    "model":  "Ollama:qwen3:14b",
+    "base_url":  "http://127.0.0.1:11434/v1",
+    "api_key_unchanged":  true,
+    "bypass_permissions_still_enabled_and_unchanged":  true,
+    "other_settings_unchanged":  true,
+    "checks_total":  8,
+    "checks_passed":  8,
+    "checks_failed":  0,
+    "save_authorized_now":  true,
+    "allowed_save_count":  1,
+    "save_executed":  false,
+    "task_execution_authorized":  false,
+    "task_started":  false,
+    "agent_started":  false
+}

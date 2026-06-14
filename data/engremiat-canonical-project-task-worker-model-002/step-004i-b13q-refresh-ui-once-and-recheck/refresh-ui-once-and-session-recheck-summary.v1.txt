@@ -1,0 +1,12 @@
+﻿step=004I-B13Q
+scope_id=CLINE-TASK-SAFE-UI-REFRESH-001
+cline_task_id=17c7e
+refresh_executed=True
+refresh_count=1
+metadata_files_matching_task=0
+active_terms=
+terminal_terms=
+active_process_count=1
+classification=NO_RELIABLE_CURRENT_TASK_STATE_DETECTED_AFTER_SINGLE_UI_REFRESH
+task_execution_authorization_state=ON_HOLD
+next=STEP_004I_B13R_PREPARE_NEW_CONTROLLED_TASK_EXECUTION_GATE

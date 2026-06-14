@@ -1,0 +1,71 @@
+﻿{
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "generated_at":  "2026-06-14T07:04:49.0123414+02:00",
+    "workspace_created":  true,
+    "workspace":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\workspace\\kanban-0.1.68",
+    "vendor":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\vendor\\kanban-0.1.68",
+    "package":  "kanban",
+    "version":  "0.1.68",
+    "files_copied":  21,
+    "total_bytes":  57544698,
+    "hash_parity":  true,
+    "runnable_entrypoints":  2,
+    "entrypoints":  [
+                        {
+                            "type":  "main",
+                            "value":  "./dist/index.js",
+                            "exists":  true
+                        },
+                        {
+                            "type":  "bin",
+                            "name":  "kanban",
+                            "value":  "dist/cli.js",
+                            "exists":  true
+                        }
+                    ],
+    "scripts_available":  [
+                              "clean",
+                              "install:all",
+                              "build",
+                              "dogfood",
+                              "link",
+                              "unlink",
+                              "dev",
+                              "dev:full",
+                              "web:dev",
+                              "web:build",
+                              "web:typecheck",
+                              "web:test",
+                              "typecheck",
+                              "lint",
+                              "format",
+                              "check",
+                              "test",
+                              "test:fast",
+                              "test:integration",
+                              "test:precommit",
+                              "test:watch",
+                              "prepare",
+                              "prepublishOnly"
+                          ],
+    "extension_layers":  {
+                             "adapter":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\src\\engremiat-adapter",
+                             "ui":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\src\\engremiat-ui",
+                             "tests":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\tests"
+                         },
+    "contracts":  {
+                      "adapter_contract":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\src\\engremiat-adapter\\adapter-contract.v1.json",
+                      "ui_contract":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\src\\engremiat-ui\\ui-extension-contract.v1.json",
+                      "test_contract":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\tests\\baseline-test-contract.v1.json"
+                  },
+    "dependencies_installed":  false,
+    "process_started":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "installed_package_modified":  false,
+    "vendor_modified":  false,
+    "external_network":  false,
+    "git":  false,
+    "decision":  "LOCAL_FORK_BASELINE_PREPARED_PENDING_CONTROLLED_EXECUTION_GATE",
+    "next":  "STEP_004F_PRECHECK_BASELINE_RUNTIME_WITHOUT_INSTALL"
+}

@@ -1,0 +1,109 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schema/task/v1",
+    "title":  "TASK",
+    "type":  "object",
+    "required":  [
+                     "task_id",
+                     "project_id",
+                     "objective_id",
+                     "stage_id",
+                     "title",
+                     "status",
+                     "priority_global",
+                     "priority_project",
+                     "risk",
+                     "validation_state",
+                     "evidence_state",
+                     "created_at",
+                     "updated_at"
+                 ],
+    "additionalProperties":  false,
+    "properties":  {
+                       "created_at":  {
+                                          "type":  "string"
+                                      },
+                       "evidence_state":  {
+                                              "type":  "string"
+                                          },
+                       "objective_id":  {
+                                            "type":  "string"
+                                        },
+                       "priority_global":  {
+                                               "type":  "string"
+                                           },
+                       "priority_project":  {
+                                                "type":  "string"
+                                            },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "risk":  {
+                                    "type":  "string"
+                                },
+                       "stage_id":  {
+                                        "type":  "string"
+                                    },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "BACKLOG",
+                                                   "READY",
+                                                   "IN_PROGRESS",
+                                                   "BLOCKED",
+                                                   "HUMAN_REVIEW",
+                                                   "VERIFIED",
+                                                   "CLOSED",
+                                                   "CANCELLED"
+                                               ]
+                                  },
+                       "task_id":  {
+                                       "type":  "string"
+                                   },
+                       "title":  {
+                                     "type":  "string"
+                                 },
+                       "updated_at":  {
+                                          "type":  "string"
+                                      },
+                       "validation_state":  {
+                                                "type":  "string"
+                                            },
+                       "summary":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "purpose":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "priority":  {
+                                        "type":  [
+                                                     "string",
+                                                     "null"
+                                                 ]
+                                    },
+                       "authorization":  {
+                                             "type":  [
+                                                          "string",
+                                                          "null"
+                                                      ]
+                                         },
+                       "next_action":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "blocked_reason":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          }
+                   }
+}

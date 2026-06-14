@@ -1,0 +1,27 @@
+﻿ENGREMIAT TASK SESSION METADATA READONLY AUDIT
+task_id=17c7e
+metadata_candidate_count=5
+metadata_files_audited=5
+detected_safe_status_terms=completed,in_progress,review,thinking
+active_term_detected=True
+terminal_term_detected=True
+same_head=True
+zero_unique_task_commits=True
+active_process_present=False
+raw_content_captured=False
+secret_values_read=False
+classification=TERMINAL_HISTORICAL_SESSION_METADATA_WITH_NO_CURRENT_TASK_GIT_RESULT
+recommended_action=NEW_CONTROLLED_TASK_EXECUTION_GATE_AFTER_UI_STATE_RESET
+
+AUDITED FILES
+data\logs\hooks.jsonl | mode=JSONL_MATCHING_ROWS_SAFE_STRUCTURE | task_ref=True | redacted=0
+data\sessions\17c7e-1781418885083-ix4u5o71\17c7e-1781418885083-ix4u5o71.json | mode=JSON_SAFE_STRUCTURE | task_ref=True | redacted=0
+data\sessions\17c7e-1781418885083-ix4u5o71\17c7e-1781418885083-ix4u5o71.messages.json | mode=JSON_SAFE_STRUCTURE | task_ref=True | redacted=4
+kanban\workspaces\engremiat-ollama\board.json | mode=JSON_SAFE_STRUCTURE | task_ref=True | redacted=0
+kanban\workspaces\engremiat-ollama\sessions.json | mode=JSON_SAFE_STRUCTURE | task_ref=True | redacted=0
+
+AUTHORIZED_NOW=False
+RESET_AUTHORIZED=False
+CONTINUATION_AUTHORIZED=False
+NEW_EXECUTION_AUTHORIZED=False
+next=STEP_004I_B13P_DEFINE_SAFE_UI_RESET_THEN_NEW_EXECUTION_GATE

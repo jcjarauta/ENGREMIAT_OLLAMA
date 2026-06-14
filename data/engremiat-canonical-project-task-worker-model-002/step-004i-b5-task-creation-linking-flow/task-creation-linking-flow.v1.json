@@ -1,0 +1,181 @@
+﻿{
+    "schema_version":  "1.1",
+    "flow_id":  "ENGREMIAT-CLINE-TASK-LINKING-FLOW-001",
+    "objective":  "Vincular una tarea Cline con proyecto, participantes, capacidades, necesidades y gobernanza Engremiat sin alterar inicialmente la baseline.",
+    "principles":  [
+                       "CLINE_REMAINS_CANONICAL_TASK_UI",
+                       "ENGREMIAT_CONTEXT_IS_SIDECAR",
+                       "NO_EXECUTION_DURING_LINKING",
+                       "CAPABILITY_DOES_NOT_IMPLY_PERMISSION",
+                       "HUMAN_CONFIRMATION_BEFORE_ACTIVATION"
+                   ],
+    "correlation":  {
+                        "draft_key":  "engremiat_task_draft_id",
+                        "cline_foreign_key":  "cline_task_id",
+                        "project_foreign_key":  "project_id",
+                        "link_key":  "engremiat_task_context_id",
+                        "task_id_capture_methods":  [
+                                                        "BASELINE_LOCAL_STORAGE_INSPECTION",
+                                                        "BASELINE_LOCAL_API_RESPONSE",
+                                                        "BASELINE_TASK_DATA_FILE_INSPECTION",
+                                                        "HUMAN_CONFIRMED_SINGLE_NEW_CARD"
+                                                    ],
+                        "preferred_method":  "BASELINE_LOCAL_DATA_INSPECTION",
+                        "title_matching_only_allowed":  false
+                    },
+    "steps":  [
+                  {
+                      "order":  1,
+                      "step_id":  "LINK-001",
+                      "name":  "PREPARE_CONTEXT_DRAFT",
+                      "actor":  "HUMAN_OR_ENGREMIAT",
+                      "input":  [
+                                    "project_id",
+                                    "requester_participant_id",
+                                    "task_description",
+                                    "required_capabilities",
+                                    "required_resources",
+                                    "authorization_policy",
+                                    "validation_policy"
+                                ],
+                      "output":  "ENGREMIAT_TASK_CONTEXT_DRAFT",
+                      "state_from":  "NONE",
+                      "state_to":  "CONTEXT_DRAFTED",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  },
+                  {
+                      "order":  2,
+                      "step_id":  "LINK-002",
+                      "name":  "HUMAN_REVIEW_CONTEXT_DRAFT",
+                      "actor":  "HUMAN",
+                      "input":  "ENGREMIAT_TASK_CONTEXT_DRAFT",
+                      "output":  "HUMAN_CONTEXT_DECISION",
+                      "state_from":  "CONTEXT_DRAFTED",
+                      "state_to":  "CONTEXT_APPROVED_OR_CANCELLED",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  },
+                  {
+                      "order":  3,
+                      "step_id":  "LINK-003",
+                      "name":  "CREATE_BASELINE_TASK_MANUALLY",
+                      "actor":  "HUMAN",
+                      "input":  "APPROVED_TASK_DESCRIPTION",
+                      "output":  "CLINE_TASK_CREATED",
+                      "state_from":  "CONTEXT_APPROVED",
+                      "state_to":  "BASELINE_TASK_CREATED",
+                      "cline_write":  true,
+                      "task_created":  true,
+                      "execution_allowed":  false,
+                      "restriction":  "CREATE_ONLY_DO_NOT_START"
+                  },
+                  {
+                      "order":  4,
+                      "step_id":  "LINK-004",
+                      "name":  "CAPTURE_CANONICAL_CLINE_TASK_ID",
+                      "actor":  "ENGREMIAT_READ_ONLY_INSPECTOR",
+                      "input":  "SINGLE_NEW_BASELINE_TASK",
+                      "output":  "CLINE_TASK_ID",
+                      "state_from":  "BASELINE_TASK_CREATED",
+                      "state_to":  "TASK_ID_CAPTURED",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  },
+                  {
+                      "order":  5,
+                      "step_id":  "LINK-005",
+                      "name":  "VERIFY_UNIQUE_CORRELATION",
+                      "actor":  "ENGREMIAT_VALIDATOR",
+                      "input":  [
+                                    "engremiat_task_draft_id",
+                                    "cline_task_id",
+                                    "project_id"
+                                ],
+                      "output":  "CORRELATION_EVIDENCE",
+                      "state_from":  "TASK_ID_CAPTURED",
+                      "state_to":  "LINK_VERIFIED",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  },
+                  {
+                      "order":  6,
+                      "step_id":  "LINK-006",
+                      "name":  "ACTIVATE_SIDECAR_LINK",
+                      "actor":  "HUMAN_AUTHORIZED_ENGREMIAT",
+                      "input":  "VERIFIED_CORRELATION",
+                      "output":  "ACTIVE_ENGREMIAT_TASK_CONTEXT",
+                      "state_from":  "LINK_VERIFIED",
+                      "state_to":  "LINKED_BLOCKED",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  },
+                  {
+                      "order":  7,
+                      "step_id":  "LINK-007",
+                      "name":  "OPEN_MATCHING_AND_AUTHORIZATION_FLOW",
+                      "actor":  "ENGREMIAT_GOVERNANCE",
+                      "input":  "LINKED_BLOCKED_TASK_CONTEXT",
+                      "output":  "READY_FOR_MATCHING",
+                      "state_from":  "LINKED_BLOCKED",
+                      "state_to":  "READY_FOR_MATCHING",
+                      "cline_write":  false,
+                      "task_created":  false,
+                      "execution_allowed":  false
+                  }
+              ],
+    "gates":  [
+                  {
+                      "gate_id":  "GATE-CONTEXT",
+                      "required_before":  "LINK-003",
+                      "condition":  "HUMAN_CONTEXT_APPROVED"
+                  },
+                  {
+                      "gate_id":  "GATE-UNIQUE-TASK",
+                      "required_before":  "LINK-005",
+                      "condition":  "EXACTLY_ONE_NEW_CLINE_TASK_IDENTIFIED"
+                  },
+                  {
+                      "gate_id":  "GATE-LINK",
+                      "required_before":  "LINK-006",
+                      "condition":  "CLINE_TASK_ID_AND_PROJECT_ID_NONEMPTY"
+                  },
+                  {
+                      "gate_id":  "GATE-EXECUTION",
+                      "required_after":  "LINK-007",
+                      "condition":  "SEPARATE_EXPLICIT_EXECUTION_AUTHORIZATION"
+                  }
+              ],
+    "failure_policy":  {
+                           "human_context_rejected":  "TRANSITION_TO_CANCELLED",
+                           "ambiguous_task_id":  "NO_GO",
+                           "missing_project_id":  "NO_GO",
+                           "duplicate_link":  "NO_GO",
+                           "task_started_during_linking":  "STOP_AND_RECORD_INCIDENT",
+                           "agent_started_during_linking":  "STOP_AND_RECORD_INCIDENT",
+                           "rollback_before_activation":  "DELETE_DRAFT",
+                           "rollback_after_activation":  "MARK_LINK_CANCELLED_PRESERVE_EVIDENCE"
+                       },
+    "outputs":  [
+                    "context-draft.v1.json",
+                    "human-context-decision.v1.json",
+                    "cline-task-id-capture.v1.json",
+                    "task-correlation-evidence.v1.json",
+                    "active-task-context.v1.json"
+                ],
+    "execution":  {
+                      "cline_modified":  false,
+                      "cline_task_created":  false,
+                      "task_started":  false,
+                      "agent_started":  false,
+                      "task_execution_authorized":  false,
+                      "git_write":  false,
+                      "external_network":  false
+                  },
+    "next":  "STEP_004I_B6_PREPARE_SINGLE_TEST_CONTEXT_DRAFT"
+}

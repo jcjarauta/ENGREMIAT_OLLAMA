@@ -1,0 +1,43 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R11",
+    "scope_id":  "CONTROLLED-TASK-SINGLE-RESULT-CARD-OPEN-001",
+    "source_step":  "004I-B13Y-R10",
+    "verified_result_title":  "You are the controlled Cline read-only inspection worker for ENGREMIAT.",
+    "prompt_sha256":  "73E3E946DF293F8B0801436C7EC4DF901C2419BF573BC126C7B20FD081CAA2B7",
+    "result_location":  "REVIEW",
+    "open_reason":  "VISIBLE_PREVIEW_INSUFFICIENT_FOR_STRUCTURED_RESULT_AUDIT",
+    "allowed_future_card_open_count":  1,
+    "allowed_future_card_title":  "You are the controlled Cline read-only inspection worker for ENGREMIAT.",
+    "allowed_future_action":  "ONE_HUMAN_CLICK_ON_EXACT_RESULT_CARD_AFTER_SEPARATE_RUNTIME_AUTHORIZATION",
+    "allowed_operations":  [
+                               "RECORD_HUMAN_DECISION",
+                               "PREPARE_SINGLE_RESULT_CARD_OPEN_GATE",
+                               "PRESERVE_TERMINAL_RESULT"
+                           ],
+    "forbidden_operations":  [
+                                 "OPEN_RESULT_CARD_NOW",
+                                 "OPEN_OTHER_CARD",
+                                 "PRESS_PLAY",
+                                 "REPLAY_TASK",
+                                 "DELETE_CARD",
+                                 "MOVE_CARD",
+                                 "EDIT_TASK",
+                                 "APPROVE_TOOL",
+                                 "ENABLE_AUTO_APPROVE",
+                                 "WRITE_SOURCE",
+                                 "EXTERNAL_NETWORK",
+                                 "GIT_WRITE"
+                             ],
+    "result_card_open_authorized_now":  false,
+    "result_card_opened":  false,
+    "play_authorized":  false,
+    "play_pressed":  false,
+    "tool_call_approved":  false,
+    "auto_approve":  false,
+    "write_authorized":  false,
+    "network_authorized":  false,
+    "git_write_authorized":  false,
+    "created_at":  "2026-06-14T21:52:29.2623332+02:00"
+}

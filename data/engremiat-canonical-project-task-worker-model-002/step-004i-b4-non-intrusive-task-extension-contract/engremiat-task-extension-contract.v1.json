@@ -1,0 +1,192 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "ENGREMIAT-TASK-EXTENSION-SIDECAR-001",
+    "objective":  "Extender tareas Cline con contexto global Engremiat sin modificar inicialmente la interfaz ni el runtime canónico.",
+    "integration_strategy":  "SIDECAR_BY_TASK_ID",
+    "baseline":  {
+                     "canonical_ui":  "CLINE_TASK_BOARD",
+                     "canonical_creation_dialog":  "NEW_TASK",
+                     "preserved_fields":  [
+                                              "DESCRIPTION_OR_PROMPT",
+                                              "PLAN_MODE",
+                                              "WORKTREE_BASE_REF",
+                                              "AUTOMATION_MODE",
+                                              "AGENT",
+                                              "PROVIDER",
+                                              "MODEL",
+                                              "CREATE_MORE",
+                                              "START_TASK"
+                                          ],
+                     "preserved_behavior":  true,
+                     "source_modification_required":  false
+                 },
+    "extension_entity":  {
+                             "entity":  "ENGREMIAT_TASK_CONTEXT",
+                             "primary_key":  "engremiat_task_context_id",
+                             "foreign_key":  "cline_task_id",
+                             "lifecycle":  "CREATED_AFTER_OR_ALONGSIDE_CLINE_TASK",
+                             "required_fields":  [
+                                                     "engremiat_task_context_id",
+                                                     "cline_task_id",
+                                                     "project_id",
+                                                     "requester_participant_id",
+                                                     "required_capabilities",
+                                                     "required_resources",
+                                                     "authorization_policy",
+                                                     "validation_policy",
+                                                     "execution_state"
+                                                 ],
+                             "optional_fields":  [
+                                                     "process_id",
+                                                     "need_ids",
+                                                     "offer_ids",
+                                                     "candidate_participant_ids",
+                                                     "assigned_participant_ids",
+                                                     "executor_participant_id",
+                                                     "validator_participant_ids",
+                                                     "authorizer_participant_ids",
+                                                     "beneficiary_participant_ids",
+                                                     "responsible_participant_id",
+                                                     "constraints",
+                                                     "priority",
+                                                     "deadline",
+                                                     "value_exchange",
+                                                     "evidence_requirements",
+                                                     "relationships",
+                                                     "metadata"
+                                                 ]
+                         },
+    "participant_roles":  [
+                              "REQUESTER",
+                              "PROVIDER",
+                              "EXECUTOR",
+                              "VALIDATOR",
+                              "AUTHORIZER",
+                              "RESPONSIBLE",
+                              "BENEFICIARY",
+                              "HOST"
+                          ],
+    "capability_contract":  {
+                                "required_capabilities_fields":  [
+                                                                     "capability_id",
+                                                                     "category",
+                                                                     "minimum_level",
+                                                                     "quantity",
+                                                                     "unit",
+                                                                     "mandatory",
+                                                                     "acceptance_criteria"
+                                                                 ],
+                                "capability_does_not_imply_permission":  true
+                            },
+    "need_offer_contract":  {
+                                "project_needs_linked_by":  "need_ids",
+                                "project_offers_linked_by":  "offer_ids",
+                                "matching_basis":  [
+                                                       "CAPABILITY_FIT",
+                                                       "NEED_OFFER_COMPLEMENTARITY",
+                                                       "AVAILABILITY",
+                                                       "RESOURCE_FIT",
+                                                       "AUTHORIZATION",
+                                                       "TRUST",
+                                                       "CONSTRAINTS"
+                                                   ]
+                            },
+    "execution_governance":  {
+                                 "default_execution_state":  "BLOCKED",
+                                 "valid_states":  [
+                                                      "DRAFT",
+                                                      "READY_FOR_MATCHING",
+                                                      "MATCH_PROPOSED",
+                                                      "PENDING_AUTHORIZATION",
+                                                      "AUTHORIZED",
+                                                      "RUNNING",
+                                                      "PENDING_VALIDATION",
+                                                      "VERIFIED",
+                                                      "REJECTED",
+                                                      "CANCELLED"
+                                                  ],
+                                 "agent_execution_requires_authorization":  true,
+                                 "task_execution_requires_authorization":  true,
+                                 "node_execution_requires_authorization":  true,
+                                 "human_validation_supported":  true,
+                                 "automatic_validation_supported":  true,
+                                 "authorization_fields":  [
+                                                              "authorization_id",
+                                                              "authorizer_participant_id",
+                                                              "scope",
+                                                              "decision",
+                                                              "timestamp",
+                                                              "evidence"
+                                                          ]
+                             },
+    "relationship_model":  {
+                               "project_is_participant":  true,
+                               "human_is_participant":  true,
+                               "ai_worker_is_participant":  true,
+                               "node_is_participant":  true,
+                               "task_is_work_unit":  true,
+                               "task_is_not_participant":  true,
+                               "commitment_links_participants":  true
+                           },
+    "storage_strategy":  {
+                             "phase_1":  "LOCAL_JSON_SIDECAR",
+                             "phase_2":  "GOOGLE_SHEETS_CONTROL_PROJECTION",
+                             "phase_3":  "POSTGRESQL_CANONICAL_STORAGE",
+                             "phase_4":  "GRAPH_RELATIONSHIP_PROJECTION",
+                             "migration_ready":  true
+                         },
+    "compatibility":  {
+                          "cline_unmodified":  true,
+                          "current_task_board_preserved":  true,
+                          "current_task_creation_preserved":  true,
+                          "project_context_added_outside_baseline":  true,
+                          "participant_matching_deferred":  true
+                      },
+    "example":  {
+                    "engremiat_task_context_id":  "ETC-EXAMPLE-001",
+                    "cline_task_id":  "CLINE-TASK-ID-PENDING",
+                    "project_id":  "PROJECT-EXAMPLE-001",
+                    "requester_participant_id":  "PARTICIPANT-PROJECT-001",
+                    "required_capabilities":  [
+                                                  {
+                                                      "capability_id":  "CAP-CODE-001",
+                                                      "category":  "CODE_GENERATION",
+                                                      "minimum_level":  "INTERMEDIATE",
+                                                      "quantity":  1,
+                                                      "unit":  "WORKER",
+                                                      "mandatory":  true,
+                                                      "acceptance_criteria":  "OUTPUT_VALIDATED"
+                                                  }
+                                              ],
+                    "required_resources":  [
+                                               "LOCAL_REPOSITORY",
+                                               "OLLAMA_MODEL",
+                                               "NODE_RUNTIME"
+                                           ],
+                    "candidate_participant_ids":  [
+                                                      "PARTICIPANT-AI-OLLAMA-001",
+                                                      "PARTICIPANT-NODE-MAIN-001",
+                                                      "PARTICIPANT-HUMAN-001"
+                                                  ],
+                    "executor_participant_id":  null,
+                    "validator_participant_ids":  [
+                                                      "PARTICIPANT-HUMAN-001"
+                                                  ],
+                    "authorizer_participant_ids":  [
+                                                       "PARTICIPANT-HUMAN-001"
+                                                   ],
+                    "authorization_policy":  "EXPLICIT_BEFORE_EXECUTION",
+                    "validation_policy":  "HUMAN_EVIDENCE_REQUIRED",
+                    "execution_state":  "DRAFT"
+                },
+    "safety":  {
+                   "cline_modified":  false,
+                   "task_created":  false,
+                   "task_started":  false,
+                   "agent_started":  false,
+                   "task_execution_authorized":  false,
+                   "git_write":  false,
+                   "external_network":  false
+               },
+    "next":  "STEP_004I_B5_DEFINE_TASK_CREATION_LINKING_FLOW"
+}

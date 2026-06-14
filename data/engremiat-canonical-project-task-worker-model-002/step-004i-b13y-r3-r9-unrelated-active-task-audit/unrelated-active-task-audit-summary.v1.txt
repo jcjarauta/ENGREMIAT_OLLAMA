@@ -1,0 +1,8 @@
+﻿step=004I-B13Y-R3-R9
+unrelated_task_state=ACTIVE
+unrelated_task_active=True
+tool_call_approved=False
+stable_for_new_task_gate=False
+classification=UNRELATED_OLD_TASK_STILL_ACTIVE_AND_CONTAINED
+validation_passed=True
+next=STEP_004I_B13Y_R3_R9_WAIT_AND_RECHECK_UNRELATED_TASK

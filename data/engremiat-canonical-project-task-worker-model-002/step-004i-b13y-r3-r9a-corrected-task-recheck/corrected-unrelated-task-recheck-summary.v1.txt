@@ -1,0 +1,8 @@
+﻿step=004I-B13Y-R3-R9A
+corrected_unrelated_task_title=Documentar y validar el primer flujo humano controlado del Kanban
+unrelated_task_state=ACTIVE
+unrelated_task_active=True
+stable_for_new_task_gate=False
+classification=CORRECTED_UNRELATED_TASK_REMAINS_ACTIVE
+validation_passed=True
+next=STEP_004I_B13Y_R3_R9A_WAIT_AND_RECHECK_AGAIN

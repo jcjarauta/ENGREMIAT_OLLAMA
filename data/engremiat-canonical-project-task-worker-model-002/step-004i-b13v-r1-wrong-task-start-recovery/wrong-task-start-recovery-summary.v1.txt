@@ -1,0 +1,13 @@
+﻿step=004I-B13V-R1
+previous_b13v_started_evidence_valid=False
+anomaly=WRONG_TASK_STARTED
+wrong_task_state=FINISHED
+wrong_task_active=False
+correct_task_visible_in_backlog=True
+avast_block_observed=False
+avast_configuration_modified=False
+retry_authorized=False
+task_execution_authorization_state=ON_HOLD_RECOVERY
+classification=WRONG_TASK_START_CONTAINED_WITHOUT_CONFIRMED_AVAST_BLOCK
+validation_passed=True
+next=STEP_004I_B13V_R2_PREPARE_EXACT_CARD_IDENTITY_AND_SINGLE_CORRECT_PLAY_GATE

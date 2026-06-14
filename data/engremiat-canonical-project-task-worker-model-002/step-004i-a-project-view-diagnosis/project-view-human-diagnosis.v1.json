@@ -1,0 +1,19 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-A",
+    "timestamp":  "2026-06-14T07:21:31.9466200+02:00",
+    "baseline_url":  "http://127.0.0.1:3485/engremiat-ollama",
+    "http_status":  200,
+    "project_area_visible":  false,
+    "project_list_or_empty_state_visible":  false,
+    "classification":  "TASK_VIEW_ONLY_PROJECT_VIEW_ABSENT",
+    "human_notes":  "adjunto imagen",
+    "project_view_verified":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_A2_INSPECT_PROJECT_VIEW_ROUTE_AND_RENDER_CONTRACT"
+}

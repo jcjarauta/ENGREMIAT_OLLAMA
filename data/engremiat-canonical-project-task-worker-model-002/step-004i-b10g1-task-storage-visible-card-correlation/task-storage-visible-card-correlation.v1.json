@@ -1,0 +1,31 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G1",
+    "timestamp":  "2026-06-14T16:43:55.0453059+02:00",
+    "draft_id":  "ETD-20260614-073710",
+    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+    "description_needle":  "Documentar y validar el primer flujo humano controlado en el Kanban de Cline",
+    "storage_objects_examined":  0,
+    "candidate_records":  0,
+    "strong_candidate_records":  0,
+    "unique_strong_task_ids":  0,
+    "task_id_candidates":  [
+
+                           ],
+    "cline_task_id_candidate":  null,
+    "task_id_verified":  false,
+    "classification":  "NO_CORRELATABLE_TASK_RECORD_FOUND",
+    "candidates":  [
+
+                   ],
+    "browser_storage_read_only":  true,
+    "browser_storage_written":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10G2_INSPECT_APPLICATION_STATE_KEYS_MANUALLY"
+}

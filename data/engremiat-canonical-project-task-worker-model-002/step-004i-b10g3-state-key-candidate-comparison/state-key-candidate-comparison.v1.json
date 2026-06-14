@@ -1,0 +1,114 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G3",
+    "timestamp":  "2026-06-14T16:46:33.1498292+02:00",
+    "current_visible_column":  "REVIEW",
+    "manual_column_move_recorded":  true,
+    "manual_column_move_is_execution":  false,
+    "start_task_pressed":  false,
+    "strong_candidates_compared":  4,
+    "candidate_comparisons":  [
+                                  {
+                                      "storage":  "localStorage",
+                                      "key":  "kanban.task-start-in-plan-mode",
+                                      "prior_score":  35,
+                                      "value_length":  4,
+                                      "json_type":  "OBJECT",
+                                      "comparison_score":  10,
+                                      "reasons":  [
+                                                      "VALID_JSON"
+                                                  ],
+                                      "task_record_count":  0,
+                                      "review_record_count":  0,
+                                      "unique_task_ids":  0,
+                                      "task_ids":  [
+
+                                                   ],
+                                      "top_records":  [
+
+                                                      ]
+                                  },
+                                  {
+                                      "storage":  "localStorage",
+                                      "key":  "kanban.notification-badge-clear.v1",
+                                      "prior_score":  35,
+                                      "value_length":  112,
+                                      "json_type":  "OBJECT",
+                                      "comparison_score":  10,
+                                      "reasons":  [
+                                                      "VALID_JSON"
+                                                  ],
+                                      "task_record_count":  0,
+                                      "review_record_count":  0,
+                                      "unique_task_ids":  0,
+                                      "task_ids":  [
+
+                                                   ],
+                                      "top_records":  [
+
+                                                      ]
+                                  },
+                                  {
+                                      "storage":  "localStorage",
+                                      "key":  "kanban.onboarding.dialog.shown",
+                                      "prior_score":  35,
+                                      "value_length":  4,
+                                      "json_type":  "OBJECT",
+                                      "comparison_score":  10,
+                                      "reasons":  [
+                                                      "VALID_JSON"
+                                                  ],
+                                      "task_record_count":  0,
+                                      "review_record_count":  0,
+                                      "unique_task_ids":  0,
+                                      "task_ids":  [
+
+                                                   ],
+                                      "top_records":  [
+
+                                                      ]
+                                  },
+                                  {
+                                      "storage":  "localStorage",
+                                      "key":  "kanban.tab-visibility-presence.v1",
+                                      "prior_score":  35,
+                                      "value_length":  2,
+                                      "json_type":  "OBJECT",
+                                      "comparison_score":  10,
+                                      "reasons":  [
+                                                      "VALID_JSON"
+                                                  ],
+                                      "task_record_count":  0,
+                                      "review_record_count":  0,
+                                      "unique_task_ids":  0,
+                                      "task_ids":  [
+
+                                                   ],
+                                      "top_records":  [
+
+                                                      ]
+                                  }
+                              ],
+    "task_records_found":  0,
+    "review_records_with_id":  0,
+    "unique_review_task_ids":  0,
+    "review_task_id_candidates":  [
+
+                                  ],
+    "cline_task_id_candidate":  null,
+    "selected_storage":  null,
+    "selected_storage_key":  null,
+    "task_id_verified":  false,
+    "classification":  "NO_TASK_RECORDS_FOUND_IN_STATE_KEY_CANDIDATES",
+    "browser_storage_read_only":  true,
+    "browser_storage_written":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10G4_CAPTURE_REACT_RUNTIME_STATE_READ_ONLY"
+}

@@ -1,0 +1,22 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B1",
+    "timestamp":  "2026-06-14T07:23:49.0066469+02:00",
+    "human_decision":  "APPROVE",
+    "canonical_baseline_type":  "TASK_BOARD",
+    "control":  "CREATE_TASK",
+    "expected_location":  "BACKLOG_COLUMN",
+    "control_visible":  true,
+    "control_clicked":  false,
+    "dialog_opened":  false,
+    "task_created":  false,
+    "board_modified":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "decision":  "CREATE_TASK_CONTROL_VISIBLE",
+    "next":  "STEP_004I_B2_VALIDATE_CREATE_TASK_DIALOG_OPEN"
+}

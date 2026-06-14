@@ -1,0 +1,19 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G6R1",
+    "timestamp":  "2026-06-14T16:58:04.3884282+02:00",
+    "reported_candidate":  "root",
+    "general_ids":  "17c7e",
+    "general_count":  1,
+    "review_ids":  "17c7e",
+    "review_count":  1,
+    "strong_ids":  "root",
+    "strong_count":  1,
+    "intersection":  [
+
+                     ],
+    "intersection_count":  0,
+    "normalization_applied":  true,
+    "sidecar_written":  false
+}

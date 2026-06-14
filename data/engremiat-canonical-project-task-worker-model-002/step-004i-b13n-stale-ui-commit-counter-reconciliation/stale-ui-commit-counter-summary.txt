@@ -1,0 +1,28 @@
+﻿ENGREMIAT STALE UI COMMIT COUNTER RECONCILIATION
+task_id=17c7e
+ui_commit_text=2 commits
+ui_commit_count=2
+git_unique_task_commit_count=0
+root_head=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+worktree_head=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+same_head=True
+worktree_clean=True
+root_dirty_file_count=2
+task_reference_file_count=5
+ui_counter_cannot_represent_current_unique_commits=True
+classification=UI_COMMIT_COUNTER_IS_HISTORICAL_TASK_SESSION_METADATA_NOT_CURRENT_GIT_DELTA
+
+ROOT DIRTY FILES
+?? data/engremiat-canonical-project-task-worker-model-002/
+?? tools/
+
+TASK REFERENCE METADATA FILES
+data\logs\hooks.jsonl
+data\sessions\17c7e-1781418885083-ix4u5o71\17c7e-1781418885083-ix4u5o71.json
+data\sessions\17c7e-1781418885083-ix4u5o71\17c7e-1781418885083-ix4u5o71.messages.json
+kanban\workspaces\engremiat-ollama\board.json
+kanban\workspaces\engremiat-ollama\sessions.json
+
+CONTENT_CAPTURED=False
+SECRET_VALUES_READ=False
+next=STEP_004I_B13O_AUDIT_TASK_SESSION_METADATA_AND_DEFINE_SAFE_RESET_OR_CONTINUATION_GATE

@@ -1,0 +1,498 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10F2",
+    "timestamp":  "2026-06-14T08:41:47.6118236+02:00",
+    "assets_inspected":  2,
+    "assets":  [
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/index-8oAWEBf8.js",
+                       "length":  2156069
+                   },
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/xterm-vendor-C64ao8R-.js",
+                       "length":  620475
+                   }
+               ],
+    "combined_javascript_length":  2776548,
+    "literal_storage_keys":  [
+                                 "kanban.theme",
+                                 "test",
+                                 "lastSeenSurveyDate"
+                             ],
+    "literal_storage_key_count":  3,
+    "task_like_storage_keys":  [
+                                   "kanban.theme"
+                               ],
+    "task_like_storage_key_count":  1,
+    "selected_storage_key":  "kanban.theme",
+    "storage_operations":  [
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "GET",
+                                   "key":  "kanban.theme",
+                                   "snippet":  "De, environment: zDe, release: \"kanban@0.1.68\", sendDefaultPii: false, initialScope: { tags: { app: \"kanban\", runtime_surface: \"web\" } } }), DL = true);\n}\nHDe();\ntry {\n  const e = localStorage.getItem(\"kanban.theme\");\n  a$(e) \u0026\u0026 e !== \"default\" \u0026\u0026 document.documentElement.setAttribute(\"data-theme\", e);\n} catch {\n}\nconst D9 = document.getElementById(\"root\");\nif (!D9) throw new Error(\"Root element was not found.\");\nBV.createRoot(D9).render(p.jsx(NDe, { children: p.jsx($De, { children: p.jsx(PDe, { children: p.jsxs(VQ"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SET",
+                                   "key":  "test",
+                                   "snippet":  "= void 0 \u0026\u0026 (r = void 0), jU(this.instance.config) || !we || !Ye) return false;\n    t = t ?? we.location, r = r ?? we.history;\n    try {\n      if (!n) {\n        try {\n          we.localStorage.setItem(\"test\", \"test\"), we.localStorage.removeItem(\"test\");\n        } catch {\n          return false;\n        }\n        n = we == null ? void 0 : we.localStorage;\n      }\n      var s, i = pEe || gx(t.hash, \"__posthog\") || gx(t.hash, \"state\"), o = i ? jj((() =\u003e JSON.parse(atob(decodeURIComponent(i))))) || jj((() =\u003e JSON.parse"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVE",
+                                   "key":  "test",
+                                   "snippet":  "e.config) || !we || !Ye) return false;\n    t = t ?? we.location, r = r ?? we.history;\n    try {\n      if (!n) {\n        try {\n          we.localStorage.setItem(\"test\", \"test\"), we.localStorage.removeItem(\"test\");\n        } catch {\n          return false;\n        }\n        n = we == null ? void 0 : we.localStorage;\n      }\n      var s, i = pEe || gx(t.hash, \"__posthog\") || gx(t.hash, \"state\"), o = i ? jj((() =\u003e JSON.parse(atob(decodeURIComponent(i))))) || jj((() =\u003e JSON.parse(decodeURIComponent(i)))) : null;\n      r"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVE",
+                                   "key":  "lastSeenSurveyDate",
+                                   "snippet":  "ys.\");\n      var r = tn(n);\n      this.Si = r ? n.length \u003e 0 : n, un.info(\"flags response received, isSurveysEnabled: \" + this.Si), this.loadIfEnabled();\n    }\n  }\n  reset() {\n    localStorage.removeItem(\"lastSeenSurveyDate\");\n    for (var t = [], n = 0; n \u003c localStorage.length; n++) {\n      var r = localStorage.key(n);\n      (r != null \u0026\u0026 r.startsWith(r7) || r != null \u0026\u0026 r.startsWith(\"inProgressSurvey_\")) \u0026\u0026 t.push(r);\n    }\n    t.forEach(((s) =\u003e localStorage.removeItem(s)));\n  }\n  loadIfEnabled() {\n    if (!this."
+                               }
+                           ],
+    "storage_operation_count":  4,
+    "dynamic_storage_operations":  [
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "GETITEM",
+                                           "key_expression":  "f",
+                                           "snippet":  "? n.raw ? function(f) {\n    return f;\n  } : n.deserializer : JSON.parse, s = g.useRef(function(f) {\n    try {\n      var d = n ? n.raw ? String : n.serializer : JSON.stringify, m = localStorage.getItem(f);\n      return m !== null ? r(m) : (t \u0026\u0026 localStorage.setItem(f, d(t)), t);\n    } catch {\n      return t;\n    }\n  }), i = g.useState(function() {\n    return s.current(e);\n  }), o = i[0], a = i[1];\n  g.useLayoutEffect(function() {\n    return a(s.current(e));\n  }, [e]);\n  var l = g.useCallback(function(f) {\n    try {\n"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "f",
+                                           "snippet":  "N.parse, s = g.useRef(function(f) {\n    try {\n      var d = n ? n.raw ? String : n.serializer : JSON.stringify, m = localStorage.getItem(f);\n      return m !== null ? r(m) : (t \u0026\u0026 localStorage.setItem(f, d(t)), t);\n    } catch {\n      return t;\n    }\n  }), i = g.useState(function() {\n    return s.current(e);\n  }), o = i[0], a = i[1];\n  g.useLayoutEffect(function() {\n    return a(s.current(e));\n  }, [e]);\n  var l = g.useCallback(function(f) {\n    try {\n      var d = typeof f == \"function\" ? f(o) : f;\n      if (typeo"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  "\n      var m = void 0;\n      n ? n.raw ? typeof d == \"string\" ? m = d : m = JSON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = function(e, t) {\n  var n = g.useState(AK(e, t)), r = n[0], s = n[1];\n  return g.useE"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "REMOVEITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  "erializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = function(e, t) {\n  var n = g.useState(AK(e, t)), r = n[0], s = n[1];\n  return g.useEffect(function() {\n    var i = true, o = window.matchMedia(e), a = function() {\n      i \u0026\u0026 s(!!o.matches);\n    };\n    "
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "GETITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  "unsupported; falling back to cookie store\"), Tk = e, e;\n}, M: function(e) {\n  Qe.error(\"localStorage error: \" + e);\n}, A: function(e) {\n  try {\n    return we == null ? void 0 : we.localStorage.getItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    w"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  "t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n} }, iEe = [\"$device_id\", \"distinct_id\", lx, FU, fx, dx, Ii], Cv = {}, oEe = { O: function() {\n  return true;\n}, M: function(e) {\n  Qe.error(\"mem"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "REMOVEITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  "(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n} }, iEe = [\"$device_id\", \"distinct_id\", lx, FU, fx, dx, Ii], Cv = {}, oEe = { O: function() {\n  return true;\n}, M: function(e) {\n  Qe.error(\"memoryStorage error: \" + e);\n}, A: function(e) {\n  return Cv[e] || null;\n}, D: function(e) {\n  return Cv[e] || null;\n}, j: function(e, t)"
+                                       },
+                                       {
+                                           "storage":  "sessionStorage",
+                                           "operation":  "GETITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  " cr.L(e);\n  } catch {\n    Dl = false;\n  }\n  return Dl;\n}, M: function(e) {\n  Qe.error(\"sessionStorage error: \", e);\n}, A: function(e) {\n  try {\n    return we == null ? void 0 : we.sessionStorage.getItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {"
+                                       },
+                                       {
+                                           "storage":  "sessionStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  ";\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n} }, ho = (function(e) {\n  return e[e.PENDING = -1] = \"PENDING\", e[e.DENIED = 0] = \"DENIED\", e[e.GRANTED = 1] = \"GRANTED\", e;\n})({});\nclass a"
+                                       },
+                                       {
+                                           "storage":  "sessionStorage",
+                                           "operation":  "REMOVEITEM",
+                                           "key_expression":  "e",
+                                           "snippet":  ", t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n} }, ho = (function(e) {\n  return e[e.PENDING = -1] = \"PENDING\", e[e.DENIED = 0] = \"DENIED\", e[e.GRANTED = 1] = \"GRANTED\", e;\n})({});\nclass aEe {\n  constructor(t) {\n    this._instance = t;\n  }\n  get N() {\n    return this._instance.config;\n  }\n  get consent() {\n    return this."
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "Wj",
+                                           "snippet":  "ed_disable_toolbar_metrics, s = Ke({ token: this.instance.config.token }, t, { apiURL: this.instance.requestRouter.endpointFor(\"ui\") }, r ? { instrument: false } : {});\n    if (we.localStorage.setItem(Wj, JSON.stringify(Ke({}, s, { source: void 0 }))), this.Y() === ha.LOADED) this.X(s);\n    else if (this.Y() === ha.UNINITIALIZED) {\n      var i;\n      this.K(ha.LOADING), (i = xt.__PosthogExtensions__) == null || i.loadExternalDependency == null || i.loadExternalDependency(this.instance, \"toolbar\", ((o) =\u003e {\n        "
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "REMOVEITEM",
+                                           "key_expression":  "o",
+                                           "snippet":  ", Object.keys(m).length \u0026\u0026 Ni.j(o, m, l, u, f, d);\n        } catch (v) {\n          Nn.M(v);\n        }\n      }, L: function(o, a) {\n        try {\n          we == null ? void 0 : we.localStorage.removeItem(o), Ni.L(o, a);\n        } catch (l) {\n          Nn.M(l);\n        }\n      } });\n    })(t.cookie_persisted_properties || []), r = t.persistence.toLowerCase();\n    return r === \"localstorage\" \u0026\u0026 Nn.O() ? Nn : r === \"localstorage+cookie\" \u0026\u0026 n.O() ? n : r === \"sessionstorage\" \u0026\u0026 cr.O() ? cr : r === \"memory\" ? oEe : r =="
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "REMOVEITEM",
+                                           "key_expression":  "s",
+                                           "snippet":  "length; n++) {\n      var r = localStorage.key(n);\n      (r != null \u0026\u0026 r.startsWith(r7) || r != null \u0026\u0026 r.startsWith(\"inProgressSurvey_\")) \u0026\u0026 t.push(r);\n    }\n    t.forEach(((s) =\u003e localStorage.removeItem(s)));\n  }\n  loadIfEnabled() {\n    if (!this._surveyManager) if (this.ki) un.info(\"Already initializing surveys, skipping...\");\n    else if (this._instance.config.disable_surveys) un.info(\"Disabled. Not loading surveys.\");\n    else if (this._instance.config.cookieless_mode \u0026\u0026 this._instance.consent.isOptedOut()) un."
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "GETITEM",
+                                           "key_expression":  "rO(d",
+                                           "snippet":  "|| t === yp.SENT) {\n              var x = n == null ? void 0 : n[Ok.SURVEY_ID], b = n == null ? void 0 : n[Ok.SURVEY_ITERATION];\n              d = { id: x, current_iteration: b }, localStorage.getItem(rO(d)) || localStorage.setItem(rO(d), \"true\"), f.$set = Ke({}, f.$set, { [BEe({ id: x, current_iteration: b }, t === yp.SENT ? \"responded\" : \"dismissed\")]: true });\n            } else t === yp.SHOWN \u0026\u0026 (f.$set = Ke({}, f.$set, { [Ok.SURVEY_LAST_SEEN_DATE]: (/* @__PURE__ */ new Date()).toISOString() }));\n            if"
+                                       },
+                                       {
+                                           "storage":  "localStorage",
+                                           "operation":  "SETITEM",
+                                           "key_expression":  "rO(d",
+                                           "snippet":  "   var x = n == null ? void 0 : n[Ok.SURVEY_ID], b = n == null ? void 0 : n[Ok.SURVEY_ITERATION];\n              d = { id: x, current_iteration: b }, localStorage.getItem(rO(d)) || localStorage.setItem(rO(d), \"true\"), f.$set = Ke({}, f.$set, { [BEe({ id: x, current_iteration: b }, t === yp.SENT ? \"responded\" : \"dismissed\")]: true });\n            } else t === yp.SHOWN \u0026\u0026 (f.$set = Ke({}, f.$set, { [Ok.SURVEY_LAST_SEEN_DATE]: (/* @__PURE__ */ new Date()).toISOString() }));\n            if (t === KEe.SHOWN) {\n          "
+                                       }
+                                   ],
+    "dynamic_storage_operation_count":  15,
+    "json_operations":  [
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "), h = y.name, y.type === \"radio\" \u0026\u0026 h != null) {\n          for (y = c; y.parentNode; ) y = y.parentNode;\n          for (y = y.querySelectorAll(\"input[name=\" + JSON.stringify(\"\" + h) + \u0027][type=\"radio\"]\u0027), h = 0; h \u003c y.length; h++) {\n            var _ = y[h];\n            if (_ !== c \u0026\u0026 _.form === c.form) {\n              var T = ag(_);\n              if (!T) throw Error(n(90));\n              se(_), je(_, T);\n            }\n          }\n        }\n        break;\n"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ", e.type === \"query\" || e.type === \"subscription\") {\n    const i = dF(e);\n    i !== void 0 \u0026\u0026 e.methodOverride !== \"POST\" \u0026\u0026 s.push(`input=${encodeURIComponent(JSON.stringify(i))}`);\n  }\n  return s.length \u0026\u0026 (r += \"?\" + s.join(\"\u0026\")), r;\n}, Hq = (e) =\u003e {\n  if (e.type === \"query\" \u0026\u0026 e.methodOverride !== \"POST\") return;\n  const t = dF(e);\n  return t !== void 0 ? JSON.stringify(t) : void 0;\n}, Uq = (e) =\u003e qq((0, wp.default)((0, wp.default)({}, e), {}, { conten"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "th \u0026\u0026 (r += \"?\" + s.join(\"\u0026\")), r;\n}, Hq = (e) =\u003e {\n  if (e.type === \"query\" \u0026\u0026 e.methodOverride !== \"POST\") return;\n  const t = dF(e);\n  return t !== void 0 ? JSON.stringify(t) : void 0;\n}, Uq = (e) =\u003e qq((0, wp.default)((0, wp.default)({}, e), {}, { contentTypeHeader: \"application/json\", getUrl: fF, getBody: Hq }));\nvar Vq = class extends Error {\n  constructor() {\n    const e = \"AbortError\";\n    super(e), this.name = e, this.message = e;\n  }\n};\nconst Wq "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " if (t \u0026\u0026 n) return dA(n) ? vK(n, e, t, r) : fA(n) \u0026\u0026 n.on(e, t, r), function() {\n      dA(n) ? yK(n, e, t, r) : fA(n) \u0026\u0026 n.off(e, t, r);\n    };\n  }, [e, t, n, JSON.stringify(r)]);\n}, RK = function(e, t) {\n  var n = g.useRef(function() {\n  });\n  g.useEffect(function() {\n    n.current = e;\n  }), g.useEffect(function() {\n    if (t !== null) {\n      var r = setInterval(function() {\n        return n.current();\n      }, t || 0);\n      return function() {\n      "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "{\n      var d = typeof f == \"function\" ? f(o) : f;\n      if (typeof d \u003e \"u\") return;\n      var m = void 0;\n      n ? n.raw ? typeof d == \"string\" ? m = d : m = JSON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  ret"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "typeof d \u003e \"u\") return;\n      var m = void 0;\n      n ? n.raw ? typeof d == \"string\" ? m = d : m = JSON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = f"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "      var m = void 0;\n      n ? n.raw ? typeof d == \"string\" ? m = d : m = JSON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = function(e, t) {\n  var n "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " _a2.call(t, this.taskId);\n  }\n  sendControlMessage(t) {\n    !this.controlSocket || this.controlSocket.readyState !== WebSocket.OPEN || this.controlSocket.send(JSON.stringify(t));\n  }\n  sendIoData(t) {\n    return !this.ioSocket || this.ioSocket.readyState !== WebSocket.OPEN ? false : (this.ioSocket.send(t), true);\n  }\n  enqueueTerminalWrite(t, n = {}) {\n    const r = n.ackBytes ?? 0, s = n.notifyText ?? null;\n    return this.terminalWriteQueue = this.termi"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "his.disposed || this.controlSocket !== t || (this.lastError = null, this.notifyLastError());\n    }, t.onmessage = (n) =\u003e {\n      let r;\n      try {\n        r = JSON.parse(String(n.data));\n      } catch {\n        return;\n      }\n      if (r.type === \"restore\") {\n        this.restoreCompleted = false, this.applyRestore(r.snapshot, r.cols, r.rows).then(() =\u003e {\n          this.disposed || this.controlSocket !== t || (this.restoreCompleted = true, this.sendContr"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  " of r) Rl(t, s);\n  else r !== void 0 \u0026\u0026 Rl(t, r);\n  return Array.from(new Set(t));\n}\nfunction Yee(e) {\n  if (typeof e != \"string\") return e;\n  try {\n    return JSON.parse(e);\n  } catch {\n    return e;\n  }\n}\nconst Xee = { create: \"Creating task\", link: \"Linking tasks\", unlink: \"Unlinking tasks\", trash: \"Moving task to done\", done: \"Moving task to done\", delete: \"Deleting task\", start: \"Starting task\", update: \"Updating task\", list: \"Listing tasks\" };\nfuncti"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  " = r === \"\\\\\" ? \"text\" : \"osc\");\n  }\n  return t;\n}\nfunction tte(e, t) {\n  return ete(e, t);\n}\nfunction nte(e, t) {\n  if (!t) return null;\n  try {\n    const n = JSON.parse(t);\n    if (typeof n != \"object\" || n === null || Array.isArray(n)) return null;\n    const r = n;\n    if (e.toLowerCase().replace(/[^a-z]/g, \"\") === \"runcommands\" \u0026\u0026 Array.isArray(r.commands)) {\n      const i = r.commands.map((o) =\u003e String(o)).filter((o) =\u003e o.length \u003e 0);\n      return i.l"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "(e.query ?? \"\"), content: Ey(e.result), error: typeof e.error == \"string\" ? Ey(e.error) : null, success: e.success };\n}\nfunction rte(e) {\n  try {\n    const t = JSON.parse(e);\n    if (Array.isArray(t) \u0026\u0026 t.length \u003e 0 \u0026\u0026 c1(t[0])) return { results: t.filter(c1).map(YA) };\n    if (c1(t)) return { results: [YA(t)] };\n  } catch {\n    return null;\n  }\n  return null;\n}\nfunction u1(e) {\n  const t = e.join(`\n`).trim();\n  return t.length \u003e 0 ? t : null;\n}\nfunction s"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "\n        if (C \u0026\u0026 r.Worker) {\n          var N = new Worker(a.filename);\n          N.onmessage = function(F) {\n            P(F.data);\n          }, N.postMessage(JSON.stringify({ language: L.language, code: L.code, immediateClose: true }));\n        } else P(a.highlight(L.code, L.grammar, L.language));\n      }, highlight: function(k, C, E) {\n        var R = { code: k, grammar: C, language: E };\n        if (a.hooks.run(\"before-tokenize\", R), !R.grammar) throw "
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "rn C;\n      }\n      if (!r.document) return r.addEventListener \u0026\u0026 (a.disableWorkerMessageHandler || r.addEventListener(\"message\", function(k) {\n        var C = JSON.parse(k.data), E = C.language, R = C.code, I = C.immediateClose;\n        r.postMessage(a.highlight(R, a.languages[E], E)), I \u0026\u0026 r.close();\n      }, false)), a;\n      var b = a.util.currentScript();\n      b \u0026\u0026 (a.filename = b.src, b.hasAttribute(\"data-manual\") \u0026\u0026 (a.manual = true));\n      functi"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "else a === 46 \u0026\u0026 i \u003e -1 ? i++ : i = -1;\n  }\n  return n;\n}\nfunction Jh(e) {\n  if (typeof e != \"string\") throw new TypeError(\"Path must be a string. Received \" + JSON.stringify(e));\n}\nconst die = { cwd: fie };\nfunction fie() {\n  return \"/\";\n}\nfunction FS(e) {\n  return !!(e !== null \u0026\u0026 typeof e == \"object\" \u0026\u0026 \"href\" in e \u0026\u0026 e.href \u0026\u0026 \"protocol\" in e \u0026\u0026 e.protocol \u0026\u0026 e.auth === void 0);\n}\nfunction pie(e) {\n  if (typeof e == \"string\") e = new URL(e);\n  else if "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ");\n}, Mfe = (e) =\u003e {\n  e.forEach(Dfe);\n};\nfunction jfe({ root: e, ...t }) {\n  const n = e || document;\n  V1.has(n) || V1.set(n, {});\n  const r = V1.get(n), s = JSON.stringify(t);\n  return r[s] || (r[s] = new IntersectionObserver(Mfe, { root: e, ...t })), r[s];\n}\nfunction Ofe(e, t, n) {\n  const r = jfe(t);\n  return c_.set(e, n), r.observe(e), () =\u003e {\n    c_.delete(e), r.unobserve(e);\n  };\n}\nconst Lfe = { some: 0, all: 1 };\nclass Ffe extends Ga {\n  construct"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "el: \"noreferrer\" } : {}, ...s, children: r });\n});\nfunction Qfe(e, t) {\n  return e.content === t.content \u0026\u0026 e.role === t.role \u0026\u0026 e.createdAt === t.createdAt \u0026\u0026 JSON.stringify(e.meta ?? null) === JSON.stringify(t.meta ?? null);\n}\nfunction u_(e, t) {\n  const n = e.findIndex((i) =\u003e i.id === t.id);\n  if (n \u003c 0) return [...e, t];\n  const r = e[n];\n  if (!r || Qfe(r, t)) return e;\n  const s = [...e];\n  return s[n] = t, s;\n}\nfunction vD(e, t) {\n  return t.reduce("
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "dren: r });\n});\nfunction Qfe(e, t) {\n  return e.content === t.content \u0026\u0026 e.role === t.role \u0026\u0026 e.createdAt === t.createdAt \u0026\u0026 JSON.stringify(e.meta ?? null) === JSON.stringify(t.meta ?? null);\n}\nfunction u_(e, t) {\n  const n = e.findIndex((i) =\u003e i.id === t.id);\n  if (n \u003c 0) return [...e, t];\n  const r = e[n];\n  if (!r || Qfe(r, t)) return e;\n  const s = [...e];\n  return s[n] = t, s;\n}\nfunction vD(e, t) {\n  return t.reduce((n, r) =\u003e u_(n, r), [...e]);\n}\nfunc"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "|| a.modelsSourceUrl.trim() !== o.modelsSourceUrl.trim() || a.defaultModelId.trim() !== o.defaultModelId.trim() || a.timeoutMs.trim() !== o.timeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeou"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "rim() !== o.modelsSourceUrl.trim() || a.defaultModelId.trim() !== o.defaultModelId.trim() || a.timeoutMs.trim() !== o.timeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeoutMs, o]), D = S.length"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "trim() || a.defaultModelId.trim() !== o.defaultModelId.trim() || a.timeoutMs.trim() !== o.timeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeoutMs, o]), D = S.length \u003e 0 \u0026\u0026 a.name.trim().length"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "== o.defaultModelId.trim() || a.timeoutMs.trim() !== o.timeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeoutMs, o]), D = S.length \u003e 0 \u0026\u0026 a.name.trim().length \u003e 0 \u0026\u0026 a.baseUrl.trim().length \u003e 0"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "meoutMs.trim() !== o.timeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeoutMs, o]), D = S.length \u003e 0 \u0026\u0026 a.name.trim().length \u003e 0 \u0026\u0026 a.baseUrl.trim().length \u003e 0 \u0026\u0026 (R || I) \u0026\u0026 !k \u0026\u0026 (a.timeoutMs"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "imeoutMs.trim() || JSON.stringify(E) !== JSON.stringify(o.models) || JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) || JSON.stringify(z) !== JSON.stringify(B) || a.apiKey.trim().length \u003e 0;\n  }, [E, a.apiKey, a.baseUrl, a.capabilities, a.defaultModelId, a.headers, a.modelsSourceUrl, a.name, a.timeoutMs, o]), D = S.length \u003e 0 \u0026\u0026 a.name.trim().length \u003e 0 \u0026\u0026 a.baseUrl.trim().length \u003e 0 \u0026\u0026 (R || I) \u0026\u0026 !k \u0026\u0026 (a.timeoutMs.trim().length === 0 |"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "m() } : {}, ...a.baseUrl.trim() !== o.baseUrl.trim() ? { baseUrl: a.baseUrl.trim() } : {}, ...a.apiKey.trim().length \u003e 0 ? { apiKey: a.apiKey.trim() } : {}, ...JSON.stringify(z) !== JSON.stringify(Object.fromEntries(o.headers.map((O) =\u003e [O.key.trim(), O.value.trim()]).filter(([O]) =\u003e O.length \u003e 0))) ? { headers: z } : {}, ...a.timeoutMs.trim() !== o.timeoutMs.trim() ? { timeoutMs: B ?? null } : {}, ...JSON.stringify(E) !== JSON.stringify(o.models) ? { mode"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "rl.trim() !== o.baseUrl.trim() ? { baseUrl: a.baseUrl.trim() } : {}, ...a.apiKey.trim().length \u003e 0 ? { apiKey: a.apiKey.trim() } : {}, ...JSON.stringify(z) !== JSON.stringify(Object.fromEntries(o.headers.map((O) =\u003e [O.key.trim(), O.value.trim()]).filter(([O]) =\u003e O.length \u003e 0))) ? { headers: z } : {}, ...a.timeoutMs.trim() !== o.timeoutMs.trim() ? { timeoutMs: B ?? null } : {}, ...JSON.stringify(E) !== JSON.stringify(o.models) ? { models: E } : {}, ...$ !=="
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "rim(), O.value.trim()]).filter(([O]) =\u003e O.length \u003e 0))) ? { headers: z } : {}, ...a.timeoutMs.trim() !== o.timeoutMs.trim() ? { timeoutMs: B ?? null } : {}, ...JSON.stringify(E) !== JSON.stringify(o.models) ? { models: E } : {}, ...$ !== (o.defaultModelId.trim() || o.models[0] || null) ? { defaultModelId: $ } : {}, ...K !== (o.modelsSourceUrl.trim() || null) ? { modelsSourceUrl: K } : {}, ...JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities)"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ").filter(([O]) =\u003e O.length \u003e 0))) ? { headers: z } : {}, ...a.timeoutMs.trim() !== o.timeoutMs.trim() ? { timeoutMs: B ?? null } : {}, ...JSON.stringify(E) !== JSON.stringify(o.models) ? { models: E } : {}, ...$ !== (o.defaultModelId.trim() || o.models[0] || null) ? { defaultModelId: $ } : {}, ...K !== (o.modelsSourceUrl.trim() || null) ? { modelsSourceUrl: K } : {}, ...JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) ? { capabilities: a.c"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "== (o.defaultModelId.trim() || o.models[0] || null) ? { defaultModelId: $ } : {}, ...K !== (o.modelsSourceUrl.trim() || null) ? { modelsSourceUrl: K } : {}, ...JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) ? { capabilities: a.capabilities.length \u003e 0 ? a.capabilities : [] } : {} } : { providerId: S, name: a.name.trim(), baseUrl: a.baseUrl.trim(), apiKey: a.apiKey.trim() || null, headers: z, timeoutMs: B, models: E, defaultModelId: $, mod"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "dels[0] || null) ? { defaultModelId: $ } : {}, ...K !== (o.modelsSourceUrl.trim() || null) ? { modelsSourceUrl: K } : {}, ...JSON.stringify(a.capabilities) !== JSON.stringify(o.capabilities) ? { capabilities: a.capabilities.length \u003e 0 ? a.capabilities : [] } : {} } : { providerId: S, name: a.name.trim(), baseUrl: a.baseUrl.trim(), apiKey: a.apiKey.trim() || null, headers: z, timeoutMs: B, models: E, defaultModelId: $, modelsSourceUrl: K, capabilities: a.ca"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ".map((i) =\u003e i.name.trim().toLowerCase() !== n ? i : (r = true, t));\n  return r ? s : [...s, t];\n}\nfunction XSe(e, t) {\n  return e.length !== t.length ? false : JSON.stringify(Op(e)) === JSON.stringify(Op(t));\n}\nfunction bv(e) {\n  return { ok: false, message: e instanceof Error ? e.message : String(e) };\n}\nfunction ZSe(e) {\n  const { open: t, workspaceId: n, selectedAgentId: r, liveAuthStatuses: s = null } = e, [i, o] = g.useState(\"\"), [a, l] = g.useState(["
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "toLowerCase() !== n ? i : (r = true, t));\n  return r ? s : [...s, t];\n}\nfunction XSe(e, t) {\n  return e.length !== t.length ? false : JSON.stringify(Op(e)) === JSON.stringify(Op(t));\n}\nfunction bv(e) {\n  return { ok: false, message: e instanceof Error ? e.message : String(e) };\n}\nfunction ZSe(e) {\n  const { open: t, workspaceId: n, selectedAgentId: r, liveAuthStatuses: s = null } = e, [i, o] = g.useState(\"\"), [a, l] = g.useState([]), [u, f] = g.useState([]"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "ification.requestPermission();\n    return wk(), t;\n  } catch {\n    return wk(), md();\n  }\n}\nfunction n_e(e) {\n  return /^[A-Za-z0-9_./:@%+=,-]+$/.test(e) ? e : JSON.stringify(e);\n}\nfunction r_e(e, t, n) {\n  var _a2;\n  if (e === \"cline\") return \"\";\n  const r = n ? ((_a2 = c0(e)) == null ? void 0 : _a2.autonomousArgs) ?? [] : [];\n  return [t, ...r.map(n_e)].join(\" \");\n}\nfunction aa(e) {\n  return e.replaceAll(`\\r\n`, `\n`).trim();\n}\nconst s_e = [{ value: \"commi"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "== 0) return decodeURIComponent(s.substring(t.length, s.length));\n      }\n    } catch {\n    }\n    return null;\n  }\n}, D: function(e) {\n  var t;\n  try {\n    t = JSON.parse(Ni.A(e)) || {};\n  } catch {\n  }\n  return t;\n}, j: function(e, t, n, r, s) {\n  if (Ye) try {\n    var i = \"\", o = \"\", a = sEe(Ye.location.hostname, r);\n    if (n) {\n      var l = /* @__PURE__ */ new Date();\n      l.setTime(l.getTime() + 24 * n * 60 * 60 * 1e3), i = \"; expires=\" + l.toUTCStr"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " l.setTime(l.getTime() + 24 * n * 60 * 60 * 1e3), i = \"; expires=\" + l.toUTCString();\n    }\n    s \u0026\u0026 (o = \"; secure\");\n    var u = e + \"=\" + encodeURIComponent(JSON.stringify(t)) + i + \"; SameSite=Lax; path=/\" + a + o;\n    return u.length \u003e 3686.4 \u0026\u0026 Qe.warn(\"cookieStore warning: large cookie, len=\" + u.length), Ye.cookie = u, u;\n  } catch {\n    return;\n  }\n}, L: function(e, t) {\n  if (Ye != null \u0026\u0026 Ye.cookie) try {\n    Ni.j(e, \"\", -1, t);\n  } catch {\n    "
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  ") {\n  try {\n    return we == null ? void 0 : we.localStorage.getItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n} }, iEe = [\"$device_id\", \"distinct_id\", lx, FU, fx, dx, Ii], Cv = {}, oEe = { O: function() {\n  return true;\n}, M: function(e) {"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "{\n  try {\n    return we == null ? void 0 : we.sessionStorage.getItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n} }, ho = (function(e) {\n  return e[e.PENDING = -1] = \"PENDING\", e[e.DENIED = 0] = \"DENIED\", e[e.GRANTED = 1] = \"GRANTED\", e;\n}"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "\n        }\n        n = we == null ? void 0 : we.localStorage;\n      }\n      var s, i = pEe || gx(t.hash, \"__posthog\") || gx(t.hash, \"state\"), o = i ? jj((() =\u003e JSON.parse(atob(decodeURIComponent(i))))) || jj((() =\u003e JSON.parse(decodeURIComponent(i)))) : null;\n      return o \u0026\u0026 o.action === \"ph_authorize\" ? ((s = o).source = \"url\", s \u0026\u0026 Object.keys(s).length \u003e 0 \u0026\u0026 (o.desiredHash ? t.hash = o.desiredHash : r ? r.replaceState(r.state, \"\", t.pathname + t.searc"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "orage;\n      }\n      var s, i = pEe || gx(t.hash, \"__posthog\") || gx(t.hash, \"state\"), o = i ? jj((() =\u003e JSON.parse(atob(decodeURIComponent(i))))) || jj((() =\u003e JSON.parse(decodeURIComponent(i)))) : null;\n      return o \u0026\u0026 o.action === \"ph_authorize\" ? ((s = o).source = \"url\", s \u0026\u0026 Object.keys(s).length \u003e 0 \u0026\u0026 (o.desiredHash ? t.hash = o.desiredHash : r ? r.replaceState(r.state, \"\", t.pathname + t.search) : t.hash = \"\")) : ((s = JSON.parse(n.getItem(Wj) || "
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "rl\", s \u0026\u0026 Object.keys(s).length \u003e 0 \u0026\u0026 (o.desiredHash ? t.hash = o.desiredHash : r ? r.replaceState(r.state, \"\", t.pathname + t.search) : t.hash = \"\")) : ((s = JSON.parse(n.getItem(Wj) || \"{}\")).source = \"localstorage\", delete s.userIntent), !(!s.token || this.instance.config.token !== s.token) \u0026\u0026 (this.loadToolbar(s), true);\n    } catch {\n      return false;\n    }\n  }\n  X(t) {\n    var n = xt.ph_load_toolbar || xt.ph_load_editor;\n    !Ht(n) \u0026\u0026 bo(n) ? n(t,"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "his.instance.config.token }, t, { apiURL: this.instance.requestRouter.endpointFor(\"ui\") }, r ? { instrument: false } : {});\n    if (we.localStorage.setItem(Wj, JSON.stringify(Ke({}, s, { source: void 0 }))), this.Y() === ha.LOADED) this.X(s);\n    else if (this.Y() === ha.UNINITIALIZED) {\n      var i;\n      this.K(ha.LOADING), (i = xt.__PosthogExtensions__) == null || i.loadExternalDependency == null || i.loadExternalDependency(this.instance, \"toolbar\", ((o"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "m;\n    return delete o[d], d + \"=\" + v;\n  }))) !== null \u0026\u0026 r !== void 0 ? r : [], l = fEe(o);\n  return l \u0026\u0026 a.push(l), s + \"?\" + a.join(\"\u0026\");\n}, vp = (e, t) =\u003e JSON.stringify(e, ((n, r) =\u003e typeof r == \"bigint\" ? r.toString() : r), t), Pk = (e) =\u003e {\n  var { data: t, compression: n } = e;\n  if (t) {\n    if (n === go.GZipJS) {\n      var r = wEe((function(a, l) {\n        var u = a.length;\n        if (typeof TextEncoder \u003c \"u\") return new TextEncoder().encode(a)"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "n.signal }, e.fetchOptions)).then(((f) =\u003e f.text().then(((d) =\u003e {\n    var m = { statusCode: f.status, text: d };\n    if (f.status === 200) try {\n      m.json = JSON.parse(d);\n    } catch (v) {\n      Qe.error(v);\n    }\n    e.callback == null || e.callback(m);\n  })))).catch(((f) =\u003e {\n    Qe.error(f), e.callback == null || e.callback({ statusCode: 0, error: f });\n  })).finally((() =\u003e l ? clearTimeout(l.timeout) : null));\n} }), q_ \u0026\u0026 ry.push({ transport: \"XHR\""
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "change = () =\u003e {\n    if (n.readyState === 4) {\n      var i = { statusCode: n.status, text: n.responseText };\n      if (n.status === 200) try {\n        i.json = JSON.parse(n.responseText);\n      } catch {\n      }\n      e.callback == null || e.callback(i);\n    }\n  }, n.send(s);\n} }), fs != null \u0026\u0026 fs.sendBeacon \u0026\u0026 ry.push({ transport: \"sendBeacon\", method: (e) =\u003e {\n  var t = yx(e.url, { beacon: \"1\" });\n  try {\n    var n, { contentType: r, body: s } = (n = Pk"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  " = I.join(\",\")), this._instance.capture(\"$feature_flag_called\", A);\n        }\n        if (s) {\n          var P = o;\n          if (!Xe(o)) try {\n            P = JSON.parse(o);\n          } catch {\n          }\n          return { key: t, enabled: !!i, variant: typeof i == \"string\" ? i : void 0, payload: P };\n        }\n      }\n    } else Xr.warn(\u0027getFeatureFlagResult for key \"\u0027 + t + `\" failed. Feature flags didn\u0027t load in time.`);\n  }\n  getRemoteConfigPayload("
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  ", { D: function(o) {\n        try {\n          var a = {};\n          try {\n            a = Ni.D(o) || {};\n          } catch {\n          }\n          var l = Ln(a, JSON.parse(Nn.A(o) || \"{}\"));\n          return Nn.j(o, l), l;\n        } catch {\n        }\n        return null;\n      }, j: function(o, a, l, u, f, d) {\n        try {\n          Nn.j(o, a, void 0, void 0, d);\n          var m = {};\n          i.forEach(((v) =\u003e {\n            a[v] \u0026\u0026 (m[v] = a[v]);\n      "
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "{\n    this.serverLimits = {}, this.lastEventRateLimited = false, this.checkForLimiting = (n) =\u003e {\n      var r = n.text;\n      if (r \u0026\u0026 r.length) try {\n        (JSON.parse(r).quota_limited || []).forEach(((s) =\u003e {\n          iO.info((s || \"events\") + \" is quota limited.\"), this.serverLimits[s] = (/* @__PURE__ */ new Date()).getTime() + 6e4;\n        }));\n      } catch (s) {\n        return void iO.warn(\u0027could not rate limit - continuing. Error: \"\u0027 + (s == null"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "script) || \"lazy-recorder\";\n  }\n  Ir() {\n    var e, t = this._instance.get_property(_v);\n    if (!t) return false;\n    var n = (e = (typeof t == \"object\" ? t : JSON.parse(t)).cache_timestamp) !== null \u0026\u0026 e !== void 0 ? e : Date.now();\n    return Date.now() - n \u003c= 3e5;\n  }\n  Sr(e) {\n    var t, n;\n    if ((t = xt.__PosthogExtensions__) == null || !t.initSessionRecording) throw Error(\"Called on script loaded before session recording is available\");\n    this.m"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ":`;\nfunction rIe(e, t) {\n  return `${k7}${e}:${t}`;\n}\nfunction sIe(e, t) {\n  return e.startsWith(`${k7}${t}:`);\n}\nfunction iIe(e) {\n  const t = cd(e);\n  return JSON.stringify({ agentId: e.selectedAgentId, providerId: t.providerId ?? t.oauthProvider ?? \"\", modelId: t.modelId ?? \"\", baseUrl: t.baseUrl ?? \"\", reasoningEffort: t.reasoningEffort ?? null });\n}\nfunction oIe(e) {\n  return JSON.stringify({ agentId: e.selectedAgentId, command: e.effectiveCommand ?? "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "derId ?? t.oauthProvider ?? \"\", modelId: t.modelId ?? \"\", baseUrl: t.baseUrl ?? \"\", reasoningEffort: t.reasoningEffort ?? null });\n}\nfunction oIe(e) {\n  return JSON.stringify({ agentId: e.selectedAgentId, command: e.effectiveCommand ?? \"\" });\n}\nfunction aIe(e) {\n  return (e == null ? void 0 : e.currentBranch) ?? (e == null ? void 0 : e.defaultBranch) ?? \"HEAD\";\n}\nfunction PO(e, t, n) {\n  e((r) =\u003e {\n    let s = false;\n    const i = {};\n    for (const [o, a]"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  ") =\u003e i.id === t.id);\n  if (n \u003c 0) return [...e, t];\n  const r = e[n];\n  if (r \u0026\u0026 r.content === t.content \u0026\u0026 r.role === t.role \u0026\u0026 r.createdAt === t.createdAt \u0026\u0026 JSON.stringify(r.meta ?? null) === JSON.stringify(t.meta ?? null)) return e;\n  const s = [...e];\n  return s[n] = t, s;\n}\nfunction $Ie(e, t) {\n  return e \u0026\u0026 t.projects.some((n) =\u003e n.id === e) ? e : t.currentProjectId;\n}\nfunction BIe(e, t) {\n  var _a2, _b;\n  if (t.type === \"requested_workspace_changed"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "eturn [...e, t];\n  const r = e[n];\n  if (r \u0026\u0026 r.content === t.content \u0026\u0026 r.role === t.role \u0026\u0026 r.createdAt === t.createdAt \u0026\u0026 JSON.stringify(r.meta ?? null) === JSON.stringify(t.meta ?? null)) return e;\n  const s = [...e];\n  return s[n] = t, s;\n}\nfunction $Ie(e, t) {\n  return e \u0026\u0026 t.projects.some((n) =\u003e n.id === e) ? e : t.currentProjectId;\n}\nfunction BIe(e, t) {\n  var _a2, _b;\n  if (t.type === \"requested_workspace_changed\") return { ...e, workspaceState: n"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "\n        }\n        s.onopen = () =\u003e {\n          o = 0, n({ type: \"stream_connected\" });\n        }, s.onmessage = (m) =\u003e {\n          try {\n            const v = JSON.parse(String(m.data));\n            if (v.type === \"snapshot\") {\n              a = v.currentProjectId, n({ type: \"snapshot\", payload: v });\n              return;\n            }\n            if (v.type === \"projects_updated\") {\n              const x = a, b = $Ie(a, v);\n              a = b, n({ type"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  ": !d \u0026\u0026 !o, shouldUseNavigationPath: a || u || f };\n}\nconst I7 = on.NotificationBadgeClearEvent;\nfunction GIe(e) {\n  if (!e) return null;\n  try {\n    const t = JSON.parse(e);\n    if (!t || typeof t != \"object\") return null;\n    const n = \"sourceId\" in t \u0026\u0026 typeof t.sourceId == \"string\" ? t.sourceId.trim() : \"\", r = \"workspaceId\" in t \u0026\u0026 typeof t.workspaceId == \"string\" ? t.workspaceId.trim() : \"\", s = \"triggeredAt\" in t \u0026\u0026 typeof t.triggeredAt == \"number\" "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " = t == null ? void 0 : t.trim();\n  if (!e || !n || typeof window \u003e \"u\") return;\n  const r = { sourceId: e, workspaceId: n, triggeredAt: Date.now() };\n  pc(I7, JSON.stringify(r));\n}\nfunction KIe(e, t) {\n  if (typeof window \u003e \"u\") return () =\u003e {\n  };\n  const n = (r) =\u003e {\n    if (r.key !== I7) return;\n    const s = GIe(r.newValue);\n    !s || s.sourceId === e || t(s.workspaceId);\n  };\n  return window.addEventListener(\"storage\", n), () =\u003e {\n    window.removeEv"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "tListener(\"storage\", n);\n  };\n}\nconst R7 = on.TabVisibilityPresence, YIe = 15e3;\nfunction FI() {\n  const e = fc(R7);\n  if (!e) return {};\n  try {\n    const t = JSON.parse(e);\n    if (!t || typeof t != \"object\") return {};\n    const n = {};\n    for (const [r, s] of Object.entries(t)) {\n      if (typeof r != \"string\" || r.trim().length === 0 || !s || typeof s != \"object\") continue;\n      const i = \"workspaceId\" in s \u0026\u0026 typeof s.workspaceId == \"string\" ? s.wo"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "i.length \u003e 0 \u0026\u0026 Number.isFinite(o) \u0026\u0026 (n[r] = { workspaceId: i, timestamp: o });\n    }\n    return n;\n  } catch {\n    return {};\n  }\n}\nfunction $I(e) {\n  pc(R7, JSON.stringify(e));\n}\nfunction BI(e, t, n = YIe) {\n  const r = {};\n  for (const [s, i] of Object.entries(e)) t - i.timestamp \u003c= n \u0026\u0026 (r[s] = i);\n  return r;\n}\nfunction XIe() {\n  return typeof crypto \u003c \"u\" \u0026\u0026 typeof crypto.randomUUID == \"function\" ? crypto.randomUUID() : `tab-${Date.now()}-${Math.ran"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "0 : t.constructor) ? t.constructor.name : \"null prototype\";\n}\nfunction KRe(e) {\n  return ~-encodeURI(e).split(/%..|./).length;\n}\nfunction YRe(e) {\n  return KRe(JSON.stringify(e));\n}\nfunction XRe() {\n  const e = /* @__PURE__ */ new WeakSet();\n  function t(r) {\n    return e.has(r) ? true : (e.add(r), false);\n  }\n  function n(r) {\n    e.delete(r);\n  }\n  return [t, n];\n}\nfunction Kd(e, t = []) {\n  return [e, t];\n}\nfunction ZRe(e, t) {\n  const [n, r] = e;\n  ret"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "on EC(e) {\n  const t = z0(sn);\n  return t.encodePolyfill ? t.encodePolyfill(e) : new TextEncoder().encode(e);\n}\nfunction JRe(e) {\n  const [t, n] = e;\n  let r = JSON.stringify(t);\n  function s(i) {\n    typeof r == \"string\" ? r = typeof i == \"string\" ? r + i : [EC(r), i] : r.push(typeof i == \"string\" ? EC(i) : i);\n  }\n  for (const i of n) {\n    const [o, a] = i;\n    if (s(`\n${JSON.stringify(o)}\n`), typeof a == \"string\" || a instanceof Uint8Array) s(a);\n    e"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "ing\" ? r = typeof i == \"string\" ? r + i : [EC(r), i] : r.push(typeof i == \"string\" ? EC(i) : i);\n  }\n  for (const i of n) {\n    const [o, a] = i;\n    if (s(`\n${JSON.stringify(o)}\n`), typeof a == \"string\" || a instanceof Uint8Array) s(a);\n    else {\n      let l;\n      try {\n        l = JSON.stringify(a);\n      } catch {\n        l = JSON.stringify(mo(a));\n      }\n      s(l);\n    }\n  }\n  return typeof r == \"string\" ? r : eAe(r);\n}\nfunction eAe(e) {\n  const t "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "  const [o, a] = i;\n    if (s(`\n${JSON.stringify(o)}\n`), typeof a == \"string\" || a instanceof Uint8Array) s(a);\n    else {\n      let l;\n      try {\n        l = JSON.stringify(a);\n      } catch {\n        l = JSON.stringify(mo(a));\n      }\n      s(l);\n    }\n  }\n  return typeof r == \"string\" ? r : eAe(r);\n}\nfunction eAe(e) {\n  const t = e.reduce((s, i) =\u003e s + i.length, 0), n = new Uint8Array(t);\n  let r = 0;\n  for (const s of e) n.set(s, r), r += s.length;\n  "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "y(o)}\n`), typeof a == \"string\" || a instanceof Uint8Array) s(a);\n    else {\n      let l;\n      try {\n        l = JSON.stringify(a);\n      } catch {\n        l = JSON.stringify(mo(a));\n      }\n      s(l);\n    }\n  }\n  return typeof r == \"string\" ? r : eAe(r);\n}\nfunction eAe(e) {\n  const t = e.reduce((s, i) =\u003e s + i.length, 0), n = new Uint8Array(t);\n  let r = 0;\n  for (const s of e) n.set(s, r), r += s.length;\n  return n;\n}\nfunction tAe(e) {\n  const t = typeo"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "   const b = Date.now();\n    try {\n      const w = await fetch(\"/api/passcode/verify\", { method: \"POST\", headers: { \"Content-Type\": \"application/json\" }, body: JSON.stringify({ passcode: t.trim() }), credentials: \"same-origin\" });\n      if (w.ok) {\n        e();\n        return;\n      }\n      if (w.status === 429) {\n        const C = w.headers.get(\"Retry-After\"), E = C ? Number.parseInt(C, 10) : 30;\n        d(Number.isFinite(E) ? E : 30), o(\"Too many failed "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "ed to `PostHogProvider`. Using default global `window.posthog` instance. You must initialize it manually. This is not recommended behavior.\"), Hl);\n  }, [s, i, JSON.stringify(o)]);\n  return g.useEffect(function() {\n    if (!s) {\n      var u = a.current;\n      u ? (i !== u.apiKey \u0026\u0026 console.warn(\"[PostHog.js] You have provided a different `apiKey` to `PostHogProvider` than the one that was already initialized. This is not supported by our provider and we\u0027ll"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  "(\"[PostHog.js] `posthog` was already loaded elsewhere. This may cause issues.\"), Hl.init(i, o), a.current = { apiKey: i, options: o ?? {} });\n    }\n  }, [s, i, JSON.stringify(o)]), de.createElement(P9.Provider, { value: { client: l, bootstrap: (t = o == null ? void 0 : o.bootstrap) !== null \u0026\u0026 t !== void 0 ? t : (n = s == null ? void 0 : s.config) === null || n === void 0 ? void 0 : n.bootstrap } }, r);\n}\nvar aS = function(e) {\n  return typeof e == \"functi"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " = this._listeners, n2 = t.indexOf(e);\n    if (n2 === -1) throw console.log(\"disposed?\", this._disposed), console.log(\"size?\", this._size), console.log(\"arr?\", JSON.stringify(this._listeners)), new Error(\"Attempted to dispose unknown listener\");\n    this._size--, t[n2] = void 0;\n    let o2 = this._deliveryQueue.current === this;\n    if (this._size * ot$2 \u003c= t.length) {\n      let d2 = 0;\n      for (let v3 = 0; v3 \u003c t.length; v3++) t[v3] ? t[d2++] = t[v3] : "
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " = this._listeners, n2 = t.indexOf(e);\n    if (n2 === -1) throw console.log(\"disposed?\", this._disposed), console.log(\"size?\", this._size), console.log(\"arr?\", JSON.stringify(this._listeners)), new Error(\"Attempted to dispose unknown listener\");\n    this._size--, t[n2] = void 0;\n    let s15 = this._deliveryQueue.current === this;\n    if (this._size * Yr$1 \u003c= t.length) {\n      let o2 = 0;\n      for (let r5 = 0; r5 \u003c t.length; r5++) t[r5] ? t[o2++] = t[r5] :"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "ISION, !!re$1.env.CI || !!re$1.env.BUILD_ARTIFACTSTAGINGDIRECTORY, ei$1 = Xe$1, ii$1 = Xe$1;\n  let i8 = re$1.env.VSCODE_NLS_CONFIG;\n  if (i8) try {\n    let e = JSON.parse(i8);\n    ei$1 = e.userLocale, jn$1 = e.osLocale, ii$1 = e.resolvedLanguage || Xe$1, ms$1 = (_c2 = e.languagePack) == null ? void 0 : _c2.translationsConfigFile;\n  } catch {\n  }\n  Xn = true;\n} else typeof navigator == \"object\" \u0026\u0026 !_s$1 ? (ye$1 = navigator.userAgent, ye$1.indexOf(\"Windows\")"
+                            },
+                            {
+                                "operation":  "STRINGIFY",
+                                "snippet":  " = this._listeners, i8 = e.indexOf(t);\n    if (i8 === -1) throw console.log(\"disposed?\", this._disposed), console.log(\"size?\", this._size), console.log(\"arr?\", JSON.stringify(this._listeners)), new Error(\"Attempted to dispose unknown listener\");\n    this._size--, e[i8] = void 0;\n    let r5 = this._deliveryQueue.current === this;\n    if (this._size * ql \u003c= e.length) {\n      let n2 = 0;\n      for (let o2 = 0; o2 \u003c e.length; o2++) e[o2] ? e[n2++] = e[o2] : r5"
+                            },
+                            {
+                                "operation":  "PARSE",
+                                "snippet":  "env.SNAP_REVISION, !!xe.env.CI || !!xe.env.BUILD_ARTIFACTSTAGINGDIRECTORY, Tr = Nt, Ir = Nt;\n  let s15 = xe.env.VSCODE_NLS_CONFIG;\n  if (s15) try {\n    let t = JSON.parse(s15);\n    Tr = t.userLocale, bo = t.osLocale, Ir = t.resolvedLanguage || Nt, ia = (_f = t.languagePack) == null ? void 0 : _f.translationsConfigFile;\n  } catch {\n  }\n  vo = true;\n} else typeof navigator == \"object\" \u0026\u0026 !ra ? ($e = navigator.userAgent, yr = $e.indexOf(\"Windows\") \u003e= 0, xr2 ="
+                            }
+                        ],
+    "json_operation_count":  72,
+    "task_schema_fields":  [
+                               "started",
+                               "Running",
+                               "Status",
+                               "Provider",
+                               "id",
+                               "order",
+                               "title",
+                               "description",
+                               "status",
+                               "position",
+                               "taskId",
+                               "baseRef",
+                               "prompt",
+                               "column",
+                               "createdAt",
+                               "provider",
+                               "completed",
+                               "Agent",
+                               "columnId",
+                               "updatedAt",
+                               "ID",
+                               "agent",
+                               "Id"
+                           ],
+    "task_schema_field_count":  23,
+    "status_values":  [
+                          "RUNNING",
+                          "REVIEW",
+                          "IN_PROGRESS",
+                          "PENDING",
+                          "COMPLETED",
+                          "BACKLOG",
+                          "IN PROGRESS",
+                          "DONE"
+                      ],
+    "id_generation_strategies":  [
+                                     "crypto.randomUUID",
+                                     "randomUUID",
+                                     "Date.now",
+                                     "Math.random"
+                                 ],
+    "classification":  "UNIQUE_TASK_STORAGE_KEY_IDENTIFIED",
+    "live_browser_storage_read":  false,
+    "task_id_extracted":  false,
+    "cline_task_id":  null,
+    "http_get_only":  true,
+    "localhost_assets_only":  true,
+    "runtime_modified":  false,
+    "browser_modified":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10F3_READ_IDENTIFIED_BROWSER_STORAGE_KEY_WITH_CONTROLLED_BROWSER_CONTEXT"
+}

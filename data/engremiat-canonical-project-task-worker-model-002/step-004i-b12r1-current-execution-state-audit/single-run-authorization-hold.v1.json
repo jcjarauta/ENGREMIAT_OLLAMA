@@ -1,0 +1,16 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B12R1",
+    "timestamp":  "2026-06-14T17:19:58.6562829+02:00",
+    "execution_scope_id":  "FIRST-CONTROLLED-CLINE-TASK-RUN-001",
+    "cline_task_id":  "17c7e",
+    "authorization_state":  "ON_HOLD_PENDING_EXECUTION_STATE_EVIDENCE",
+    "authorization_effective":  false,
+    "authorization_consumed_or_possibly_consumed":  false,
+    "second_run_authorized":  false,
+    "automatic_click_authorized":  false,
+    "human_must_not_press_run_again":  true,
+    "reason":  "B12_PREFLIGHT_REPORTED_RUN_NOT_VISIBLE_AND_ACTIVE_EXECUTION_NOT_FALSE",
+    "next":  "STEP_004I_B12R2_REBUILD_PREFLIGHT_WITH_CORRECT_VISIBLE_STATE"
+}

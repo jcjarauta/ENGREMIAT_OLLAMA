@@ -1,0 +1,127 @@
+﻿{
+    "schema_version":  "1.0",
+    "manifest_id":  "ENGREMIAT-CANONICAL-PROJECT-TASK-WORKER-MODEL-002-MANIFEST-001",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "status":  "FOUNDATIONAL_BASELINE",
+    "purpose":  "Define the canonical project-task-worker model technical boundaries, dependencies, execution modes, authorization policy, validation contract, rollback policy, and evidence contract before implementation.",
+    "source_cycle":  {
+                         "cycle_id":  "CONTROLLED-CLINE-READONLY-INSPECTION-001",
+                         "close_step":  "004I-B13Y-R14",
+                         "prompt_sha256":  "73E3E946DF293F8B0801436C7EC4DF901C2419BF573BC126C7B20FD081CAA2B7",
+                         "result_classification":  "CONTROLLED_CLINE_READONLY_INSPECTION_CYCLE_COMPLETED"
+                     },
+    "current_state":  {
+                          "implementation_exists":  false,
+                          "direct_model_files_found":  false,
+                          "baseline_commit":  "2cc897de",
+                          "git_state_observation":  "DETACHED_HEAD_REPORTED_BY_CONTROLLED_READONLY_INSPECTION",
+                          "reference_file":  "data/engremiat-human-ux-and-kanban-001/objective-close.v1.json",
+                          "reference_line":  58
+                      },
+    "technical_boundaries":  {
+                                 "model_layers":  [
+                                                      "PROJECT",
+                                                      "TASK",
+                                                      "WORKER"
+                                                  ],
+                                 "execution_default":  "NO_EXECUTION_WITHOUT_EXPLICIT_HUMAN_AUTHORIZATION",
+                                 "write_default":  "BLOCKED",
+                                 "network_default":  "BLOCKED",
+                                 "git_write_default":  "BLOCKED",
+                                 "cline_mutation_default":  "BLOCKED",
+                                 "one_technical_boundary_per_step":  true
+                             },
+    "dependencies":  {
+                         "required_now":  [
+                                              "PowerShell",
+                                              "Local filesystem",
+                                              "JSON parser",
+                                              "Human authorization evidence"
+                                          ],
+                         "deferred_until_selected":  [
+                                                         "Node.js runtime",
+                                                         "Ollama worker",
+                                                         "Cline execution adapter",
+                                                         "Google Sheets control projection",
+                                                         "Telegram projection layer"
+                                                     ],
+                         "external_services_required_for_foundational_manifest":  false
+                     },
+    "execution_modes":  [
+                            {
+                                "mode":  "READ_ONLY_INSPECTION",
+                                "risk":  "READ_ONLY",
+                                "authorization_required":  true
+                            },
+                            {
+                                "mode":  "LOCAL_EVIDENCE_WRITE",
+                                "risk":  "LOCAL_FILE_WRITE",
+                                "authorization_required":  true
+                            },
+                            {
+                                "mode":  "CONTROLLED_WORKER_EXECUTION",
+                                "risk":  "CONTROLLED_EXECUTION",
+                                "authorization_required":  true
+                            },
+                            {
+                                "mode":  "EXTERNAL_OR_REMOTE_ACTION",
+                                "risk":  "EXTERNAL_WRITE",
+                                "authorization_required":  true,
+                                "default":  "NO_GO"
+                            }
+                        ],
+    "authorization_policy":  {
+                                 "human_gate_required":  true,
+                                 "authorization_must_be_scoped":  true,
+                                 "authorization_must_name_target":  true,
+                                 "authorization_must_define_allowed_write_count":  true,
+                                 "implicit_authorization_for_following_steps":  false,
+                                 "auto_approve_allowed":  false
+                             },
+    "validation_contract":  {
+                                "required_checks":  [
+                                                        "JSON_PARSE_OK",
+                                                        "REQUIRED_FIELDS_PRESENT",
+                                                        "MANIFEST_ID_MATCH",
+                                                        "OBJECTIVE_MATCH",
+                                                        "TECHNICAL_BOUNDARIES_PRESENT",
+                                                        "AUTHORIZATION_POLICY_PRESENT",
+                                                        "ROLLBACK_POLICY_PRESENT",
+                                                        "EVIDENCE_CONTRACT_PRESENT"
+                                                    ],
+                                "implementation_validation_deferred":  true,
+                                "git_head_stability_check_required_before_implementation":  true,
+                                "worktree_inventory_required_before_implementation":  true
+                            },
+    "rollback_policy":  {
+                            "current_step":  "DELETE_MANIFEST_IF_NEWLY_CREATED_AND_VALIDATION_FAILS",
+                            "future_implementation":  "EACH_STEP_MUST_DECLARE_REVERSIBLE_ROLLBACK",
+                            "automatic_destructive_rollback_allowed":  false
+                        },
+    "evidence_contract":  {
+                              "format":  "JSON_V1",
+                              "required_fields":  [
+                                                      "step",
+                                                      "operation",
+                                                      "authorization_state",
+                                                      "input",
+                                                      "output",
+                                                      "validation",
+                                                      "writes",
+                                                      "network",
+                                                      "git",
+                                                      "next"
+                                                  ],
+                              "evidence_root":  "data/engremiat-canonical-project-task-worker-model-002",
+                              "secret_values_allowed":  false,
+                              "sensitive_values_must_be_redacted":  true
+                          },
+    "known_risks":  [
+                        "No implementation files currently define the model",
+                        "Framework and library selection remains unverified",
+                        "Detached Git HEAD may represent an unstable baseline"
+                    ],
+    "smallest_safe_next_task":  "Audit Git HEAD and worktree state read-only, then prepare the first implementation-boundary decision without creating runtime code.",
+    "created_from_authorized_step":  "004I-B13Y-R15",
+    "created_at":  "2026-06-14T22:05:08.2911613+02:00"
+}

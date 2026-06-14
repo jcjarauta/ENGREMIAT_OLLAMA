@@ -1,0 +1,17 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B9",
+    "timestamp":  "2026-06-14T07:39:33.8113435+02:00",
+    "draft_id":  "ETD-20260614-073710",
+    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+    "human_decision":  "APPROVE",
+    "task_creation_authorized":  true,
+    "authorization_scope":  "CREATE_EXACTLY_ONE_BASELINE_TASK_WITHOUT_STARTING",
+    "task_execution_authorized":  false,
+    "agent_execution_authorized":  false,
+    "node_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "HUMAN_MANUAL_CREATE_SINGLE_CARD"
+}

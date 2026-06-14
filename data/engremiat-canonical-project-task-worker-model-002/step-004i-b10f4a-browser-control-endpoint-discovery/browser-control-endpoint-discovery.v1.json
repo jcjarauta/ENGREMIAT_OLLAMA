@@ -1,0 +1,292 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10F4A",
+    "timestamp":  "2026-06-14T08:44:42.0987200+02:00",
+    "browser_process_count":  31,
+    "browser_processes":  [
+                              {
+                                  "process_id":  10184,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --no-startup-window"
+                              },
+                              {
+                                  "process_id":  6080,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=crashpad-handler \"--user-data-dir=C:\\Users\\pc\\AppData\\Local\\Microsoft\\Edge\\User Data\" /prefetch:4 --monitor-self-annotation=ptype=crashpad-handler \"--database=C:\\Users\\pc\\AppData\\Local\\Microsoft\\Edge\\User Data\\Crashpad\" --annotation=IsOfficialBuild=1 --annotation=channel= --annotation=chromium-version=149.0.7827.115 \"--annotation=exe=C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --annotation=plat=Win64 --annotation=prod=Edge --annotation=ver=149.0.4022.69 --initial-client-data=0x288,0x28c,0x290,0x284,0x298,0x7ffaba039c38,0x7ffaba039c44,0x7ffaba039c50"
+                              },
+                              {
+                                  "process_id":  8892,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=gpu-process --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --startup-read-main-dll --metrics-shmem-handle=2180,i,9192767571850488490,7602008858062782318,262144 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=2372 /prefetch:2"
+                              },
+                              {
+                                  "process_id":  12092,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=es --service-sandbox-type=none --startup-read-main-dll --metrics-shmem-handle=2624,i,11369303551146243488,13062192776642364612,524288 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2632 /prefetch:11"
+                              },
+                              {
+                                  "process_id":  12172,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=es --service-sandbox-type=service --startup-read-main-dll --metrics-shmem-handle=2952,i,17439804278166640769,8615539994193856389,524288 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2972 /prefetch:13"
+                              },
+                              {
+                                  "process_id":  5388,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --instant-process --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=7 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=637196294 --skip-read-main-dll --metrics-shmem-handle=5748,i,5799715005499750100,6301542612579242493,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708992871164437 --mojo-platform-channel-handle=5764 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  8504,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --top-chrome-webui --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=948279484 --ssd-no-pressure-read-main-dll --metrics-shmem-handle=3136,i,17629818369155843518,255002877517110589,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708997556373682 --mojo-platform-channel-handle=4860 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  13504,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=948672461 --skip-read-main-dll --metrics-shmem-handle=6108,i,17809282005926894893,16624951274189715226,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190708999430457380 --mojo-platform-channel-handle=6864 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  16228,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=17 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=950981264 --skip-read-main-dll --metrics-shmem-handle=7620,i,9036761315575443259,12046301000752517423,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709002241582927 --mojo-platform-channel-handle=7624 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  12364,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=18 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=950984351 --skip-read-main-dll --metrics-shmem-handle=7660,i,3695431284948751360,6801754283545739790,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709003178624776 --mojo-platform-channel-handle=7488 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  13596,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=utility --utility-sub-type=edge_search_indexer.mojom.SearchIndexerInterfaceBroker --lang=es --service-sandbox-type=search_indexer --message-loop-type-ui --video-capture-use-gpu-memory-buffer --ssd-no-pressure-read-main-dll --metrics-shmem-handle=7548,i,8167846685749337748,4361816299614765459,524288 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709005052708474 --mojo-platform-channel-handle=7020 /prefetch:14"
+                              },
+                              {
+                                  "process_id":  16408,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=utility --utility-sub-type=audio.mojom.AudioService --lang=es --service-sandbox-type=audio --video-capture-use-gpu-memory-buffer --skip-read-main-dll --metrics-shmem-handle=8484,i,9600852871993141364,14130627290665985322,524288 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709020045378058 --mojo-platform-channel-handle=6224 /prefetch:12"
+                              },
+                              {
+                                  "process_id":  6984,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=es --service-sandbox-type=none --video-capture-use-gpu-memory-buffer --skip-read-main-dll --metrics-shmem-handle=9784,i,11336113558165452996,18235376475940845044,524288 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709020982419907 --mojo-platform-channel-handle=6292 /prefetch:14"
+                              },
+                              {
+                                  "process_id":  5508,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=40 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=3123849649 --ssd-no-pressure-read-main-dll --metrics-shmem-handle=2060,i,4939634176749255212,1954569640325404376,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709023793545454 --mojo-platform-channel-handle=8576 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  9380,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=42 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=3124819643 --skip-read-main-dll --metrics-shmem-handle=8364,i,10850096802392271828,3486635213028669636,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709025667629152 --mojo-platform-channel-handle=9016 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  1196,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=43 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=3124879013 --skip-read-main-dll --metrics-shmem-handle=9368,i,1567443866063507182,13619810396657513276,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709026604671001 --mojo-platform-channel-handle=9920 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  14524,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=44 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=3126146907 --skip-read-main-dll --metrics-shmem-handle=9308,i,2082145078713642633,6224537484676619564,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709027541712850 --mojo-platform-channel-handle=9924 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  1496,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=45 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=3126253377 --skip-read-main-dll --metrics-shmem-handle=8804,i,1913378768572225309,7007292348720361142,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709028478754699 --mojo-platform-channel-handle=9456 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  15024,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=50 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=17902979220 --skip-read-main-dll --metrics-shmem-handle=10744,i,9367770275025904848,4790181501388825439,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709033163963944 --mojo-platform-channel-handle=11080 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  15752,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=57 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=81652966073 --skip-read-main-dll --metrics-shmem-handle=10968,i,7604752222444757645,13472747917685826616,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709039723256887 --mojo-platform-channel-handle=10328 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  18144,
+                                  "name":  "msedge.exe",
+                                  "executable_path":  "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+                                  "command_line":  "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --pdf-upsell-enabled --video-capture-use-gpu-memory-buffer --lang=es --js-flags --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=59 --time-ticks-at-unix-epoch=-1781330269953441 --launch-time-ticks=83945243602 --ssd-no-pressure-read-main-dll --metrics-shmem-handle=11104,i,4688570299120907647,7296732166609473809,2097152 --field-trial-handle=2396,i,13782987413139483435,4636726526500119586,262144 --variations-seed-version --pseudonymization-salt-handle=2408,i,16103619266378074335,3783972943136544737,4 --trace-process-track-uuid=3190709041597340585 --mojo-platform-channel-handle=9956 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  21436,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" "
+                              },
+                              {
+                                  "process_id":  2004,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=crashpad-handler \"--user-data-dir=C:\\Users\\pc\\AppData\\Local\\Google\\Chrome\\User Data\" /prefetch:4 --monitor-self-annotation=ptype=crashpad-handler \"--database=C:\\Users\\pc\\AppData\\Local\\Google\\Chrome\\User Data\\Crashpad\" \"--metrics-dir=C:\\Users\\pc\\AppData\\Local\\Google\\Chrome\\User Data\" --url=https://clients2.google.com/cr/report --annotation=channel= --annotation=plat=Win64 --annotation=prod=Chrome --annotation=ver=149.0.7827.115 --initial-client-data=0x124,0x128,0x12c,0x100,0x130,0x7ffa7b44a9e0,0x7ffa7b44a9ec,0x7ffa7b44a9f8"
+                              },
+                              {
+                                  "process_id":  22400,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=gpu-process --no-pre-read-main-dll --gpu-preferences=SAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAACAAAAAAAAAAIAAAAAAAAAA== --metrics-shmem-handle=1844,i,4999935595189907177,14483231395775022154,262144 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1876 /prefetch:2"
+                              },
+                              {
+                                  "process_id":  11884,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=es --service-sandbox-type=none --no-pre-read-main-dll --metrics-shmem-handle=2200,i,8844040321229992849,608059415493101152,524288 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2208 /prefetch:11"
+                              },
+                              {
+                                  "process_id":  20564,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=es --service-sandbox-type=service --no-pre-read-main-dll --metrics-shmem-handle=2280,i,15265208871460962897,2853868044203460181,524288 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2296 /prefetch:13"
+                              },
+                              {
+                                  "process_id":  20136,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=12 --time-ticks-at-unix-epoch=-1781330268537299 --launch-time-ticks=88686076368 --metrics-shmem-handle=5728,i,12936281514666159954,17878539919249389465,2097152 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190708997556373682 --mojo-platform-channel-handle=2988 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  2220,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=14 --time-ticks-at-unix-epoch=-1781330268537299 --launch-time-ticks=88688196554 --metrics-shmem-handle=6484,i,10514867043118570521,2209738065905375108,2097152 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190708999430457380 --mojo-platform-channel-handle=5868 /prefetch:1"
+                              },
+                              {
+                                  "process_id":  5852,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --utility-sub-type=audio.mojom.AudioService --lang=es --service-sandbox-type=audio --video-capture-use-gpu-memory-buffer --no-pre-read-main-dll --metrics-shmem-handle=4764,i,708553429753006894,11575798338414443959,524288 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190709000367499229 --mojo-platform-channel-handle=4948 /prefetch:12"
+                              },
+                              {
+                                  "process_id":  19848,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=utility --utility-sub-type=video_capture.mojom.VideoCaptureService --lang=es --service-sandbox-type=none --video-capture-use-gpu-memory-buffer --no-pre-read-main-dll --metrics-shmem-handle=2948,i,16997144692353141895,2319384813524665657,524288 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190709001304541078 --mojo-platform-channel-handle=6480 /prefetch:14"
+                              },
+                              {
+                                  "process_id":  14052,
+                                  "name":  "chrome.exe",
+                                  "executable_path":  "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+                                  "command_line":  "\"C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe\" --type=renderer --no-pre-read-main-dll --video-capture-use-gpu-memory-buffer --lang=es --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=18 --time-ticks-at-unix-epoch=-1781330268537299 --launch-time-ticks=88690885655 --metrics-shmem-handle=4872,i,1510555317856725081,5249435931638562468,2097152 --field-trial-handle=1872,i,603908910364846512,13843751643888560075,262144 --variations-seed-version=20260613-030030.935000-production --pseudonymization-salt-handle=1888,i,15063719729354563243,9953452632031009444,4 --trace-process-track-uuid=3190709003178624776 --mojo-platform-channel-handle=6820 /prefetch:1"
+                              }
+                          ],
+    "declared_debugging_ports":  [
+
+                                 ],
+    "candidate_ports":  [
+                            9222,
+                            9223,
+                            9224,
+                            9333
+                        ],
+    "probe_count":  4,
+    "probes":  [
+                   {
+                       "port":  9222,
+                       "declared_in_process_commandline":  false,
+                       "version_status":  null,
+                       "version_ok":  false,
+                       "version_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "list_status":  null,
+                       "list_ok":  false,
+                       "list_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "targets":  [
+
+                                   ],
+                       "target_count":  0,
+                       "kanban_target_count":  0
+                   },
+                   {
+                       "port":  9223,
+                       "declared_in_process_commandline":  false,
+                       "version_status":  null,
+                       "version_ok":  false,
+                       "version_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "list_status":  null,
+                       "list_ok":  false,
+                       "list_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "targets":  [
+
+                                   ],
+                       "target_count":  0,
+                       "kanban_target_count":  0
+                   },
+                   {
+                       "port":  9224,
+                       "declared_in_process_commandline":  false,
+                       "version_status":  null,
+                       "version_ok":  false,
+                       "version_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "list_status":  null,
+                       "list_ok":  false,
+                       "list_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "targets":  [
+
+                                   ],
+                       "target_count":  0,
+                       "kanban_target_count":  0
+                   },
+                   {
+                       "port":  9333,
+                       "declared_in_process_commandline":  false,
+                       "version_status":  null,
+                       "version_ok":  false,
+                       "version_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "list_status":  null,
+                       "list_ok":  false,
+                       "list_error":  "Excepción al llamar a \"GetResponse\" con los argumentos \"0\": \"Se excedió el tiempo de espera de la operación\"",
+                       "targets":  [
+
+                                   ],
+                       "target_count":  0,
+                       "kanban_target_count":  0
+                   }
+               ],
+    "valid_cdp_endpoint_count":  0,
+    "valid_cdp_endpoints":  [
+
+                            ],
+    "kanban_target_count":  0,
+    "kanban_targets":  [
+
+                       ],
+    "classification":  "NO_EXISTING_BROWSER_CONTROL_ENDPOINT_FOUND",
+    "browser_started":  false,
+    "browser_restarted":  false,
+    "debugging_enabled":  false,
+    "live_browser_storage_read":  false,
+    "task_id_extracted":  false,
+    "cline_task_id":  null,
+    "runtime_modified":  false,
+    "browser_modified":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10F4B_PREPARE_SEPARATE_HUMAN_GATE_FOR_CONTROLLED_BROWSER_RELAUNCH"
+}

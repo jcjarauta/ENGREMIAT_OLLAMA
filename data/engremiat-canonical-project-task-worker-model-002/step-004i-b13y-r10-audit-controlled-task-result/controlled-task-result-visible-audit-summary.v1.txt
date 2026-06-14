@@ -1,0 +1,11 @@
+﻿step=004I-B13Y-R10
+result_card_visible_in_review=True
+current_state_visible=True
+readiness_visible=False
+smallest_next_step_visible=False
+clarification_requested_again=False
+structured_result_visible_in_preview=False
+result_card_open_required=True
+visible_result_classification=CONTROLLED_TASK_RESULT_EXISTS_BUT_PREVIEW_INSUFFICIENT
+validation_passed=True
+next=STEP_004I_B13Y_R11_PREPARE_SINGLE_RESULT_CARD_OPEN_GATE

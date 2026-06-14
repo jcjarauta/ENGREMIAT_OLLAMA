@@ -1,0 +1,51 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R15",
+    "scope_id":  "FOUNDATIONAL-MANIFEST-CREATION-001",
+    "source_step":  "004I-B13Y-R14",
+    "reason":  "CONTROLLED_READONLY_INSPECTION_RECOMMENDED_FOUNDATIONAL_BASELINE",
+    "recommended_action":  "Create the foundational project manifest (for example, engremiat-canonical-project-task-worker-model-002/manifest.v1.json) to define the model technical requirements, dependencies, and execution boundaries. This would establish a minimal validated baseline for further implementation.",
+    "proposed_target":  "data/engremiat-canonical-project-task-worker-model-002/manifest.v1.json",
+    "proposed_manifest_purpose":  "DEFINE_TECHNICAL_REQUIREMENTS_DEPENDENCIES_EXECUTION_BOUNDARIES_AND_VALIDATION_CONTRACT",
+    "proposed_sections":  [
+                              "schema_version",
+                              "manifest_id",
+                              "objective",
+                              "purpose",
+                              "current_state",
+                              "technical_boundaries",
+                              "dependencies",
+                              "execution_modes",
+                              "authorization_policy",
+                              "validation_contract",
+                              "rollback_policy",
+                              "evidence_contract"
+                          ],
+    "allowed_future_write_count":  1,
+    "allowed_future_target":  "data/engremiat-canonical-project-task-worker-model-002/manifest.v1.json",
+    "allowed_future_operation":  "CREATE_ONE_NEW_FOUNDATIONAL_MANIFEST_AFTER_SEPARATE_EXECUTION_GATE",
+    "allowed_operations_in_this_step":  [
+                                            "READ_CLOSE_EVIDENCE",
+                                            "PREPARE_SCOPE",
+                                            "RECORD_HUMAN_DECISION"
+                                        ],
+    "forbidden_operations_in_this_step":  [
+                                              "CREATE_MANIFEST",
+                                              "MODIFY_SOURCE",
+                                              "MODIFY_CLINE",
+                                              "EXECUTE_TASK",
+                                              "APPROVE_TOOL",
+                                              "EXTERNAL_NETWORK",
+                                              "GIT_ADD",
+                                              "GIT_COMMIT",
+                                              "GIT_PUSH"
+                                          ],
+    "manifest_creation_authorized_now":  false,
+    "manifest_created":  false,
+    "source_modified":  false,
+    "cline_modified":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "created_at":  "2026-06-14T22:04:05.2169091+02:00"
+}

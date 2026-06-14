@@ -1,0 +1,19 @@
+﻿{
+    "origin":  "http://127.0.0.1:3485",
+    "path":  "/engremiat-ollama",
+    "localStorage":  {
+                         "kanban.task-create-primary-start-action":  "start",
+                         "kanban.task-start-in-plan-mode":  "true",
+                         "kanban.notification-badge-clear.v1":  "{\"sourceId\":\"5d668e11-bd30-4db8-8f4e-5fd2b26b24b9\",\"workspaceId\":\"engremiat-ollama\",\"triggeredAt\":1781447925650}",
+                         "kanban.task-auto-review-mode":  "commit",
+                         "kanban.preferred-open-target":  "vscode",
+                         "kanban.tab-visibility-presence.v1":  "{}",
+                         "kanban.onboarding.dialog.shown":  "true",
+                         "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog":  "{\"$device_id\":\"019ec46a-d7d6-798f-84df-e0d9fa672c99\",\"distinct_id\":\"019ec46a-d7d6-798f-84df-e0d9fa672c99\",\"$sesid\":[1781447696134,\"019ec68e-9e6a-78d2-9ef3-9938c425f581\",1781447695977],\"$epp\":true,\"$initial_person_info\":{\"r\":\"$direct\",\"u\":\"http://127.0.0.1:3484/engremiat-ollama\"},\"$user_state\":\"anonymous\",\"$initialization_time\":\"2026-06-14T14:34:56.122Z\",\"$configured_session_timeout_ms\":1800000,\"$stored_person_properties\":{\"$internal_or_test_user\":true},\"$capture_rate_limit\":{\"tokens\":98.1,\"last\":1781447696134},\"$client_session_props\":{\"sessionId\":\"019ec68e-9e6a-78d2-9ef3-9938c425f581\",\"props\":{\"r\":\"$direct\",\"u\":\"http://127.0.0.1:3485/engremiat-ollama\"}},\"$feature_flag_errors\":[],\"$active_feature_flags\":[],\"$enabled_feature_flags\":{},\"$feature_flag_payloads\":{},\"$feature_flag_details\":{},\"$feature_flag_request_id\":\"0081de03-7252-406c-a1eb-0b4fd5b98482\",\"$feature_flag_evaluated_at\":1781448000292,\"$autocapture_disabled_server_side\":false,\"$heatmaps_enabled_server_side\":false,\"$product_tours_enabled_server_side\":false,\"$web_vitals_enabled_server_side\":false,\"$web_vitals_allowed_metrics\":null,\"$exception_capture_enabled_server_side\":false,\"$error_tracking_suppression_rules\":[],\"$dead_clicks_enabled_server_side\":false}"
+                     },
+    "sessionStorage":  {
+                           "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog":  "{\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":1,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\"}",
+                           "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_primary_window_exists":  "true",
+                           "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_window_id":  "\"019ec68e-9e6a-78d2-9ef3-9939be874e3b\""
+                       }
+}

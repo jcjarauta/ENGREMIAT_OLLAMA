@@ -1,0 +1,21 @@
+﻿004I-B10F4C — ESTRATEGIA CORREGIDA
+
+NO EJECUTAR EL RELANZAMIENTO CON PERFIL TEMPORAL.
+
+Motivo:
+La tarjeta creada reside en el almacenamiento del perfil y pestaña actuales. Una instancia separada con perfil temporal tendría un localStorage distinto y no permitiría recuperar su identificador.
+
+Siguiente frontera propuesta:
+1. Mantener abierta la pestaña actual del Kanban.
+2. Abrir DevTools manualmente en esa misma pestaña.
+3. Ejecutar exclusivamente consultas de lectura para enumerar localStorage y sessionStorage.
+4. Copiar el resultado a terminal para generar evidencia.
+
+Prohibido:
+- localStorage.setItem, removeItem o clear.
+- Modificar IndexedDB.
+- Pulsar Start task.
+- Iniciar agentes, workers o modelos.
+- Cerrar o relanzar el navegador actual.
+
+NEXT=STEP_004I_B10F4D_HUMAN_GATE_EXISTING_TAB_DEVTOOLS_READ_ONLY_ENUMERATION

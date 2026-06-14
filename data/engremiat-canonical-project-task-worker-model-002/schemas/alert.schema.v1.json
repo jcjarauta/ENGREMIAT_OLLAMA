@@ -1,0 +1,144 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schema/alert/v1",
+    "title":  "ALERT",
+    "type":  "object",
+    "required":  [
+                     "alert_id",
+                     "alert_type",
+                     "severity",
+                     "status",
+                     "message",
+                     "created_at"
+                 ],
+    "additionalProperties":  false,
+    "properties":  {
+                       "alert_id":  {
+                                        "type":  "string"
+                                    },
+                       "alert_type":  {
+                                          "type":  "string"
+                                      },
+                       "created_at":  {
+                                          "type":  "string"
+                                      },
+                       "message":  {
+                                       "type":  "string"
+                                   },
+                       "node_id":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "objective_id":  {
+                                            "type":  [
+                                                         "string",
+                                                         "null"
+                                                     ]
+                                        },
+                       "project_id":  {
+                                          "type":  [
+                                                       "string",
+                                                       "null"
+                                                   ]
+                                      },
+                       "severity":  {
+                                        "type":  "string",
+                                        "enum":  [
+                                                     "INFO",
+                                                     "LOW",
+                                                     "MEDIUM",
+                                                     "HIGH",
+                                                     "CRITICAL"
+                                                 ]
+                                    },
+                       "status":  {
+                                      "type":  "string"
+                                  },
+                       "task_id":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "worker_id":  {
+                                         "type":  [
+                                                      "string",
+                                                      "null"
+                                                  ]
+                                     },
+                       "summary":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "purpose":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "risk":  {
+                                    "type":  [
+                                                 "string",
+                                                 "null"
+                                             ]
+                                },
+                       "priority":  {
+                                        "type":  [
+                                                     "string",
+                                                     "null"
+                                                 ]
+                                    },
+                       "priority_global":  {
+                                               "type":  [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                           },
+                       "priority_project":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "authorization":  {
+                                             "type":  [
+                                                          "string",
+                                                          "null"
+                                                      ]
+                                         },
+                       "validation_state":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "evidence_state":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          },
+                       "next_action":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "blocked_reason":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          },
+                       "updated_at":  {
+                                          "type":  [
+                                                       "string",
+                                                       "null"
+                                                   ]
+                                      }
+                   }
+}

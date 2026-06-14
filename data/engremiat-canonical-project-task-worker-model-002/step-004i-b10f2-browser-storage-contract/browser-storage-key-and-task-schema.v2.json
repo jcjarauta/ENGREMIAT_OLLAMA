@@ -1,0 +1,194 @@
+﻿{
+    "schema_version":  "2.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10F2R1",
+    "timestamp":  "2026-06-14T08:42:31.7392383+02:00",
+    "assets_inspected":  2,
+    "assets":  [
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/index-8oAWEBf8.js",
+                       "length":  2156069
+                   },
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/xterm-vendor-C64ao8R-.js",
+                       "length":  620475
+                   }
+               ],
+    "previous_selected_key":  "kanban.theme",
+    "previous_classification":  "UNIQUE_TASK_STORAGE_KEY_IDENTIFIED",
+    "theme_key_rejected":  true,
+    "rejection_reason":  "PREFERENCE_KEY_NOT_TASK_DATA",
+    "literal_storage_keys":  [
+                                 "kanban.theme",
+                                 "lastSeenSurveyDate",
+                                 "test"
+                             ],
+    "excluded_preference_keys":  [
+                                     "kanban.theme"
+                                 ],
+    "possible_literal_data_keys":  [
+
+                                   ],
+    "constant_count":  159,
+    "resolved_dynamic_keys":  [
+                                  "children",
+                                  "deltaY",
+                                  "undefined"
+                              ],
+    "resolved_dynamic_task_keys":  [
+
+                                   ],
+    "unresolved_key_expressions":  [
+                                       "f",
+                                       "rO",
+                                       "Wj"
+                                   ],
+    "dynamic_operations":  [
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "GETITEM",
+                                   "key_expression":  "f",
+                                   "resolved_key":  null,
+                                   "task_like":  false,
+                                   "snippet":  "age key may not be falsy\");\n  var r = n ? n.raw ? function(f) {\n    return f;\n  } : n.deserializer : JSON.parse, s = g.useRef(function(f) {\n    try {\n      var d = n ? n.raw ? String : n.serializer : JSON.stringify, m = localStorage.getItem(f);\n      return m !== null ? r(m) : (t \u0026\u0026 localStorage.setItem(f, d(t)), t);\n    } catch {\n      return t;\n    }\n  }), i = g.useState(function() {\n    return s.current(e);\n  }), o = i[0], a = i[1];\n  g.useLayoutEffect(function() {\n    return a(s.current(e));\n  }, [e]);\n  var l = g.useCallback(function(f) {\n    try {\n      var d = typeof f == \"function\" ? f(o) : f;\n      if (t"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "f",
+                                   "resolved_key":  null,
+                                   "task_like":  false,
+                                   "snippet":  "    return f;\n  } : n.deserializer : JSON.parse, s = g.useRef(function(f) {\n    try {\n      var d = n ? n.raw ? String : n.serializer : JSON.stringify, m = localStorage.getItem(f);\n      return m !== null ? r(m) : (t \u0026\u0026 localStorage.setItem(f, d(t)), t);\n    } catch {\n      return t;\n    }\n  }), i = g.useState(function() {\n    return s.current(e);\n  }), o = i[0], a = i[1];\n  g.useLayoutEffect(function() {\n    return a(s.current(e));\n  }, [e]);\n  var l = g.useCallback(function(f) {\n    try {\n      var d = typeof f == \"function\" ? f(o) : f;\n      if (typeof d \u003e \"u\") return;\n      var m = void 0;\n      n ? n.raw ? t"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  ") : f;\n      if (typeof d \u003e \"u\") return;\n      var m = void 0;\n      n ? n.raw ? typeof d == \"string\" ? m = d : m = JSON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = function(e, t) {\n  var n = g.useState(AK(e, t)), r = n[0], s = n[1];\n  return g.useEffect(function() {\n    var i = true, o = window.matchMedia(e"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVEITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  "ON.stringify(d) : n.serializer ? m = n.serializer(d) : m = JSON.stringify(d) : m = JSON.stringify(d), localStorage.setItem(e, m), a(r(m));\n    } catch {\n    }\n  }, [e, a]), u = g.useCallback(function() {\n    try {\n      localStorage.removeItem(e), a(void 0);\n    } catch {\n    }\n  }, [e, a]);\n  return [o, l, u];\n}, AK = function(e, t) {\n  return t;\n}, PK = function(e, t) {\n  var n = g.useState(AK(e, t)), r = n[0], s = n[1];\n  return g.useEffect(function() {\n    var i = true, o = window.matchMedia(e), a = function() {\n      i \u0026\u0026 s(!!o.matches);\n    };\n    return o.addEventListener(\"change\", a), s(o.matches), functi"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "GETITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  " }\n  return e || Qe.error(\"localStorage unsupported; falling back to cookie store\"), Tk = e, e;\n}, M: function(e) {\n  Qe.error(\"localStorage error: \" + e);\n}, A: function(e) {\n  try {\n    return we == null ? void 0 : we.localStorage.getItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catc"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  "ge.getItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(Nn.A(e)) || {};\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n} }, iEe = [\"$device_id\", \"distinct_id\", lx, FU, fx, dx, Ii], Cv = {}, oEe = { O: function() {\n  return true;\n}, M: function(e) {\n  Qe.error(\"memoryStorage error: \" + e);\n}, A: function(e) {\n  return Cv[e]"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVEITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  "atch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.localStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    Nn.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.localStorage.removeItem(e);\n  } catch (t) {\n    Nn.M(t);\n  }\n} }, iEe = [\"$device_id\", \"distinct_id\", lx, FU, fx, dx, Ii], Cv = {}, oEe = { O: function() {\n  return true;\n}, M: function(e) {\n  Qe.error(\"memoryStorage error: \" + e);\n}, A: function(e) {\n  return Cv[e] || null;\n}, D: function(e) {\n  return Cv[e] || null;\n}, j: function(e, t) {\n  Cv[e] = t;\n}, L: function(e) {\n  delete Cv[e];\n} }, Dl "
+                               },
+                               {
+                                   "storage":  "sessionStorage",
+                                   "operation":  "GETITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  "\"), cr.A(e) !== \u0027\"xyz\"\u0027 \u0026\u0026 (Dl = false), cr.L(e);\n  } catch {\n    Dl = false;\n  }\n  return Dl;\n}, M: function(e) {\n  Qe.error(\"sessionStorage error: \", e);\n}, A: function(e) {\n  try {\n    return we == null ? void 0 : we.sessionStorage.getItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n"
+                               },
+                               {
+                                   "storage":  "sessionStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  ".getItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n  return null;\n}, D: function(e) {\n  try {\n    return JSON.parse(cr.A(e)) || null;\n  } catch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n} }, ho = (function(e) {\n  return e[e.PENDING = -1] = \"PENDING\", e[e.DENIED = 0] = \"DENIED\", e[e.GRANTED = 1] = \"GRANTED\", e;\n})({});\nclass aEe {\n  constructor(t) {\n    this._instance = t;\n  }\n  get N("
+                               },
+                               {
+                                   "storage":  "sessionStorage",
+                                   "operation":  "REMOVEITEM",
+                                   "key_expression":  "e",
+                                   "resolved_key":  "undefined",
+                                   "task_like":  false,
+                                   "snippet":  "ch {\n  }\n  return null;\n}, j: function(e, t) {\n  try {\n    we == null ? void 0 : we.sessionStorage.setItem(e, JSON.stringify(t));\n  } catch (n) {\n    cr.M(n);\n  }\n}, L: function(e) {\n  try {\n    we == null ? void 0 : we.sessionStorage.removeItem(e);\n  } catch (t) {\n    cr.M(t);\n  }\n} }, ho = (function(e) {\n  return e[e.PENDING = -1] = \"PENDING\", e[e.DENIED = 0] = \"DENIED\", e[e.GRANTED = 1] = \"GRANTED\", e;\n})({});\nclass aEe {\n  constructor(t) {\n    this._instance = t;\n  }\n  get N() {\n    return this._instance.config;\n  }\n  get consent() {\n    return this.U() ? ho.DENIED : this.H;\n  }\n  isOptedOut() {\n    return th"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "Wj",
+                                   "resolved_key":  null,
+                                   "task_like":  false,
+                                   "snippet":  " \"custom\" \u0026\u0026 this.instance.config.advanced_disable_toolbar_metrics, s = Ke({ token: this.instance.config.token }, t, { apiURL: this.instance.requestRouter.endpointFor(\"ui\") }, r ? { instrument: false } : {});\n    if (we.localStorage.setItem(Wj, JSON.stringify(Ke({}, s, { source: void 0 }))), this.Y() === ha.LOADED) this.X(s);\n    else if (this.Y() === ha.UNINITIALIZED) {\n      var i;\n      this.K(ha.LOADING), (i = xt.__PosthogExtensions__) == null || i.loadExternalDependency == null || i.loadExternalDependency(this.instance, \"toolbar\", ((o) =\u003e {\n        if (o) return Gj.error(\"[Toolbar] Failed to load\", o), void "
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVEITEM",
+                                   "key_expression":  "o",
+                                   "resolved_key":  "children",
+                                   "task_like":  false,
+                                   "snippet":  "    a[v] \u0026\u0026 (m[v] = a[v]);\n          })), Object.keys(m).length \u0026\u0026 Ni.j(o, m, l, u, f, d);\n        } catch (v) {\n          Nn.M(v);\n        }\n      }, L: function(o, a) {\n        try {\n          we == null ? void 0 : we.localStorage.removeItem(o), Ni.L(o, a);\n        } catch (l) {\n          Nn.M(l);\n        }\n      } });\n    })(t.cookie_persisted_properties || []), r = t.persistence.toLowerCase();\n    return r === \"localstorage\" \u0026\u0026 Nn.O() ? Nn : r === \"localstorage+cookie\" \u0026\u0026 n.O() ? n : r === \"sessionstorage\" \u0026\u0026 cr.O() ? cr : r === \"memory\" ? oEe : r === \"cookie\" ? Ni : n.O() ? n : Ni;\n  }\n  Pt(t) {\n    var n = "
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "REMOVEITEM",
+                                   "key_expression":  "s",
+                                   "resolved_key":  "deltaY",
+                                   "task_like":  false,
+                                   "snippet":  "or (var t = [], n = 0; n \u003c localStorage.length; n++) {\n      var r = localStorage.key(n);\n      (r != null \u0026\u0026 r.startsWith(r7) || r != null \u0026\u0026 r.startsWith(\"inProgressSurvey_\")) \u0026\u0026 t.push(r);\n    }\n    t.forEach(((s) =\u003e localStorage.removeItem(s)));\n  }\n  loadIfEnabled() {\n    if (!this._surveyManager) if (this.ki) un.info(\"Already initializing surveys, skipping...\");\n    else if (this._instance.config.disable_surveys) un.info(\"Disabled. Not loading surveys.\");\n    else if (this._instance.config.cookieless_mode \u0026\u0026 this._instance.consent.isOptedOut()) un.info(\"Not loading surveys in cookieless mode without consent"
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "GETITEM",
+                                   "key_expression":  "rO",
+                                   "resolved_key":  null,
+                                   "task_like":  false,
+                                   "snippet":  "de_system_time = a), t === yp.DISMISSED || t === yp.SENT) {\n              var x = n == null ? void 0 : n[Ok.SURVEY_ID], b = n == null ? void 0 : n[Ok.SURVEY_ITERATION];\n              d = { id: x, current_iteration: b }, localStorage.getItem(rO(d)) || localStorage.setItem(rO(d), \"true\"), f.$set = Ke({}, f.$set, { [BEe({ id: x, current_iteration: b }, t === yp.SENT ? \"responded\" : \"dismissed\")]: true });\n            } else t === yp.SHOWN \u0026\u0026 (f.$set = Ke({}, f.$set, { [Ok.SURVEY_LAST_SEEN_DATE]: (/* @__PURE__ */ new Date()).toISOString() }));\n            if (t === KEe.SHOWN) {\n              var w = n == null ? void "
+                               },
+                               {
+                                   "storage":  "localStorage",
+                                   "operation":  "SETITEM",
+                                   "key_expression":  "rO",
+                                   "resolved_key":  null,
+                                   "task_like":  false,
+                                   "snippet":  "ISMISSED || t === yp.SENT) {\n              var x = n == null ? void 0 : n[Ok.SURVEY_ID], b = n == null ? void 0 : n[Ok.SURVEY_ITERATION];\n              d = { id: x, current_iteration: b }, localStorage.getItem(rO(d)) || localStorage.setItem(rO(d), \"true\"), f.$set = Ke({}, f.$set, { [BEe({ id: x, current_iteration: b }, t === yp.SENT ? \"responded\" : \"dismissed\")]: true });\n            } else t === yp.SHOWN \u0026\u0026 (f.$set = Ke({}, f.$set, { [Ok.SURVEY_LAST_SEEN_DATE]: (/* @__PURE__ */ new Date()).toISOString() }));\n            if (t === KEe.SHOWN) {\n              var w = n == null ? void 0 : n[sO.TOUR_TYPE];\n          "
+                               }
+                           ],
+    "task_state_snippets":  [
+                                "localStorage.getItem(\"kanban.theme\")",
+                                "localStorage.getItem(e)",
+                                "localStorage.getItem(f)",
+                                "localStorage.getItem(rO(d)) || localStorage.setItem(rO(d), \"true\"), f.$set = Ke({}, f.$set, { [BEe({ id: x, current_iteration: b }, t === yp.SENT ? \"responded\" : \"dismissed\")]: true })",
+                                "localStorage.setItem(e, JSON.stringify(t))",
+                                "localStorage.setItem(Wj, JSON.stringify(Ke({}, s, { source: void 0 }))), this.Y() === ha.LOADED) this.X(s)",
+                                "sessionStorage.setItem(e, JSON.stringify(t))"
+                            ],
+    "selected_storage_key":  null,
+    "classification":  "TASK_STORAGE_KEY_REMAINS_DYNAMIC_AND_UNRESOLVED",
+    "live_browser_storage_read":  false,
+    "task_id_extracted":  false,
+    "cline_task_id":  null,
+    "http_get_only":  true,
+    "localhost_assets_only":  true,
+    "runtime_modified":  false,
+    "browser_modified":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10F3_TRACE_DYNAMIC_STORAGE_KEY_VARIABLES"
+}

@@ -1,0 +1,34 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B3",
+    "timestamp":  "2026-06-14T07:33:01.8907551+02:00",
+    "dialog_opened":  true,
+    "visible_field_labels":  "adjutno imagen",
+    "visible_field_count":  1,
+    "semantic_fields":  {
+                            "title":  true,
+                            "description_or_prompt":  true,
+                            "status":  false,
+                            "worker_or_agent":  true,
+                            "project_context":  false,
+                            "priority":  false
+                        },
+    "save_control_label":  "adjunto imagen",
+    "cancel_control_visible":  true,
+    "dialog_closed_without_saving":  true,
+    "task_created":  false,
+    "board_modified":  false,
+    "missing_global_engremiat_fields":  [
+                                            "PROJECT_CONTEXT"
+                                        ],
+    "classification":  "BASELINE_TASK_FIELDS_VERIFIED_GLOBAL_ENGREMIAT_FIELDS_ABSENT",
+    "field_contract_verified":  true,
+    "source_modified":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B4_DEFINE_NON_INTRUSIVE_ENGREMIAT_TASK_EXTENSION_CONTRACT"
+}

@@ -1,0 +1,150 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10F4E",
+    "timestamp":  "2026-06-14T16:42:50.8317279+02:00",
+    "draft_id":  "ETD-20260614-073710",
+    "origin":  "http://127.0.0.1:3485",
+    "path":  "/engremiat-ollama",
+    "storage_entries":  11,
+    "local_storage_entries":  8,
+    "session_storage_entries":  3,
+    "entry_inventory":  [
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.task-create-primary-start-action",
+                                "value_length":  5,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.task-start-in-plan-mode",
+                                "value_length":  4,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.notification-badge-clear.v1",
+                                "value_length":  112,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.task-auto-review-mode",
+                                "value_length":  6,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.preferred-open-target",
+                                "value_length":  6,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.tab-visibility-presence.v1",
+                                "value_length":  2,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "kanban.onboarding.dialog.shown",
+                                "value_length":  4,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "localStorage",
+                                "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog",
+                                "value_length":  1232,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "sessionStorage",
+                                "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog",
+                                "value_length":  142,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "sessionStorage",
+                                "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_primary_window_exists",
+                                "value_length":  4,
+                                "contains_draft_marker":  false
+                            },
+                            {
+                                "storage":  "sessionStorage",
+                                "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_window_id",
+                                "value_length":  38,
+                                "contains_draft_marker":  false
+                            }
+                        ],
+    "marker_entry_count":  0,
+    "marker_entries":  [
+
+                       ],
+    "task_like_entry_count":  7,
+    "task_like_entries":  [
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.task-create-primary-start-action",
+                                  "value_length":  5,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.task-start-in-plan-mode",
+                                  "value_length":  4,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.notification-badge-clear.v1",
+                                  "value_length":  112,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.task-auto-review-mode",
+                                  "value_length":  6,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.preferred-open-target",
+                                  "value_length":  6,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.tab-visibility-presence.v1",
+                                  "value_length":  2,
+                                  "contains_draft_marker":  false
+                              },
+                              {
+                                  "storage":  "localStorage",
+                                  "key":  "kanban.onboarding.dialog.shown",
+                                  "value_length":  4,
+                                  "contains_draft_marker":  false
+                              }
+                          ],
+    "task_id_candidate_count":  0,
+    "task_id_candidates":  [
+
+                           ],
+    "cline_task_id":  null,
+    "task_id_extracted":  false,
+    "classification":  "TASK_STORAGE_FOUND_BUT_DRAFT_MARKER_ABSENT",
+    "browser_storage_read_executed":  true,
+    "browser_storage_write_authorized":  false,
+    "browser_storage_written":  false,
+    "existing_browser_closed":  false,
+    "browser_restarted":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "raw_capture":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10f4e-live-storage-enumeration\\devtools-storage-enumeration.raw.json",
+    "next":  "STEP_004I_B10G_INSPECT_TASK_STORAGE_AND_VISIBLE_CARD_CORRELATION"
+}

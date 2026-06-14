@@ -1,0 +1,17 @@
+﻿Specific task: inspect the current repository state for the objective engremiat-canonical-project-task-worker-model-002 and determine the smallest safe next implementation step.
+Use strict read-only mode. Focus only on:
+1. data/engremiat-canonical-project-task-worker-model-002 and its latest step evidence.
+2. Repository files directly related to the canonical project-task-worker model.
+3. Current Git branch, HEAD and status using read-only commands only.
+Do not inspect unrelated projects unless required to resolve a direct dependency.
+Do not create, modify, move or delete files.
+Do not run builds, tests, installers, package managers, servers, workers or network operations.
+Do not approve or execute any mutating tool call.
+Return exactly these sections:
+CURRENT_STATE:
+RELEVANT_FILES:
+RISKS:
+SMALLEST_SAFE_NEXT_TASK:
+PROPOSED_VALIDATION:
+AUTHORIZATION_REQUIRED: True
+End after proposing the task. Do not execute it.

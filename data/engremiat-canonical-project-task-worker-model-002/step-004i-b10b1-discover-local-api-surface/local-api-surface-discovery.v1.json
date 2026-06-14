@@ -1,0 +1,65 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10B1",
+    "timestamp":  "2026-06-14T07:44:43.8637072+02:00",
+    "app_url":  "http://127.0.0.1:3485/engremiat-ollama",
+    "html_received":  true,
+    "html_length":  1445,
+    "script_assets_discovered":  2,
+    "script_assets_loaded":  2,
+    "assets":  [
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/index-8oAWEBf8.js",
+                       "loaded":  true,
+                       "length":  2156069
+                   },
+                   {
+                       "url":  "http://127.0.0.1:3485/assets/xterm-vendor-C64ao8R-.js",
+                       "loaded":  true,
+                       "length":  620475
+                   }
+               ],
+    "api_route_candidates":  [
+                                 "/api/early_access_features/?token=",
+                                 "/api/passcode/status",
+                                 "/api/passcode/verify",
+                                 "/api/product_tours/?token=",
+                                 "/api/surveys/?token=",
+                                 "/api/trpc",
+                                 "/api/web_experiments/?token="
+                             ],
+    "api_route_candidate_count":  7,
+    "storage_references":  [
+                               "IDBDatabase",
+                               "localStorage",
+                               "sessionstorage",
+                               "taskId"
+                           ],
+    "storage_reference_count":  4,
+    "network_call_references":  [
+                                    "EventSource",
+                                    "fetch",
+                                    "WebSocket",
+                                    "XMLHttpRequest"
+                                ],
+    "task_identifier_references":  [
+                                       "id",
+                                       "taskId",
+                                       "UUID"
+                                   ],
+    "classification":  "LOCAL_API_ROUTE_CANDIDATES_DISCOVERED",
+    "http_get_only":  true,
+    "api_probe_executed":  false,
+    "browser_storage_read":  false,
+    "task_id_extracted":  false,
+    "cline_task_id":  null,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10B2_PROBE_DISCOVERED_TASK_API_ROUTES_READ_ONLY"
+}

@@ -1,0 +1,10 @@
+﻿step=004I-B13Y-R3-R11
+stale_card_disposition=STALE_UI_IGNORED_WITHOUT_MUTATION
+new_task_open_executed=True
+new_task_open_count=1
+new_task_empty_confirmed=True
+prompt_insert_executed=False
+prompt_sent=False
+task_execution_authorization_state=ON_HOLD_NEW_EMPTY_TASK
+validation_passed=True
+next=STEP_004I_B13Y_R4_INSERT_FULL_CLARIFIED_PROMPT_WITHOUT_SENDING

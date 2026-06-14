@@ -1,0 +1,11 @@
+﻿step=004I-B13Y-R3-R7
+window_close_executed=True
+window_open_executed=True
+local_url_open_executed=True
+same_local_url_confirmed=True
+current_ui_state=BOARD
+observed_full_prompt_task_state=NONE
+board_recovered=True
+classification=CLINE_BOARD_RECOVERED_AFTER_HOST_WINDOW_RESTART
+validation_passed=True
+next=STEP_004I_B13Y_R3_R8_OPEN_ONE_NEW_EMPTY_TASK_FROM_RECOVERED_BOARD

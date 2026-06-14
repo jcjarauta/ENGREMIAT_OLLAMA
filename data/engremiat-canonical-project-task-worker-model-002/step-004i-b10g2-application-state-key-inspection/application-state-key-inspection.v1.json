@@ -1,0 +1,275 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G2",
+    "timestamp":  "2026-06-14T16:45:38.4355002+02:00",
+    "draft_id":  "ETD-20260614-073710",
+    "current_visible_column":  "REVIEW",
+    "manual_column_move_recorded":  true,
+    "manual_column_move_is_execution":  false,
+    "start_task_pressed":  false,
+    "task_started":  false,
+    "storage_entry_count":  11,
+    "valid_json_entries":  8,
+    "encoded_or_compressed_candidates":  0,
+    "strong_state_key_candidates":  4,
+    "classification":  "MULTIPLE_APPLICATION_STATE_KEY_CANDIDATES_FOUND",
+    "entries":  [
+                    {
+                        "storage":  "localStorage",
+                        "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog",
+                        "value_length":  1232,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  15,
+                        "reasons":  [
+                                        "VALID_JSON",
+                                        "NONTRIVIAL_SIZE"
+                                    ],
+                        "preview":  "{\"$device_id\":\"019ec46a-d7d6-798f-84df-e0d9fa672c99\",\"distinct_id\":\"019ec46a-d7d6-798f-84df-e0d9fa672c99\",\"$sesid\":[1781447696134,\"019ec68e-9e6a-78d2-9ef3-9938c425f581\",1781447695977],\"$epp\":true,\"$initial_person_info\":{\"r\":\"$direct\",\"u\":\"http://127.0.0.1:3484/engremiat-ollama\"},\"$user_state\":\"anonymous\",\"$initialization_time\":\"2026-06-14T14:34:56.122Z\",\"$configured_session_timeout_ms\":1800000,\"$stored_person_properties\":{\"$internal_or_test_user\":true},\"$capture_rate_limit\":{\"tokens\":98.1,\"last\":1781447696134},\"$client_session_props\":{\"sessionId\":\"019ec68e-9e6a-78d2-9ef3-9938c425f581\",\"props\":"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.onboarding.dialog.shown",
+                        "value_length":  4,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  35,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY",
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "true"
+                    },
+                    {
+                        "storage":  "sessionStorage",
+                        "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_posthog",
+                        "value_length":  142,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  10,
+                        "reasons":  [
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "{\"$sdk_debug_extensions_init_method\":\"synchronous\",\"$sdk_debug_extensions_init_time_ms\":1,\"$referrer\":\"$direct\",\"$referring_domain\":\"$direct\"}"
+                    },
+                    {
+                        "storage":  "sessionStorage",
+                        "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_window_id",
+                        "value_length":  38,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  10,
+                        "reasons":  [
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "\"019ec68e-9e6a-78d2-9ef3-9939be874e3b\""
+                    },
+                    {
+                        "storage":  "sessionStorage",
+                        "key":  "ph_phc_yGiSfCTcBFiBv5ahdw8iYNL5j97iAcwZZV1q1sr3Iwd_primary_window_exists",
+                        "value_length":  4,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  10,
+                        "reasons":  [
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "true"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.tab-visibility-presence.v1",
+                        "value_length":  2,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  35,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY",
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "{}"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.task-start-in-plan-mode",
+                        "value_length":  4,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  35,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY",
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "true"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.task-create-primary-start-action",
+                        "value_length":  5,
+                        "json_valid":  false,
+                        "json_type":  "",
+                        "json_error":  "Primitivo JSON no válido: start.",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  25,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY"
+                                    ],
+                        "preview":  "start"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.notification-badge-clear.v1",
+                        "value_length":  112,
+                        "json_valid":  true,
+                        "json_type":  "OBJECT",
+                        "json_error":  "",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  35,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY",
+                                        "VALID_JSON"
+                                    ],
+                        "preview":  "{\"sourceId\":\"5d668e11-bd30-4db8-8f4e-5fd2b26b24b9\",\"workspaceId\":\"engremiat-ollama\",\"triggeredAt\":1781447925650}"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.preferred-open-target",
+                        "value_length":  6,
+                        "json_valid":  false,
+                        "json_type":  "",
+                        "json_error":  "Primitivo JSON no válido: vscode.",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  25,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY"
+                                    ],
+                        "preview":  "vscode"
+                    },
+                    {
+                        "storage":  "localStorage",
+                        "key":  "kanban.task-auto-review-mode",
+                        "value_length":  6,
+                        "json_valid":  false,
+                        "json_type":  "",
+                        "json_error":  "Primitivo JSON no válido: commit.",
+                        "contains_description":  false,
+                        "contains_draft_marker":  false,
+                        "task_terms":  [
+
+                                       ],
+                        "task_term_count":  0,
+                        "encoding_hints":  [
+
+                                           ],
+                        "score":  25,
+                        "reasons":  [
+                                        "TASK_LIKE_KEY"
+                                    ],
+                        "preview":  "commit"
+                    }
+                ],
+    "browser_storage_read_only":  true,
+    "browser_storage_written":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10G3_COMPARE_STATE_KEY_CANDIDATES"
+}

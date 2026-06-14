@@ -1,0 +1,36 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13O",
+    "timestamp":  "2026-06-14T20:22:13.5028083+02:00",
+    "gate_id":  "CLINE-TASK-SESSION-RESET-OR-CONTINUE-001",
+    "cline_task_id":  "17c7e",
+    "current_classification":  "TERMINAL_HISTORICAL_SESSION_METADATA_WITH_NO_CURRENT_TASK_GIT_RESULT",
+    "recommended_action":  "NEW_CONTROLLED_TASK_EXECUTION_GATE_AFTER_UI_STATE_RESET",
+    "authorized_now":  false,
+    "reset_authorized_now":  false,
+    "continue_authorized_now":  false,
+    "new_execution_authorized_now":  false,
+    "allowed_future_actions":  [
+                                   "OPEN_SEPARATE_HUMAN_GATE",
+                                   "VERIFY_CARD_REMAINS_REVIEW",
+                                   "REFRESH_UI_ONCE_IF_AUTHORIZED",
+                                   "RECHECK_HEADER_AND_SESSION_STATE",
+                                   "RESET_STALE_SESSION_ONLY_IF_EXPLICITLY_AUTHORIZED",
+                                   "DEFINE_NEW_EXECUTION_GATE_AFTER_CLEAN_STATE"
+                               ],
+    "forbidden_actions":  [
+                              "DELETE_WORKTREE_NOW",
+                              "DELETE_CLINE_METADATA_NOW",
+                              "CLEAR_BROWSER_STORAGE_NOW",
+                              "MOVE_CARD_NOW",
+                              "PRESS_SEND_NOW",
+                              "PRESS_RUN_NOW",
+                              "START_AGENT_NOW",
+                              "MODIFY_PROVIDER_OR_MODEL",
+                              "MERGE_OR_CHERRY_PICK",
+                              "GIT_WRITE"
+                          ],
+    "task_execution_authorization_state":  "ON_HOLD",
+    "next":  "STEP_004I_B13P_DEFINE_SAFE_UI_RESET_THEN_NEW_EXECUTION_GATE"
+}

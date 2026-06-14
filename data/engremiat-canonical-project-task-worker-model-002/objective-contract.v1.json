@@ -1,0 +1,409 @@
+﻿{
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "version":  "1.0.0",
+    "created_at":  "2026-06-14T06:54:47.2361828+02:00",
+    "purpose":  "Crear un modelo canónico reutilizable que represente proyectos, objetivos, tareas, workers, nodos, prioridades, dependencias, gates, evidencias, actividad y alertas para alimentar la interfaz humana de ENGREMIAT con datos consistentes.",
+    "strategic_role":  "SOURCE_OF_TRUTH_FOR_HUMAN_UX_AND_FUTURE_WORKER_ORCHESTRATION",
+    "source_objective":  "ENGREMIAT_HUMAN_UX_AND_KANBAN_001",
+    "primary_consumers":  [
+                              "ENGREMIAT_HUMAN_UX",
+                              "KANBAN_VIEW",
+                              "GLOBAL_WORK_VIEW",
+                              "CANVAS_VIEW",
+                              "WORKER_CAPACITY_VIEW",
+                              "HUMAN_DECISION_QUEUE",
+                              "EVIDENCE_VIEW",
+                              "ALERT_VIEW",
+                              "FUTURE_NODE_REGISTRY"
+                          ],
+    "canonical_entities":  [
+                               {
+                                   "entity":  "PROJECT",
+                                   "id_field":  "project_id",
+                                   "purpose":  "Agrupar objetivos y trabajo relacionado bajo una iniciativa estable",
+                                   "required_relations":  [
+                                                              "OBJECTIVE",
+                                                              "TASK",
+                                                              "WORKER_ASSIGNMENT",
+                                                              "EVIDENCE",
+                                                              "ALERT"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "OBJECTIVE",
+                                   "id_field":  "objective_id",
+                                   "purpose":  "Representar un resultado global verificable dentro de un proyecto",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "STAGE",
+                                                              "TASK",
+                                                              "GATE",
+                                                              "EVIDENCE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "STAGE",
+                                   "id_field":  "stage_id",
+                                   "purpose":  "Agrupar tareas en una etapa lógica del objetivo",
+                                   "required_relations":  [
+                                                              "OBJECTIVE",
+                                                              "TASK"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "TASK",
+                                   "id_field":  "task_id",
+                                   "purpose":  "Representar una unidad concreta de trabajo gobernado",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "OBJECTIVE",
+                                                              "STAGE",
+                                                              "WORKER_ASSIGNMENT",
+                                                              "DEPENDENCY",
+                                                              "GATE",
+                                                              "EVIDENCE",
+                                                              "ACTIVITY"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "STEP",
+                                   "id_field":  "step_id",
+                                   "purpose":  "Representar una acción mínima verificable dentro de una tarea",
+                                   "required_relations":  [
+                                                              "TASK",
+                                                              "EVIDENCE",
+                                                              "ACTIVITY"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "WORKER",
+                                   "id_field":  "worker_id",
+                                   "purpose":  "Representar humanos, IA o nodos capaces de participar en trabajo",
+                                   "required_relations":  [
+                                                              "WORKER_CAPABILITY",
+                                                              "WORKER_ASSIGNMENT",
+                                                              "NODE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "NODE",
+                                   "id_field":  "node_id",
+                                   "purpose":  "Representar una máquina, dispositivo o punto de ejecución",
+                                   "required_relations":  [
+                                                              "WORKER",
+                                                              "WORKER_CAPABILITY",
+                                                              "ACTIVITY",
+                                                              "ALERT"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "WORKER_ASSIGNMENT",
+                                   "id_field":  "assignment_id",
+                                   "purpose":  "Separar responsabilidad, generación, ejecución, revisión y aprobación",
+                                   "required_relations":  [
+                                                              "TASK",
+                                                              "WORKER"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "WORKER_CAPABILITY",
+                                   "id_field":  "capability_id",
+                                   "purpose":  "Describir qué puede hacer cada worker y bajo qué límites",
+                                   "required_relations":  [
+                                                              "WORKER",
+                                                              "NODE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "DEPENDENCY",
+                                   "id_field":  "dependency_id",
+                                   "purpose":  "Representar relaciones depends_on, blocks, provides_to y related_to",
+                                   "required_relations":  [
+                                                              "TASK",
+                                                              "PROJECT",
+                                                              "OBJECTIVE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "GATE",
+                                   "id_field":  "gate_id",
+                                   "purpose":  "Representar decisiones humanas y autorizaciones explícitas",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "OBJECTIVE",
+                                                              "TASK",
+                                                              "WORKER",
+                                                              "ACTIVITY"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "EVIDENCE",
+                                   "id_field":  "evidence_id",
+                                   "purpose":  "Registrar artefactos, hashes, logs, diffs, validaciones y resultados",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "OBJECTIVE",
+                                                              "TASK",
+                                                              "STEP",
+                                                              "GATE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "ACTIVITY",
+                                   "id_field":  "activity_id",
+                                   "purpose":  "Registrar la línea temporal del sistema y los cambios de estado",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "TASK",
+                                                              "WORKER",
+                                                              "NODE"
+                                                          ]
+                               },
+                               {
+                                   "entity":  "ALERT",
+                                   "id_field":  "alert_id",
+                                   "purpose":  "Representar bloqueos, anomalías, riesgos y estados que requieren atención",
+                                   "required_relations":  [
+                                                              "PROJECT",
+                                                              "OBJECTIVE",
+                                                              "TASK",
+                                                              "WORKER",
+                                                              "NODE"
+                                                          ]
+                               }
+                           ],
+    "canonical_hierarchy":  [
+                                "PROJECT",
+                                "OBJECTIVE",
+                                "STAGE",
+                                "TASK",
+                                "STEP"
+                            ],
+    "worker_types":  [
+                         "HUMAN",
+                         "AI",
+                         "NODE"
+                     ],
+    "worker_roles":  [
+                         "ACCOUNTABLE",
+                         "GENERATION",
+                         "EXECUTION",
+                         "REVIEW",
+                         "APPROVAL",
+                         "SUPERVISION"
+                     ],
+    "task_statuses":  [
+                          "BACKLOG",
+                          "READY",
+                          "IN_PROGRESS",
+                          "BLOCKED",
+                          "HUMAN_REVIEW",
+                          "VERIFIED",
+                          "CLOSED",
+                          "CANCELLED"
+                      ],
+    "project_health_states":  [
+                                  "HEALTHY",
+                                  "AT_RISK",
+                                  "BLOCKED",
+                                  "WAITING_HUMAN",
+                                  "NO_WORKER_AVAILABLE",
+                                  "STALE",
+                                  "CLOSED"
+                              ],
+    "priority_model":  {
+                           "values":  [
+                                          "P0",
+                                          "P1",
+                                          "P2",
+                                          "P3",
+                                          "P4"
+                                      ],
+                           "meanings":  {
+                                            "P0":  "EMERGENCY",
+                                            "P1":  "CRITICAL",
+                                            "P2":  "HIGH",
+                                            "P3":  "NORMAL",
+                                            "P4":  "LOW"
+                                        },
+                           "dimensions":  [
+                                              "priority_global",
+                                              "priority_project",
+                                              "urgency",
+                                              "impact",
+                                              "blocking_power",
+                                              "dependency_reach",
+                                              "time_risk"
+                                          ],
+                           "sorting_rule":  "priority_global ASC, priority_score DESC, created_at ASC"
+                       },
+    "dependency_types":  [
+                             "DEPENDS_ON",
+                             "BLOCKS",
+                             "PROVIDES_TO",
+                             "RELATED_TO"
+                         ],
+    "authorization_states":  [
+                                 "NOT_REQUIRED",
+                                 "PENDING",
+                                 "GRANTED",
+                                 "DENIED",
+                                 "EXPIRED",
+                                 "REVOKED"
+                             ],
+    "validation_states":  [
+                              "NOT_RUN",
+                              "PASS",
+                              "FAIL",
+                              "PARTIAL"
+                          ],
+    "evidence_states":  [
+                            "NONE",
+                            "PARTIAL",
+                            "COMPLETE",
+                            "INVALID"
+                        ],
+    "alert_types":  [
+                        "BLOCKER",
+                        "ANOMALY",
+                        "RISK",
+                        "STALE",
+                        "CAPACITY",
+                        "AUTHORIZATION",
+                        "EVIDENCE",
+                        "SYSTEM"
+                    ],
+    "alert_severities":  [
+                             "INFO",
+                             "LOW",
+                             "MEDIUM",
+                             "HIGH",
+                             "CRITICAL"
+                         ],
+    "canonical_views":  [
+                            "PROJECT_PORTFOLIO",
+                            "GLOBAL_WORK",
+                            "PROJECT_KANBAN",
+                            "TASK_DETAIL",
+                            "WORKER_CAPACITY",
+                            "HUMAN_DECISION_QUEUE",
+                            "EVIDENCE_VIEW",
+                            "ACTIVITY_TIMELINE",
+                            "ALERT_CENTER",
+                            "CANVAS_RELATIONSHIPS",
+                            "SYSTEM_STATUS"
+                        ],
+    "invariants":  [
+                       "Every TASK belongs to exactly one PROJECT and one OBJECTIVE",
+                       "Every OBJECTIVE belongs to exactly one PROJECT",
+                       "Every STEP belongs to exactly one TASK",
+                       "Every TASK has exactly one ACCOUNTABLE worker assignment",
+                       "A TASK may have zero or one GENERATION worker, zero or one EXECUTION worker, zero or one REVIEW worker and zero or one APPROVAL worker",
+                       "A TASK in HUMAN_REVIEW requires at least one PENDING GATE",
+                       "A TASK in VERIFIED requires validation_state=PASS and at least one EVIDENCE",
+                       "A TASK in CLOSED requires evidence_state=COMPLETE and close_decision recorded",
+                       "A HIGH or CRITICAL risk action requires HUMAN approval",
+                       "A NODE worker must reference a NODE",
+                       "An AI worker may execute only through an authorized NODE or generate-only boundary",
+                       "Dependencies must not self-reference",
+                       "Circular blocking dependencies are invalid",
+                       "Deleting an entity is forbidden when referenced by active entities",
+                       "Visual movement of a card never executes a real task",
+                       "Real execution requires an explicit authorized GATE",
+                       "Every state change produces an ACTIVITY record"
+                   ],
+    "scope":  {
+                  "included":  [
+                                   "Define canonical entity schemas",
+                                   "Define identifiers and relations",
+                                   "Define worker assignments and capabilities",
+                                   "Define priorities and dependency semantics",
+                                   "Define gates, evidence, activity and alerts",
+                                   "Create canonical example dataset",
+                                   "Connect existing UX prototype to canonical JSON",
+                                   "Validate referential integrity and invariants"
+                               ],
+                  "excluded":  [
+                                   "Database migration",
+                                   "Google Sheets synchronization",
+                                   "Telegram integration",
+                                   "Real node discovery",
+                                   "Real worker scheduling",
+                                   "Automatic task execution",
+                                   "Cline agent execution",
+                                   "Ollama generation",
+                                   "Remote network",
+                                   "Push"
+                               ]
+              },
+    "deliverables":  [
+                         "objective-contract.v1.json",
+                         "schemas/project.schema.v1.json",
+                         "schemas/objective.schema.v1.json",
+                         "schemas/stage.schema.v1.json",
+                         "schemas/task.schema.v1.json",
+                         "schemas/step.schema.v1.json",
+                         "schemas/worker.schema.v1.json",
+                         "schemas/node.schema.v1.json",
+                         "schemas/worker-assignment.schema.v1.json",
+                         "schemas/worker-capability.schema.v1.json",
+                         "schemas/dependency.schema.v1.json",
+                         "schemas/gate.schema.v1.json",
+                         "schemas/evidence.schema.v1.json",
+                         "schemas/activity.schema.v1.json",
+                         "schemas/alert.schema.v1.json",
+                         "canonical-model.v1.json",
+                         "validation-report.v1.json",
+                         "objective-close.v1.json"
+                     ],
+    "stages":  [
+                   {
+                       "id":  "STAGE_001",
+                       "name":  "ENTITY_CONTRACTS",
+                       "outcome":  "Esquemas canónicos de entidades y relaciones"
+                   },
+                   {
+                       "id":  "STAGE_002",
+                       "name":  "CANONICAL_DATASET",
+                       "outcome":  "Dataset consistente multiproyecto y multiworker"
+                   },
+                   {
+                       "id":  "STAGE_003",
+                       "name":  "UX_BINDING",
+                       "outcome":  "Prototipo alimentado desde el modelo canónico"
+                   },
+                   {
+                       "id":  "STAGE_004",
+                       "name":  "VALIDATION_AND_CLOSE",
+                       "outcome":  "Integridad referencial, invariantes, evidencia y commit"
+                   }
+               ],
+    "safety":  {
+                   "local_only":  true,
+                   "schema_and_json_only":  true,
+                   "external_network":  false,
+                   "cline_execution":  false,
+                   "ollama_generation":  false,
+                   "automatic_execution":  false,
+                   "node_execution":  false,
+                   "target_code_write":  false,
+                   "git_commit":  false,
+                   "git_push":  false,
+                   "human_gate_before_real_execution":  true
+               },
+    "success_criteria":  [
+                             "Todos los IDs son únicos y estables",
+                             "Todas las relaciones obligatorias son válidas",
+                             "No existen dependencias circulares de bloqueo",
+                             "Las tareas pueden ordenarse globalmente por prioridad",
+                             "Cada tarea diferencia ACCOUNTABLE, GENERATION, EXECUTION, REVIEW y APPROVAL",
+                             "La UX multiproyecto consume el modelo sin datos embebidos duplicados",
+                             "Los gates y evidencias quedan vinculados a tareas reales",
+                             "La actividad permite reconstruir cambios de estado",
+                             "Las alertas pueden asociarse a proyecto, tarea, worker o nodo",
+                             "El modelo puede migrarse posteriormente a Sheets o base de datos sin cambiar su semántica"
+                         ],
+    "decision":  "OBJECTIVE_DEFINED_READY_FOR_CANONICAL_ENTITY_SCHEMAS",
+    "readiness":  10,
+    "next":  "STEP_002_CREATE_CANONICAL_ENTITY_SCHEMAS"
+}

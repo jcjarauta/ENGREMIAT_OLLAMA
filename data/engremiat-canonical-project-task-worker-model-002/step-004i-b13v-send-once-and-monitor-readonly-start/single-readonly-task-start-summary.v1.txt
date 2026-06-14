@@ -1,0 +1,13 @@
+﻿step=004I-B13V
+prompt_sha256=E003318E95105E8DE476B7AB95128EFA2034D368E00B0FCEF4A2F906D934600D
+prompt_sent=True
+prompt_send_count=1
+human_visual_confirmation=STARTED
+readonly_task_started=True
+cline_authorization_request_visible=False
+task_execution_authorization_state=READ_ONLY_ACTIVE
+write_authorized=False
+network_authorized=False
+git_write_authorized=False
+validation_passed=True
+next=STEP_004I_B13W_WAIT_FOR_READONLY_RESULT_AND_CAPTURE_STRUCTURED_OUTPUT

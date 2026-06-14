@@ -1,0 +1,19 @@
+﻿004I-B12R2 — EJECUCIÓN HUMANA ÚNICA ARMADA
+
+TAREA=17c7e
+URL=http://127.0.0.1:3485/engremiat-ollama?task=17c7e
+COLUMNA=REVIEW
+CONTROL=RUN
+AUTORIZACIÓN=UNA PULSACIÓN HUMANA
+
+DESPUÉS DE STATUS=VERIFIED
+1. Pulsa el botón superior RUN exactamente una vez.
+2. No pulses ningún otro control.
+3. No escribas en el composer.
+4. No pulses Move Card To Done.
+5. No apruebes permisos ni acciones posteriores.
+6. Observa el primer cambio visible.
+7. Regresa a terminal y continúa con B13.
+
+DETENERSE SI
+Cambia la tarea o URL; aparece un error; se solicitan permisos; RUN desaparece antes de pulsarlo; ya aparece STOP/CANCEL/RESUME; se solicita una segunda pulsación.

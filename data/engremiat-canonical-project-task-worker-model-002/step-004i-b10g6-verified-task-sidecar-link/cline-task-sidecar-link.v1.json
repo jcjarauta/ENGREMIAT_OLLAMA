@@ -1,0 +1,45 @@
+﻿{
+    "schema_version":  "1.0",
+    "link_type":  "ENGREMIAT_CONTEXT_TO_CLINE_TASK_NON_INTRUSIVE_SIDECAR",
+    "link_id":  "LINK-F10350433E0649EA",
+    "created_at":  "2026-06-14T17:11:44.2874357+02:00",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+    "engremiat_task_draft_id":  "ETD-20260614-073710",
+    "cline_task_id":  "17c7e",
+    "cline_task_url":  "http://127.0.0.1:3485/engremiat-ollama?task=17c7e",
+    "cline_visible_column":  "REVIEW",
+    "manual_column_move_recorded":  true,
+    "manual_column_move_is_execution":  false,
+    "link_state":  "LINKED_NOT_EXECUTED",
+    "link_authority":  "HUMAN_APPROVED_CONTEXT_PLUS_VISIBLE_SELECTED_TASK_URL_PLUS_READ_ONLY_REACT_EVIDENCE",
+    "source_records":  {
+                           "approved_context":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b6-single-test-context-draft\\context-approved.v1.json",
+                           "manual_creation_record":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b9-manual-baseline-task-creation\\manual-baseline-task-created.v1.json",
+                           "react_runtime_report":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g5-react-runtime-readonly-capture\\react-runtime-capture-result.v2.json",
+                           "react_id_comparison":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6r2-react-id-evidence-comparison\\react-id-evidence-comparison.v1.json",
+                           "extension_contract":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b4-non-intrusive-task-extension-contract\\engremiat-task-extension-contract.v1.json",
+                           "verification_evidence":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6-verified-task-sidecar-link\\task-id-verification-evidence.v3.json"
+                       },
+    "execution":  {
+                      "task_started":  false,
+                      "agent_started":  false,
+                      "worker_started":  false,
+                      "node_started":  false,
+                      "task_execution_authorized":  false,
+                      "agent_execution_authorized":  false
+                  },
+    "mutation_boundaries":  {
+                                "cline_task_modified":  false,
+                                "browser_storage_written":  false,
+                                "react_runtime_modified":  false,
+                                "dom_modified":  false,
+                                "source_modified":  false,
+                                "only_new_sidecar_files_written":  true
+                            },
+    "rollback":  {
+                     "strategy":  "DELETE_STEP_OUTPUT_DIRECTORY",
+                     "path":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6-verified-task-sidecar-link"
+                 },
+    "next":  "STEP_004I_B10G7_VALIDATE_LINK_CONTRACT_AND_CLOSE_SINGLE_TEST_LINKING"
+}

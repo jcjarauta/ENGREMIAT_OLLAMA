@@ -1,0 +1,102 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G6R2",
+    "timestamp":  "2026-06-14T16:59:12.7211622+02:00",
+    "repair_reason":  "GENERAL_REVIEW_AND_STRONG_SINGLETON_IDS_DID_NOT_INTERSECT",
+    "reported_candidate":  "root",
+    "general_ids":  [
+                        "17c7e"
+                    ],
+    "review_ids":  [
+                       "17c7e"
+                   ],
+    "strong_ids":  [
+                       "root"
+                   ],
+    "candidate_count":  2,
+    "qualified_candidate_count":  0,
+    "comparisons":  [
+                        {
+                            "id":  "root",
+                            "normalized_id":  "root",
+                            "aggregate_score":  295,
+                            "max_source_score":  130,
+                            "row_count":  1,
+                            "in_general_ids":  false,
+                            "in_review_ids":  false,
+                            "in_strong_ids":  true,
+                            "is_reported_candidate":  true,
+                            "description_correlated":  false,
+                            "draft_id_correlated":  true,
+                            "review_correlated":  false,
+                            "task_schema_correlated":  false,
+                            "evidence":  [
+                                             "DRAFT_ID_CORRELATED",
+                                             "STRONG_SET",
+                                             "REPORTED_SELECTION"
+                                         ],
+                            "statuses":  [
+
+                                         ],
+                            "text_samples":  [
+                                                 "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more"
+                                             ],
+                            "paths":  [
+                                          "$.captures[71]"
+                                      ]
+                        },
+                        {
+                            "id":  "17c7e",
+                            "normalized_id":  "17c7e",
+                            "aggregate_score":  220,
+                            "max_source_score":  80,
+                            "row_count":  5,
+                            "in_general_ids":  true,
+                            "in_review_ids":  true,
+                            "in_strong_ids":  false,
+                            "is_reported_candidate":  false,
+                            "description_correlated":  false,
+                            "draft_id_correlated":  false,
+                            "review_correlated":  true,
+                            "task_schema_correlated":  true,
+                            "evidence":  [
+                                             "REVIEW_CORRELATED",
+                                             "TASK_SCHEMA",
+                                             "GENERAL_SET",
+                                             "REVIEW_SET"
+                                         ],
+                            "statuses":  [
+                                             "awaiting_review"
+                                         ],
+                            "text_samples":  [
+
+                                             ],
+                            "paths":  [
+                                          "$.captures[109].react.props.children.props.taskSessions.17c7e",
+                                          "$.captures[120].react.props.children.props.taskSessions.17c7e",
+                                          "$.captures[65].react.props.children.props.taskSessions.17c7e",
+                                          "$.captures[76].react.props.children.props.taskSessions.17c7e",
+                                          "$.captures[87].react.props.children.props.taskSessions.17c7e"
+                                      ]
+                        }
+                    ],
+    "selected_task_id":  null,
+    "task_id_selected":  false,
+    "task_id_verified":  false,
+    "classification":  "REACT_ID_CANDIDATES_REQUIRE_HUMAN_DISAMBIGUATION",
+    "previous_diagnostic_present":  true,
+    "sidecar_created":  false,
+    "sidecar_modified":  false,
+    "runtime_read_only":  true,
+    "runtime_modified":  false,
+    "dom_modified":  false,
+    "browser_storage_written":  false,
+    "source_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10G6R3_CAPTURE_TARGETED_REACT_CARD_RECORD"
+}

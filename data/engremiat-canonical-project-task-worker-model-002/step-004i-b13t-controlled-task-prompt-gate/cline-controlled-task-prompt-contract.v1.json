@@ -1,0 +1,37 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13T",
+    "scope_id":  "CLINE-CONTROLLED-TASK-PROMPT-001",
+    "source_step":  "004I-B13S",
+    "prompt_file":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13t-controlled-task-prompt-gate\\cline-controlled-task-prompt.v1.txt",
+    "prompt_sha256":  "E003318E95105E8DE476B7AB95128EFA2034D368E00B0FCEF4A2F906D934600D",
+    "prompt_purpose":  "READ_ONLY_REPOSITORY_READINESS_INSPECTION",
+    "allowed_prompt_insert_count":  1,
+    "allowed_prompt_send_count":  0,
+    "allowed_execution_count":  0,
+    "allowed_operations":  [
+                               "HUMAN_COPY_PROMPT",
+                               "HUMAN_PASTE_PROMPT_INTO_EMPTY_COMPOSER",
+                               "HUMAN_VISUAL_CONFIRMATION"
+                           ],
+    "forbidden_operations":  [
+                                 "PRESS_ENTER",
+                                 "CLICK_SEND",
+                                 "START_TASK",
+                                 "CONTINUE_PREVIOUS_TASK",
+                                 "APPROVE_TOOL_CALL",
+                                 "ENABLE_AUTO_APPROVE",
+                                 "WRITE_FILE",
+                                 "RUN_COMMAND",
+                                 "START_PROCESS",
+                                 "NETWORK_ACCESS",
+                                 "GIT_WRITE",
+                                 "CHANGE_SETTINGS"
+                             ],
+    "prompt_insert_authorized_now":  false,
+    "prompt_send_authorized":  false,
+    "task_execution_authorized":  false,
+    "task_execution_authorization_state":  "ON_HOLD",
+    "created_at":  "2026-06-14T20:32:11.9241223+02:00"
+}

@@ -1,0 +1,64 @@
+﻿{
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "generated_at":  "2026-06-14T07:16:53.8777623+02:00",
+    "human_decision":  "APPROVE",
+    "authorization_scope":  "UNMODIFIED_LOCAL_BASELINE_SERVER_ONLY",
+    "stale_processes_stopped":  1,
+    "process_started":  true,
+    "launcher_process_id":  19096,
+    "listener_process_id":  19096,
+    "listener_address":  "127.0.0.1",
+    "localhost_only":  true,
+    "port":  3485,
+    "log_urls_detected":  1,
+    "http_probe_engine":  "SYSTEM_NET_HTTPWEBREQUEST",
+    "http_probes":  [
+                        {
+                            "url":  "http://127.0.0.1:3485/engremiat-ollama",
+                            "status":  200,
+                            "status_description":  "OK",
+                            "location":  "",
+                            "content_type":  "text/html; charset=utf-8",
+                            "http_response_received":  true
+                        },
+                        {
+                            "url":  "http://127.0.0.1:3485",
+                            "status":  200,
+                            "status_description":  "OK",
+                            "location":  "",
+                            "content_type":  "text/html; charset=utf-8",
+                            "http_response_received":  true
+                        },
+                        {
+                            "url":  "/engremiat-ollama",
+                            "status":  null,
+                            "status_description":  "Excepción al llamar a \"Create\" con los argumentos \"1\": \"URI no válido: no se puede determinar el formato del URI.\"",
+                            "location":  null,
+                            "content_type":  null,
+                            "http_response_received":  false
+                        },
+                        {
+                            "url":  "/",
+                            "status":  null,
+                            "status_description":  "Excepción al llamar a \"Create\" con los argumentos \"1\": \"URI no válido: no se puede determinar el formato del URI.\"",
+                            "location":  null,
+                            "content_type":  null,
+                            "http_response_received":  false
+                        }
+                    ],
+    "reachable_url":  "http://127.0.0.1:3485/engremiat-ollama",
+    "http_status":  200,
+    "http_response_received":  true,
+    "non_2xx_allowed_as_server_evidence":  true,
+    "dependencies_reused_locally":  true,
+    "dependencies_downloaded":  false,
+    "npm_install_executed":  false,
+    "browser_opened":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "runtime_state":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\baseline\\runtime-state.v3.json",
+    "decision":  "UNMODIFIED_LOCAL_KANBAN_BASELINE_STARTED_AND_NATIVE_HTTP_VERIFIED",
+    "next":  "STEP_004I_HUMAN_VALIDATE_BASELINE_FEATURE_PARITY"
+}

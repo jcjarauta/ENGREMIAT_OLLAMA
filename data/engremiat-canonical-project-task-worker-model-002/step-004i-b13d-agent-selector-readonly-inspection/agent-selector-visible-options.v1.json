@@ -1,0 +1,50 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13D",
+    "timestamp":  "2026-06-14T18:27:54.0602675+02:00",
+    "cline_task_id":  "17c7e",
+    "click_count":  1,
+    "clicked_target":  "NO_AGENT_CONFIGURED_BUTTON",
+    "interface_opened":  true,
+    "interface_type":  "MODAL",
+    "visible_title":  "Settings",
+    "visible_options":  [
+                            "Cline",
+                            "Claude Code",
+                            "OpenAI Codex",
+                            "Factory Droid",
+                            "Kiro"
+                        ],
+    "visible_field_labels":  [
+                                 "Agent",
+                                 "Enable bypass permissions flag",
+                                 "API provider"
+                             ],
+    "visible_providers":  [
+
+                          ],
+    "visible_models":  [
+
+                       ],
+    "requires_secret_or_credential":  false,
+    "requires_installation":  true,
+    "requires_remote_connection":  false,
+    "local_option_visible":  true,
+    "selection_made":  false,
+    "save_apply_connect_install_pressed":  false,
+    "task_activity_observed":  false,
+    "closed_without_saving":  true,
+    "close_method":  "CANCEL",
+    "classification":  "AGENT_CONFIGURATION_REQUIRES_COMPONENT_INSTALLATION",
+    "agent_selected":  false,
+    "settings_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "browser_storage_written":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B13E_AUDIT_INSTALLATION_REQUIREMENT_READ_ONLY"
+}

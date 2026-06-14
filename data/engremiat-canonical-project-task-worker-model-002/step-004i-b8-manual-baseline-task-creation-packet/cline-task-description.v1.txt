@@ -1,0 +1,28 @@
+﻿ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710
+PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001
+PROJECT_NAME: ENGREMIAT OLLAMA
+
+OBJETIVO
+Documentar y validar el primer flujo humano controlado en el Kanban de Cline
+
+CAPACIDADES_REQUERIDAS
+CODE_ANALYSIS, DOCUMENTATION, HUMAN_VALIDATION
+
+RECURSOS_REQUERIDOS
+LOCAL_REPOSITORY, CLINE_KANBAN, OLLAMA_MODEL
+
+GOBERNANZA
+authorization_policy=EXPLICIT_BEFORE_EXECUTION
+validation_policy=HUMAN_EVIDENCE_REQUIRED
+validators=PARTICIPANT-HUMAN-OPERATOR
+authorizers=PARTICIPANT-HUMAN-OPERATOR
+
+RESTRICCIONES
+- Crear la tarjeta sin iniciarla.
+- No ejecutar agente, worker, nodo ni modelo.
+- No pulsar Start task.
+- Mantener task_execution_authorized=False.
+- La capacidad técnica no implica permiso.
+
+CRITERIO_DE_ACEPTACION
+La tarjeta queda visible una sola vez en Backlog y permanece sin ejecución.

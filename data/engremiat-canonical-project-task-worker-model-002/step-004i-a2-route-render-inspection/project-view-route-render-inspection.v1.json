@@ -1,0 +1,228 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-A2",
+    "timestamp":  "2026-06-14T07:22:01.3579216+02:00",
+    "baseline_path":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\tools\\engremiat-kanban\\baseline",
+    "source_files_scanned":  3,
+    "project_reference_count":  0,
+    "task_reference_count":  24,
+    "route_reference_count":  12,
+    "create_project_reference_count":  0,
+    "project_files":  [
+
+                      ],
+    "task_files":  [
+                       "runtime-launch-plan.v1.json",
+                       "runtime-state.v3.json",
+                       "workspace-baseline-manifest.v1.json"
+                   ],
+    "route_files":  [
+                        "runtime-launch-plan.v1.json",
+                        "runtime-state.v3.json"
+                    ],
+    "create_project_files":  [
+
+                             ],
+    "classification":  "BASELINE_HAS_NO_PROJECT_VIEW_SOURCE_REFERENCES",
+    "project_layer_expected_from_source":  false,
+    "matches":  {
+                    "project_terms":  [
+
+                                      ],
+                    "task_terms":  [
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  2,
+                                           "text":  "\"plan_id\":  \"ENGREMIAT-KANBAN-RUNTIME-LAUNCH-PLAN-001\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  4,
+                                           "text":  "\"workspace\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  5,
+                                           "text":  "\"package\":  \"kanban\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  9,
+                                           "text":  "\"name\":  \"kanban\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  86,
+                                           "text":  "\"task_execution_allowed\":  false,"
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  93,
+                                           "text":  "\"resolved_entrypoint_path\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\\\\dist\\\\cli.js\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  98,
+                                           "text":  "\"dependency_source\":  \"C:\\\\Users\\\\pc\\\\AppData\\\\Roaming\\\\npm\\\\node_modules\\\\kanban\\\\node_modules\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  99,
+                                           "text":  "\"dependency_target\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\\\\node_modules\","
+                                       },
+                                       {
+                                           "file":  "runtime-launch-plan.v1.json",
+                                           "line":  104,
+                                           "text":  "\"runtime_state_v3\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\baseline\\\\runtime-state.v3.json\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  2,
+                                           "text":  "\"runtime_id\":  \"ENGREMIAT-KANBAN-BASELINE-RUNTIME-003\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  4,
+                                           "text":  "\"workspace\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  5,
+                                           "text":  "\"entrypoint\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\\\\dist\\\\cli.js\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  60,
+                                           "text":  "\"stdout_file\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\baseline\\\\runtime-server.out.txt\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  61,
+                                           "text":  "\"stderr_file\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\baseline\\\\runtime-server.err.txt\","
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  65,
+                                           "text":  "\"task_started\":  false,"
+                                       },
+                                       {
+                                           "file":  "runtime-state.v3.json",
+                                           "line":  66,
+                                           "text":  "\"task_execution_authorized\":  false,"
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  2,
+                                           "text":  "\"baseline_id\":  \"ENGREMIAT-KANBAN-BASELINE-001\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  4,
+                                           "text":  "\"package_name\":  \"kanban\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  7,
+                                           "text":  "\"vendor_snapshot\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\vendor\\\\kanban-0.1.68\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  8,
+                                           "text":  "\"workspace\":  \"C:\\\\Users\\\\pc\\\\Desktop\\\\ENGREMIAT_OLLAMA\\\\tools\\\\engremiat-kanban\\\\workspace\\\\kanban-0.1.68\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  21,
+                                           "text":  "\"name\":  \"kanban\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  33,
+                                           "text":  "\"unlink\":  \"npm unlink -g kanban\","
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  56,
+                                           "text":  "\"task_started\":  false,"
+                                       },
+                                       {
+                                           "file":  "workspace-baseline-manifest.v1.json",
+                                           "line":  153,
+                                           "text":  "\"path\":  \"man/kanban.1\","
+                                       }
+                                   ],
+                    "route_terms":  [
+                                        {
+                                            "file":  "runtime-launch-plan.v1.json",
+                                            "line":  106,
+                                            "text":  "\"reachable_url\":  \"http://127.0.0.1:3485/engremiat-ollama\""
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  12,
+                                            "text":  "\"http://127.0.0.1:3485/engremiat-ollama\""
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  15,
+                                            "text":  "\"http://127.0.0.1:3485/engremiat-ollama\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  17,
+                                            "text":  "\"/engremiat-ollama\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  22,
+                                            "text":  "\"url\":  \"http://127.0.0.1:3485/engremiat-ollama\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  25,
+                                            "text":  "\"location\":  \"\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  33,
+                                            "text":  "\"location\":  \"\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  38,
+                                            "text":  "\"url\":  \"/engremiat-ollama\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  41,
+                                            "text":  "\"location\":  null,"
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  49,
+                                            "text":  "\"location\":  null,"
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  54,
+                                            "text":  "\"reachable_url\":  \"http://127.0.0.1:3485/engremiat-ollama\","
+                                        },
+                                        {
+                                            "file":  "runtime-state.v3.json",
+                                            "line":  56,
+                                            "text":  "\"response_location\":  \"\","
+                                        }
+                                    ],
+                    "create_project_terms":  [
+
+                                             ]
+                },
+    "source_modified":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_A3_CONFIRM_TASK_BOARD_AS_CANONICAL_BASELINE"
+}

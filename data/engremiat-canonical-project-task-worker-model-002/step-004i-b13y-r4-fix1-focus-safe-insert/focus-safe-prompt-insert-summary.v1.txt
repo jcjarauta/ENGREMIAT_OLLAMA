@@ -1,0 +1,8 @@
+﻿step=004I-B13Y-R4-FIX1
+repair_reason=FOCUS_CONFLICT_REMOVED
+prompt_sha256=73E3E946DF293F8B0801436C7EC4DF901C2419BF573BC126C7B20FD081CAA2B7
+clipboard_write_executed=True
+prompt_insert_executed=True
+prompt_sent=False
+validation_passed=True
+next=STEP_004I_B13Y_R5_VERIFY_PROMPT_AND_PREPARE_SEND_GATE

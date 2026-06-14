@@ -1,0 +1,10 @@
+﻿step=004I-B13Y-R12
+verified_result_title=You are the controlled Cline read-only inspection worker for ENGREMIAT.
+result_card_open_action_executed=True
+correct_result_card_clicked=True
+resulting_ui_state=OPENED
+result_card_opened=True
+react_error_visible=False
+classification=EXACT_CONTROLLED_RESULT_CARD_OPENED_ONCE
+validation_passed=True
+next=STEP_004I_B13Y_R13_CAPTURE_STRUCTURED_RESULT_WITHOUT_EDITING

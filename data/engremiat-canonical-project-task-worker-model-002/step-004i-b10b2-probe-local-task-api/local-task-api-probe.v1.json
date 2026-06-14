@@ -1,0 +1,141 @@
+﻿{
+    "schema_version":  "1.1",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10B2R1",
+    "timestamp":  "2026-06-14T07:48:25.1150433+02:00",
+    "draft_id":  "ETD-20260614-073710",
+    "base_url":  "http://127.0.0.1:3485",
+    "raw_candidate_count":  7,
+    "normalized_routes":  [
+                              "/api/early_access_features/?token=",
+                              "/api/passcode/status",
+                              "/api/passcode/verify",
+                              "/api/product_tours/?token=",
+                              "/api/surveys/?token=",
+                              "/api/trpc",
+                              "/api/web_experiments/?token="
+                          ],
+    "normalized_route_count":  7,
+    "routes_probed":  7,
+    "successful_responses":  0,
+    "marker_response_count":  0,
+    "unique_task_id_candidate_count":  0,
+    "unique_task_id_candidates":  [
+
+                                  ],
+    "cline_task_id":  null,
+    "task_id_extracted":  false,
+    "classification":  "NO_SUCCESSFUL_LOCAL_TASK_API_RESPONSE",
+    "probes":  [
+                   {
+                       "path":  "/api/early_access_features/?token=",
+                       "url":  "http://127.0.0.1:3485/api/early_access_features/?token=",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/passcode/status",
+                       "url":  "http://127.0.0.1:3485/api/passcode/status",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/passcode/verify",
+                       "url":  "http://127.0.0.1:3485/api/passcode/verify",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/product_tours/?token=",
+                       "url":  "http://127.0.0.1:3485/api/product_tours/?token=",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/surveys/?token=",
+                       "url":  "http://127.0.0.1:3485/api/surveys/?token=",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/trpc",
+                       "url":  "http://127.0.0.1:3485/api/trpc",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   },
+                   {
+                       "path":  "/api/web_experiments/?token=",
+                       "url":  "http://127.0.0.1:3485/api/web_experiments/?token=",
+                       "http_method":  "GET",
+                       "http_status":  null,
+                       "content_type":  "",
+                       "response_length":  0,
+                       "marker_found":  false,
+                       "task_id_candidates":  [
+
+                                              ],
+                       "task_id_candidate_count":  0,
+                       "error":  "Excepción al llamar a \"Add\" con los argumentos \"2\": \"El encabezado \u0027Accept\u0027 se debe modificar con la propiedad o método adecuados.\r\nNombre del parámetro: name\""
+                   }
+               ],
+    "normalization_repaired":  true,
+    "http_get_only":  true,
+    "localhost_only":  true,
+    "browser_storage_read":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B10C_INSPECT_BROWSER_STORAGE_WITH_CONTROLLED_DEVTOOLS"
+}

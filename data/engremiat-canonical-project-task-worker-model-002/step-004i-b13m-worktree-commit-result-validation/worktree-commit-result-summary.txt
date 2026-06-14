@@ -1,0 +1,28 @@
+﻿ENGREMIAT WORKTREE COMMIT RESULT VALIDATION
+task_id=17c7e
+root_head=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+worktree_head=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+merge_base=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+relationship=SAME_HEAD
+root_branch=main
+worktree_branch=DETACHED_HEAD
+ui_commit_text=2 commits
+ui_commit_count=2
+worktree_unique_commit_count=0
+ui_count_matches_unique=False
+root_unique_commit_count=0
+root_dirty_file_count=2
+worktree_dirty_file_count=0
+changed_file_count=0
+
+UNIQUE COMMITS
+
+
+CHANGED FILES
+
+
+DIFF STAT
+
+
+classification=NO_UNIQUE_TASK_COMMITS_FOUND
+next=STEP_004I_B13N_RECONCILE_STALE_UI_COMMIT_COUNTER

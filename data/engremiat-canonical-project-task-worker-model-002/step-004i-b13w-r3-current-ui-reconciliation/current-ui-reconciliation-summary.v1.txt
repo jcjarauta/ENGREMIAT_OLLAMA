@@ -1,0 +1,10 @@
+﻿step=004I-B13W-R3
+prior_recorded_ui_state=ERROR
+current_ui_state=BOARD
+current_correct_task_state=RESULT
+visible_response_confirmed=True
+prior_current_state_contradiction_detected=True
+result_ready_for_controlled_capture=True
+classification=CURRENT_BOARD_AND_CORRECT_TASK_RESULT_VISIBLE
+validation_passed=True
+next=STEP_004I_B13W_R4_CAPTURE_VISIBLE_CORRECT_TASK_RESULT

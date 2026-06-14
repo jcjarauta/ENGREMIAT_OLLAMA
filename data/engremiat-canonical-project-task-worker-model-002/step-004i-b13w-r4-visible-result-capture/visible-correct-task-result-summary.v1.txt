@@ -1,0 +1,9 @@
+﻿step=004I-B13W-R4
+capture_method=HUMAN_TRANSCRIPTION_OF_VISIBLE_CARD_TEXT
+correct_task_in_review=True
+clarification_request_detected=True
+structured_terms_detected=0
+visible_text_may_be_truncated=True
+classification=CLINE_RETURNED_CLARIFICATION_REQUEST_INSTEAD_OF_READONLY_INSPECTION
+validation_passed=True
+next=STEP_004I_B13X_PREPARE_CLARIFICATION_RESPONSE_CONTRACT_AND_HUMAN_GATE

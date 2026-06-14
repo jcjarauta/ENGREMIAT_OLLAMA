@@ -1,0 +1,116 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schema/project/v1",
+    "title":  "PROJECT",
+    "type":  "object",
+    "required":  [
+                     "project_id",
+                     "name",
+                     "status",
+                     "health",
+                     "priority",
+                     "created_at",
+                     "updated_at"
+                 ],
+    "additionalProperties":  false,
+    "properties":  {
+                       "created_at":  {
+                                          "type":  "string"
+                                      },
+                       "health":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "HEALTHY",
+                                                   "AT_RISK",
+                                                   "BLOCKED",
+                                                   "WAITING_HUMAN",
+                                                   "NO_WORKER_AVAILABLE",
+                                                   "STALE",
+                                                   "CLOSED"
+                                               ]
+                                  },
+                       "name":  {
+                                    "type":  "string"
+                                },
+                       "priority":  {
+                                        "type":  "string"
+                                    },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "status":  {
+                                      "type":  "string",
+                                      "enum":  [
+                                                   "PLANNED",
+                                                   "ACTIVE",
+                                                   "PAUSED",
+                                                   "BLOCKED",
+                                                   "CLOSED",
+                                                   "CANCELLED"
+                                               ]
+                                  },
+                       "updated_at":  {
+                                          "type":  "string"
+                                      },
+                       "summary":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "purpose":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "risk":  {
+                                    "type":  [
+                                                 "string",
+                                                 "null"
+                                             ]
+                                },
+                       "priority_global":  {
+                                               "type":  [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                           },
+                       "priority_project":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "authorization":  {
+                                             "type":  [
+                                                          "string",
+                                                          "null"
+                                                      ]
+                                         },
+                       "validation_state":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "evidence_state":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          },
+                       "next_action":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "blocked_reason":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          }
+                   }
+}

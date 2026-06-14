@@ -1,0 +1,35 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I",
+    "timestamp":  "2026-06-14T07:19:55.1807254+02:00",
+    "human_decision":  "REJECT",
+    "baseline_url":  "http://127.0.0.1:3485/engremiat-ollama",
+    "http_status":  200,
+    "process_id":  19096,
+    "checks":  {
+                   "interface_loaded":  true,
+                   "projects_visible":  false,
+                   "tasks_visible":  true,
+                   "navigation_works":  true,
+                   "task_detail_works":  true,
+                   "create_controls_visible":  false,
+                   "no_unexpected_modifications":  false,
+                   "no_agent_execution":  true
+               },
+    "checks_total":  8,
+    "checks_passed":  5,
+    "failed_checks":  [
+                          "projects_visible",
+                          "create_controls_visible",
+                          "no_unexpected_modifications"
+                      ],
+    "feature_parity_verified":  false,
+    "agent_started":  false,
+    "task_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "decision":  "NO_GO_BASELINE_PARITY_DIFFERENCE_DETECTED",
+    "next":  "REPAIR_BASELINE_FEATURE_PARITY_BEFORE_CONTINUING"
+}

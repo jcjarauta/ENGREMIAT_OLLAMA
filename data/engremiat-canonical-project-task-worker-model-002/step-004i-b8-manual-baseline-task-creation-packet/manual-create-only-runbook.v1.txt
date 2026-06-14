@@ -1,0 +1,16 @@
+﻿004I-B8 — PAQUETE PREPARADO, TODAVÍA NO CREAR
+
+1. Abrir Create task únicamente cuando el siguiente gate B9 lo autorice.
+2. Copiar el contenido completo de: C:\Users\pc\Desktop\ENGREMIAT_OLLAMA\data\engremiat-canonical-project-task-worker-model-002\step-004i-b8-manual-baseline-task-creation-packet\cline-task-description.v1.txt
+3. Mantener Plan mode activado.
+4. Mantener Automation desactivado.
+5. Crear exactamente una tarjeta.
+6. No pulsar Start task.
+7. Volver a terminal para registrar evidencia.
+
+ESTADO ACTUAL
+context=CONTEXT_APPROVED
+task_creation_authorized=False
+task_execution_authorized=False
+agent_execution_authorized=False
+next=STEP_004I_B9_HUMAN_AUTHORIZE_AND_MANUALLY_CREATE_SINGLE_BASELINE_TASK

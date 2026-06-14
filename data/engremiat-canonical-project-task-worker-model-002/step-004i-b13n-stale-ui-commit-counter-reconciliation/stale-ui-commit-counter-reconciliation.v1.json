@@ -1,0 +1,118 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13N",
+    "timestamp":  "2026-06-14T20:20:58.6171188+02:00",
+    "cline_task_id":  "17c7e",
+    "ui_commit_text":  "2 commits",
+    "ui_commit_count":  2,
+    "git_unique_task_commit_count":  0,
+    "root_head":  "2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b",
+    "worktree_head":  "2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b",
+    "same_head":  true,
+    "worktree_clean":  true,
+    "root_dirty_file_count":  2,
+    "root_dirty_files":  [
+                             {
+                                 "status":  "??",
+                                 "path":  "data/engremiat-canonical-project-task-worker-model-002/"
+                             },
+                             {
+                                 "status":  "??",
+                                 "path":  "tools/"
+                             }
+                         ],
+    "worktree_dirty_file_count":  0,
+    "worktree_list_porcelain":  "worktree C:/Users/pc/Desktop/ENGREMIAT_OLLAMA\r\nHEAD 2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b\r\nbranch refs/heads/main\r\n\r\nworktree C:/Users/pc/.cline/worktrees/17c7e/ENGREMIAT_OLLAMA\r\nHEAD 2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b\r\ndetached",
+    "root_recent_log":  "2cc897d feat: add multiproject human UX and Kanban reference\r\n9f7af37 feat: add governed Ollama generate-only worker\r\n8ff88c0 test: record governed Cline task no-go evidence\r\nacc3615 chore: initialize local Ollama and Cline workspace",
+    "worktree_recent_log":  "2cc897d feat: add multiproject human UX and Kanban reference\r\n9f7af37 feat: add governed Ollama generate-only worker\r\n8ff88c0 test: record governed Cline task no-go evidence\r\nacc3615 chore: initialize local Ollama and Cline workspace",
+    "root_reflog":  "2cc897d\tHEAD@{0}\tcommit (amend): feat: add multiproject human UX and Kanban reference\r\n709c4eb\tHEAD@{1}\tcommit: feat: add multiproject human UX and Kanban reference\r\n9f7af37\tHEAD@{2}\tcommit (amend): feat: add governed Ollama generate-only worker\r\nac4c957\tHEAD@{3}\tcommit: feat: add governed Ollama generate-only worker\r\n8ff88c0\tHEAD@{4}\tcommit: test: record governed Cline task no-go evidence\r\nacc3615\tHEAD@{5}\treset: moving to HEAD\r\nacc3615\tHEAD@{6}\tcommit (initial): chore: initialize local Ollama and Cline workspace",
+    "worktree_reflog":  "2cc897d\tHEAD@{0}",
+    "worktree_admin_path":  "C:/Users/pc/Desktop/ENGREMIAT_OLLAMA/.git/worktrees/ENGREMIAT_OLLAMA",
+    "worktree_admin_files":  [
+                                 {
+                                     "name":  "HEAD",
+                                     "size_bytes":  41,
+                                     "last_write_utc":  "2026-06-14T06:34:44.5264280Z"
+                                 },
+                                 {
+                                     "name":  "gitdir",
+                                     "size_bytes":  57,
+                                     "last_write_utc":  "2026-06-14T06:34:44.5264280Z"
+                                 },
+                                 {
+                                     "name":  "commondir",
+                                     "size_bytes":  6,
+                                     "last_write_utc":  "2026-06-14T06:34:44.5264280Z"
+                                 },
+                                 {
+                                     "name":  "ORIG_HEAD",
+                                     "size_bytes":  41,
+                                     "last_write_utc":  "2026-06-14T06:34:44.6009798Z"
+                                 },
+                                 {
+                                     "name":  "logs/HEAD",
+                                     "size_bytes":  133,
+                                     "last_write_utc":  "2026-06-14T06:34:44.5264280Z"
+                                 }
+                             ],
+    "cline_metadata_files_scanned":  86,
+    "task_reference_file_count":  5,
+    "task_reference_files":  [
+                                 {
+                                     "relative_path":  "data\\logs\\hooks.jsonl",
+                                     "size_bytes":  1303,
+                                     "last_write_utc":  "2026-06-14T06:35:28.1096859Z",
+                                     "task_id_reference_detected":  true,
+                                     "content_captured":  false
+                                 },
+                                 {
+                                     "relative_path":  "data\\sessions\\17c7e-1781418885083-ix4u5o71\\17c7e-1781418885083-ix4u5o71.json",
+                                     "size_bytes":  1073,
+                                     "last_write_utc":  "2026-06-14T06:35:28.1252433Z",
+                                     "task_id_reference_detected":  true,
+                                     "content_captured":  false
+                                 },
+                                 {
+                                     "relative_path":  "data\\sessions\\17c7e-1781418885083-ix4u5o71\\17c7e-1781418885083-ix4u5o71.messages.json",
+                                     "size_bytes":  8644,
+                                     "last_write_utc":  "2026-06-14T06:35:28.1140181Z",
+                                     "task_id_reference_detected":  true,
+                                     "content_captured":  false
+                                 },
+                                 {
+                                     "relative_path":  "kanban\\workspaces\\engremiat-ollama\\board.json",
+                                     "size_bytes":  2191,
+                                     "last_write_utc":  "2026-06-14T06:35:29.0916959Z",
+                                     "task_id_reference_detected":  true,
+                                     "content_captured":  false
+                                 },
+                                 {
+                                     "relative_path":  "kanban\\workspaces\\engremiat-ollama\\sessions.json",
+                                     "size_bytes":  1085,
+                                     "last_write_utc":  "2026-06-14T06:35:29.0916959Z",
+                                     "task_id_reference_detected":  true,
+                                     "content_captured":  false
+                                 }
+                             ],
+    "metadata_content_captured":  false,
+    "secret_values_read":  false,
+    "ui_counter_cannot_represent_current_unique_commits":  true,
+    "classification":  "UI_COMMIT_COUNTER_IS_HISTORICAL_TASK_SESSION_METADATA_NOT_CURRENT_GIT_DELTA",
+    "ui_state_modified":  false,
+    "browser_storage_modified":  false,
+    "task_execution_authorized":  false,
+    "execution_authorization_state":  "ON_HOLD",
+    "integration_authorized":  false,
+    "git_write":  false,
+    "git_commit":  false,
+    "git_merge":  false,
+    "git_cherry_pick":  false,
+    "git_push":  false,
+    "process_started":  false,
+    "task_moved":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "external_network":  false,
+    "next":  "STEP_004I_B13O_AUDIT_TASK_SESSION_METADATA_AND_DEFINE_SAFE_RESET_OR_CONTINUATION_GATE"
+}

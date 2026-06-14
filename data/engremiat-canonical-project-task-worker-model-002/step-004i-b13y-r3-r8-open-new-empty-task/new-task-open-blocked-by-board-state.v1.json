@@ -1,0 +1,23 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R3-R8",
+    "source_step":  "004I-B13Y-R3-R7",
+    "board_visible":  true,
+    "unrelated_old_task_active":  true,
+    "unrelated_tool_gate_visible":  false,
+    "new_task_open_authorized_now":  false,
+    "new_task_open_executed":  false,
+    "prompt_insert_authorized":  false,
+    "prompt_sent":  false,
+    "task_execution_authorized":  false,
+    "task_execution_authorization_state":  "ON_HOLD_BOARD_AUDIT",
+    "tool_call_approved":  false,
+    "write_authorized":  false,
+    "network_authorized":  false,
+    "git_write_authorized":  false,
+    "classification":  "UNRELATED_OLD_TASK_STILL_ACTIVE",
+    "validation_passed":  true,
+    "next":  "STEP_004I_B13Y_R3_R9_AUDIT_AND_CONTAIN_UNRELATED_ACTIVE_TASK",
+    "created_at":  "2026-06-14T21:19:30.4380628+02:00"
+}

@@ -1,0 +1,383 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13E",
+    "timestamp":  "2026-06-14T18:35:42.2186002+02:00",
+    "cline_task_id":  "17c7e",
+    "cline_command_present":  true,
+    "cline_command_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+    "cline_version":  null,
+    "node_present":  true,
+    "node_path":  "C:\\Program Files\\nodejs\\node.exe",
+    "npm_present":  true,
+    "npm_path":  "C:\\Program Files\\nodejs\\npm.ps1",
+    "ollama_present":  true,
+    "ollama_path":  "C:\\Users\\pc\\AppData\\Local\\Programs\\Ollama\\ollama.exe",
+    "ollama_version":  "\u001b[?25l\u001b[?2004h\r\nOllama 0.30.8\r\n\r\n▸ Chat with a model\r\n    Start an interactive chat with a model\r\n\r\n  Launch Claude Code (not installed)\r\n    Anthropic\u0027s coding tool with subagents\r\n\r\n  Launch Codex App (not installed)\r\n    An AI agent you can delegate real work to, by OpenAI\r\n\r\n  Launch Hermes Agent (install)\r\n    Self-improving AI agent built by Nous Research\r\n\r\n  Launch OpenClaw (install)\r\n    Personal AI with 100+ skills\r\n\r\n  More...\r\n    Show additional integrations\r\n\r\n\r\n↑/↓ navigate • enter launch • → configure • esc quit\r\n\u001b[21A \u001b[J\r\n\u001b[2K\r\n\u001b[?2004l\u001b[?25h\u001b[?1002l\u001b[?1003l\u001b[?1006l",
+    "candidate_configuration_roots":  [
+                                          "C:\\Users\\pc\\.cline",
+                                          "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\.cline"
+                                      ],
+    "candidate_configuration_files":  [
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\globalState.json",
+                                              "size":  332,
+                                              "last_write":  "2026-06-13T18:22:31.1317542+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\locks\\hub\\production.json",
+                                              "size":  703,
+                                              "last_write":  "2026-06-13T18:22:39.6944704+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781367834198_1j02y\\1781367834198_1j02y.json",
+                                              "size":  1088,
+                                              "last_write":  "2026-06-13T18:24:55.7861039+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781367834198_1j02y\\1781367834198_1j02y.messages.json",
+                                              "size":  3888,
+                                              "last_write":  "2026-06-13T18:24:13.8318925+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781383848852_wl0yb\\1781383848852_wl0yb.json",
+                                              "size":  5523,
+                                              "last_write":  "2026-06-13T22:51:32.1063752+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781383848852_wl0yb\\1781383848852_wl0yb.messages.json",
+                                              "size":  9243,
+                                              "last_write":  "2026-06-13T22:51:32.1063752+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781383949205_nmbs0\\1781383949205_nmbs0.json",
+                                              "size":  5525,
+                                              "last_write":  "2026-06-13T22:53:17.2178504+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781383949205_nmbs0\\1781383949205_nmbs0.messages.json",
+                                              "size":  11053,
+                                              "last_write":  "2026-06-13T22:53:17.2178504+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384118295_0jaf9\\1781384118295_0jaf9.json",
+                                              "size":  6797,
+                                              "last_write":  "2026-06-13T22:55:36.0204148+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384118295_0jaf9\\1781384118295_0jaf9.messages.json",
+                                              "size":  5669,
+                                              "last_write":  "2026-06-13T22:55:36.0204148+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384148120_jypju\\1781384148120_jypju.json",
+                                              "size":  4565,
+                                              "last_write":  "2026-06-13T22:55:48.3597243+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384148120_jypju\\1781384148120_jypju.messages.json",
+                                              "size":  6296,
+                                              "last_write":  "2026-06-13T22:55:48.3562604+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384163706_xosj3\\1781384163706_xosj3.json",
+                                              "size":  7468,
+                                              "last_write":  "2026-06-13T23:01:01.0921442+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384163706_xosj3\\1781384163706_xosj3.messages.json",
+                                              "size":  29557,
+                                              "last_write":  "2026-06-13T23:01:01.0906017+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384576570_3ejaf\\1781384576570_3ejaf.json",
+                                              "size":  5972,
+                                              "last_write":  "2026-06-13T23:07:21.2026684+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384576570_3ejaf\\1781384576570_3ejaf.messages.json",
+                                              "size":  43747,
+                                              "last_write":  "2026-06-13T23:07:21.2026684+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384841431_cp791\\1781384841431_cp791.json",
+                                              "size":  3899,
+                                              "last_write":  "2026-06-13T23:07:21.6553447+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\1781384841431_cp791\\1781384841431_cp791.messages.json",
+                                              "size":  42926,
+                                              "last_write":  "2026-06-13T23:07:21.6396827+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\17c7e-1781418885083-ix4u5o71\\17c7e-1781418885083-ix4u5o71.json",
+                                              "size":  1073,
+                                              "last_write":  "2026-06-14T08:35:28.1252433+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\sessions\\17c7e-1781418885083-ix4u5o71\\17c7e-1781418885083-ix4u5o71.messages.json",
+                                              "size":  8644,
+                                              "last_write":  "2026-06-14T08:35:28.1140181+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\settings\\cli-notices.json",
+                                              "size":  55,
+                                              "last_write":  "2026-06-13T18:23:37.1941337+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\data\\settings\\providers.json",
+                                              "size":  308,
+                                              "last_write":  "2026-06-13T23:02:48.6118679+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\kanban\\workspaces\\index.json",
+                                              "size":  264,
+                                              "last_write":  "2026-06-14T06:36:35.4606023+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\kanban\\workspaces\\engremiat-ollama\\board.json",
+                                              "size":  2191,
+                                              "last_write":  "2026-06-14T08:35:29.0916959+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\kanban\\workspaces\\engremiat-ollama\\meta.json",
+                                              "size":  50,
+                                              "last_write":  "2026-06-14T08:35:29.0916959+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\kanban\\workspaces\\engremiat-ollama\\sessions.json",
+                                              "size":  1085,
+                                              "last_write":  "2026-06-14T08:35:29.0916959+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\config\\first-governed-cline-task-001.v2.json",
+                                              "size":  3877,
+                                              "last_write":  "2026-06-14T08:34:44.5591583+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-backlog-card-evidence.v1.json",
+                                              "size":  1494,
+                                              "last_write":  "2026-06-14T08:34:44.5591583+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-capability-inventory.v1.json",
+                                              "size":  2175,
+                                              "last_write":  "2026-06-14T08:34:44.5591583+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-comparison.v1.json",
+                                              "size":  3294,
+                                              "last_write":  "2026-06-14T08:34:44.5629603+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-created-data-evidence.v1.json",
+                                              "size":  3612,
+                                              "last_write":  "2026-06-14T08:34:44.5629603+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-launch-gate.v1.json",
+                                              "size":  1252,
+                                              "last_write":  "2026-06-14T08:34:44.5641324+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-local-ui-execution.v1.json",
+                                              "size":  1385,
+                                              "last_write":  "2026-06-14T08:34:44.5651397+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-real-ui-validation.v1.json",
+                                              "size":  649,
+                                              "last_write":  "2026-06-14T08:34:44.5651397+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\cline-kanban-safe-launch-plan.v1.json",
+                                              "size":  2350,
+                                              "last_write":  "2026-06-14T08:34:44.5651397+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\enhanced-human-ux-validation.v1.json",
+                                              "size":  2306,
+                                              "last_write":  "2026-06-14T08:34:44.5662564+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\human-navigation-validation.v1.json",
+                                              "size":  812,
+                                              "last_write":  "2026-06-14T08:34:44.5662564+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\human-ux-gap-analysis.v1.json",
+                                              "size":  2342,
+                                              "last_write":  "2026-06-14T08:34:44.5672591+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\human-ux-model.v1.json",
+                                              "size":  10590,
+                                              "last_write":  "2026-06-14T08:34:44.5672591+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\kanban-board-contract.v1.json",
+                                              "size":  14040,
+                                              "last_write":  "2026-06-14T08:34:44.5679428+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\multi-project-work-model.v1.json",
+                                              "size":  18884,
+                                              "last_write":  "2026-06-14T08:34:44.5679428+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\objective-close.v1.json",
+                                              "size":  10642,
+                                              "last_write":  "2026-06-14T08:34:44.5679428+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\objective-contract.v1.json",
+                                              "size":  6802,
+                                              "last_write":  "2026-06-14T08:34:44.5679428+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\prototype\\prototype-manifest.v1.json",
+                                              "size":  1881,
+                                              "last_write":  "2026-06-14T08:34:44.5679428+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\prototype\\prototype-manifest.v2.json",
+                                              "size":  1742,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\engremiat-human-ux-and-kanban-001\\step-006-objective-close\\objective-close.v1.json",
+                                              "size":  1810,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\approved-application.v1.json",
+                                              "size":  887,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\canonical-rebuild.v1.json",
+                                              "size":  863,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\final-human-approval-gate.v1.json",
+                                              "size":  925,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\human-review.v1.json",
+                                              "size":  1739,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\input-contract.v1.json",
+                                              "size":  3481,
+                                              "last_write":  "2026-06-14T08:34:44.5726006+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\objective-close.v1.json",
+                                              "size":  7059,
+                                              "last_write":  "2026-06-14T08:34:44.5772907+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\objective-contract.v1.json",
+                                              "size":  2515,
+                                              "last_write":  "2026-06-14T08:34:44.5772907+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\output-contract.v1.json",
+                                              "size":  2542,
+                                              "last_write":  "2026-06-14T08:34:44.5772907+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\quarantine-validation.final.v1.json",
+                                              "size":  1442,
+                                              "last_write":  "2026-06-14T08:34:44.5772907+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\quarantine-validation.v1.json",
+                                              "size":  985,
+                                              "last_write":  "2026-06-14T08:34:44.5772907+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\quarantine-validation.v2.json",
+                                              "size":  2257,
+                                              "last_write":  "2026-06-14T08:34:44.5792935+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\quarantine-validation.v3.json",
+                                              "size":  1487,
+                                              "last_write":  "2026-06-14T08:34:44.5792935+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\repair-contract.v1.json",
+                                              "size":  1720,
+                                              "last_write":  "2026-06-14T08:34:44.5828597+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\generate-only-ollama-worker-002\\utf8-diff-repair.v1.json",
+                                              "size":  1085,
+                                              "last_write":  "2026-06-14T08:34:44.5828597+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\governed-cline-tests\\first-governed-cline-task-001-close.v1.json",
+                                              "size":  1730,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\governed-cline-tests\\first-governed-cline-task-001-no-go.v1.json",
+                                              "size":  1153,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\hardware-preflight\\hardware-profile.v1.json",
+                                              "size":  2369,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\hardware-preflight\\nvidia-gpu-profile.v1.json",
+                                              "size":  514,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\kanban-human-controlled-task-flow-002\\step-001-flow-contract\\human-controlled-kanban-task-flow.v1.json",
+                                              "size":  6841,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\kanban-human-controlled-task-flow-002\\step-002-first-task-payload\\first-human-controlled-task.v1.json",
+                                              "size":  3533,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\kanban-human-controlled-task-flow-002\\step-003-human-decision\\task-creation-human-decision.v1.json",
+                                              "size":  1460,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\kanban-human-controlled-task-flow-002\\step-004-manual-task-creation\\manual-single-task-creation-packet.v1.json",
+                                              "size":  2995,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\model-smoke\\qwen3-14b-context-32768.v1.json",
+                                              "size":  588,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          },
+                                          {
+                                              "path":  "C:\\Users\\pc\\.cline\\worktrees\\17c7e\\ENGREMIAT_OLLAMA\\data\\model-smoke\\qwen3-14b-smoke.v1.json",
+                                              "size":  537,
+                                              "last_write":  "2026-06-14T08:34:44.5845451+02:00"
+                                          }
+                                      ],
+    "candidate_configuration_file_count":  70,
+    "environment_signal_presence":  {
+                                        "ollama_host_present":  false,
+                                        "openai_api_key_present":  false,
+                                        "anthropic_api_key_present":  false,
+                                        "cline_api_key_present":  false
+                                    },
+    "secret_values_read":  false,
+    "secret_values_printed":  false,
+    "served_asset_count":  2
+}

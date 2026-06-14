@@ -1,0 +1,111 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schema/gate/v1",
+    "title":  "GATE",
+    "type":  "object",
+    "required":  [
+                     "gate_id",
+                     "project_id",
+                     "objective_id",
+                     "task_id",
+                     "gate_type",
+                     "authorization",
+                     "risk",
+                     "created_at"
+                 ],
+    "additionalProperties":  false,
+    "properties":  {
+                       "authorization":  {
+                                             "type":  "string",
+                                             "enum":  [
+                                                          "NOT_REQUIRED",
+                                                          "PENDING",
+                                                          "GRANTED",
+                                                          "DENIED",
+                                                          "EXPIRED",
+                                                          "REVOKED"
+                                                      ]
+                                         },
+                       "created_at":  {
+                                          "type":  "string"
+                                      },
+                       "gate_id":  {
+                                       "type":  "string"
+                                   },
+                       "gate_type":  {
+                                         "type":  "string"
+                                     },
+                       "objective_id":  {
+                                            "type":  "string"
+                                        },
+                       "project_id":  {
+                                          "type":  "string"
+                                      },
+                       "risk":  {
+                                    "type":  "string"
+                                },
+                       "task_id":  {
+                                       "type":  "string"
+                                   },
+                       "summary":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "purpose":  {
+                                       "type":  [
+                                                    "string",
+                                                    "null"
+                                                ]
+                                   },
+                       "priority":  {
+                                        "type":  [
+                                                     "string",
+                                                     "null"
+                                                 ]
+                                    },
+                       "priority_global":  {
+                                               "type":  [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                           },
+                       "priority_project":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "validation_state":  {
+                                                "type":  [
+                                                             "string",
+                                                             "null"
+                                                         ]
+                                            },
+                       "evidence_state":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          },
+                       "next_action":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "blocked_reason":  {
+                                              "type":  [
+                                                           "string",
+                                                           "null"
+                                                       ]
+                                          },
+                       "updated_at":  {
+                                          "type":  [
+                                                       "string",
+                                                       "null"
+                                                   ]
+                                      }
+                   }
+}

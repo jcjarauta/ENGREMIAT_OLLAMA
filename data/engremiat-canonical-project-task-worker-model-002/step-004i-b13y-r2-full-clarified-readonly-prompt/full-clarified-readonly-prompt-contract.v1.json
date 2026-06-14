@@ -1,0 +1,49 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R2",
+    "scope_id":  "CLINE-FULL-CLARIFIED-READONLY-NEW-TASK-001",
+    "source_step":  "004I-B13Y-R1",
+    "prompt_file":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r2-full-clarified-readonly-prompt\\full-clarified-readonly-prompt.v1.txt",
+    "prompt_sha256":  "73E3E946DF293F8B0801436C7EC4DF901C2419BF573BC126C7B20FD081CAA2B7",
+    "prompt_purpose":  "FULLY_SPECIFIED_READONLY_OBJECTIVE_INSPECTION",
+    "required_output_sections":  [
+                                     "CURRENT_STATE",
+                                     "RELEVANT_FILES",
+                                     "RISKS",
+                                     "SMALLEST_SAFE_NEXT_TASK",
+                                     "PROPOSED_VALIDATION",
+                                     "AUTHORIZATION_REQUIRED"
+                                 ],
+    "authorization_required_expected":  true,
+    "clarification_request_forbidden":  true,
+    "allowed_new_task_open_count":  1,
+    "allowed_prompt_insert_count":  0,
+    "allowed_prompt_send_count":  0,
+    "allowed_execution_count":  0,
+    "allowed_operations":  [
+                               "GENERATE_LOCAL_PROMPT",
+                               "VALIDATE_PROMPT_MARKERS",
+                               "CALCULATE_PROMPT_HASH",
+                               "PREPARE_HUMAN_GATE"
+                           ],
+    "forbidden_operations":  [
+                                 "OPEN_NEW_TASK_NOW",
+                                 "OPEN_BROKEN_CARD",
+                                 "INSERT_PROMPT_NOW",
+                                 "SEND_PROMPT",
+                                 "START_TASK",
+                                 "APPROVE_TOOL",
+                                 "ENABLE_AUTO_APPROVE",
+                                 "RUN_COMMAND",
+                                 "WRITE_SOURCE",
+                                 "NETWORK_ACCESS",
+                                 "GIT_WRITE"
+                             ],
+    "new_task_open_authorized_now":  false,
+    "prompt_insert_authorized_now":  false,
+    "prompt_send_authorized":  false,
+    "task_execution_authorized":  false,
+    "task_execution_authorization_state":  "ON_HOLD_UI_FALLBACK",
+    "created_at":  "2026-06-14T21:02:28.1393507+02:00"
+}

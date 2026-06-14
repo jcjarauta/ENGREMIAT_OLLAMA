@@ -1,0 +1,17 @@
+﻿ENGREMIAT — CIERRE DE PRUEBA INDIVIDUAL DE ENLACE
+
+Objetivo: ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002
+Proyecto: PROJECT-ENGREMIAT-OLLAMA-001
+Draft Engremiat: ETD-20260614-073710
+Tarea Cline: 17c7e
+URL: http://127.0.0.1:3485/engremiat-ollama?task=17c7e
+Columna visible: REVIEW
+Estado del vínculo: LINKED_NOT_EXECUTED
+
+RESULTADO
+La tarea se creó manualmente, se identificó, se verificó y quedó enlazada mediante sidecar.
+No se inició la tarea, agente, worker o nodo.
+No se modificó Cline, React, DOM ni almacenamiento del navegador.
+
+SIGUIENTE PROPUESTA
+Definir un gate humano independiente para la primera ejecución controlada de la tarea.

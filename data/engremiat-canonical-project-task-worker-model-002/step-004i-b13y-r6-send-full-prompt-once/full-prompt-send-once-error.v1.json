@@ -1,0 +1,19 @@
+﻿{
+    "schema_version":  "1.0",
+    "step":  "004I-B13Y-R6",
+    "status":  "ERROR",
+    "message":  "Respuesta de seguridad inválida.",
+    "execution_stopped":  true,
+    "prompt_send_authorized_now":  false,
+    "prompt_sent":  false,
+    "task_created":  false,
+    "play_authorized":  false,
+    "task_execution_authorized":  false,
+    "task_execution_authorization_state":  "ON_HOLD_SEND_GATE",
+    "tool_call_approved":  false,
+    "write_authorized":  false,
+    "network_authorized":  false,
+    "git_write_authorized":  false,
+    "next":  "REPAIR_STEP_004I_B13Y_R6",
+    "created_at":  "2026-06-14T21:37:03.4208865+02:00"
+}

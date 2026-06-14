@@ -1,0 +1,11 @@
+﻿step=004I-B13Y-R3-R9C
+worktree_exists=True
+git_repository_detected=False
+head_short=
+tracked_status_entry_count=0
+latest_filesystem_activity_age_seconds=46393
+recent_filesystem_activity_detected=False
+matched_active_process_count=0
+stale_thinking_candidate=True
+classification=STALE_THINKING_UI_CANDIDATE_NO_PROCESS_NO_RECENT_ACTIVITY
+next=STEP_004I_B13Y_R3_R10_PREPARE_HUMAN_GATE_TO_CONTAIN_STALE_CARD

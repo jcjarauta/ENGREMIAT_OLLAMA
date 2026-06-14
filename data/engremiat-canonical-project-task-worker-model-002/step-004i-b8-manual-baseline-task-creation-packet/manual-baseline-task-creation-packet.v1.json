@@ -1,0 +1,47 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B8",
+    "packet_id":  "MBTC-20260614-073848",
+    "created_at":  "2026-06-14T07:38:48.3910514+02:00",
+    "source_draft_id":  "ETD-20260614-073710",
+    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+    "cline_task_description_file":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b8-manual-baseline-task-creation-packet\\cline-task-description.v1.txt",
+    "manual_action":  {
+                          "target_ui":  "CLINE_KANBAN_BASELINE",
+                          "control":  "CREATE_TASK",
+                          "action":  "CREATE_ONLY",
+                          "human_must_open_dialog":  true,
+                          "human_must_paste_description":  true,
+                          "human_must_leave_plan_mode_enabled":  true,
+                          "human_must_leave_automation_disabled":  true,
+                          "human_must_not_start_task":  true,
+                          "human_must_not_authorize_agent":  true,
+                          "human_must_not_create_more_than_one":  true
+                      },
+    "expected_result":  {
+                            "new_cards_expected":  1,
+                            "target_column":  "BACKLOG",
+                            "task_execution_state":  "NOT_STARTED",
+                            "cline_task_id":  "PENDING_READ_ONLY_CAPTURE",
+                            "sidecar_state_before":  "CONTEXT_APPROVED",
+                            "sidecar_state_after_manual_creation":  "BASELINE_TASK_CREATED"
+                        },
+    "gates":  {
+                  "context_approved":  true,
+                  "task_creation_authorized":  false,
+                  "task_execution_authorized":  false,
+                  "agent_execution_authorized":  false,
+                  "node_execution_authorized":  false,
+                  "manual_creation_gate":  "PENDING_SEPARATE_HUMAN_APPROVAL"
+              },
+    "safety":  {
+                   "cline_modified":  false,
+                   "task_created":  false,
+                   "task_started":  false,
+                   "agent_started":  false,
+                   "external_network":  false,
+                   "git_write":  false
+               },
+    "next":  "STEP_004I_B9_HUMAN_AUTHORIZE_AND_MANUALLY_CREATE_SINGLE_BASELINE_TASK"
+}

@@ -1,0 +1,49 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G7",
+    "timestamp":  "2026-06-14T17:12:51.9080535+02:00",
+    "single_test_id":  "SINGLE-CLINE-TASK-LINK-001",
+    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+    "engremiat_task_draft_id":  "ETD-20260614-073710",
+    "cline_task_id":  "17c7e",
+    "cline_task_url":  "http://127.0.0.1:3485/engremiat-ollama?task=17c7e",
+    "current_visible_column":  "REVIEW",
+    "result":  "SINGLE_TEST_TASK_CREATED_AND_LINKED_SUCCESSFULLY",
+    "decision":  "SINGLE_TEST_LINKING_CLOSED_WITHOUT_EXECUTION",
+    "readiness":  100,
+    "context_approved":  true,
+    "baseline_task_created":  true,
+    "task_id_verified":  true,
+    "sidecar_link_created":  true,
+    "link_contract_validated":  true,
+    "manual_column_move_recorded":  true,
+    "manual_column_move_is_execution":  false,
+    "link_state":  "LINKED_NOT_EXECUTED",
+    "execution_boundary":  {
+                               "task_started":  false,
+                               "agent_started":  false,
+                               "worker_started":  false,
+                               "node_started":  false,
+                               "task_execution_authorized":  false,
+                               "agent_execution_authorized":  false
+                           },
+    "mutation_boundary":  {
+                              "cline_modified":  false,
+                              "browser_storage_written":  false,
+                              "react_runtime_modified":  false,
+                              "dom_modified":  false,
+                              "source_modified":  false,
+                              "only_local_evidence_and_sidecar_written":  true
+                          },
+    "artifacts":  {
+                      "sidecar_link":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6-verified-task-sidecar-link\\cline-task-sidecar-link.v1.json",
+                      "verification_evidence":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6-verified-task-sidecar-link\\task-id-verification-evidence.v3.json",
+                      "validation":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g7-single-test-linking-close\\single-test-link-validation.v1.json",
+                      "rollback":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g6-verified-task-sidecar-link\\rollback-instructions.v1.txt"
+                  },
+    "rollback_strategy":  "DELETE_STEP_004I_B10G6_AND_B10G7_OUTPUT_DIRECTORIES",
+    "git_write":  false,
+    "external_network":  false,
+    "next_proposal":  "STEP_004I_B11_DEFINE_HUMAN_GATE_FOR_FIRST_CONTROLLED_TASK_EXECUTION"
+}

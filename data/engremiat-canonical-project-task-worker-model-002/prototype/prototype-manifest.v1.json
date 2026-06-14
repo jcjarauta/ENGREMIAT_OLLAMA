@@ -1,0 +1,43 @@
+﻿{
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "generated_at":  "2026-06-14T06:59:33.3548172+02:00",
+    "prototype_version":  "1.0.0",
+    "source_model":  "canonical-model.v1.json",
+    "adapter":  "prototype/canonical-model.data.js",
+    "entrypoint":  "prototype/index.html",
+    "binding_strategy":  "SEPARATE_GENERATED_DATA_ADAPTER",
+    "html_contains_embedded_entity_dataset":  false,
+    "projects":  3,
+    "objectives":  3,
+    "tasks":  5,
+    "workers":  5,
+    "nodes":  2,
+    "gates":  2,
+    "alerts":  1,
+    "views":  [
+                  "PROJECT_PORTFOLIO",
+                  "GLOBAL_WORK",
+                  "PROJECT_KANBAN",
+                  "WORKER_CAPACITY",
+                  "HUMAN_DECISION_QUEUE",
+                  "ALERT_CENTER",
+                  "TASK_DETAIL"
+              ],
+    "filters":  [
+                    "PROJECT",
+                    "STATUS",
+                    "WORKER"
+                ],
+    "priority_sort":  "priority_global ASC, priority_score DESC",
+    "card_movement_executes_task":  false,
+    "execution_controls":  false,
+    "external_dependencies":  false,
+    "network":  false,
+    "cline_started":  false,
+    "ollama_called":  false,
+    "git":  false,
+    "html_sha256":  "025790943e20bd879403eaad06ff453842d1ff6eb1d30ddcf489c38fb00b3132",
+    "adapter_sha256":  "ffac99d887d55728652b3319385a7a303280cfbaf6f326b4904618250e45bbbd",
+    "decision":  "CANONICAL_MODEL_CONNECTED_TO_INTERACTIVE_HUMAN_UX",
+    "next":  "STEP_005_VALIDATE_CANONICAL_RELATIONSHIPS_PRIORITIES_GATES_AND_UX"
+}

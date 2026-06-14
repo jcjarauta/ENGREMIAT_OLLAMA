@@ -1,0 +1,11 @@
+﻿step=004I-B13S
+scope_id=CLINE-NEW-CONTROLLED-TASK-EXECUTION-001
+previous_cline_task_id=17c7e
+new_task_open_executed=True
+new_task_open_count=1
+new_task_empty_confirmed=True
+task_prompt_insert_executed=False
+prompt_sent=False
+task_execution_authorization_state=ON_HOLD
+validation_passed=True
+next=STEP_004I_B13T_PREPARE_CONTROLLED_TASK_PROMPT_CONTRACT_AND_HUMAN_INSERT_GATE

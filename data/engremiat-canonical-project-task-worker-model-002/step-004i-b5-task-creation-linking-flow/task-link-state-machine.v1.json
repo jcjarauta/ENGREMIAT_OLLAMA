@@ -1,0 +1,81 @@
+﻿{
+    "schema_version":  "1.1",
+    "machine_id":  "ENGREMIAT-TASK-LINK-STATE-MACHINE-001",
+    "initial_state":  "NONE",
+    "terminal_states":  [
+                            "READY_FOR_MATCHING",
+                            "CANCELLED",
+                            "ERROR"
+                        ],
+    "states":  [
+                   "NONE",
+                   "CONTEXT_DRAFTED",
+                   "CONTEXT_APPROVED",
+                   "BASELINE_TASK_CREATED",
+                   "TASK_ID_CAPTURED",
+                   "LINK_VERIFIED",
+                   "LINKED_BLOCKED",
+                   "READY_FOR_MATCHING",
+                   "CANCELLED",
+                   "ERROR"
+               ],
+    "transitions":  [
+                        {
+                            "transition_id":  "TR-001",
+                            "from":  "NONE",
+                            "to":  "CONTEXT_DRAFTED",
+                            "operation":  "PREPARE_CONTEXT_DRAFT"
+                        },
+                        {
+                            "transition_id":  "TR-002",
+                            "from":  "CONTEXT_DRAFTED",
+                            "to":  "CONTEXT_APPROVED",
+                            "operation":  "HUMAN_APPROVE_CONTEXT"
+                        },
+                        {
+                            "transition_id":  "TR-003",
+                            "from":  "CONTEXT_DRAFTED",
+                            "to":  "CANCELLED",
+                            "operation":  "HUMAN_REJECT_CONTEXT"
+                        },
+                        {
+                            "transition_id":  "TR-004",
+                            "from":  "CONTEXT_APPROVED",
+                            "to":  "BASELINE_TASK_CREATED",
+                            "operation":  "CREATE_TASK_WITHOUT_STARTING"
+                        },
+                        {
+                            "transition_id":  "TR-005",
+                            "from":  "BASELINE_TASK_CREATED",
+                            "to":  "TASK_ID_CAPTURED",
+                            "operation":  "CAPTURE_TASK_ID_READ_ONLY"
+                        },
+                        {
+                            "transition_id":  "TR-006",
+                            "from":  "TASK_ID_CAPTURED",
+                            "to":  "LINK_VERIFIED",
+                            "operation":  "VERIFY_UNIQUE_CORRELATION"
+                        },
+                        {
+                            "transition_id":  "TR-007",
+                            "from":  "LINK_VERIFIED",
+                            "to":  "LINKED_BLOCKED",
+                            "operation":  "ACTIVATE_SIDECAR_LINK"
+                        },
+                        {
+                            "transition_id":  "TR-008",
+                            "from":  "LINKED_BLOCKED",
+                            "to":  "READY_FOR_MATCHING",
+                            "operation":  "OPEN_MATCHING_FLOW"
+                        }
+                    ],
+    "forbidden_transitions":  [
+                                  "CONTEXT_DRAFTED-\u003eRUNNING",
+                                  "CONTEXT_APPROVED-\u003eRUNNING",
+                                  "BASELINE_TASK_CREATED-\u003eRUNNING",
+                                  "TASK_ID_CAPTURED-\u003eRUNNING",
+                                  "LINK_VERIFIED-\u003eRUNNING",
+                                  "LINKED_BLOCKED-\u003eRUNNING"
+                              ],
+    "default_execution_state":  "BLOCKED"
+}

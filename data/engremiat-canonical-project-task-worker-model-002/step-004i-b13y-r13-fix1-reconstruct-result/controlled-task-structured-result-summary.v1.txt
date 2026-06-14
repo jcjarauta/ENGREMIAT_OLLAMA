@@ -1,0 +1,12 @@
+﻿step=004I-B13Y-R13-FIX1
+capture_complete=True
+current_state_present=True
+readiness_present=False
+relevant_files_present=True
+risks_present=True
+smallest_safe_next_task_present=True
+proposed_validation_present=True
+authorization_required=True
+contract_complete=True
+classification=CONTROLLED_READONLY_INSPECTION_RESULT_CONTRACT_COMPLETE
+next=STEP_004I_B13Y_R14_VALIDATE_RESULT_AGAINST_PROMPT_AND_CLOSE_CONTROLLED_CYCLE

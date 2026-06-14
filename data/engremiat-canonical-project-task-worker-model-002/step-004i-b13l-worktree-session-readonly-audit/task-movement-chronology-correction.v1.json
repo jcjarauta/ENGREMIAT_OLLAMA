@@ -1,0 +1,18 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13L",
+    "timestamp":  "2026-06-14T20:18:31.0403443+02:00",
+    "cline_task_id":  "17c7e",
+    "correction_reason":  "USER_REPORTED_TASK_MOVEMENT_OCCURRED_BEFORE_B13K",
+    "task_moved_historically":  true,
+    "historical_movement_description":  "BACKLOG_TO_REVIEW",
+    "task_returned_to_review":  true,
+    "task_moved_during_b13k":  false,
+    "new_execution_started_during_b13k":  false,
+    "b13k_task_moved_false_scope":  "ONLY_DURING_B13K_OBSERVATION",
+    "historical_worktree_evidence_may_come_from_prior_task_action":  true,
+    "current_execution_state":  "UNRESOLVED_PENDING_LOCAL_AUDIT",
+    "task_execution_authorized":  false,
+    "execution_authorization_state":  "ON_HOLD"
+}

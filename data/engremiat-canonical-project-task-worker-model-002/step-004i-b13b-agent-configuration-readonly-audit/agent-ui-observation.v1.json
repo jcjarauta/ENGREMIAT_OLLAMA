@@ -1,0 +1,20 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B13B",
+    "timestamp":  "2026-06-14T18:20:46.2628277+02:00",
+    "cline_task_id":  "17c7e",
+    "agent_control_type":  "BUTTON",
+    "dropdown_indicator_visible":  false,
+    "settings_icon_visible":  true,
+    "model_selector_visible":  true,
+    "send_control_disabled":  true,
+    "review_visible":  true,
+    "activity_visible":  false,
+    "additional_error_visible":  false,
+    "no_ui_click_performed":  true,
+    "agent_configuration_opened":  false,
+    "agent_selected":  false,
+    "settings_modified":  false,
+    "task_started":  false
+}

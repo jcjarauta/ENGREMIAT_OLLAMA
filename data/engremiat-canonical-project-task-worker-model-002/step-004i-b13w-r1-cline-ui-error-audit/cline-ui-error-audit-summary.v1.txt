@@ -1,0 +1,9 @@
+﻿step=004I-B13W-R1
+ui_error_type=MINIFIED_REACT_ERROR_185
+try_again_clicked=True
+reload_page_clicked=True
+tool_call_approved=False
+task_execution_authorization_state=ON_HOLD_UI_RECOVERY
+classification=CLINE_UI_ERROR_WITH_UNCONTROLLED_POST_ERROR_ACTION
+validation_passed=False
+next=STEP_004I_B13W_R2_AUDIT_UNCONTROLLED_UI_ACTION_BEFORE_RECOVERY

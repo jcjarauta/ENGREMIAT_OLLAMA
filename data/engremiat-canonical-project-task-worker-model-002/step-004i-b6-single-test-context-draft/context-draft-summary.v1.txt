@@ -1,0 +1,14 @@
+﻿draft_id=ETD-20260614-073710
+project_id=PROJECT-ENGREMIAT-OLLAMA-001
+project_name=ENGREMIAT OLLAMA
+requester_participant_id=PARTICIPANT-PROJECT-ENGREMIAT-OLLAMA
+task_description=Documentar y validar el primer flujo humano controlado en el Kanban de Cline
+required_capabilities=CODE_ANALYSIS,DOCUMENTATION,HUMAN_VALIDATION
+required_resources=LOCAL_REPOSITORY,CLINE_KANBAN,OLLAMA_MODEL
+candidate_participants=PARTICIPANT-AI-CLINE-OLLAMA,PARTICIPANT-NODE-LOCAL-WINDOWS,PARTICIPANT-HUMAN-OPERATOR
+validators=PARTICIPANT-HUMAN-OPERATOR
+authorizers=PARTICIPANT-HUMAN-OPERATOR
+link_state=CONTEXT_DRAFTED
+cline_task_id=PENDING
+execution_authorized=False
+next=STEP_004I_B7_HUMAN_REVIEW_SINGLE_TEST_CONTEXT_DRAFT

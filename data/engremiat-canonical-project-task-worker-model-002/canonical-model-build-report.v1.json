@@ -1,0 +1,150 @@
+﻿{
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "generated_at":  "2026-06-14T06:58:32.4056874+02:00",
+    "model_id":  "ENGREMIAT-CANONICAL-MODEL-001",
+    "validation_strategy":  "ENTITY_NAMESPACE_AWARE",
+    "identity_rule":  "IDs must be unique inside each entity collection. Equal textual IDs across different entity types are permitted and resolved by entity namespace.",
+    "collections":  {
+                        "projects":  3,
+                        "objectives":  3,
+                        "stages":  3,
+                        "tasks":  5,
+                        "steps":  2,
+                        "workers":  5,
+                        "nodes":  2,
+                        "worker_assignments":  10,
+                        "worker_capabilities":  3,
+                        "dependencies":  2,
+                        "gates":  2,
+                        "evidences":  2,
+                        "activities":  2,
+                        "alerts":  1
+                    },
+    "total_entities":  45,
+    "namespace_checks":  [
+                             {
+                                 "collection":  "projects",
+                                 "id_field":  "project_id",
+                                 "count":  3,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "objectives",
+                                 "id_field":  "objective_id",
+                                 "count":  3,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "stages",
+                                 "id_field":  "stage_id",
+                                 "count":  3,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "tasks",
+                                 "id_field":  "task_id",
+                                 "count":  5,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "steps",
+                                 "id_field":  "step_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "workers",
+                                 "id_field":  "worker_id",
+                                 "count":  5,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "nodes",
+                                 "id_field":  "node_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "worker_assignments",
+                                 "id_field":  "assignment_id",
+                                 "count":  10,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "worker_capabilities",
+                                 "id_field":  "capability_id",
+                                 "count":  3,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "dependencies",
+                                 "id_field":  "dependency_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "gates",
+                                 "id_field":  "gate_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "evidences",
+                                 "id_field":  "evidence_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "activities",
+                                 "id_field":  "activity_id",
+                                 "count":  2,
+                                 "unique_ids":  true
+                             },
+                             {
+                                 "collection":  "alerts",
+                                 "id_field":  "alert_id",
+                                 "count":  1,
+                                 "unique_ids":  true
+                             }
+                         ],
+    "composite_ids_unique":  true,
+    "raw_cross_namespace_collisions_count":  2,
+    "raw_cross_namespace_collisions":  [
+                                           {
+                                               "id":  "NODE:BACKUP",
+                                               "namespaces":  [
+                                                                  "nodes",
+                                                                  "workers"
+                                                              ],
+                                               "allowed":  true
+                                           },
+                                           {
+                                               "id":  "NODE:MAIN-PC",
+                                               "namespaces":  [
+                                                                  "nodes",
+                                                                  "workers"
+                                                              ],
+                                               "allowed":  true
+                                           }
+                                       ],
+    "cross_namespace_collisions_allowed":  true,
+    "references_valid":  true,
+    "accountable_rule_valid":  true,
+    "node_worker_rule_valid":  true,
+    "dependency_self_reference_free":  true,
+    "priority_sort_valid":  true,
+    "priority_order":  [
+                           "TASK-CANONICAL-SCHEMAS",
+                           "TASK-CANONICAL-DATASET",
+                           "TASK-UX-CANONICAL-BINDING",
+                           "TASK-OLLAMA-GENERATE-ONLY",
+                           "TASK-NODE-LINUX-VALIDATION"
+                       ],
+    "execution_performed":  false,
+    "cline_started":  false,
+    "ollama_called":  false,
+    "network":  false,
+    "git":  false,
+    "decision":  "CANONICAL_MULTIPROJECT_DATASET_CREATED_AND_NAMESPACE_VALIDATED",
+    "next":  "STEP_004_CONNECT_UX_PROTOTYPE_TO_CANONICAL_MODEL"
+}

@@ -1,0 +1,1092 @@
+﻿{
+    "schema_version":  "2.0",
+    "objective":  "ENGREMIAT_CANONICAL_PROJECT_TASK_WORKER_MODEL_002",
+    "step":  "004I-B10G5R1",
+    "timestamp":  "2026-06-14T16:56:16.2642349+02:00",
+    "repair_reason":  "INVALID_JSON_PRIMITIVE_FROM_MANUAL_CONSOLE_COPY",
+    "capture_method":  "DEVTOOLS_COPY_JSON_STRING_TO_CLIPBOARD",
+    "origin":  "http://127.0.0.1:3485",
+    "path":  "/engremiat-ollama",
+    "visible_text_matches":  15,
+    "runtime_captures":  122,
+    "candidate_objects":  132,
+    "id_candidates":  [
+                          "17c7e"
+                      ],
+    "review_id_candidates":  [
+                                 "17c7e"
+                             ],
+    "strong_id_candidates":  [
+                                 "root"
+                             ],
+    "cline_task_id_candidate":  "root",
+    "task_id_extracted":  true,
+    "task_id_verified":  false,
+    "classification":  "UNIQUE_REACT_RUNTIME_TASK_ID_CANDIDATE_FOUND",
+    "candidate_summary":  [
+                              {
+                                  "path":  "$.captures[82]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[81]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[84]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[83]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[78]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[77]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[80]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[79]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[89]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[88]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[91]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[90]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[86]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[85]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[87].react.props.children.props.taskSessions.17c7e",
+                                  "score":  80,
+                                  "reasons":  [
+                                                  "ID",
+                                                  "REVIEW",
+                                                  "TASK_SCHEMA"
+                                              ],
+                                  "id":  "17c7e",
+                                  "status":  "awaiting_review",
+                                  "text":  "",
+                                  "property_names":  [
+                                                         "taskId",
+                                                         "state",
+                                                         "mode",
+                                                         "agentId",
+                                                         "workspacePath",
+                                                         "pid",
+                                                         "startedAt",
+                                                         "updatedAt",
+                                                         "lastOutputAt",
+                                                         "reviewReason",
+                                                         "exitCode",
+                                                         "lastHookAt",
+                                                         "latestHookActivity",
+                                                         "warningMessage",
+                                                         "latestTurnCheckpoint",
+                                                         "previousTurnCheckpoint"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[87]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[76].react.props.children.props.taskSessions.17c7e",
+                                  "score":  80,
+                                  "reasons":  [
+                                                  "ID",
+                                                  "REVIEW",
+                                                  "TASK_SCHEMA"
+                                              ],
+                                  "id":  "17c7e",
+                                  "status":  "awaiting_review",
+                                  "text":  "",
+                                  "property_names":  [
+                                                         "taskId",
+                                                         "state",
+                                                         "mode",
+                                                         "agentId",
+                                                         "workspacePath",
+                                                         "pid",
+                                                         "startedAt",
+                                                         "updatedAt",
+                                                         "lastOutputAt",
+                                                         "reviewReason",
+                                                         "exitCode",
+                                                         "lastHookAt",
+                                                         "latestHookActivity",
+                                                         "warningMessage",
+                                                         "latestTurnCheckpoint",
+                                                         "previousTurnCheckpoint"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[66]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[65].react.props.children.props.taskSessions.17c7e",
+                                  "score":  80,
+                                  "reasons":  [
+                                                  "ID",
+                                                  "REVIEW",
+                                                  "TASK_SCHEMA"
+                                              ],
+                                  "id":  "17c7e",
+                                  "status":  "awaiting_review",
+                                  "text":  "",
+                                  "property_names":  [
+                                                         "taskId",
+                                                         "state",
+                                                         "mode",
+                                                         "agentId",
+                                                         "workspacePath",
+                                                         "pid",
+                                                         "startedAt",
+                                                         "updatedAt",
+                                                         "lastOutputAt",
+                                                         "reviewReason",
+                                                         "exitCode",
+                                                         "lastHookAt",
+                                                         "latestHookActivity",
+                                                         "warningMessage",
+                                                         "latestTurnCheckpoint",
+                                                         "previousTurnCheckpoint"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[68]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[67]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[63]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[62]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[65]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[64]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[74]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[73]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[76]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[75]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[70]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[69]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[72]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[71]",
+                                  "score":  130,
+                                  "reasons":  [
+                                                  "DRAFT_ID",
+                                                  "ID"
+                                              ],
+                                  "id":  "root",
+                                  "status":  "",
+                                  "text":  "Backlog1Create task(c)ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710PROJECT_ID: PROJECT-ENGREMIAT-OLLAMA-001 PROJECT_NAME: ENGREMIAT… See more",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[112]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[111]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[114]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[113]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[109]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[108]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[110]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[109].react.props.children.props.taskSessions.17c7e",
+                                  "score":  80,
+                                  "reasons":  [
+                                                  "ID",
+                                                  "REVIEW",
+                                                  "TASK_SCHEMA"
+                                              ],
+                                  "id":  "17c7e",
+                                  "status":  "awaiting_review",
+                                  "text":  "",
+                                  "property_names":  [
+                                                         "taskId",
+                                                         "state",
+                                                         "mode",
+                                                         "agentId",
+                                                         "workspacePath",
+                                                         "pid",
+                                                         "startedAt",
+                                                         "updatedAt",
+                                                         "lastOutputAt",
+                                                         "reviewReason",
+                                                         "exitCode",
+                                                         "lastHookAt",
+                                                         "latestHookActivity",
+                                                         "warningMessage",
+                                                         "latestTurnCheckpoint",
+                                                         "previousTurnCheckpoint"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[120]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[119]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[121]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[120].react.props.children.props.taskSessions.17c7e",
+                                  "score":  80,
+                                  "reasons":  [
+                                                  "ID",
+                                                  "REVIEW",
+                                                  "TASK_SCHEMA"
+                                              ],
+                                  "id":  "17c7e",
+                                  "status":  "awaiting_review",
+                                  "text":  "",
+                                  "property_names":  [
+                                                         "taskId",
+                                                         "state",
+                                                         "mode",
+                                                         "agentId",
+                                                         "workspacePath",
+                                                         "pid",
+                                                         "startedAt",
+                                                         "updatedAt",
+                                                         "lastOutputAt",
+                                                         "reviewReason",
+                                                         "exitCode",
+                                                         "lastHookAt",
+                                                         "latestHookActivity",
+                                                         "warningMessage",
+                                                         "latestTurnCheckpoint",
+                                                         "previousTurnCheckpoint"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[116]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[115]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[118]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[117]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              },
+                              {
+                                  "path":  "$.captures[107]",
+                                  "score":  100,
+                                  "reasons":  [
+                                                  "DRAFT_ID"
+                                              ],
+                                  "id":  "",
+                                  "status":  "",
+                                  "text":  "ENGREMIAT_TASK_DRAFT_ID: ETD-20260614-073710",
+                                  "property_names":  [
+                                                         "matchText",
+                                                         "level",
+                                                         "tag",
+                                                         "id",
+                                                         "className",
+                                                         "attributes",
+                                                         "reactKeys",
+                                                         "react"
+                                                     ]
+                              }
+                          ],
+    "runtime_read_executed":  true,
+    "runtime_modified":  false,
+    "dom_modified":  false,
+    "browser_storage_written":  false,
+    "source_modified":  false,
+    "sidecar_modified":  false,
+    "task_started":  false,
+    "agent_started":  false,
+    "task_execution_authorized":  false,
+    "git_write":  false,
+    "external_network":  false,
+    "raw_capture":  "C:\\Users\\pc\\Desktop\\ENGREMIAT_OLLAMA\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b10g5-react-runtime-readonly-capture\\react-runtime-capture.raw.v2.json",
+    "next":  "STEP_004I_B10G6_VERIFY_REACT_TASK_ID_AND_LINK_SIDECAR"
+}

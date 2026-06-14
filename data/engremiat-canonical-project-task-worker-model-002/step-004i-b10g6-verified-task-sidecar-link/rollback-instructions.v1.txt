@@ -1,0 +1,6 @@
+﻿ROLLBACK 004I-B10G6R4
+Eliminar únicamente esta carpeta para revertir el vínculo sidecar:
+C:\Users\pc\Desktop\ENGREMIAT_OLLAMA\data\engremiat-canonical-project-task-worker-model-002\step-004i-b10g6-verified-task-sidecar-link
+
+No modificar ni mover la tarjeta Cline.
+No pulsar Run, Start task o Move Card To Done.

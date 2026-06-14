@@ -1,0 +1,9 @@
+﻿step=004I-B13Y-R9
+controlled_wait_seconds=60
+observed_task_state=RESULT
+task_still_active=False
+task_terminal=True
+tool_gate_visible=False
+classification=CONTROLLED_TASK_RETURNED_RESULT
+validation_passed=True
+next=STEP_004I_B13Y_R10_AUDIT_CONTROLLED_TASK_RESULT

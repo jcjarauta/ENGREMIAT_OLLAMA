@@ -1,0 +1,11 @@
+﻿step=004I-B13Y-R16
+manifest_created=True
+manifest_write_executed=True
+manifest_json_parse_ok=True
+required_fields_present=True
+technical_boundaries_valid=True
+authorization_policy_valid=True
+external_network=False
+git_write=False
+manifest_sha256=452DF2CDACC57013BE4C52D09B46F17C6CF2282BDB0C8EE9626AB9BC7C1FA4EC
+next=STEP_004I_B13Y_R17_READONLY_AUDIT_GIT_HEAD_AND_WORKTREE_BASELINE

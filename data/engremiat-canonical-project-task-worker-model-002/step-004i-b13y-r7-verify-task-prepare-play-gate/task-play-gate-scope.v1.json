@@ -1,0 +1,40 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R7",
+    "scope_id":  "CLINE-CONTROLLED-READONLY-TASK-PLAY-001",
+    "source_step":  "004I-B13Y-R6-FIX2",
+    "prompt_sha256":  "73E3E946DF293F8B0801436C7EC4DF901C2419BF573BC126C7B20FD081CAA2B7",
+    "verified_new_task_title":  "You are the controlled Cline read-only inspection worker for ENGREMIAT.",
+    "verified_task_location":  "BACKLOG",
+    "allowed_future_play_count":  1,
+    "allowed_future_play_method":  "ONE_HUMAN_CLICK_AFTER_SEPARATE_RUNTIME_AUTHORIZATION",
+    "allowed_execution_mode":  "CONTROLLED_READ_ONLY_TASK",
+    "allowed_operations":  [
+                               "RECORD_TASK_IDENTITY",
+                               "PREPARE_PLAY_GATE",
+                               "PRESERVE_STALE_CARD_LOGICAL_CONTAINMENT"
+                           ],
+    "forbidden_operations":  [
+                                 "PRESS_PLAY_NOW",
+                                 "OPEN_CARD_NOW",
+                                 "APPROVE_TOOL",
+                                 "ENABLE_AUTO_APPROVE",
+                                 "DELETE_CARD",
+                                 "MOVE_CARD",
+                                 "RESEND_PROMPT",
+                                 "WRITE_SOURCE",
+                                 "EXTERNAL_NETWORK",
+                                 "GIT_WRITE"
+                             ],
+    "play_authorized_now":  false,
+    "play_pressed":  false,
+    "task_execution_authorized_now":  false,
+    "task_execution_started":  false,
+    "tool_call_approved":  false,
+    "auto_approve":  false,
+    "write_authorized":  false,
+    "network_authorized":  false,
+    "git_write_authorized":  false,
+    "created_at":  "2026-06-14T21:42:59.7165640+02:00"
+}

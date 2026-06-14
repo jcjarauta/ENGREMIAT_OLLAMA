@@ -1,0 +1,100 @@
+﻿{
+    "schema_version":  "1.0",
+    "draft_id":  "ETD-20260614-073710",
+    "engremiat_task_context_id":  "ETC-PENDING-20260614073710",
+    "cline_task_id":  null,
+    "project":  {
+                    "project_id":  "PROJECT-ENGREMIAT-OLLAMA-001",
+                    "name":  "ENGREMIAT OLLAMA",
+                    "participant_type":  "PROJECT",
+                    "requester_participant_id":  "PARTICIPANT-PROJECT-ENGREMIAT-OLLAMA",
+                    "needs":  [
+                                  "DOCUMENTED_AND_VALIDATED_HUMAN_CONTROLLED_WORKFLOW"
+                              ],
+                    "offers":  [
+                                   "REUSABLE_EVIDENCE",
+                                   "KANBAN_BASELINE_KNOWLEDGE"
+                               ]
+                },
+    "task":  {
+                 "description":  "Documentar y validar el primer flujo humano controlado en el Kanban de Cline",
+                 "work_unit_type":  "TASK",
+                 "required_capabilities":  [
+                                               {
+                                                   "category":  "CODE_ANALYSIS",
+                                                   "minimum_level":  "BASELINE",
+                                                   "mandatory":  true,
+                                                   "acceptance_criteria":  "EVIDENCE_REVIEWED"
+                                               },
+                                               {
+                                                   "category":  "DOCUMENTATION",
+                                                   "minimum_level":  "BASELINE",
+                                                   "mandatory":  true,
+                                                   "acceptance_criteria":  "EVIDENCE_REVIEWED"
+                                               },
+                                               {
+                                                   "category":  "HUMAN_VALIDATION",
+                                                   "minimum_level":  "BASELINE",
+                                                   "mandatory":  true,
+                                                   "acceptance_criteria":  "EVIDENCE_REVIEWED"
+                                               }
+                                           ],
+                 "required_resources":  [
+                                            "LOCAL_REPOSITORY",
+                                            "CLINE_KANBAN",
+                                            "OLLAMA_MODEL"
+                                        ],
+                 "priority":  "NORMAL",
+                 "execution_state":  "DRAFT",
+                 "cline_creation_status":  "EXISTING_VISIBLE_TEST_CARD_NOT_LINKED",
+                 "create_new_cline_task":  false
+             },
+    "participants":  {
+                         "candidate_participant_ids":  [
+                                                           "PARTICIPANT-AI-CLINE-OLLAMA",
+                                                           "PARTICIPANT-NODE-LOCAL-WINDOWS",
+                                                           "PARTICIPANT-HUMAN-OPERATOR"
+                                                       ],
+                         "assigned_participant_ids":  [
+
+                                                      ],
+                         "executor_participant_id":  null,
+                         "validator_participant_ids":  "PARTICIPANT-HUMAN-OPERATOR",
+                         "authorizer_participant_ids":  "PARTICIPANT-HUMAN-OPERATOR",
+                         "responsible_participant_id":  null
+                     },
+    "governance":  {
+                       "authorization_policy":  "EXPLICIT_BEFORE_EXECUTION",
+                       "validation_policy":  "HUMAN_EVIDENCE_REQUIRED",
+                       "capability_implies_permission":  false,
+                       "agent_execution_authorized":  false,
+                       "task_execution_authorized":  false,
+                       "node_execution_authorized":  false
+                   },
+    "linking":  {
+                    "integration_strategy":  "SIDECAR_BY_TASK_ID",
+                    "link_state":  "CONTEXT_DRAFTED",
+                    "canonical_task_id_required":  true,
+                    "task_id_capture_pending":  true,
+                    "title_matching_only_allowed":  false,
+                    "unique_correlation_verified":  false,
+                    "sidecar_activated":  false
+                },
+    "evidence":  {
+                     "created_at":  "2026-06-14T07:37:10.4957922+02:00",
+                     "created_by":  "HUMAN_GUIDED_ENGREMIAT",
+                     "source_flow_id":  "ENGREMIAT-CLINE-TASK-LINKING-FLOW-001",
+                     "source_machine_id":  "ENGREMIAT-TASK-LINK-STATE-MACHINE-001",
+                     "human_review_pending":  true
+                 },
+    "safety":  {
+                   "cline_modified":  false,
+                   "task_created":  false,
+                   "task_started":  false,
+                   "agent_started":  false,
+                   "task_execution_authorized":  false,
+                   "git_write":  false,
+                   "external_network":  false
+               },
+    "next":  "STEP_004I_B7_HUMAN_REVIEW_SINGLE_TEST_CONTEXT_DRAFT"
+}
