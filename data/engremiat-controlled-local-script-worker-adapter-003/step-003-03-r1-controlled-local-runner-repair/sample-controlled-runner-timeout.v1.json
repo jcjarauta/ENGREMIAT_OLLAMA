@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "runner_id": "ENGREMIAT-CONTROLLED-LOCAL-RUNNER-003",
+  "preflight_id": "PREFLIGHT-LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+  "request_id": "LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+  "task_id": "TASK-PTW-001",
+  "operation_id": "RUN_NODE_CHECK",
+  "executable": "node",
+  "arguments": [
+    "--check",
+    "tools/engremiat-worker-model/validate-canonical-model.js"
+  ],
+  "authorization_status": "AUTHORIZED",
+  "started_at": "2026-06-14T20:48:40.825Z",
+  "finished_at": "2026-06-14T20:48:40.825Z",
+  "exit_code_policy": {
+    "allowed_exit_codes": [
+      0,
+      1
+    ],
+    "success_exit_codes": [
+      0
+    ],
+    "exit_code_allowed": false,
+    "exit_code_successful": false
+  },
+  "process": {
+    "started": true,
+    "completed": false,
+    "timed_out": true,
+    "cancelled": true,
+    "exit_code": null,
+    "duration_ms": 30000,
+    "executor_error": false
+  },
+  "output": {
+    "stdout": "partial\n",
+    "stderr": "timeout\n",
+    "stdout_sha256": "95AEBB28195B8D737EFFE0DF18D71D39C8D8BA6569286FD3930FBC9F9767181E",
+    "stderr_sha256": "7ED6120912D915F6BA8EF82BA3EC0B703265A0979BC0A243E0144580AD0C0B6B"
+  },
+  "terminal_execution_state": "CANCELLED",
+  "safety": {
+    "shell": false,
+    "use_shell_execute": false,
+    "network": false,
+    "free_form_command": false,
+    "operation_allowlisted": true,
+    "timeout_enforced": true
+  },
+  "evidence_required": [
+    "STDOUT",
+    "STDERR",
+    "EXIT_CODE",
+    "TARGET_FILE_SHA256"
+  ],
+  "integrity_sha256": "48574C22DC1B5FB76AECED89C1140090805C883F2D5DE5C02E9FD27B38DCA17B"
+}

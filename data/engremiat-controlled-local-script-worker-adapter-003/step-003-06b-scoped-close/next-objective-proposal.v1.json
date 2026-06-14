@@ -1,0 +1,31 @@
+﻿{
+    "schema_version":  "1.0",
+    "proposal_id":  "ENGREMIAT_CONTROLLED_CLINE_WORKER_ADAPTER_004",
+    "title":  "Controlled Cline Worker Adapter",
+    "status":  "PROPOSED_NOT_STARTED",
+    "purpose":  "Conectar Cline al modelo canónico mediante una frontera controlada de autorización, ejecución, timeout, resultado y evidencia.",
+    "strategic_reason":  "El adaptador LOCAL_SCRIPT ya valida el patrón mínimo de ejecución real y puede reutilizarse como base de control para Cline.",
+    "included":  [
+                     "Descubrimiento de interfaz estable de Cline",
+                     "Contrato de tarea Cline",
+                     "Preflight sin ejecución",
+                     "Autorización separada",
+                     "Una tarea controlada",
+                     "Timeout y cancelación",
+                     "Captura de resultado",
+                     "Integración canónica",
+                     "Evidencia íntegra"
+                 ],
+    "excluded":  [
+                     "Ollama",
+                     "Ejecución concurrente",
+                     "Comandos libres",
+                     "Red no declarada",
+                     "Telegram",
+                     "Google API",
+                     "Continuación automática"
+                 ],
+    "estimated_blocks":  7,
+    "recommended_following_objective":  "ENGREMIAT_CONTROLLED_OLLAMA_WORKER_ADAPTER_005",
+    "created_at":  "2026-06-14T22:57:04.9590829+02:00"
+}

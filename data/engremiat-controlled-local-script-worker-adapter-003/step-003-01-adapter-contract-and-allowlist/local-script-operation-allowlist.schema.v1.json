@@ -1,0 +1,28 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schemas/local-script-operation-allowlist.v1.json",
+    "title":  "Engremiat Local Script Operation Allowlist",
+    "type":  "object",
+    "required":  [
+                     "schema_version",
+                     "registry_id",
+                     "deny_by_default",
+                     "operations"
+                 ],
+    "properties":  {
+                       "schema_version":  {
+                                              "const":  "1.0"
+                                          },
+                       "registry_id":  {
+                                           "type":  "string",
+                                           "minLength":  1
+                                       },
+                       "deny_by_default":  {
+                                               "const":  true
+                                           },
+                       "operations":  {
+                                          "type":  "array",
+                                          "minItems":  1
+                                      }
+                   }
+}

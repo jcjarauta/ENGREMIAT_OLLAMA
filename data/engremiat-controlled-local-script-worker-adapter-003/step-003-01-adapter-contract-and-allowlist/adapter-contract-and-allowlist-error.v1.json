@@ -1,0 +1,15 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-local-script-worker-adapter-003",
+    "step":  "003-01",
+    "status":  "ERROR",
+    "message":  "El objetivo canónico anterior no está cerrado y validado.",
+    "execution_stopped":  true,
+    "runtime_execution":  false,
+    "process_started":  false,
+    "command_executed":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "next":  "REPAIR_STEP_003_01",
+    "created_at":  "2026-06-14T22:44:17.3028986+02:00"
+}

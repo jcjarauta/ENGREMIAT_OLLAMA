@@ -1,0 +1,14 @@
+﻿step=003-05-R1
+repairs_step=003-05
+repair_reason=PREFLIGHT_CLONED_REMOVED_EXPECTED_EXIT_CODES_PROPERTY
+authorization_reused=True
+previous_attempt_process_started=False
+real_process_started=True
+real_process_completed=True
+exit_code=0
+timed_out=False
+runner_terminal_execution_state=TERMINAL_SUCCESS
+canonical_terminal_execution_state=TERMINAL_SUCCESS
+final_task_status=REVIEW
+validation_passed=True
+next=STEP_003_06_FINAL_AUDIT_COMMIT_PUSH_CLOSE_AND_DEFINE_NEXT_OBJECTIVE

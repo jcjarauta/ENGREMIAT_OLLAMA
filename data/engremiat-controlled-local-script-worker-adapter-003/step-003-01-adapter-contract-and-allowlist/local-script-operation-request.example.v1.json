@@ -1,0 +1,16 @@
+﻿{
+    "schema_version":  "1.0",
+    "request_id":  "LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+    "task_id":  "TASK-PTW-001",
+    "operation_id":  "RUN_NODE_CHECK",
+    "arguments":  {
+                      "target_file":  "tools/engremiat-worker-model/validate-canonical-model.js"
+                  },
+    "requested_execution_mode":  "READ_ONLY",
+    "authorization_context":  {
+                                  "task_authorization_state":  "AUTHORIZED",
+                                  "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION"
+                              },
+    "dry_run":  true,
+    "runtime_execution":  false
+}

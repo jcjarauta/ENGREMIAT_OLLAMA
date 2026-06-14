@@ -1,0 +1,15 @@
+﻿step=003-01-R1
+repairs_step=003-01
+repair_reason=PREVIOUS_CLOSE_RESULT_LACKED_OBJECTIVE_STATUS_PROPERTY
+previous_objective_status_normalized=CLOSED
+operation_count=4
+unique_operation_ids=True
+allowed_executables_verified=True
+timeouts_verified=True
+network_denied=True
+evidence_required_for_all=True
+runtime_execution=False
+process_started=False
+command_executed=False
+validation_passed=True
+next=STEP_003_02_BUILD_NON_EXECUTING_PREFLIGHT

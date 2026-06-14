@@ -1,0 +1,10 @@
+﻿step=003-06B
+objective=engremiat-controlled-local-script-worker-adapter-003
+objective_status=CLOSED
+audit_validation_passed=True
+real_process_verified=True
+operation_id=RUN_NODE_CHECK
+exit_code=0
+final_task_status=REVIEW
+next_objective_proposal_id=ENGREMIAT_CONTROLLED_CLINE_WORKER_ADAPTER_004
+commit_policy=SCOPED_ONLY_NO_GIT_ADD_DOT

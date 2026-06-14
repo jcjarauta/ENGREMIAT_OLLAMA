@@ -1,0 +1,134 @@
+﻿{
+    "schema_version":  "1.0",
+    "registry_id":  "ENGREMIAT-LOCAL-SCRIPT-ALLOWLIST-003-V1",
+    "deny_by_default":  true,
+    "free_form_commands":  false,
+    "shell_interpolation":  false,
+    "network_allowed":  false,
+    "destructive_operations_allowed":  false,
+    "operation_count":  4,
+    "operations":  [
+                       {
+                           "operation_id":  "VALIDATE_CANONICAL_MODEL",
+                           "enabled":  true,
+                           "executable":  "node",
+                           "fixed_arguments":  [
+                                                   "tools/engremiat-worker-model/validate-canonical-model.js"
+                                               ],
+                           "dynamic_arguments":  [
+                                                     {
+                                                         "name":  "input_file",
+                                                         "type":  "REPOSITORY_RELATIVE_JSON_FILE",
+                                                         "required":  true
+                                                     },
+                                                     {
+                                                         "name":  "output_file",
+                                                         "type":  "REPOSITORY_RELATIVE_JSON_FILE",
+                                                         "required":  true
+                                                     }
+                                                 ],
+                           "risk":  "READ_ONLY",
+                           "execution_mode":  "READ_ONLY",
+                           "working_directory":  "REPOSITORY_ROOT",
+                           "timeout_seconds":  60,
+                           "network":  false,
+                           "authorization_required":  true,
+                           "expected_exit_codes":  [
+                                                       0,
+                                                       1
+                                                   ],
+                           "evidence":  [
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "OUTPUT_FILE_SHA256"
+                                        ]
+                       },
+                       {
+                           "operation_id":  "RUN_NODE_CHECK",
+                           "enabled":  true,
+                           "executable":  "node",
+                           "fixed_arguments":  [
+                                                   "--check"
+                                               ],
+                           "dynamic_arguments":  [
+                                                     {
+                                                         "name":  "target_file",
+                                                         "type":  "REPOSITORY_RELATIVE_JS_FILE",
+                                                         "required":  true
+                                                     }
+                                                 ],
+                           "risk":  "READ_ONLY",
+                           "execution_mode":  "READ_ONLY",
+                           "working_directory":  "REPOSITORY_ROOT",
+                           "timeout_seconds":  30,
+                           "network":  false,
+                           "authorization_required":  true,
+                           "expected_exit_codes":  [
+                                                       0,
+                                                       1
+                                                   ],
+                           "evidence":  [
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "TARGET_FILE_SHA256"
+                                        ]
+                       },
+                       {
+                           "operation_id":  "READ_GIT_STATUS",
+                           "enabled":  true,
+                           "executable":  "git",
+                           "fixed_arguments":  [
+                                                   "status",
+                                                   "--short"
+                                               ],
+                           "dynamic_arguments":  [
+
+                                                 ],
+                           "risk":  "READ_ONLY",
+                           "execution_mode":  "READ_ONLY",
+                           "working_directory":  "REPOSITORY_ROOT",
+                           "timeout_seconds":  30,
+                           "network":  false,
+                           "authorization_required":  true,
+                           "expected_exit_codes":  [
+                                                       0
+                                                   ],
+                           "evidence":  [
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE"
+                                        ]
+                       },
+                       {
+                           "operation_id":  "CALCULATE_FILE_HASH",
+                           "enabled":  true,
+                           "executable":  "INTERNAL_NODE_ADAPTER",
+                           "fixed_arguments":  [
+
+                                               ],
+                           "dynamic_arguments":  [
+                                                     {
+                                                         "name":  "target_file",
+                                                         "type":  "REPOSITORY_RELATIVE_FILE",
+                                                         "required":  true
+                                                     }
+                                                 ],
+                           "risk":  "READ_ONLY",
+                           "execution_mode":  "READ_ONLY",
+                           "working_directory":  "REPOSITORY_ROOT",
+                           "timeout_seconds":  30,
+                           "network":  false,
+                           "authorization_required":  true,
+                           "expected_exit_codes":  [
+                                                       0
+                                                   ],
+                           "evidence":  [
+                                            "FILE_SHA256",
+                                            "FILE_SIZE_BYTES"
+                                        ]
+                       }
+                   ],
+    "created_at":  "2026-06-14T22:45:16.4630029+02:00"
+}

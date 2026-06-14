@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "smoke_id": "REAL-LOCAL-SCRIPT-SMOKE-003-001-R1",
+  "authorization_reused": true,
+  "previous_attempt_process_started": false,
+  "operation_id": "RUN_NODE_CHECK",
+  "target_file": "tools/engremiat-worker-model/local-script-adapter/controlled-local-runner.js",
+  "process_started": true,
+  "process_completed": true,
+  "command_executed": true,
+  "exit_code": 0,
+  "timed_out": false,
+  "duration_ms": 54,
+  "stdout_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+  "runner_terminal_execution_state": "TERMINAL_SUCCESS",
+  "canonical_terminal_execution_state": "TERMINAL_SUCCESS",
+  "final_task_status": "REVIEW",
+  "runner_integrity_sha256": "992F697C732D4FF57CC782472B62DC79FE0ECD0C2F15AEB760CB95F7BBDDA1A7",
+  "integration_integrity_sha256": "481593B829CE8128E98E752D2E561F3E7C72EAF5833C33D12806E9A0C29CADC0",
+  "safety": {
+    "shell": false,
+    "network": false,
+    "destructive": false,
+    "external_network": false
+  },
+  "integrity_sha256": "59F059D675E50F3B2D02AEC52376E2397E673DF97D69A1C74ED4C6ECEA073545"
+}

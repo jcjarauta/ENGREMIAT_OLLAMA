@@ -1,0 +1,15 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-local-script-worker-adapter-003",
+    "step":  "003-05",
+    "status":  "ERROR",
+    "message":  "El primer smoke local real falló con exit=1",
+    "execution_stopped":  true,
+    "automatic_retry":  false,
+    "process_may_have_started":  true,
+    "external_network":  false,
+    "destructive_action":  false,
+    "git_write":  false,
+    "next":  "REPAIR_STEP_003_05",
+    "created_at":  "2026-06-14T22:51:18.1066289+02:00"
+}

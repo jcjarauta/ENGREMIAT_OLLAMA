@@ -1,0 +1,13 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-local-script-worker-adapter-003",
+    "step":  "003-06A",
+    "status":  "ERROR",
+    "message":  "Git read fallo: git  exit=1 stderr=",
+    "audit_only":  true,
+    "git_add":  false,
+    "git_commit":  false,
+    "git_push":  false,
+    "next":  "REPAIR_STEP_003_06A",
+    "created_at":  "2026-06-14T22:54:40.0603614+02:00"
+}

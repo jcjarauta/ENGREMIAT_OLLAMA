@@ -1,0 +1,16 @@
+﻿step=003-04
+boundary_id=LOCAL-SCRIPT-CANONICAL-INTEGRATION-003-001
+integration_created=True
+test_count=16
+passed_count=16
+dry_run_plan_verified=True
+queued_to_running_verified=True
+success_to_review_verified=True
+error_to_blocked_verified=True
+cancelled_to_blocked_verified=True
+identity_gates_verified=True
+integrity_gates_verified=True
+real_process_started=False
+real_command_executed=False
+validation_passed=True
+next=STEP_003_05_RUN_FIRST_AUTHORIZED_LOW_RISK_LOCAL_SMOKE

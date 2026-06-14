@@ -1,0 +1,90 @@
+{
+  "valid": true,
+  "test_count": 16,
+  "passed_count": 16,
+  "results": [
+    {
+      "name": "dry_run_prepared",
+      "passed": true,
+      "detail": "DRY_RUN_PLAN_READY"
+    },
+    {
+      "name": "success_integrated",
+      "passed": true,
+      "detail": "CONTROLLED_RUN_INTEGRATED_WITH_CANONICAL_LIFECYCLE"
+    },
+    {
+      "name": "success_terminal_preserved",
+      "passed": true,
+      "detail": "TERMINAL_SUCCESS"
+    },
+    {
+      "name": "success_task_review",
+      "passed": true,
+      "detail": "REVIEW"
+    },
+    {
+      "name": "success_integrity_valid",
+      "passed": true,
+      "detail": "B6A47F4F7E66A5692D357758AB16033D627C1C26B9A06A6995CE956BB7F40FA6"
+    },
+    {
+      "name": "success_no_real_execution",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "error_integrated",
+      "passed": true,
+      "detail": "TERMINAL_ERROR"
+    },
+    {
+      "name": "error_task_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    },
+    {
+      "name": "error_integrity_valid",
+      "passed": true,
+      "detail": "82B48025C029DBC1749953D46B0820487A22616FA409007FC06309264F8E4050"
+    },
+    {
+      "name": "cancelled_integrated",
+      "passed": true,
+      "detail": "CANCELLED"
+    },
+    {
+      "name": "cancelled_task_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    },
+    {
+      "name": "cancelled_integrity_valid",
+      "passed": true,
+      "detail": "CA49E41BFB243758FF2ACF823B391F3B18C9DA5A456F708276CEFF618243E7D7"
+    },
+    {
+      "name": "task_mismatch_blocked",
+      "passed": true,
+      "detail": "TASK_ID_MISMATCH"
+    },
+    {
+      "name": "operation_mismatch_blocked",
+      "passed": true,
+      "detail": "OPERATION_ID_MISMATCH"
+    },
+    {
+      "name": "nonterminal_runner_blocked",
+      "passed": true,
+      "detail": "RUNNER_TERMINAL_STATE_INVALID"
+    },
+    {
+      "name": "missing_integrity_blocked",
+      "passed": true,
+      "detail": "RUNNER_INTEGRITY_MISSING"
+    }
+  ],
+  "real_process_started": false,
+  "real_command_executed": false,
+  "tested_at": "2026-06-14T20:49:53.191Z"
+}

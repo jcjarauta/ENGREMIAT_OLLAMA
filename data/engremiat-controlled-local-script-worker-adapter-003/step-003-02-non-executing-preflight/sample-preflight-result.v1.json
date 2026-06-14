@@ -1,0 +1,51 @@
+﻿{
+    "schema_version":  "1.0",
+    "preflight_id":  "PREFLIGHT-LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+    "adapter_id":  "ENGREMIAT-LOCAL-SCRIPT-WORKER-ADAPTER-003",
+    "request_id":  "LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+    "task_id":  "TASK-PTW-001",
+    "operation_id":  "RUN_NODE_CHECK",
+    "executable":  "node",
+    "arguments":  [
+                      "--check",
+                      "tools/engremiat-worker-model/validate-canonical-model.js"
+                  ],
+    "resolved_arguments":  {
+                               "target_file":  "tools/engremiat-worker-model/validate-canonical-model.js"
+                           },
+    "working_directory":  ".",
+    "risk":  "READ_ONLY",
+    "execution_mode":  "READ_ONLY",
+    "timeout_seconds":  30,
+    "evidence_required":  [
+                              "STDOUT",
+                              "STDERR",
+                              "EXIT_CODE",
+                              "TARGET_FILE_SHA256"
+                          ],
+    "authorization":  {
+                          "task_authorization_state":  "AUTHORIZED",
+                          "execution_authorization_required":  true,
+                          "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+                          "required_next_state":  "PENDING_EXECUTION_AUTHORIZATION"
+                      },
+    "safety":  {
+                   "deny_by_default":  true,
+                   "free_form_command":  false,
+                   "shell_interpolation":  false,
+                   "network":  false,
+                   "destructive":  false,
+                   "runtime_execution":  false,
+                   "process_started":  false,
+                   "command_executed":  false
+               },
+    "next_required_action":  "SEPARATE_EXECUTION_GATE",
+    "integrity_sha256":  "C3666C9ED5AC5C1C7CB8A0AD013619D79DBF56BB12DB447425DA479B37AB2C2B",
+    "allowed_exit_codes":  [
+                               0,
+                               1
+                           ],
+    "success_exit_codes":  [
+                               0
+                           ]
+}

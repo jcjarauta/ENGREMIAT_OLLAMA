@@ -1,0 +1,105 @@
+{
+  "valid": true,
+  "test_count": 19,
+  "passed_count": 19,
+  "results": [
+    {
+      "name": "authorized_success_completed",
+      "passed": true,
+      "detail": "TERMINAL_SUCCESS"
+    },
+    {
+      "name": "zero_exit_successful",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "success_process_started",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "success_exit_code_captured",
+      "passed": true,
+      "detail": "0"
+    },
+    {
+      "name": "stdout_hash_created",
+      "passed": true,
+      "detail": "90184FC3132CC68061B04A12F9845BC1E1DD4FEDDE692923EC9193EC22B9BDE8"
+    },
+    {
+      "name": "stderr_hash_created",
+      "passed": true,
+      "detail": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "name": "success_integrity_valid",
+      "passed": true,
+      "detail": "DF5212B7571300766FCAF00F4B4DC7422EBA179DBD45A248E0841EBBA20E0785"
+    },
+    {
+      "name": "shell_and_network_disabled",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "authorization_gate_blocks",
+      "passed": true,
+      "detail": "EXECUTION_AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "nonzero_exit_maps_error",
+      "passed": true,
+      "detail": "TERMINAL_ERROR"
+    },
+    {
+      "name": "exit_one_allowed_but_not_success",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "stderr_captured",
+      "passed": true,
+      "detail": "syntax error\n"
+    },
+    {
+      "name": "error_integrity_valid",
+      "passed": true,
+      "detail": "4E5E6DB2F4184530017A9E6ED9CA23743B1BB03BBD7987D794CD957AF82682E3"
+    },
+    {
+      "name": "timeout_maps_cancelled",
+      "passed": true,
+      "detail": "CANCELLED"
+    },
+    {
+      "name": "timeout_integrity_valid",
+      "passed": true,
+      "detail": "48574C22DC1B5FB76AECED89C1140090805C883F2D5DE5C02E9FD27B38DCA17B"
+    },
+    {
+      "name": "executor_exception_maps_error",
+      "passed": true,
+      "detail": "TERMINAL_ERROR"
+    },
+    {
+      "name": "unsafe_preflight_blocked",
+      "passed": true,
+      "detail": "PREFLIGHT_INVALID"
+    },
+    {
+      "name": "unregistered_executable_blocked",
+      "passed": true,
+      "detail": "EXECUTABLE_NOT_ALLOWED"
+    },
+    {
+      "name": "invalid_exit_policy_blocked",
+      "passed": true,
+      "detail": "SUCCESS_EXIT_CODE_NOT_ALLOWED"
+    }
+  ],
+  "real_process_started": false,
+  "real_command_executed": false,
+  "tested_at": "2026-06-14T20:48:40.826Z"
+}

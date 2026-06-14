@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "runner_id": "ENGREMIAT-CONTROLLED-LOCAL-RUNNER-003",
+  "preflight_id": "PREFLIGHT-LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+  "request_id": "LOCAL-SCRIPT-REQUEST-EXAMPLE-001",
+  "task_id": "TASK-PTW-001",
+  "operation_id": "RUN_NODE_CHECK",
+  "executable": "node",
+  "arguments": [
+    "--check",
+    "tools/engremiat-worker-model/validate-canonical-model.js"
+  ],
+  "authorization_status": "AUTHORIZED",
+  "started_at": "2026-06-14T20:48:40.825Z",
+  "finished_at": "2026-06-14T20:48:40.825Z",
+  "exit_code_policy": {
+    "allowed_exit_codes": [
+      0,
+      1
+    ],
+    "success_exit_codes": [
+      0
+    ],
+    "exit_code_allowed": true,
+    "exit_code_successful": false
+  },
+  "process": {
+    "started": true,
+    "completed": true,
+    "timed_out": false,
+    "cancelled": false,
+    "exit_code": 1,
+    "duration_ms": 9,
+    "executor_error": false
+  },
+  "output": {
+    "stdout": "",
+    "stderr": "syntax error\n",
+    "stdout_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_sha256": "10410D981C37BC1054BA8FA4388E83AC8C4A690D17F84BDB0AC8C2A94FDE7DB8"
+  },
+  "terminal_execution_state": "TERMINAL_ERROR",
+  "safety": {
+    "shell": false,
+    "use_shell_execute": false,
+    "network": false,
+    "free_form_command": false,
+    "operation_allowlisted": true,
+    "timeout_enforced": true
+  },
+  "evidence_required": [
+    "STDOUT",
+    "STDERR",
+    "EXIT_CODE",
+    "TARGET_FILE_SHA256"
+  ],
+  "integrity_sha256": "4E5E6DB2F4184530017A9E6ED9CA23743B1BB03BBD7987D794CD957AF82682E3"
+}

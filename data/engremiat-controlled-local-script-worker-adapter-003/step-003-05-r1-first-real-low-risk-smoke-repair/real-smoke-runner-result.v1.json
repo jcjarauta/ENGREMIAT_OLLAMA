@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0",
+  "runner_id": "ENGREMIAT-CONTROLLED-LOCAL-RUNNER-003",
+  "preflight_id": "PREFLIGHT-LOCAL-SCRIPT-REAL-SMOKE-003-001",
+  "request_id": "LOCAL-SCRIPT-REAL-SMOKE-003-001",
+  "task_id": "TASK-PTW-001",
+  "operation_id": "RUN_NODE_CHECK",
+  "executable": "node",
+  "arguments": [
+    "--check",
+    "tools/engremiat-worker-model/local-script-adapter/controlled-local-runner.js"
+  ],
+  "authorization_status": "AUTHORIZED",
+  "started_at": "2026-06-14T20:52:26.670Z",
+  "finished_at": "2026-06-14T20:52:26.725Z",
+  "exit_code_policy": {
+    "allowed_exit_codes": [
+      0,
+      1
+    ],
+    "success_exit_codes": [
+      0
+    ],
+    "exit_code_allowed": true,
+    "exit_code_successful": true
+  },
+  "process": {
+    "started": true,
+    "completed": true,
+    "timed_out": false,
+    "cancelled": false,
+    "exit_code": 0,
+    "duration_ms": 54,
+    "executor_error": false
+  },
+  "output": {
+    "stdout": "",
+    "stderr": "",
+    "stdout_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+  },
+  "terminal_execution_state": "TERMINAL_SUCCESS",
+  "safety": {
+    "shell": false,
+    "use_shell_execute": false,
+    "network": false,
+    "free_form_command": false,
+    "operation_allowlisted": true,
+    "timeout_enforced": true
+  },
+  "evidence_required": [
+    "STDOUT",
+    "STDERR",
+    "EXIT_CODE",
+    "TARGET_FILE_SHA256"
+  ],
+  "integrity_sha256": "992F697C732D4FF57CC782472B62DC79FE0ECD0C2F15AEB760CB95F7BBDDA1A7"
+}

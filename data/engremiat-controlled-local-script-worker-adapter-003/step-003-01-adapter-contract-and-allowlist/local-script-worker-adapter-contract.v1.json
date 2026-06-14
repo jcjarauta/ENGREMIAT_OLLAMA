@@ -1,0 +1,48 @@
+﻿{
+    "schema_version":  "1.0",
+    "adapter_id":  "ENGREMIAT-LOCAL-SCRIPT-WORKER-ADAPTER-003",
+    "adapter_type":  "LOCAL_SCRIPT",
+    "status":  "CONTRACT_DEFINED_NOT_EXECUTABLE",
+    "purpose":  "Execute only registered local operations through a strict allowlist and the canonical Project-Task-Worker lifecycle.",
+    "security_principles":  [
+                                "DENY_BY_DEFAULT",
+                                "NO_FREE_FORM_COMMANDS",
+                                "NO_SHELL_INTERPOLATION",
+                                "LOCAL_ONLY_BY_DEFAULT",
+                                "EXPLICIT_OPERATION_ID_REQUIRED",
+                                "VALIDATED_ARGUMENTS_ONLY",
+                                "REPOSITORY_SCOPED_PATHS_ONLY",
+                                "TIMEOUT_REQUIRED",
+                                "STDOUT_STDERR_CAPTURE_REQUIRED",
+                                "EVIDENCE_REQUIRED"
+                            ],
+    "authorization_policy":  {
+                                 "preflight":  "NO_ADDITIONAL_AUTHORIZATION",
+                                 "real_process_start":  "SEPARATE_EXECUTION_GATE_REQUIRED",
+                                 "local_write":  "SEPARATE_EXECUTION_GATE_REQUIRED",
+                                 "network":  "DENIED",
+                                 "destructive":  "DENIED"
+                             },
+    "process_policy":  {
+                           "max_parallel_processes":  1,
+                           "default_timeout_seconds":  60,
+                           "maximum_timeout_seconds":  300,
+                           "capture_stdout":  true,
+                           "capture_stderr":  true,
+                           "capture_exit_code":  true,
+                           "kill_on_timeout":  true,
+                           "use_shell_execute":  false
+                       },
+    "path_policy":  {
+                        "allowed_roots":  [
+                                              "REPOSITORY_ROOT",
+                                              "REPOSITORY_TOOLS",
+                                              "REPOSITORY_DATA"
+                                          ],
+                        "outside_repository":  false,
+                        "path_traversal":  false
+                    },
+    "runtime_execution":  false,
+    "process_started":  false,
+    "created_at":  "2026-06-14T22:45:16.4620002+02:00"
+}

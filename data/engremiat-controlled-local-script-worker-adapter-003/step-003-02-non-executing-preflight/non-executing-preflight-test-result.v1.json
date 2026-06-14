@@ -1,0 +1,88 @@
+{
+  "valid": true,
+  "test_count": 16,
+  "passed_count": 16,
+  "results": [
+    {
+      "name": "valid_request_passes",
+      "passed": true,
+      "detail": "GO_FOR_SEPARATE_EXECUTION_GATE"
+    },
+    {
+      "name": "operation_resolved",
+      "passed": true,
+      "detail": "RUN_NODE_CHECK"
+    },
+    {
+      "name": "target_path_scoped",
+      "passed": true,
+      "detail": "tools/engremiat-worker-model/validate-canonical-model.js"
+    },
+    {
+      "name": "authorization_gate_preserved",
+      "passed": true,
+      "detail": "SEPARATE_EXECUTION_GATE"
+    },
+    {
+      "name": "no_execution",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "integrity_valid",
+      "passed": true,
+      "detail": "C3666C9ED5AC5C1C7CB8A0AD013619D79DBF56BB12DB447425DA479B37AB2C2B"
+    },
+    {
+      "name": "unknown_operation_blocked",
+      "passed": true,
+      "detail": "OPERATION_NOT_ALLOWLISTED"
+    },
+    {
+      "name": "path_traversal_blocked",
+      "passed": true,
+      "detail": "PATH_TRAVERSAL_DENIED"
+    },
+    {
+      "name": "wrong_extension_blocked",
+      "passed": true,
+      "detail": "JS_EXTENSION_REQUIRED"
+    },
+    {
+      "name": "missing_input_blocked",
+      "passed": true,
+      "detail": "INPUT_FILE_NOT_FOUND"
+    },
+    {
+      "name": "unexpected_argument_blocked",
+      "passed": true,
+      "detail": "UNEXPECTED_ARGUMENT"
+    },
+    {
+      "name": "mode_mismatch_blocked",
+      "passed": true,
+      "detail": "EXECUTION_MODE_MISMATCH"
+    },
+    {
+      "name": "task_authorization_blocked",
+      "passed": true,
+      "detail": "TASK_AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "execution_context_blocked",
+      "passed": true,
+      "detail": "EXECUTION_AUTHORIZATION_CONTEXT_INVALID"
+    },
+    {
+      "name": "non_dry_run_blocked",
+      "passed": true,
+      "detail": "REQUEST_NOT_DRY_RUN"
+    },
+    {
+      "name": "unsafe_registry_blocked",
+      "passed": true,
+      "detail": "REGISTRY_INVALID"
+    }
+  ],
+  "tested_at": "2026-06-14T20:46:26.473Z"
+}

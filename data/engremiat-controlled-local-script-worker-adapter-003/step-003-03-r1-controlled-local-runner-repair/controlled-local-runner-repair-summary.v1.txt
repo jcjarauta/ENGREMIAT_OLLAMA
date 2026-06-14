@@ -1,0 +1,15 @@
+﻿step=003-03-R1
+repairs_step=003-03
+repair_reason=EXPECTED_EXIT_CODES_CONFLATED_ALLOWED_AND_SUCCESSFUL_EXIT_CODES
+registry_normalized=True
+allowed_exit_codes_defined=True
+success_exit_codes_defined=True
+test_count=19
+passed_count=19
+exit_zero_maps_success=True
+exit_one_maps_error=True
+timeout_maps_cancelled=True
+real_process_started=False
+real_command_executed=False
+validation_passed=True
+next=STEP_003_04_INTEGRATE_CONTROLLED_RUNNER_WITH_CANONICAL_LIFECYCLE
