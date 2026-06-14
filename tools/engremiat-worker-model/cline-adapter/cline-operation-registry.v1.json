@@ -1,0 +1,161 @@
+﻿{
+    "schema_version":  "1.0",
+    "registry_id":  "ENGREMIAT-CLINE-OPERATION-REGISTRY-004-V1",
+    "adapter_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "source_boundary":  "CLINE_CLI_COMMAND",
+    "deny_by_default":  true,
+    "free_form_arguments":  false,
+    "raw_prompt_execution":  false,
+    "automatic_continuation":  false,
+    "task_dispatch_enabled":  false,
+    "operation_count":  4,
+    "enabled_operation_count":  1,
+    "operations":  [
+                       {
+                           "operation_id":  "CLINE_CLI_CAPABILITY_PROBE",
+                           "enabled":  true,
+                           "phase":  "INTERFACE_DISCOVERY",
+                           "description":  "Execute one low-risk CLI help or version probe after a separate authorization gate.",
+                           "executable_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+                           "argument_contract":  {
+                                                     "candidate_argument_sets":  [
+                                                                                     [
+                                                                                         "--help"
+                                                                                     ],
+                                                                                     [
+                                                                                         "--version"
+                                                                                     ]
+                                                                                 ],
+                                                     "selected_argument_set":  [
+                                                                                   "--help"
+                                                                               ],
+                                                     "free_form_arguments":  false,
+                                                     "syntax_verified":  true
+                                                 },
+                           "risk":  "READ_ONLY_PROCESS",
+                           "execution_mode":  "CONTROLLED_EXECUTION",
+                           "timeout_seconds":  30,
+                           "network_policy":  "NO_NETWORK_REQUIRED_EXPECTED",
+                           "authorization_required":  true,
+                           "success_exit_codes":  [
+                                                      0
+                                                  ],
+                           "allowed_exit_codes":  [
+                                                      0,
+                                                      1
+                                                  ],
+                           "evidence":  [
+                                            "EXECUTABLE_IDENTITY",
+                                            "ARGUMENT_SET",
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "DURATION_MS",
+                                            "OUTPUT_HASHES"
+                                        ],
+                           "dispatch_allowed":  false
+                       },
+                       {
+                           "operation_id":  "CLINE_SINGLE_TASK_DISPATCH",
+                           "enabled":  false,
+                           "phase":  "TASK_EXECUTION",
+                           "description":  "Dispatch exactly one canonical development task after CLI syntax and result contract are verified.",
+                           "executable_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+                           "argument_contract":  {
+                                                     "syntax_status":  "UNRESOLVED",
+                                                     "task_envelope_required":  true,
+                                                     "free_form_arguments":  false,
+                                                     "raw_shell_arguments":  false
+                                                 },
+                           "risk":  "CONTROLLED_DEVELOPMENT_EXECUTION",
+                           "execution_mode":  "CONTROLLED_EXECUTION",
+                           "timeout_seconds":  900,
+                           "network_policy":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+                           "authorization_required":  true,
+                           "success_exit_codes":  [
+                                                      0
+                                                  ],
+                           "allowed_exit_codes":  [
+                                                      0,
+                                                      1
+                                                  ],
+                           "evidence":  [
+                                            "TASK_ENVELOPE_SHA256",
+                                            "EXECUTABLE_IDENTITY",
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "DURATION_MS",
+                                            "RESULT_CLASSIFICATION",
+                                            "CANONICAL_FINAL_STATE"
+                                        ],
+                           "dispatch_allowed":  false
+                       },
+                       {
+                           "operation_id":  "CLINE_TASK_STATUS_READ",
+                           "enabled":  false,
+                           "phase":  "TASK_OBSERVATION",
+                           "description":  "Read one dispatched task status only after a stable task identifier contract exists.",
+                           "executable_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+                           "argument_contract":  {
+                                                     "syntax_status":  "UNRESOLVED_PENDING_CAPABILITY_PROBE",
+                                                     "task_id_required":  true,
+                                                     "free_form_arguments":  false
+                                                 },
+                           "risk":  "READ_ONLY_PROCESS",
+                           "execution_mode":  "READ_ONLY",
+                           "timeout_seconds":  30,
+                           "network_policy":  "UNRESOLVED",
+                           "authorization_required":  false,
+                           "success_exit_codes":  [
+                                                      0
+                                                  ],
+                           "allowed_exit_codes":  [
+                                                      0,
+                                                      1
+                                                  ],
+                           "evidence":  [
+                                            "TASK_ID",
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "STATUS_CLASSIFICATION"
+                                        ],
+                           "dispatch_allowed":  false
+                       },
+                       {
+                           "operation_id":  "CLINE_TASK_CANCEL",
+                           "enabled":  false,
+                           "phase":  "TASK_CONTROL",
+                           "description":  "Cancel exactly one known Cline task after a stable cancellation interface exists.",
+                           "executable_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+                           "argument_contract":  {
+                                                     "syntax_status":  "UNRESOLVED_PENDING_CAPABILITY_PROBE",
+                                                     "task_id_required":  true,
+                                                     "free_form_arguments":  false
+                                                 },
+                           "risk":  "CONTROLLED_CANCELLATION",
+                           "execution_mode":  "CONTROLLED_EXECUTION",
+                           "timeout_seconds":  30,
+                           "network_policy":  "UNRESOLVED",
+                           "authorization_required":  true,
+                           "success_exit_codes":  [
+                                                      0
+                                                  ],
+                           "allowed_exit_codes":  [
+                                                      0,
+                                                      1
+                                                  ],
+                           "evidence":  [
+                                            "TASK_ID",
+                                            "CANCEL_REQUEST",
+                                            "STDOUT",
+                                            "STDERR",
+                                            "EXIT_CODE",
+                                            "FINAL_STATUS"
+                                        ],
+                           "dispatch_allowed":  false
+                       }
+                   ],
+    "created_at":  "2026-06-14T23:01:10.8441540+02:00"
+}

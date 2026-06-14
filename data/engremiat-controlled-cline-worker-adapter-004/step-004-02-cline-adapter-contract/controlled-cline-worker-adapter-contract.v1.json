@@ -1,0 +1,90 @@
+﻿{
+    "schema_version":  "1.0",
+    "adapter_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "adapter_type":  "CLINE_CLI",
+    "status":  "TASK_INTERFACE_REVIEWED_EXECUTION_STILL_DISABLED",
+    "source_boundary":  "CLINE_CLI_COMMAND",
+    "cli_identity":  {
+                         "command_name":  "cline",
+                         "command_type":  "ExternalScript",
+                         "detected_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+                         "path_sha256":  "8357974C985D092771AEB674FDC66BBF8CF3E67271C7945D104ED5004B815F96",
+                         "identity_verified_by":  "READ_ONLY_COMMAND_DISCOVERY",
+                         "cli_syntax_verified":  true,
+                         "verified_argument_set":  [
+                                                       "--help"
+                                                   ]
+                     },
+    "security_principles":  [
+                                "DENY_BY_DEFAULT",
+                                "NO_FREE_FORM_CLINE_ARGUMENTS",
+                                "NO_RAW_PROMPT_EXECUTION",
+                                "NO_AUTOMATIC_CONTINUATION",
+                                "SINGLE_TASK_ONLY",
+                                "SEPARATE_EXECUTION_AUTHORIZATION",
+                                "LOCAL_PROCESS_TIMEOUT_REQUIRED",
+                                "STDOUT_STDERR_CAPTURE_REQUIRED",
+                                "TASK_RESULT_EVIDENCE_REQUIRED",
+                                "CANONICAL_STATE_MAPPING_REQUIRED",
+                                "NO_UI_AUTOMATION",
+                                "NO_SESSION_METADATA_MUTATION",
+                                "NO_NETWORK_ASSUMPTION_WITHOUT_EVIDENCE"
+                            ],
+    "authorization_policy":  {
+                                 "capability_probe":  "EXPLICIT_LOW_RISK_PROCESS_GATE",
+                                 "task_dispatch":  "EXPLICIT_TASK_EXECUTION_GATE",
+                                 "task_cancel":  "EXPLICIT_CANCEL_GATE",
+                                 "status_read":  "ALLOW_AFTER_INTERFACE_VERIFIED",
+                                 "automatic_followup":  "DENIED"
+                             },
+    "process_policy":  {
+                           "max_parallel_cline_processes":  1,
+                           "default_probe_timeout_seconds":  30,
+                           "maximum_task_timeout_seconds":  900,
+                           "shell":  false,
+                           "use_shell_execute":  false,
+                           "capture_stdout":  true,
+                           "capture_stderr":  true,
+                           "capture_exit_code":  true,
+                           "kill_on_timeout":  true
+                       },
+    "task_policy":  {
+                        "single_task_only":  true,
+                        "task_envelope_required":  true,
+                        "repository_scope_required":  true,
+                        "allowed_task_content_source":  "CANONICAL_TASK_ENVELOPE_ONLY",
+                        "raw_terminal_command_from_task":  false,
+                        "automatic_accept":  false,
+                        "automatic_continuation":  false
+                    },
+    "canonical_mapping":  {
+                              "dispatch_started":  "RUNNING",
+                              "exit_success":  "TERMINAL_SUCCESS",
+                              "exit_error":  "TERMINAL_ERROR",
+                              "timeout":  "CANCELLED",
+                              "task_success":  "REVIEW",
+                              "task_failure":  "BLOCKED",
+                              "task_cancelled":  "BLOCKED"
+                          },
+    "runtime_execution":  false,
+    "cline_invoked":  false,
+    "created_at":  "2026-06-14T23:01:10.8421470+02:00",
+    "network_policy":  {
+                           "schema_version":  "1.0",
+                           "policy_id":  "CLINE-NETWORK-AUTHORIZATION-POLICY-004-001",
+                           "classification":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+                           "network_transport_required":  true,
+                           "offline_flag_available":  false,
+                           "no_network_flag_available":  false,
+                           "authorization_required":  true,
+                           "authorization_scope":  "ONLY_THE_SINGLE_AUTHORIZED_CLINE_PROCESS_AND_ITS_MODEL_PROVIDER_TRANSPORT",
+                           "task_instruction_network_access":  "DENIED",
+                           "child_shell_network_tools":  "DENIED",
+                           "automatic_continuation":  false,
+                           "network_activity_claimed_as_zero":  false,
+                           "network_activity_must_be_logged":  true,
+                           "network_destinations_verified":  false,
+                           "execution_enabled":  false,
+                           "created_at":  "2026-06-14T23:09:49.8826350+02:00"
+                       }
+}

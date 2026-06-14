@@ -1,0 +1,14 @@
+﻿{
+    "schema_version":  "1.0",
+    "request_id":  "CLINE-CAPABILITY-PROBE-EXAMPLE-001",
+    "task_id":  "TASK-CLINE-ADAPTER-004-PROBE",
+    "operation_id":  "CLINE_CLI_CAPABILITY_PROBE",
+    "requested_argument_set":  "AUTO_SELECT_SAFE_HELP_OR_VERSION",
+    "authorization_context":  {
+                                  "task_authorization_state":  "AUTHORIZED",
+                                  "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION"
+                              },
+    "dry_run":  true,
+    "runtime_execution":  false,
+    "cline_invoked":  false
+}

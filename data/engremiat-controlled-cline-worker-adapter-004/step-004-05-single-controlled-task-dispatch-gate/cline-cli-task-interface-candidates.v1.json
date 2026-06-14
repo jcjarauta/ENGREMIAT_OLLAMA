@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "source": "CLINE_HELP_CAPTURE_004_03",
+  "candidate_line_count": 18,
+  "command_like_line_count": 2,
+  "prompt_marker_count": 3,
+  "task_marker_count": 9,
+  "non_interactive_marker_count": 3,
+  "stable_task_interface_candidate_detected": true,
+  "candidate_lines": [
+    "Usage: cline [options] [command] [prompt]",
+    "prompt                        Your prompt. Default to start in act mode with",
+    "auto-approve enabled.",
+    "-V, --version                 Output the version number",
+    "-p, --plan                    Run in plan mode",
+    "--json                        Output messages as JSON instead of styled text",
+    "--auto-approve <boolean>      Set tool auto-approval for all tools (default:",
+    "-k, --key <api-key>           API key override for this run",
+    "-s, --system <system-prompt>  Override the default system prompt",
+    "-z, --zen                     Start a session that runs in the background hub",
+    "--acp                         Run in Agent Client Protocol (ACP) mode for",
+    "--hooks-dir <path>            Directory path to additional hooks for runtime",
+    "--worktree                    Auto-create a detached git worktree under",
+    "~/.cline/worktrees/ and run the task there",
+    "--kanban                      Run the kanban app",
+    "-v, --verbose                 Show verbose output",
+    "schedule                      Manage scheduled tasks",
+    "kanban                        Run the kanban app"
+  ],
+  "command_like_lines": [
+    "--auto-approve <boolean>      Set tool auto-approval for all tools (default:",
+    "--hooks-dir <path>            Directory path to additional hooks for runtime"
+  ],
+  "prompt_marker_lines": [
+    "Usage: cline [options] [command] [prompt]",
+    "prompt                        Your prompt. Default to start in act mode with",
+    "-s, --system <system-prompt>  Override the default system prompt"
+  ],
+  "task_marker_lines": [
+    "-p, --plan                    Run in plan mode",
+    "-k, --key <api-key>           API key override for this run",
+    "-z, --zen                     Start a session that runs in the background hub",
+    "--acp                         Run in Agent Client Protocol (ACP) mode for",
+    "--hooks-dir <path>            Directory path to additional hooks for runtime",
+    "~/.cline/worktrees/ and run the task there",
+    "--kanban                      Run the kanban app",
+    "schedule                      Manage scheduled tasks",
+    "kanban                        Run the kanban app"
+  ],
+  "non_interactive_marker_lines": [
+    "auto-approve enabled.",
+    "--json                        Output messages as JSON instead of styled text",
+    "--auto-approve <boolean>      Set tool auto-approval for all tools (default:"
+  ],
+  "raw_help_included": false,
+  "raw_help_sha256": "BF21EA0B2D860AAEA2B9228CB0A1130BCF4381AACF05B28C6BCE359D44EA1DE0"
+}

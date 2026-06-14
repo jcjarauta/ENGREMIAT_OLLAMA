@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "inspection_id": "CLINE-CLI-STATIC-INTERFACE-004-001",
+  "package": {
+    "root": "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline",
+    "name": "cline",
+    "version": "3.0.24",
+    "type": null,
+    "bin_entries": [
+      {
+        "name": "cline",
+        "target": "./bin/cline",
+        "exists": true
+      }
+    ],
+    "package_json_sha256": "E1EF2EB8A899967454E6EE53E6B38633D5CF1C0022C26E923FBC4719F6DDDC92"
+  },
+  "wrapper": {
+    "path": "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+    "sha256": "71887F175B0DC19A1895E23DC5F897A560787A5F3120AC23297AA6CE3F617A6C",
+    "content_included": false
+  },
+  "captured_help": {
+    "path": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-03-authorized-cline-cli-capability-probe\\cline-help.stdout.txt",
+    "sha256": "BF21EA0B2D860AAEA2B9228CB0A1130BCF4381AACF05B28C6BCE359D44EA1DE0",
+    "content_included": false
+  },
+  "source_scan": {
+    "roots": [
+      "bin"
+    ],
+    "files_scanned": 0,
+    "files_with_evidence": 0,
+    "evidence": []
+  },
+  "aggregated": {
+    "prompt_flags": [],
+    "noninteractive_flags": [],
+    "structured_flags": [],
+    "task_commands": [],
+    "positional_contracts": [],
+    "stdin_files": [],
+    "parser_files": [],
+    "network_client_files": []
+  },
+  "candidates": [],
+  "candidate_count": 0,
+  "exact_task_interface_resolved": false,
+  "confidence": "LOW",
+  "noninteractive_control_found": false,
+  "structured_output_control_found": false,
+  "stdin_interface_found": false,
+  "network_client_code_detected": false,
+  "cline_invoked": false,
+  "process_started": false,
+  "task_dispatched": false,
+  "prompt_submitted": false,
+  "session_content_read": false,
+  "metadata_modified": false
+}

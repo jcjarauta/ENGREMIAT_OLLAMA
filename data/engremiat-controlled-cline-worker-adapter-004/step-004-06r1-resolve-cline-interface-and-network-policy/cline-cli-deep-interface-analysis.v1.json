@@ -1,0 +1,87 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-06R1",
+    "root_help_sha256":  "95368C80A9F22E1F6FCA3FFFFD2ADAF9D27D83A0389E22C00BD71B8218283224",
+    "usage_lines":  [
+                        "Usage: cline [options] [command] [prompt]"
+                    ],
+    "commands":  [
+                     "auth",
+                     "config",
+                     "connect",
+                     "dashboard",
+                     "doctor",
+                     "hook",
+                     "hub",
+                     "kanban",
+                     "mcp",
+                     "plugin",
+                     "schedule",
+                     "update",
+                     "version"
+                 ],
+    "task_command_candidates":  [
+
+                                ],
+    "all_long_options":  [
+                             "--acp",
+                             "--auto-approve",
+                             "--compaction",
+                             "--config",
+                             "--cwd",
+                             "--data-dir",
+                             "--help",
+                             "--hooks-dir",
+                             "--id",
+                             "--json",
+                             "--kanban",
+                             "--key",
+                             "--model",
+                             "--plan",
+                             "--provider",
+                             "--retries",
+                             "--system",
+                             "--thinking",
+                             "--timeout",
+                             "--tui",
+                             "--update",
+                             "--verbose",
+                             "--version",
+                             "--worktree",
+                             "--zen"
+                         ],
+    "all_short_options":  [
+                              "-c",
+                              "-h",
+                              "-i",
+                              "-k",
+                              "-m",
+                              "-p",
+                              "-s",
+                              "-t",
+                              "-v",
+                              "-z"
+                          ],
+    "prompt_flags":  [
+
+                     ],
+    "non_interactive_flags":  [
+                                  "--auto-approve"
+                              ],
+    "structured_output_flags":  [
+                                    "--json"
+                                ],
+    "network_related_flags":  [
+                                  "--provider"
+                              ],
+    "help_probe_count":  0,
+    "successful_task_help_count":  0,
+    "selected_subcommand":  null,
+    "exact_task_interface_resolved":  false,
+    "approval_mode_resolved":  true,
+    "network_transport_required":  true,
+    "raw_task_content_read":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false
+}

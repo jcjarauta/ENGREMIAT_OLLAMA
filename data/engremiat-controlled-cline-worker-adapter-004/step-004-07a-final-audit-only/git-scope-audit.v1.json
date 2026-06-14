@@ -1,0 +1,26 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-07A",
+    "git_status_entry_count":  3,
+    "objective_scope_entry_count":  2,
+    "unrelated_entry_count":  1,
+    "objective_scope_entries":  [
+                                    "?? data/engremiat-controlled-cline-worker-adapter-004/",
+                                    "?? tools/engremiat-worker-model/cline-adapter/"
+                                ],
+    "unrelated_entries":  [
+                              "?? tools/engremiat-kanban/"
+                          ],
+    "allowed_prefixes":  [
+                             "tools/engremiat-worker-model/cline-adapter/",
+                             "data/engremiat-controlled-cline-worker-adapter-004/"
+                         ],
+    "git_mutation_performed":  false,
+    "git_add":  false,
+    "commit":  false,
+    "push":  false,
+    "scoped_close_possible":  true,
+    "unrelated_changes_preserved":  true,
+    "created_at":  "2026-06-14T23:22:27.5266436+02:00"
+}

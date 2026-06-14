@@ -1,0 +1,13 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-07B-R1",
+    "status":  "ERROR",
+    "message":  "warning: in the working copy of \u0027data/engremiat-controlled-cline-worker-adapter-004/step-004-03-authorized-cline-cli-capability-probe/cline-help.stdout.txt\u0027, LF will be replaced by CRLF the next time Git touches it",
+    "execution_stopped":  true,
+    "automatic_retry":  false,
+    "git_add_all":  false,
+    "scoped_add_only":  true,
+    "next":  "AUDIT_CURRENT_GIT_STATE_BEFORE_RETRYING_STEP_004_07B_R1",
+    "created_at":  "2026-06-14T23:24:28.0180536+02:00"
+}

@@ -1,0 +1,45 @@
+﻿{
+    "schema_version":  "1.0",
+    "gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001-R1",
+    "repairs_gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001",
+    "operation_id":  "CLINE_SINGLE_TASK_DISPATCH",
+    "task_id":  "TASK-CLINE-004-SMOKE-001",
+    "project_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "task_envelope_sha256":  "BB14C8DA48BBCE6455E97586CBAD199B5A7C785A849980D2DD10410A2715D837",
+    "preflight_integrity_sha256":  "315A699AA576F49A136A1DD04883A473BC44D8E4041BFB1A30F40E3813716929",
+    "interface_resolution":  {
+                                 "exact_task_interface_resolved":  false,
+                                 "selected_subcommand":  null,
+                                 "prompt_flags":  [
+
+                                                  ],
+                                 "non_interactive_flags":  [
+                                                               "--auto-approve"
+                                                           ],
+                                 "structured_output_flags":  [
+                                                                 "--json"
+                                                             ]
+                             },
+    "network_policy_id":  "CLINE-NETWORK-AUTHORIZATION-POLICY-004-001",
+    "network_policy_classification":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+    "authorization":  {
+                          "task_authorization_state":  "AUTHORIZED",
+                          "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+                          "explicit_human_task_execution_authorization_required":  true,
+                          "explicit_human_network_transport_authorization_required":  true,
+                          "authorization_phrase":  "AUTORIZO_STEP_004_06R2_SINGLE_CONTROLLED_CLINE_TASK_AND_REQUIRED_MODEL_TRANSPORT"
+                      },
+    "dispatch":  {
+                     "global_dispatch_enabled":  false,
+                     "operation_enabled":  false,
+                     "dispatch_allowed":  false,
+                     "cline_invoked":  false,
+                     "process_started":  false,
+                     "task_dispatched":  false,
+                     "prompt_submitted":  false,
+                     "runtime_execution":  false
+                 },
+    "decision":  "NO_GO_PENDING_EXACT_TASK_INTERFACE",
+    "next_required_action":  "CONTINUE_INTERFACE_DISCOVERY_WITHOUT_TASK_DISPATCH",
+    "integrity_sha256":  "B8BAEF9A8D0324710BA7CD6C28564B925FCFDFECBC89C46DCD092C5A4A0113AC"
+}

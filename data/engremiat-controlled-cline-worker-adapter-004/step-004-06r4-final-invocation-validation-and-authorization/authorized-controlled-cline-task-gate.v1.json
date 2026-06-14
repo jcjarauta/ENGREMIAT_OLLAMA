@@ -1,0 +1,41 @@
+﻿{
+    "schema_version":  "1.0",
+    "gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001-R4",
+    "replaces_gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001-R3",
+    "operation_id":  "CLINE_SINGLE_TASK_DISPATCH",
+    "task_id":  "TASK-CLINE-004-SMOKE-001",
+    "project_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "invocation_manifest_id":  "CLINE-FINAL-INVOCATION-MANIFEST-004-001",
+    "invocation_manifest_integrity_sha256":  "6819B4083CC1D279D61C652A6AFD202C24E266F5098B2C43B4964F9425157910",
+    "corrected_contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R4",
+    "corrected_contract_integrity_sha256":  "510249AF689D53898F95A5DA612F6CF3BC2D4BE7DE995861810E1B6360A586CD",
+    "authorization_id":  "CLINE-SINGLE-TASK-AND-TRANSPORT-AUTHORIZATION-004-001",
+    "authorization":  {
+                          "task_authorization_state":  "AUTHORIZED",
+                          "task_execution_authorization_state":  "AUTHORIZED",
+                          "network_transport_authorization_state":  "AUTHORIZED_FOR_SINGLE_CONFIGURED_CLINE_MODEL_TRANSPORT",
+                          "authorization_consumed":  true,
+                          "authorization_phrase_verified":  true
+                      },
+    "dispatch":  {
+                     "global_dispatch_enabled":  false,
+                     "operation_enabled":  false,
+                     "dispatch_allowed_for_gate":  false,
+                     "maximum_dispatch_count":  1,
+                     "cline_invoked":  true,
+                     "process_started":  true,
+                     "task_dispatched":  true,
+                     "prompt_submitted":  true,
+                     "runtime_execution":  false
+                 },
+    "workspace":  {
+                      "isolation_mode":  "DEDICATED_EMPTY_DIRECTORY",
+                      "path":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r4-final-invocation-validation-and-authorization\\isolated-cline-smoke-workspace",
+                      "project_source_mounted":  false,
+                      "git_repository_present":  false,
+                      "allowed_output":  "cline-controlled-smoke-output.v1.json"
+                  },
+    "decision":  "SINGLE_CONTROLLED_EXECUTION_COMPLETED",
+    "next_required_action":  "STEP_004_07A_FINAL_AUDIT_ONLY",
+    "integrity_sha256":  "6D7AF07339A79917C30C0B9E57A78FC9159B9F2D384F8635244373FF36F31C57"
+}

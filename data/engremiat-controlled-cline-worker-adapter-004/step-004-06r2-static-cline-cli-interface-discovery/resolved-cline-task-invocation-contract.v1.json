@@ -1,0 +1,41 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001",
+    "package_name":  "cline",
+    "package_version":  "3.0.24",
+    "wrapper_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+    "package_root":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline",
+    "bin_entries":  [
+                        {
+                            "name":  "cline",
+                            "target":  "./bin/cline",
+                            "exists":  true
+                        }
+                    ],
+    "resolution_method":  "STATIC_LOCAL_PACKAGE_AND_CLI_SOURCE_INSPECTION",
+    "exact_task_interface_resolved":  false,
+    "confidence":  "LOW",
+    "candidate_count":  0,
+    "selected_candidate":  null,
+    "all_candidates":  [
+
+                       ],
+    "noninteractive_control_found":  false,
+    "noninteractive_flags":  [
+
+                             ],
+    "structured_output_control_found":  false,
+    "structured_output_flags":  [
+
+                                ],
+    "stdin_interface_found":  false,
+    "network_transport_policy":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+    "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+    "global_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "dispatch_allowed":  false,
+    "cline_invoked":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "created_at":  "2026-06-14T23:11:19.1226549+02:00"
+}

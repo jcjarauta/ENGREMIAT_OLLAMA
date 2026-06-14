@@ -1,0 +1,60 @@
+﻿{
+    "schema_version":  "1.0",
+    "audit_id":  "CONTROLLED-CLINE-WORKER-ADAPTER-FINAL-AUDIT-004-001",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-07A",
+    "checks":  {
+                   "step_004_03_verified":  true,
+                   "step_004_04_verified":  true,
+                   "step_004_05_verified":  true,
+                   "step_004_06r4_verified":  true,
+                   "step_004_06r5_verified":  true,
+                   "authorization_consumed_once":  true,
+                   "authorization_not_reusable":  true,
+                   "process_terminal_success":  true,
+                   "output_validation_verified":  true,
+                   "output_exact":  true,
+                   "workspace_isolated":  true,
+                   "automatic_retry_disabled":  true,
+                   "automatic_continuation_disabled":  true,
+                   "global_dispatch_relocked":  true,
+                   "gate_consumed_and_closed":  true,
+                   "project_source_not_mounted":  true,
+                   "no_git_write_during_execution":  true
+               },
+    "check_count":  17,
+    "checks_passed":  17,
+    "checks_failed":  0,
+    "failed_checks":  [
+
+                      ],
+    "workspace_files":  [
+                            "cline-controlled-smoke-output.v1.json",
+                            "README_CONTROLLED_SMOKE.md"
+                        ],
+    "unexpected_workspace_files":  [
+
+                                   ],
+    "missing_workspace_files":  [
+
+                                ],
+    "output_fields":  [
+                          "result",
+                          "schema_version",
+                          "task_id"
+                      ],
+    "output_exact":  true,
+    "registry_task_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "operation_dispatch_allowed":  false,
+    "authorization_consumed":  true,
+    "dispatch_count":  1,
+    "terminal_execution_state":  "TERMINAL_SUCCESS",
+    "canonical_task_status":  "REVIEW",
+    "objective_scope_entry_count":  2,
+    "unrelated_entry_count":  1,
+    "git_mutation_performed":  false,
+    "audit_passed":  true,
+    "scoped_close_ready":  true,
+    "created_at":  "2026-06-14T23:22:27.5276493+02:00"
+}

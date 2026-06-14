@@ -1,0 +1,30 @@
+﻿{
+    "schema_version":  "1.0",
+    "selection_id":  "CLINE-HUMAN-INTERFACE-SELECTION-004-001-R1",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-06R3-R1",
+    "repairs_step":  "004-06R3",
+    "selection_reused":  true,
+    "selection_reuse_reason":  "HUMAN_SELECTED_CANDIDATE_2_BEFORE_HASH_FAILURE_AND_NO_EXECUTION_OCCURRED",
+    "decision":  "SELECT",
+    "candidate_count":  2,
+    "selected_candidate_index":  2,
+    "selected_candidate":  {
+                               "type":  "PROMPT_OPTION",
+                               "syntax":  "--prompt {TASK_PROMPT}",
+                               "source":  "README.md"
+                           },
+    "selection_source":  "EXPLICIT_HUMAN_TERMINAL_DECISION_REUSED_AFTER_NON_EXECUTING_HASH_FAILURE",
+    "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+    "network_authorization_state":  "PENDING_EXPLICIT_AUTHORIZATION",
+    "global_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "dispatch_allowed":  false,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "runtime_execution":  false,
+    "created_at":  "2026-06-14T23:17:28.3034826+02:00",
+    "integrity_sha256":  "68121EEF2C7827B3BBD7C024FDD87F62DCD40D9396DD6063F1EC5C53BE0A622C"
+}

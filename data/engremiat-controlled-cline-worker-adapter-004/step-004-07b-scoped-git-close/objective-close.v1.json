@@ -1,0 +1,68 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-07B-R4",
+    "repairs_steps":  [
+                          "004-07B",
+                          "004-07B-R1",
+                          "004-07B-R2",
+                          "004-07B-R3"
+                      ],
+    "repair_reason":  "CMD_PERCENT_EXPANSION_IN_GIT_PRETTY_FORMAT_REMOVED",
+    "objective_completed":  true,
+    "adapter":  "CONTROLLED_CLINE_WORKER_ADAPTER",
+    "cline_package_version":  "3.0.24",
+    "capabilities":  {
+                         "cli_capability_probe_verified":  true,
+                         "non_executing_preflight_verified":  true,
+                         "single_task_gate_verified":  true,
+                         "positional_prompt_interface_verified":  true,
+                         "isolated_workspace_verified":  true,
+                         "single_real_task_verified":  true,
+                         "structured_output_verified":  true
+                     },
+    "execution":  {
+                      "authorized_dispatches":  1,
+                      "completed_dispatches":  1,
+                      "authorization_consumed_once":  true,
+                      "authorization_reusable":  false,
+                      "terminal_execution_state":  "TERMINAL_SUCCESS",
+                      "canonical_task_status":  "REVIEW",
+                      "automatic_retry":  false,
+                      "automatic_continuation":  false
+                  },
+    "safety":  {
+                   "global_dispatch_enabled":  false,
+                   "operation_enabled":  false,
+                   "dispatch_allowed":  false,
+                   "workspace_isolated":  true,
+                   "project_source_mounted":  false,
+                   "unexpected_output_files":  0,
+                   "network_scope":  "SINGLE_AUTHORIZED_CLINE_MODEL_TRANSPORT"
+               },
+    "audit":  {
+                  "audit_step":  "004-07A",
+                  "checks_passed":  17,
+                  "checks_failed":  0,
+                  "validation_passed":  true
+              },
+    "git":  {
+                "branch":  "main",
+                "remote":  "origin",
+                "pre_close_head":  "4b285186b5542499c407ebb2e240692cb268d24b",
+                "commit_message":  "feat(cline-adapter): close controlled Cline worker adapter",
+                "commit_hash_source":  "GIT_REV_PARSE_HEAD_AFTER_COMMIT",
+                "objective_scope_paths":  [
+                                              "tools/engremiat-worker-model/cline-adapter",
+                                              "data/engremiat-controlled-cline-worker-adapter-004"
+                                          ],
+                "initial_objective_entries":  78,
+                "initial_unrelated_entries":  1,
+                "unrelated_changes_preserved":  true,
+                "git_add_all":  false,
+                "scoped_add_only":  true
+            },
+    "decision":  "OBJECTIVE_COMPLETE_READY_FOR_SCOPED_COMMIT_AND_PUSH",
+    "next_proposal":  "ENGREMIAT_CONTROLLED_CLINE_TASK_RESULT_INTEGRATION_005",
+    "created_at":  "2026-06-14T23:28:24.1294626+02:00"
+}

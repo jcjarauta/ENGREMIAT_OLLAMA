@@ -1,0 +1,41 @@
+﻿{
+    "schema_version":  "1.0",
+    "gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001-R3",
+    "replaces_gate_id":  "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001-R1",
+    "operation_id":  "CLINE_SINGLE_TASK_DISPATCH",
+    "task_id":  "TASK-CLINE-004-SMOKE-001",
+    "project_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "task_envelope_sha256":  "BB14C8DA48BBCE6455E97586CBAD199B5A7C785A849980D2DD10410A2715D837",
+    "preflight_integrity_sha256":  "315A699AA576F49A136A1DD04883A473BC44D8E4041BFB1A30F40E3813716929",
+    "invocation_contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R3",
+    "invocation_contract_integrity_sha256":  "A340945185584C0A6A52D7D48B93E2F1646C4365F41D23C9E7C69DF9FD0173CB",
+    "selected_candidate":  {
+                               "type":  "PROMPT_OPTION",
+                               "syntax":  "--prompt {TASK_PROMPT}",
+                               "source":  "README.md"
+                           },
+    "argument_template":  [
+                              "--prompt",
+                              "{TASK_PROMPT}"
+                          ],
+    "authorization":  {
+                          "task_authorization_state":  "AUTHORIZED",
+                          "task_execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+                          "network_transport_authorization_state":  "PENDING_EXPLICIT_AUTHORIZATION",
+                          "explicit_human_authorization_required":  true,
+                          "authorization_phrase":  "AUTORIZO_STEP_004_06R4_SINGLE_CONTROLLED_CLINE_TASK_AND_REQUIRED_MODEL_TRANSPORT"
+                      },
+    "dispatch":  {
+                     "global_dispatch_enabled":  false,
+                     "operation_enabled":  false,
+                     "dispatch_allowed":  false,
+                     "cline_invoked":  false,
+                     "process_started":  false,
+                     "task_dispatched":  false,
+                     "prompt_submitted":  false,
+                     "runtime_execution":  false
+                 },
+    "decision":  "READY_FOR_FINAL_NON_EXECUTING_INVOCATION_VALIDATION",
+    "next_required_action":  "STEP_004_06R4_VALIDATE_SELECTED_INVOCATION_AND_REQUEST_EXECUTION_AUTHORIZATION",
+    "integrity_sha256":  "F141C35B122FCBC0B37816B85AD6D9EBE8145268E8E2823B6C7C74B6B7B047B9"
+}

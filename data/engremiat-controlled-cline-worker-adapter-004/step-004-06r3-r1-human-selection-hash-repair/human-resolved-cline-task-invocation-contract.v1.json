@@ -1,0 +1,43 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R3",
+    "replaces_contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R1",
+    "package_name":  "cline",
+    "package_version":  "3.0.24",
+    "resolution_method":  "DIRECT_BIN_INSPECTION_PLUS_REUSED_EXPLICIT_HUMAN_SELECTION",
+    "candidate_count":  2,
+    "selected_candidate_index":  2,
+    "selected_candidate":  {
+                               "type":  "PROMPT_OPTION",
+                               "syntax":  "--prompt {TASK_PROMPT}",
+                               "source":  "README.md"
+                           },
+    "argument_mode":  "PROMPT_OPTION_WITH_TASK_ARGUMENT",
+    "argument_template":  [
+                              "--prompt",
+                              "{TASK_PROMPT}"
+                          ],
+    "task_placeholder":  "{TASK_PROMPT}",
+    "exact_task_interface_resolved":  true,
+    "confidence":  "HUMAN_SELECTED_FROM_BOUNDED_STATIC_EVIDENCE",
+    "noninteractive_control_required":  true,
+    "noninteractive_control_status":  "PENDING_FINAL_NON_EXECUTING_VALIDATION",
+    "structured_output_control_status":  "OPTIONAL_UNLESS_SUPPORTED",
+    "network_policy":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+    "network_authorization_state":  "PENDING_EXPLICIT_AUTHORIZATION",
+    "task_execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+    "single_task_only":  true,
+    "timeout_seconds":  300,
+    "automatic_continuation":  false,
+    "free_form_shell":  false,
+    "global_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "dispatch_allowed":  false,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "runtime_execution":  false,
+    "created_at":  "2026-06-14T23:17:28.3126626+02:00",
+    "integrity_sha256":  "A340945185584C0A6A52D7D48B93E2F1646C4365F41D23C9E7C69DF9FD0173CB"
+}

@@ -1,0 +1,29 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-06",
+    "boundary_id":  "CONTROLLED-CLINE-TASK-SMOKE-004-001",
+    "review_completed":  true,
+    "execution_attempted":  false,
+    "decision":  "NO_GO",
+    "reasons":  [
+                    "NON_INTERACTIVE_APPROVAL_FLAG_NOT_PROVEN",
+                    "ENFORCEABLE_OFFLINE_OR_NO_NETWORK_FLAG_NOT_PROVEN"
+                ],
+    "exact_argument_template_resolved":  true,
+    "non_interactive_mode_resolved":  false,
+    "network_isolation_argument_resolved":  false,
+    "human_authorization_requested":  false,
+    "human_authorization_received":  false,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "runtime_execution":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "classification":  "CLINE_TASK_EXECUTION_BLOCKED_BY_UNRESOLVED_INTERFACE_OR_NETWORK_CONTROL",
+    "validation_passed":  true,
+    "next":  "STEP_004_06R_RESOLVE_EXACT_AND_NETWORK_ISOLATED_CLINE_TASK_INTERFACE",
+    "created_at":  "2026-06-14T23:08:25.6565520+02:00"
+}

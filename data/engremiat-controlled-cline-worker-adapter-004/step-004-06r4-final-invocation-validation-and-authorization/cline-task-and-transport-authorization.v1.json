@@ -1,0 +1,33 @@
+﻿{
+    "schema_version":  "1.0",
+    "authorization_id":  "CLINE-SINGLE-TASK-AND-TRANSPORT-AUTHORIZATION-004-001",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-06R4",
+    "required_phrase":  "AUTORIZO_STEP_004_06R5_SINGLE_CONTROLLED_CLINE_TASK_IN_ISOLATED_WORKSPACE_AND_REQUIRED_MODEL_TRANSPORT",
+    "human_authorization_verified":  true,
+    "task_execution_authorized":  true,
+    "cline_model_transport_authorized":  true,
+    "authorization_scope":  [
+                                "ONE_CLINE_PROCESS",
+                                "ONE_POSITIONAL_TASK_PROMPT",
+                                "ISOLATED_WORKSPACE_ONLY",
+                                "CONFIGURED_CLINE_MODEL_PROVIDER_TRANSPORT",
+                                "MAXIMUM_120_SECONDS"
+                            ],
+    "not_authorized":  [
+                           "SECOND_TASK",
+                           "AUTOMATIC_CONTINUATION",
+                           "GIT_WRITE",
+                           "PROJECT_SOURCE_MODIFICATION",
+                           "BROWSER_AUTOMATION",
+                           "SESSION_METADATA_MODIFICATION",
+                           "UNDECLARED_OUTPUTS"
+                       ],
+    "authorization_consumed":  true,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "created_at":  "2026-06-14T23:19:18.1982424+02:00",
+    "authorization_consumed_at":  "2026-06-14T23:20:54.4547042+02:00"
+}

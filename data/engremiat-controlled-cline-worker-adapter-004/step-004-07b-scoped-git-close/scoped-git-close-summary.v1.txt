@@ -1,0 +1,7 @@
+﻿step=004-07B-R4
+objective=engremiat-controlled-cline-worker-adapter-004
+status=READY_FOR_SCOPED_COMMIT_AND_PUSH
+commit_hash_source=GIT_REV_PARSE_HEAD_AFTER_COMMIT
+git_add_all=False
+scoped_add_only=True
+next=DEFINE_ENGREMIAT_CONTROLLED_CLINE_TASK_RESULT_INTEGRATION_005

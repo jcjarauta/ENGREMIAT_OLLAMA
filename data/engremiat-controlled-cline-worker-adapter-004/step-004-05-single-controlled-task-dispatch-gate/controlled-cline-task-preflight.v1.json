@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "preflight_id": "PREFLIGHT-CLINE-TASK-ENVELOPE-004-SMOKE-001",
+  "adapter_id": "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+  "operation_id": "CLINE_SINGLE_TASK_DISPATCH",
+  "envelope_id": "CLINE-TASK-ENVELOPE-004-SMOKE-001",
+  "task_id": "TASK-CLINE-004-SMOKE-001",
+  "project_id": "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+  "objective": "Produce one harmless local JSON evidence file through a single controlled Cline task.",
+  "instructions_sha256": "25D7AD6F6A46E76F8EB1C29491990E7744E014E18755E18A2530E887166D4D94",
+  "repository_scope": "data/engremiat-controlled-cline-worker-adapter-004",
+  "allowed_paths": [
+    "data/engremiat-controlled-cline-worker-adapter-004/step-004-06-controlled-cline-task-smoke"
+  ],
+  "forbidden_actions": [
+    "NETWORK_ACCESS",
+    "GIT_PUSH",
+    "GIT_FORCE",
+    "DELETE_OUTSIDE_ALLOWED_PATHS",
+    "FREE_FORM_SHELL",
+    "AUTOMATIC_CONTINUATION",
+    "MODIFY_CLINE_SESSION_METADATA"
+  ],
+  "validation_contract": [
+    "OUTPUT_FILE_EXISTS",
+    "OUTPUT_JSON_VALID",
+    "EXACT_OUTPUT_FIELDS",
+    "TASK_ID_MATCHES",
+    "NO_UNDECLARED_FILES",
+    "NO_GIT_WRITE"
+  ],
+  "timeout_seconds": 300,
+  "authorization": {
+    "task_authorization_state": "AUTHORIZED",
+    "execution_authorization_state": "PENDING_EXECUTION_AUTHORIZATION",
+    "separate_execution_gate_required": true
+  },
+  "execution_policy": "SINGLE_TASK_CONTROLLED",
+  "safety": {
+    "deny_by_default": true,
+    "free_form_arguments": false,
+    "raw_prompt_execution": false,
+    "automatic_continuation": false,
+    "network_access": false,
+    "global_dispatch_enabled": false,
+    "operation_enabled": false,
+    "dispatch_allowed": false,
+    "cline_invoked": false,
+    "process_started": false,
+    "task_dispatched": false,
+    "prompt_submitted": false,
+    "runtime_execution": false
+  },
+  "next_required_action": "SEPARATE_HUMAN_EXECUTION_AUTHORIZATION_GATE",
+  "integrity_sha256": "315A699AA576F49A136A1DD04883A473BC44D8E4041BFB1A30F40E3813716929"
+}

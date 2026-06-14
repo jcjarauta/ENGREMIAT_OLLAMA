@@ -1,0 +1,103 @@
+{
+  "valid": true,
+  "test_count": 18,
+  "passed_count": 18,
+  "results": [
+    {
+      "name": "valid_envelope_passes",
+      "passed": true,
+      "detail": "CLINE_TASK_PREFLIGHT_VALID_READY_FOR_SEPARATE_EXECUTION_GATE"
+    },
+    {
+      "name": "ready_for_separate_gate",
+      "passed": true,
+      "detail": "CLINE_TASK_PREFLIGHT_VALID_READY_FOR_SEPARATE_EXECUTION_GATE"
+    },
+    {
+      "name": "dispatch_remains_disabled",
+      "passed": true,
+      "detail": "dispatch state"
+    },
+    {
+      "name": "zero_execution",
+      "passed": true,
+      "detail": "execution flags"
+    },
+    {
+      "name": "integrity_valid",
+      "passed": true,
+      "detail": "A97B637CB3365F6AD59182B704CA2FFC31B2C32573AB7B303B87C32BE87D90EB"
+    },
+    {
+      "name": "missing_field_blocked",
+      "passed": true,
+      "detail": "REQUIRED_FIELD_MISSING"
+    },
+    {
+      "name": "scope_traversal_blocked",
+      "passed": true,
+      "detail": "PATH_TRAVERSAL_DENIED"
+    },
+    {
+      "name": "allowed_path_traversal_blocked",
+      "passed": true,
+      "detail": "PATH_TRAVERSAL_DENIED"
+    },
+    {
+      "name": "allowed_path_outside_scope_blocked",
+      "passed": true,
+      "detail": "ALLOWED_PATH_OUTSIDE_SCOPE"
+    },
+    {
+      "name": "duplicate_allowed_path_blocked",
+      "passed": true,
+      "detail": "DUPLICATE_ALLOWED_PATH"
+    },
+    {
+      "name": "missing_forbidden_action_blocked",
+      "passed": true,
+      "detail": "MANDATORY_FORBIDDEN_ACTION_MISSING"
+    },
+    {
+      "name": "prohibited_instruction_blocked",
+      "passed": true,
+      "detail": "PROHIBITED_INSTRUCTION_DETECTED"
+    },
+    {
+      "name": "timeout_above_limit_blocked",
+      "passed": true,
+      "detail": "TIMEOUT_INVALID"
+    },
+    {
+      "name": "task_authorization_required",
+      "passed": true,
+      "detail": "TASK_AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "execution_must_remain_pending",
+      "passed": true,
+      "detail": "EXECUTION_GATE_STATE_INVALID"
+    },
+    {
+      "name": "runtime_execution_blocked",
+      "passed": true,
+      "detail": "PREFLIGHT_MODE_REQUIRED"
+    },
+    {
+      "name": "global_dispatch_enabled_blocked",
+      "passed": true,
+      "detail": "GLOBAL_DISPATCH_MUST_REMAIN_DISABLED"
+    },
+    {
+      "name": "operation_enabled_blocked",
+      "passed": true,
+      "detail": "DISPATCH_OPERATION_MUST_REMAIN_DISABLED"
+    }
+  ],
+  "cline_invoked": false,
+  "process_started": false,
+  "task_dispatched": false,
+  "prompt_submitted": false,
+  "runtime_execution": false,
+  "tested_at": "2026-06-14T21:05:34.717Z"
+}

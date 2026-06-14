@@ -1,0 +1,44 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R1",
+    "package_name":  "cline",
+    "package_version":  "3.0.24",
+    "wrapper_path":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+    "package_root":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline",
+    "bin_entries":  [
+                        {
+                            "name":  "cline",
+                            "target":  "./bin/cline",
+                            "absolute":  "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline\\bin\\cline",
+                            "exists":  true
+                        }
+                    ],
+    "resolution_method":  "DIRECT_BIN_WRAPPER_AND_PACKAGE_BUNDLE_STATIC_INSPECTION",
+    "files_inspected":  5,
+    "evidence_files":  2,
+    "candidate_count":  2,
+    "exact_task_interface_resolved":  false,
+    "confidence":  "MEDIUM",
+    "selected_candidate":  null,
+    "all_candidates":  [
+                           {
+                               "type":  "POSITIONAL_ARGUMENT",
+                               "syntax":  "-s, --system \u003cprompt\u003e",
+                               "file":  "README.md"
+                           },
+                           {
+                               "type":  "PROMPT_OPTION",
+                               "syntax":  "--prompt {TASK_PROMPT}",
+                               "file":  "README.md"
+                           }
+                       ],
+    "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+    "network_policy":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+    "global_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "dispatch_allowed":  false,
+    "cline_invoked":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "created_at":  "2026-06-14T23:12:34.1778114+02:00"
+}

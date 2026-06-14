@@ -1,0 +1,47 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R4",
+    "replaces_contract_id":  "CLINE-TASK-INVOCATION-CONTRACT-004-001-R3",
+    "package_name":  "cline",
+    "package_version":  "3.0.24",
+    "resolution_method":  "LOCAL_HELP_VALIDATION_PLUS_HUMAN_REVIEW",
+    "previous_selected_candidate":  {
+                                        "type":  "PROMPT_OPTION",
+                                        "syntax":  "--prompt {TASK_PROMPT}",
+                                        "status":  "REJECTED_AS_FALSE_POSITIVE_FROM_README"
+                                    },
+    "selected_interface":  {
+                               "type":  "POSITIONAL_PROMPT",
+                               "syntax":  "cline [options] [command] [prompt]",
+                               "argument_template":  [
+                                                         "--json",
+                                                         "--cwd",
+                                                         "{ISOLATED_WORKSPACE}",
+                                                         "--timeout",
+                                                         "120",
+                                                         "--auto-approve true",
+                                                         "{TASK_PROMPT}"
+                                                     ]
+                           },
+    "prompt_delivery_mode":  "POSITIONAL_FINAL_ARGUMENT",
+    "local_help_positional_prompt_verified":  true,
+    "local_help_json_verified":  true,
+    "local_help_cwd_verified":  true,
+    "local_help_timeout_verified":  true,
+    "local_help_auto_approve_verified":  true,
+    "local_help_yolo_verified":  false,
+    "isolated_workspace_required":  true,
+    "network_policy":  "EXPLICITLY_AUTHORIZED_CLINE_MODEL_TRANSPORT_ONLY",
+    "network_authorization_state":  "PENDING_EXPLICIT_AUTHORIZATION",
+    "task_execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION",
+    "global_dispatch_enabled":  false,
+    "operation_enabled":  false,
+    "dispatch_allowed":  false,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "runtime_execution":  false,
+    "created_at":  "2026-06-14T23:19:08.6307639+02:00",
+    "integrity_sha256":  "510249AF689D53898F95A5DA612F6CF3BC2D4BE7DE995861810E1B6360A586CD"
+}

@@ -1,0 +1,37 @@
+﻿{
+    "schema_version":  "1.0",
+    "envelope_id":  "CLINE-TASK-ENVELOPE-004-SMOKE-001",
+    "task_id":  "TASK-CLINE-004-SMOKE-001",
+    "project_id":  "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+    "objective":  "Produce one harmless local JSON evidence file through a single controlled Cline task.",
+    "instructions":  "Create only the file data/engremiat-controlled-cline-worker-adapter-004/step-004-06-controlled-cline-task-smoke/cline-controlled-smoke-output.v1.json. The JSON must contain schema_version 1.0, task_id TASK-CLINE-004-SMOKE-001, result CONTROLLED_CLINE_TASK_SMOKE_OK and no other fields. Do not read or modify other project files. Do not use the network. Do not run Git. Do not continue automatically.",
+    "repository_scope":  "data/engremiat-controlled-cline-worker-adapter-004",
+    "allowed_paths":  [
+                          "data/engremiat-controlled-cline-worker-adapter-004/step-004-06-controlled-cline-task-smoke"
+                      ],
+    "forbidden_actions":  [
+                              "NETWORK_ACCESS",
+                              "GIT_PUSH",
+                              "GIT_FORCE",
+                              "DELETE_OUTSIDE_ALLOWED_PATHS",
+                              "FREE_FORM_SHELL",
+                              "AUTOMATIC_CONTINUATION",
+                              "MODIFY_CLINE_SESSION_METADATA"
+                          ],
+    "validation_contract":  [
+                                "OUTPUT_FILE_EXISTS",
+                                "OUTPUT_JSON_VALID",
+                                "EXACT_OUTPUT_FIELDS",
+                                "TASK_ID_MATCHES",
+                                "NO_UNDECLARED_FILES",
+                                "NO_GIT_WRITE"
+                            ],
+    "timeout_seconds":  300,
+    "authorization_context":  {
+                                  "task_authorization_state":  "AUTHORIZED",
+                                  "execution_authorization_state":  "PENDING_EXECUTION_AUTHORIZATION"
+                              },
+    "execution_policy":  "SINGLE_TASK_CONTROLLED",
+    "dry_run":  true,
+    "runtime_execution":  false
+}

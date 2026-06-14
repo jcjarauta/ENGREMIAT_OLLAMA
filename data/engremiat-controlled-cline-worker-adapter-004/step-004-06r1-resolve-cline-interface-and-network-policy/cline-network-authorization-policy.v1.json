@@ -1,0 +1,18 @@
+﻿{
+    "schema_version":  "1.0",
+    "policy_id":  "CLINE-NETWORK-AUTHORIZATION-POLICY-004-001",
+    "classification":  "EXPLICITLY_AUTHORIZED_CLINE_TRANSPORT_REQUIRED",
+    "network_transport_required":  true,
+    "offline_flag_available":  false,
+    "no_network_flag_available":  false,
+    "authorization_required":  true,
+    "authorization_scope":  "ONLY_THE_SINGLE_AUTHORIZED_CLINE_PROCESS_AND_ITS_MODEL_PROVIDER_TRANSPORT",
+    "task_instruction_network_access":  "DENIED",
+    "child_shell_network_tools":  "DENIED",
+    "automatic_continuation":  false,
+    "network_activity_claimed_as_zero":  false,
+    "network_activity_must_be_logged":  true,
+    "network_destinations_verified":  false,
+    "execution_enabled":  false,
+    "created_at":  "2026-06-14T23:09:49.8826350+02:00"
+}

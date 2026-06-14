@@ -1,0 +1,15 @@
+﻿step=004-06
+review_completed=True
+execution_attempted=False
+decision=NO_GO
+reasons=NON_INTERACTIVE_APPROVAL_FLAG_NOT_PROVEN,ENFORCEABLE_OFFLINE_OR_NO_NETWORK_FLAG_NOT_PROVEN
+candidate_template_count=1
+exact_argument_template_resolved=True
+non_interactive_mode_resolved=False
+network_isolation_argument_resolved=False
+cline_invoked=False
+process_started=False
+task_dispatched=False
+prompt_submitted=False
+external_network=False
+next=STEP_004_06R_RESOLVE_EXACT_AND_NETWORK_ISOLATED_CLINE_TASK_INTERFACE

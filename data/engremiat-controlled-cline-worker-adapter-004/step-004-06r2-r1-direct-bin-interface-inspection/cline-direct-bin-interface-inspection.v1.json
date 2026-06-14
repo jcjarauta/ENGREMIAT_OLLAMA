@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "inspection_id": "CLINE-DIRECT-BIN-INTERFACE-004-001",
+  "package": {
+    "root": "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline",
+    "name": "cline",
+    "version": "3.0.24",
+    "package_json_sha256": "E1EF2EB8A899967454E6EE53E6B38633D5CF1C0022C26E923FBC4719F6DDDC92",
+    "bin_entries": [
+      {
+        "name": "cline",
+        "target": "./bin/cline",
+        "absolute": "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline\\bin\\cline",
+        "exists": true
+      }
+    ]
+  },
+  "wrapper": {
+    "path": "C:\\Users\\pc\\AppData\\Roaming\\npm\\cline.ps1",
+    "sha256": "71887F175B0DC19A1895E23DC5F897A560787A5F3120AC23297AA6CE3F617A6C",
+    "references": [
+      "$basedir/node_modules/cline/bin/cline",
+      "$basedir/node_modules/cline/bin/cline",
+      "$basedir/node_modules/cline/bin/cline",
+      "$basedir/node_modules/cline/bin/cline"
+    ],
+    "content_included": false
+  },
+  "scan": {
+    "package_files_found": 5,
+    "files_inspected": 5,
+    "evidence_files": 2,
+    "direct_target_count": 5,
+    "evidence": [
+      {
+        "file": "bin/cline",
+        "absolute": "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline\\bin\\cline",
+        "size_bytes": 2827,
+        "sha256": "6A9300C6EE95B4A693843A3B09D4267027E268D562B816AF69F9351AF173B407",
+        "text_like": true,
+        "matches": {}
+      },
+      {
+        "file": "README.md",
+        "absolute": "C:\\Users\\pc\\AppData\\Roaming\\npm\\node_modules\\cline\\README.md",
+        "size_bytes": 14728,
+        "sha256": "76B3754D4F0E2B5E5E41B02D98C5579D253A35FA061340C75EF3C05B39CC012D",
+        "text_like": true,
+        "matches": {
+          "flags": [
+            "--help",
+            "--provider",
+            "--apikey",
+            "--modelid",
+            "--json",
+            "--yolo",
+            "--zen",
+            "--auto-approve",
+            "--retries",
+            "--team-name",
+            "--baseurl",
+            "--bot-token",
+            "--signing-secret",
+            "--base-url",
+            "--app-token",
+            "--api-key",
+            "--stop",
+            "--cron",
+            "--prompt",
+            "--workspace",
+            "--model",
+            "--timeout",
+            "--tags",
+            "--limit",
+            "--delivery-adapter",
+            "--delivery-bot",
+            "--delivery-thread",
+            "--system",
+            "--key",
+            "--plan",
+            "--tui",
+            "--cwd",
+            "--config",
+            "--hooks-dir",
+            "--acp",
+            "--thinking",
+            "--compaction",
+            "--data-dir",
+            "--kanban",
+            "--verbose",
+            "--version"
+          ],
+          "positional": [
+            "-s, --system <prompt>"
+          ],
+          "prompt_flags": [
+            "--prompt"
+          ],
+          "noninteractive_flags": [
+            "--yolo",
+            "--auto-approve"
+          ],
+          "structured_flags": [
+            "--json"
+          ]
+        }
+      }
+    ]
+  },
+  "flags": [
+    "--help",
+    "--provider",
+    "--apikey",
+    "--modelid",
+    "--json",
+    "--yolo",
+    "--zen",
+    "--auto-approve",
+    "--retries",
+    "--team-name",
+    "--baseurl",
+    "--bot-token",
+    "--signing-secret",
+    "--base-url",
+    "--app-token",
+    "--api-key",
+    "--stop",
+    "--cron",
+    "--prompt",
+    "--workspace",
+    "--model",
+    "--timeout",
+    "--tags",
+    "--limit",
+    "--delivery-adapter",
+    "--delivery-bot",
+    "--delivery-thread",
+    "--system",
+    "--key",
+    "--plan",
+    "--tui",
+    "--cwd",
+    "--config",
+    "--hooks-dir",
+    "--acp",
+    "--thinking",
+    "--compaction",
+    "--data-dir",
+    "--kanban",
+    "--verbose",
+    "--version"
+  ],
+  "candidates": [
+    {
+      "type": "POSITIONAL_ARGUMENT",
+      "syntax": "-s, --system <prompt>",
+      "file": "README.md"
+    },
+    {
+      "type": "PROMPT_OPTION",
+      "syntax": "--prompt {TASK_PROMPT}",
+      "file": "README.md"
+    }
+  ],
+  "candidate_count": 2,
+  "exact_task_interface_resolved": false,
+  "confidence": "MEDIUM",
+  "cline_invoked": false,
+  "process_started": false,
+  "task_dispatched": false,
+  "prompt_submitted": false,
+  "session_content_read": false,
+  "metadata_modified": false
+}

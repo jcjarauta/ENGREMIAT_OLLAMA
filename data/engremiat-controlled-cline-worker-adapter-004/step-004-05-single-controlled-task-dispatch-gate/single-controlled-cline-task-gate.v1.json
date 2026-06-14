@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "gate_id": "CLINE-SINGLE-TASK-DISPATCH-GATE-004-001",
+  "adapter_id": "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+  "operation_id": "CLINE_SINGLE_TASK_DISPATCH",
+  "envelope_id": "CLINE-TASK-ENVELOPE-004-SMOKE-001",
+  "task_id": "TASK-CLINE-004-SMOKE-001",
+  "project_id": "ENGREMIAT-CONTROLLED-CLINE-WORKER-ADAPTER-004",
+  "task_envelope_sha256": "BB14C8DA48BBCE6455E97586CBAD199B5A7C785A849980D2DD10410A2715D837",
+  "preflight_integrity_sha256": "315A699AA576F49A136A1DD04883A473BC44D8E4041BFB1A30F40E3813716929",
+  "cli_interface_analysis": {
+    "stable_task_interface_candidate_detected": true,
+    "candidate_line_count": 18,
+    "prompt_marker_count": 3,
+    "task_marker_count": 9,
+    "non_interactive_marker_count": 3
+  },
+  "authorization": {
+    "task_authorization_state": "AUTHORIZED",
+    "execution_authorization_state": "PENDING_EXECUTION_AUTHORIZATION",
+    "explicit_human_decision_required": true,
+    "authorization_phrase": "AUTORIZO_STEP_004_06_SINGLE_CONTROLLED_CLINE_TASK_SMOKE"
+  },
+  "dispatch": {
+    "global_dispatch_enabled": false,
+    "operation_enabled": false,
+    "dispatch_allowed": false,
+    "cline_invoked": false,
+    "process_started": false,
+    "task_dispatched": false,
+    "prompt_submitted": false,
+    "runtime_execution": false
+  },
+  "safety": {
+    "single_task_only": true,
+    "repository_scope_enforced": true,
+    "allowed_paths_enforced": true,
+    "forbidden_actions_enforced": true,
+    "network_denied": true,
+    "git_write_denied": true,
+    "automatic_continuation": false,
+    "free_form_shell": false,
+    "timeout_seconds": 300
+  },
+  "decision": "READY_FOR_HUMAN_REVIEW_OF_EXACT_CLI_INVOCATION",
+  "next_required_action": "REVIEW_EXACT_ARGUMENT_CONTRACT_BEFORE_EXECUTION",
+  "integrity_sha256": "7B11E0A93D342E637FA9B5F253475EBE26E88C73122A3FB56B75C0F9CA8BA990"
+}

@@ -1,0 +1,37 @@
+﻿{
+    "schema_version":  "1.0",
+    "validation_id":  "CONTROLLED-CLINE-OUTPUT-VALIDATION-004-001",
+    "objective":  "engremiat-controlled-cline-worker-adapter-004",
+    "step":  "004-06R5",
+    "workspace":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r4-final-invocation-validation-and-authorization\\isolated-cline-smoke-workspace",
+    "files_before":  [
+                         "README_CONTROLLED_SMOKE.md"
+                     ],
+    "files_after":  [
+                        "cline-controlled-smoke-output.v1.json",
+                        "README_CONTROLLED_SMOKE.md"
+                    ],
+    "allowed_files_after":  [
+                                "README_CONTROLLED_SMOKE.md",
+                                "cline-controlled-smoke-output.v1.json"
+                            ],
+    "unexpected_files_after":  [
+
+                               ],
+    "unexpected_file_count":  0,
+    "output_file":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r4-final-invocation-validation-and-authorization\\isolated-cline-smoke-workspace\\cline-controlled-smoke-output.v1.json",
+    "output_exists":  true,
+    "output_json_valid":  true,
+    "output_exact_fields":  true,
+    "schema_version_matches":  true,
+    "task_id_matches":  true,
+    "result_matches":  true,
+    "process_successful":  true,
+    "terminal_execution_state":  "TERMINAL_SUCCESS",
+    "canonical_task_status":  "REVIEW",
+    "automatic_retry":  false,
+    "automatic_continuation":  false,
+    "git_write":  false,
+    "validation_passed":  true,
+    "created_at":  "2026-06-14T23:21:11.1959672+02:00"
+}
