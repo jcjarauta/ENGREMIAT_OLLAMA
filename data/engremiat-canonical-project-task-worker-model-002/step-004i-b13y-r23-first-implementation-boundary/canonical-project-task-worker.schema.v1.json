@@ -1,0 +1,196 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schemas/canonical-project-task-worker.v1.json",
+    "title":  "Canonical Project Task Worker Model",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "schema_version",
+                     "projects",
+                     "tasks",
+                     "workers"
+                 ],
+    "properties":  {
+                       "schema_version":  {
+                                              "const":  "1.0"
+                                          },
+                       "projects":  {
+                                        "type":  "array",
+                                        "items":  {
+                                                      "type":  "object",
+                                                      "additionalProperties":  false,
+                                                      "required":  [
+                                                                       "project_id",
+                                                                       "title",
+                                                                       "status",
+                                                                       "objective",
+                                                                       "task_ids"
+                                                                   ],
+                                                      "properties":  {
+                                                                         "project_id":  {
+                                                                                            "type":  "string",
+                                                                                            "minLength":  1
+                                                                                        },
+                                                                         "title":  {
+                                                                                       "type":  "string",
+                                                                                       "minLength":  1
+                                                                                   },
+                                                                         "status":  {
+                                                                                        "enum":  [
+                                                                                                     "DRAFT",
+                                                                                                     "ACTIVE",
+                                                                                                     "ON_HOLD",
+                                                                                                     "COMPLETED",
+                                                                                                     "ARCHIVED"
+                                                                                                 ]
+                                                                                    },
+                                                                         "objective":  {
+                                                                                           "type":  "string",
+                                                                                           "minLength":  1
+                                                                                       },
+                                                                         "task_ids":  {
+                                                                                          "type":  "array",
+                                                                                          "uniqueItems":  true,
+                                                                                          "items":  {
+                                                                                                        "type":  "string",
+                                                                                                        "minLength":  1
+                                                                                                    }
+                                                                                      }
+                                                                     }
+                                                  }
+                                    },
+                       "tasks":  {
+                                     "type":  "array",
+                                     "items":  {
+                                                   "type":  "object",
+                                                   "additionalProperties":  false,
+                                                   "required":  [
+                                                                    "task_id",
+                                                                    "project_id",
+                                                                    "title",
+                                                                    "status",
+                                                                    "required_capabilities",
+                                                                    "eligible_worker_ids",
+                                                                    "authorization_state",
+                                                                    "execution_state"
+                                                                ],
+                                                   "properties":  {
+                                                                      "task_id":  {
+                                                                                      "type":  "string",
+                                                                                      "minLength":  1
+                                                                                  },
+                                                                      "project_id":  {
+                                                                                         "type":  "string",
+                                                                                         "minLength":  1
+                                                                                     },
+                                                                      "title":  {
+                                                                                    "type":  "string",
+                                                                                    "minLength":  1
+                                                                                },
+                                                                      "status":  {
+                                                                                     "enum":  [
+                                                                                                  "BACKLOG",
+                                                                                                  "READY",
+                                                                                                  "IN_PROGRESS",
+                                                                                                  "REVIEW",
+                                                                                                  "COMPLETED",
+                                                                                                  "BLOCKED"
+                                                                                              ]
+                                                                                 },
+                                                                      "required_capabilities":  {
+                                                                                                    "type":  "array",
+                                                                                                    "uniqueItems":  true,
+                                                                                                    "items":  {
+                                                                                                                  "type":  "string",
+                                                                                                                  "minLength":  1
+                                                                                                              }
+                                                                                                },
+                                                                      "eligible_worker_ids":  {
+                                                                                                  "type":  "array",
+                                                                                                  "uniqueItems":  true,
+                                                                                                  "items":  {
+                                                                                                                "type":  "string",
+                                                                                                                "minLength":  1
+                                                                                                            }
+                                                                                              },
+                                                                      "authorization_state":  {
+                                                                                                  "enum":  [
+                                                                                                               "NOT_REQUIRED",
+                                                                                                               "PENDING_HUMAN_AUTHORIZATION",
+                                                                                                               "AUTHORIZED",
+                                                                                                               "REJECTED",
+                                                                                                               "EXPIRED"
+                                                                                                           ]
+                                                                                              },
+                                                                      "execution_state":  {
+                                                                                              "enum":  [
+                                                                                                           "NOT_STARTED",
+                                                                                                           "QUEUED",
+                                                                                                           "RUNNING",
+                                                                                                           "TERMINAL_SUCCESS",
+                                                                                                           "TERMINAL_ERROR",
+                                                                                                           "CANCELLED"
+                                                                                                       ]
+                                                                                          }
+                                                                  }
+                                               }
+                                 },
+                       "workers":  {
+                                       "type":  "array",
+                                       "items":  {
+                                                     "type":  "object",
+                                                     "additionalProperties":  false,
+                                                     "required":  [
+                                                                      "worker_id",
+                                                                      "worker_type",
+                                                                      "status",
+                                                                      "capabilities",
+                                                                      "execution_modes"
+                                                                  ],
+                                                     "properties":  {
+                                                                        "worker_id":  {
+                                                                                          "type":  "string",
+                                                                                          "minLength":  1
+                                                                                      },
+                                                                        "worker_type":  {
+                                                                                            "enum":  [
+                                                                                                         "HUMAN",
+                                                                                                         "CLINE",
+                                                                                                         "OLLAMA",
+                                                                                                         "LOCAL_SCRIPT",
+                                                                                                         "REMOTE_NODE"
+                                                                                                     ]
+                                                                                        },
+                                                                        "status":  {
+                                                                                       "enum":  [
+                                                                                                    "AVAILABLE",
+                                                                                                    "BUSY",
+                                                                                                    "OFFLINE",
+                                                                                                    "DISABLED"
+                                                                                                ]
+                                                                                   },
+                                                                        "capabilities":  {
+                                                                                             "type":  "array",
+                                                                                             "uniqueItems":  true,
+                                                                                             "items":  {
+                                                                                                           "type":  "string",
+                                                                                                           "minLength":  1
+                                                                                                       }
+                                                                                         },
+                                                                        "execution_modes":  {
+                                                                                                "type":  "array",
+                                                                                                "uniqueItems":  true,
+                                                                                                "items":  {
+                                                                                                              "enum":  [
+                                                                                                                           "READ_ONLY",
+                                                                                                                           "LOCAL_WRITE",
+                                                                                                                           "CONTROLLED_EXECUTION",
+                                                                                                                           "REMOTE_EXECUTION"
+                                                                                                                       ]
+                                                                                                          }
+                                                                                            }
+                                                                    }
+                                                 }
+                                   }
+                   }
+}

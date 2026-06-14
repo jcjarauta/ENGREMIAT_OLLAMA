@@ -1,0 +1,45 @@
+﻿{
+    "schema_version":  "1.0",
+    "projects":  [
+                     {
+                         "project_id":  "PROJECT-PTW-001",
+                         "title":  "Canonical worker model",
+                         "status":  "ACTIVE",
+                         "objective":  "Validate the first Project-Task-Worker contract",
+                         "task_ids":  [
+                                          "TASK-PTW-001"
+                                      ]
+                     }
+                 ],
+    "tasks":  [
+                  {
+                      "task_id":  "TASK-PTW-001",
+                      "project_id":  "PROJECT-PTW-001",
+                      "title":  "Validate canonical contract",
+                      "status":  "READY",
+                      "required_capabilities":  [
+                                                    "JSON_VALIDATION",
+                                                    "LOCAL_READ_ONLY"
+                                                ],
+                      "eligible_worker_ids":  [
+                                                  "WORKER-LOCAL-001"
+                                              ],
+                      "authorization_state":  "AUTHORIZED",
+                      "execution_state":  "NOT_STARTED"
+                  }
+              ],
+    "workers":  [
+                    {
+                        "worker_id":  "WORKER-LOCAL-001",
+                        "worker_type":  "LOCAL_SCRIPT",
+                        "status":  "AVAILABLE",
+                        "capabilities":  [
+                                             "JSON_VALIDATION",
+                                             "LOCAL_READ_ONLY"
+                                         ],
+                        "execution_modes":  [
+                                                "READ_ONLY"
+                                            ]
+                    }
+                ]
+}

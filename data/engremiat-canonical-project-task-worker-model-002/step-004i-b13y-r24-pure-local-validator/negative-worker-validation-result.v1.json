@@ -1,0 +1,18 @@
+{
+  "valid": false,
+  "errors": [
+    {
+      "code": "WORKER_CAPABILITY_MISSING",
+      "message": "Worker WORKER-LOCAL-001 lacks capability JSON_VALIDATION.",
+      "location": "$.tasks[0].eligible_worker_ids"
+    }
+  ],
+  "counts": {
+    "projects": 1,
+    "tasks": 1,
+    "workers": 1
+  },
+  "input": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\invalid-worker-capability.v1.json",
+  "validator": "PTW-VALIDATOR-001",
+  "validated_at": "2026-06-14T20:21:54.942Z"
+}

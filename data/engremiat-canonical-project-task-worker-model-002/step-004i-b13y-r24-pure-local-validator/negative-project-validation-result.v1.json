@@ -1,0 +1,23 @@
+{
+  "valid": false,
+  "errors": [
+    {
+      "code": "TASK_PROJECT_NOT_FOUND",
+      "message": "Project PROJECT-MISSING does not exist.",
+      "location": "$.tasks[0].project_id"
+    },
+    {
+      "code": "PROJECT_TASK_OWNER_MISMATCH",
+      "message": "Task TASK-PTW-001 belongs to another project.",
+      "location": "$.projects[0].task_ids"
+    }
+  ],
+  "counts": {
+    "projects": 1,
+    "tasks": 1,
+    "workers": 1
+  },
+  "input": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\invalid-missing-project.v1.json",
+  "validator": "PTW-VALIDATOR-001",
+  "validated_at": "2026-06-14T20:21:54.897Z"
+}

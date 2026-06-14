@@ -1,0 +1,14 @@
+﻿step=004I-B13Y-R22-R1
+head_sha=98c3d81e7e8b691052d4fcb041fed3ea31df19a6
+branch=main
+commit_subject=feat(worker-model): add canonical project-task-worker baseline
+local_commit_preserved=True
+commit_scope_exact=True
+committed_path_count=231
+staged_path_count=0
+remote_count=0
+origin_present=False
+upstream=
+classification=LOCAL_COMMIT_COMPLETE_NO_REMOTE_CONFIGURED
+validation_passed=True
+next=STEP_004I_B13Y_R22_R2_CONFIGURE_REMOTE_IDENTITY

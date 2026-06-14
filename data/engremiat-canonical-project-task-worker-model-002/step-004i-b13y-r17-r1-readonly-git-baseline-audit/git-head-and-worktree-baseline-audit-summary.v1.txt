@@ -1,0 +1,15 @@
+﻿step=004I-B13Y-R17-R1
+repair_reason=EXPECTED_UNTRACKED_FILE_HANDLED_WITH_SAFE_GIT_WRAPPER
+head_sha=2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b
+branch=main
+detached_head=False
+worktree_clean=False
+status_entry_count=252
+untracked_entry_count=252
+modified_or_staged_entry_count=0
+manifest_tracked=False
+manifest_untracked=True
+manifest_hash_match=True
+classification=ATTACHED_BRANCH_WITH_DIRTY_WORKTREE
+validation_passed=True
+next=STEP_004I_B13Y_R18_PREPARE_HUMAN_DECISION_FOR_GIT_BASELINE_STABILIZATION

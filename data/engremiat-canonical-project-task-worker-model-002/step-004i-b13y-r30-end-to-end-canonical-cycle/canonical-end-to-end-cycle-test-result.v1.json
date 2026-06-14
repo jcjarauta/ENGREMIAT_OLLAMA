@@ -1,0 +1,88 @@
+{
+  "valid": true,
+  "test_count": 16,
+  "passed_count": 16,
+  "results": [
+    {
+      "name": "cycle_completed",
+      "passed": true,
+      "detail": "CANONICAL_CYCLE_COMPLETE"
+    },
+    {
+      "name": "project_preserved",
+      "passed": true,
+      "detail": "PROJECT-PTW-001"
+    },
+    {
+      "name": "task_preserved",
+      "passed": true,
+      "detail": "TASK-PTW-001"
+    },
+    {
+      "name": "worker_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "six_stages_recorded",
+      "passed": true,
+      "detail": "6"
+    },
+    {
+      "name": "final_task_review",
+      "passed": true,
+      "detail": "REVIEW"
+    },
+    {
+      "name": "final_execution_success",
+      "passed": true,
+      "detail": "TERMINAL_SUCCESS"
+    },
+    {
+      "name": "separate_gate_preserved",
+      "passed": true,
+      "detail": "true"
+    },
+    {
+      "name": "no_real_execution",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "no_external_integrations",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "input_immutable",
+      "passed": true,
+      "detail": "input model changed"
+    },
+    {
+      "name": "integrity_chain_valid",
+      "passed": true,
+      "detail": "95DBC8EEC43946D11ECABBA34DBC2C5865FA327D4D213BDCA6CEE99A5EC65981"
+    },
+    {
+      "name": "authorization_gate_blocks_cycle",
+      "passed": true,
+      "detail": "DRY_RUN_PLAN"
+    },
+    {
+      "name": "invalid_initial_model_blocked",
+      "passed": true,
+      "detail": "INITIAL_VALIDATION"
+    },
+    {
+      "name": "missing_task_blocked",
+      "passed": true,
+      "detail": "DRY_RUN_PLAN"
+    },
+    {
+      "name": "invalid_outcome_blocked",
+      "passed": true,
+      "detail": "SIMULATED_LIFECYCLE"
+    }
+  ],
+  "tested_at": "2026-06-14T20:40:32.190Z"
+}

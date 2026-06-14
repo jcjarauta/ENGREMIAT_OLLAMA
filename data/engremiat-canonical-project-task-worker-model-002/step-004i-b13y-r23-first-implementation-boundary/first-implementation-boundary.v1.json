@@ -1,0 +1,118 @@
+﻿{
+    "schema_version":  "1.0",
+    "boundary_id":  "PTW-CONTRACT-001",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "title":  "Canonical Project-Task-Worker Contract",
+    "purpose":  "Establish the smallest deterministic data contract connecting one project, its tasks, and eligible workers before adding execution adapters.",
+    "implementation_order":  1,
+    "included":  [
+                     "Project entity contract",
+                     "Task entity contract",
+                     "Worker entity contract",
+                     "Project-to-task relationship",
+                     "Task-to-worker eligibility relationship",
+                     "Task lifecycle states",
+                     "Worker capability declarations",
+                     "Authorization and execution gates",
+                     "Evidence references",
+                     "Pure local validation"
+                 ],
+    "excluded":  [
+                     "Worker process execution",
+                     "Ollama invocation",
+                     "Cline invocation",
+                     "Google Sheets API",
+                     "Telegram integration",
+                     "Network services",
+                     "Database migration",
+                     "Automatic task assignment",
+                     "Git operations"
+                 ],
+    "entities":  {
+                     "project":  {
+                                     "required":  [
+                                                      "project_id",
+                                                      "title",
+                                                      "status",
+                                                      "objective",
+                                                      "task_ids"
+                                                  ],
+                                     "statuses":  [
+                                                      "DRAFT",
+                                                      "ACTIVE",
+                                                      "ON_HOLD",
+                                                      "COMPLETED",
+                                                      "ARCHIVED"
+                                                  ]
+                                 },
+                     "task":  {
+                                  "required":  [
+                                                   "task_id",
+                                                   "project_id",
+                                                   "title",
+                                                   "status",
+                                                   "required_capabilities",
+                                                   "eligible_worker_ids",
+                                                   "authorization_state",
+                                                   "execution_state"
+                                               ],
+                                  "statuses":  [
+                                                   "BACKLOG",
+                                                   "READY",
+                                                   "IN_PROGRESS",
+                                                   "REVIEW",
+                                                   "COMPLETED",
+                                                   "BLOCKED"
+                                               ],
+                                  "authorization_states":  [
+                                                               "NOT_REQUIRED",
+                                                               "PENDING_HUMAN_AUTHORIZATION",
+                                                               "AUTHORIZED",
+                                                               "REJECTED",
+                                                               "EXPIRED"
+                                                           ],
+                                  "execution_states":  [
+                                                           "NOT_STARTED",
+                                                           "QUEUED",
+                                                           "RUNNING",
+                                                           "TERMINAL_SUCCESS",
+                                                           "TERMINAL_ERROR",
+                                                           "CANCELLED"
+                                                       ]
+                              },
+                     "worker":  {
+                                    "required":  [
+                                                     "worker_id",
+                                                     "worker_type",
+                                                     "status",
+                                                     "capabilities",
+                                                     "execution_modes"
+                                                 ],
+                                    "types":  [
+                                                  "HUMAN",
+                                                  "CLINE",
+                                                  "OLLAMA",
+                                                  "LOCAL_SCRIPT",
+                                                  "REMOTE_NODE"
+                                              ],
+                                    "statuses":  [
+                                                     "AVAILABLE",
+                                                     "BUSY",
+                                                     "OFFLINE",
+                                                     "DISABLED"
+                                                 ]
+                                }
+                 },
+    "invariants":  [
+                       "Every task references exactly one existing project",
+                       "Every project task_id references an existing task owned by that project",
+                       "Every eligible_worker_id references an existing worker",
+                       "A worker is eligible only when it covers every required task capability",
+                       "Execution cannot start unless authorization_state is AUTHORIZED or NOT_REQUIRED",
+                       "Terminal execution states cannot coexist with IN_PROGRESS task status",
+                       "No adapter may mutate this contract without producing evidence"
+                   ],
+    "first_runtime_boundary_deferred":  true,
+    "next_recommended_boundary":  "PTW-VALIDATOR-001",
+    "created_at":  "2026-06-14T22:20:14.8726092+02:00"
+}

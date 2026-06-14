@@ -1,0 +1,98 @@
+{
+  "valid": true,
+  "test_count": 18,
+  "passed_count": 18,
+  "results": [
+    {
+      "name": "dry_run_created",
+      "passed": true,
+      "detail": "DRY_RUN_PLAN_READY"
+    },
+    {
+      "name": "assignment_queued",
+      "passed": true,
+      "detail": "QUEUED"
+    },
+    {
+      "name": "worker_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "runtime_not_executed",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "separate_gate_present",
+      "passed": true,
+      "detail": "SEPARATE_EXECUTION_GATE"
+    },
+    {
+      "name": "read_only_gate_classified",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "input_model_immutable",
+      "passed": true,
+      "detail": "input model changed"
+    },
+    {
+      "name": "integrity_hash_valid",
+      "passed": true,
+      "detail": "CF62B121044D69B161382CE4B9697669D7780CA1564EE04390923BDD1E1E1926"
+    },
+    {
+      "name": "write_requires_execution_authorization",
+      "passed": true,
+      "detail": "PENDING_EXECUTION_AUTHORIZATION"
+    },
+    {
+      "name": "missing_inputs_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "missing_outputs_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "missing_validation_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "missing_evidence_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "missing_rollback_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "invalid_timeout_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "risk_mismatch_blocked",
+      "passed": true,
+      "detail": "EXECUTION_SPEC_INVALID"
+    },
+    {
+      "name": "task_authorization_blocks_plan",
+      "passed": true,
+      "detail": "ASSIGNMENT_PLAN_FAILED"
+    },
+    {
+      "name": "missing_task_blocked",
+      "passed": true,
+      "detail": "ASSIGNMENT_PLAN_FAILED"
+    }
+  ],
+  "tested_at": "2026-06-14T20:31:08.166Z"
+}

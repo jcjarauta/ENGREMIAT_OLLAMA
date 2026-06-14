@@ -1,0 +1,18 @@
+{
+  "valid": false,
+  "errors": [
+    {
+      "code": "EXECUTION_WITHOUT_AUTHORIZATION",
+      "message": "Execution requires AUTHORIZED or NOT_REQUIRED.",
+      "location": "$.tasks[0].authorization_state"
+    }
+  ],
+  "counts": {
+    "projects": 1,
+    "tasks": 1,
+    "workers": 1
+  },
+  "input": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\invalid-authorization.v1.json",
+  "validator": "PTW-VALIDATOR-001",
+  "validated_at": "2026-06-14T20:21:54.989Z"
+}

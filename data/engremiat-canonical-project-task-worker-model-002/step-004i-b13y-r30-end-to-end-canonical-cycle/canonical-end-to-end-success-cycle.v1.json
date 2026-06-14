@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "cycle_id": "E2E-DRYRUN-E2E-VALIDATE-001-TASK-PTW-001-SUCCESS",
+  "cycle_engine_id": "PTW-END-TO-END-CYCLE-001",
+  "project_id": "PROJECT-PTW-001",
+  "task_id": "TASK-PTW-001",
+  "worker_id": "WORKER-LOCAL-001",
+  "worker_type": "LOCAL_SCRIPT",
+  "operation": "VALIDATE",
+  "risk": "READ_ONLY",
+  "execution_mode": "READ_ONLY",
+  "initial_model_sha256": "E8F3F995BCBD6B0C5E5735BA23BDEEC6D51C936FF91BDAC437CFB951B3416E72",
+  "dry_run_plan_sha256": "73105E26C7729D8997FAD8E5D2E0B81985C4977B910CEDE2A86CFA448D242ADF",
+  "simulation_sha256": "BCAE7A6CD4726D33B31496FEE1C74D4D7CB6493683F2844003C116980EB2AE1D",
+  "stages": [
+    {
+      "sequence": 1,
+      "stage": "MODEL_VALIDATED",
+      "status": "OK"
+    },
+    {
+      "sequence": 2,
+      "stage": "WORKER_SELECTED_AND_ASSIGNED",
+      "status": "OK",
+      "worker_id": "WORKER-LOCAL-001"
+    },
+    {
+      "sequence": 3,
+      "stage": "TASK_QUEUED",
+      "status": "OK",
+      "execution_state": "QUEUED"
+    },
+    {
+      "sequence": 4,
+      "stage": "DRY_RUN_CONTRACT_CREATED",
+      "status": "OK",
+      "plan_id": "DRYRUN-E2E-VALIDATE-001-TASK-PTW-001"
+    },
+    {
+      "sequence": 5,
+      "stage": "WORKER_LIFECYCLE_SIMULATED",
+      "status": "OK",
+      "outcome": "SUCCESS"
+    },
+    {
+      "sequence": 6,
+      "stage": "FINAL_MODEL_VALIDATED",
+      "status": "OK",
+      "task_status": "REVIEW",
+      "execution_state": "TERMINAL_SUCCESS"
+    }
+  ],
+  "final_task_status": "REVIEW",
+  "final_execution_state": "TERMINAL_SUCCESS",
+  "expected_next_action": "HUMAN_OR_AUTOMATED_REVIEW",
+  "authorization": {
+    "task_authorization_state": "AUTHORIZED",
+    "separate_execution_gate_present": true,
+    "real_execution_authorized": false
+  },
+  "safety": {
+    "simulation_only": true,
+    "runtime_execution": false,
+    "worker_started": false,
+    "process_started": false,
+    "command_executed": false,
+    "external_network": false,
+    "google_api": false,
+    "telegram": false,
+    "ollama_invoked": false,
+    "cline_invoked": false
+  },
+  "artifacts": {
+    "dry_run_plan": {
+      "schema_version": "1.0",
+      "plan_id": "DRYRUN-E2E-VALIDATE-001-TASK-PTW-001",
+      "planner_id": "PTW-DRY-RUN-EXECUTION-PLAN-001",
+      "project_id": "PROJECT-PTW-001",
+      "task_id": "TASK-PTW-001",
+      "worker_id": "WORKER-LOCAL-001",
+      "worker_type": "LOCAL_SCRIPT",
+      "execution_mode": "READ_ONLY",
+      "operation_id": "E2E-VALIDATE-001",
+      "operation": "VALIDATE",
+      "risk": "READ_ONLY",
+      "inputs": [
+        "CANONICAL_MODEL"
+      ],
+      "outputs": [
+        "CANONICAL_CYCLE_RESULT"
+      ],
+      "validation": [
+        "FINAL_MODEL_VALID",
+        "FINAL_TASK_REVIEW",
+        "FINAL_EXECUTION_TERMINAL_SUCCESS"
+      ],
+      "evidence": [
+        "END_TO_END_EVIDENCE",
+        "SHA256_CHAIN"
+      ],
+      "rollback": "NOT_REQUIRED_SIMULATION_ONLY",
+      "timeout_seconds": 60,
+      "environment": {
+        "scope": "LOCAL_ONLY",
+        "network": false
+      },
+      "authorization": {
+        "task_authorization_state": "AUTHORIZED",
+        "execution_authorization_required": false,
+        "execution_authorization_status": "READY_FOR_SEPARATE_EXECUTION_GATE",
+        "execution_authorized": false
+      },
+      "safety": {
+        "dry_run": true,
+        "runtime_execution": false,
+        "worker_started": false,
+        "external_network": false,
+        "destructive_operation": false,
+        "automatic_commit": false,
+        "automatic_push": false
+      },
+      "assignment": {
+        "decision": "PLAN_READY",
+        "selection_score": 160,
+        "candidate_count": 1,
+        "task_status": "READY",
+        "execution_state": "QUEUED",
+        "events": [
+          {
+            "type": "WORKER_ASSIGNED",
+            "task_id": "TASK-PTW-001",
+            "worker_id": "WORKER-LOCAL-001",
+            "actor": "ASSIGNMENT_PLANNER"
+          },
+          {
+            "type": "EXECUTION_STATE_TRANSITION",
+            "task_id": "TASK-PTW-001",
+            "from": "NOT_STARTED",
+            "to": "QUEUED",
+            "actor": "ASSIGNMENT_PLANNER",
+            "automatic_task_transition": null
+          }
+        ]
+      },
+      "expected_terminal_states": [
+        "TERMINAL_SUCCESS",
+        "TERMINAL_ERROR",
+        "CANCELLED"
+      ],
+      "next_required_action": "SEPARATE_EXECUTION_GATE",
+      "integrity_sha256": "73105E26C7729D8997FAD8E5D2E0B81985C4977B910CEDE2A86CFA448D242ADF"
+    },
+    "simulation_result": {
+      "schema_version": "1.0",
+      "simulation_id": "SIM-DRYRUN-E2E-VALIDATE-001-TASK-PTW-001-SUCCESS",
+      "simulator_id": "PTW-SIMULATED-WORKER-LIFECYCLE-001",
+      "plan_id": "DRYRUN-E2E-VALIDATE-001-TASK-PTW-001",
+      "task_id": "TASK-PTW-001",
+      "project_id": "PROJECT-PTW-001",
+      "worker_id": "WORKER-LOCAL-001",
+      "worker_type": "LOCAL_SCRIPT",
+      "outcome": "SUCCESS",
+      "terminal_execution_state": "TERMINAL_SUCCESS",
+      "final_task_status": "REVIEW",
+      "events": [
+        {
+          "sequence": 1,
+          "type": "SIMULATION_GATE_OPENED",
+          "task_id": "TASK-PTW-001",
+          "worker_id": "WORKER-LOCAL-001",
+          "real_execution": false
+        },
+        {
+          "sequence": 2,
+          "type": "TASK_STATUS_TRANSITION",
+          "task_id": "TASK-PTW-001",
+          "from": "READY",
+          "to": "IN_PROGRESS",
+          "actor": "END_TO_END_SIMULATOR"
+        },
+        {
+          "sequence": 3,
+          "type": "EXECUTION_STATE_TRANSITION",
+          "task_id": "TASK-PTW-001",
+          "from": "QUEUED",
+          "to": "RUNNING",
+          "actor": "END_TO_END_SIMULATOR",
+          "automatic_task_transition": null
+        },
+        {
+          "sequence": 4,
+          "type": "EXECUTION_STATE_TRANSITION",
+          "task_id": "TASK-PTW-001",
+          "from": "RUNNING",
+          "to": "TERMINAL_SUCCESS",
+          "actor": "END_TO_END_SIMULATOR",
+          "automatic_task_transition": {
+            "from": "IN_PROGRESS",
+            "to": "REVIEW"
+          }
+        }
+      ],
+      "final_model": {
+        "schema_version": "1.0",
+        "projects": [
+          {
+            "project_id": "PROJECT-PTW-001",
+            "title": "Canonical worker model",
+            "status": "ACTIVE",
+            "objective": "Validate the first Project-Task-Worker contract",
+            "task_ids": [
+              "TASK-PTW-001"
+            ]
+          }
+        ],
+        "tasks": [
+          {
+            "task_id": "TASK-PTW-001",
+            "project_id": "PROJECT-PTW-001",
+            "title": "Validate canonical contract",
+            "status": "REVIEW",
+            "required_capabilities": [
+              "JSON_VALIDATION",
+              "LOCAL_READ_ONLY"
+            ],
+            "eligible_worker_ids": [
+              "WORKER-LOCAL-001"
+            ],
+            "authorization_state": "AUTHORIZED",
+            "execution_state": "TERMINAL_SUCCESS"
+          }
+        ],
+        "workers": [
+          {
+            "worker_id": "WORKER-LOCAL-001",
+            "worker_type": "LOCAL_SCRIPT",
+            "status": "AVAILABLE",
+            "capabilities": [
+              "JSON_VALIDATION",
+              "LOCAL_READ_ONLY"
+            ],
+            "execution_modes": [
+              "READ_ONLY"
+            ]
+          }
+        ]
+      },
+      "safety": {
+        "simulation_only": true,
+        "runtime_execution": false,
+        "worker_started": false,
+        "process_started": false,
+        "external_network": false,
+        "filesystem_operation": false,
+        "command_executed": false
+      },
+      "next_required_action": "HUMAN_OR_AUTOMATED_REVIEW",
+      "integrity_sha256": "BCAE7A6CD4726D33B31496FEE1C74D4D7CB6493683F2844003C116980EB2AE1D"
+    },
+    "final_model": {
+      "schema_version": "1.0",
+      "projects": [
+        {
+          "project_id": "PROJECT-PTW-001",
+          "title": "Canonical worker model",
+          "status": "ACTIVE",
+          "objective": "Validate the first Project-Task-Worker contract",
+          "task_ids": [
+            "TASK-PTW-001"
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "TASK-PTW-001",
+          "project_id": "PROJECT-PTW-001",
+          "title": "Validate canonical contract",
+          "status": "REVIEW",
+          "required_capabilities": [
+            "JSON_VALIDATION",
+            "LOCAL_READ_ONLY"
+          ],
+          "eligible_worker_ids": [
+            "WORKER-LOCAL-001"
+          ],
+          "authorization_state": "AUTHORIZED",
+          "execution_state": "TERMINAL_SUCCESS"
+        }
+      ],
+      "workers": [
+        {
+          "worker_id": "WORKER-LOCAL-001",
+          "worker_type": "LOCAL_SCRIPT",
+          "status": "AVAILABLE",
+          "capabilities": [
+            "JSON_VALIDATION",
+            "LOCAL_READ_ONLY"
+          ],
+          "execution_modes": [
+            "READ_ONLY"
+          ]
+        }
+      ]
+    }
+  },
+  "integrity_sha256": "95DBC8EEC43946D11ECABBA34DBC2C5865FA327D4D213BDCA6CEE99A5EC65981"
+}

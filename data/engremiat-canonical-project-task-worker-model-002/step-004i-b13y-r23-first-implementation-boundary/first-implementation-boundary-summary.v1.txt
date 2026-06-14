@@ -1,0 +1,15 @@
+﻿step=004I-B13Y-R23
+boundary_id=PTW-CONTRACT-001
+boundary_created=True
+schema_created=True
+example_created=True
+task_project_references_valid=True
+project_task_references_valid=True
+worker_references_valid=True
+worker_capabilities_cover_task_requirements=True
+authorization_invariant_valid=True
+runtime_execution=False
+external_network=False
+git_write=False
+validation_passed=True
+next=STEP_004I_B13Y_R24_BUILD_PURE_LOCAL_CANONICAL_MODEL_VALIDATOR

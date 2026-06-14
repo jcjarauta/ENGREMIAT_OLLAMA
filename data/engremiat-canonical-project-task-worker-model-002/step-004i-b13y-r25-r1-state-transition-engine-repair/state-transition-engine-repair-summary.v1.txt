@@ -1,0 +1,17 @@
+﻿step=004I-B13Y-R25-R1
+repairs_step=004I-B13Y-R25
+repair_reason=TERMINAL_EXECUTION_REQUIRED_ATOMIC_TASK_STATUS_CHANGE
+engine_rewritten=True
+engine_sha256=0E8CA6F83A02952AABF15F1F2E78010462779B1FC8A4CE3063FC3FDF50EA86E3
+node_check_engine_ok=True
+node_check_test_ok=True
+test_count=15
+passed_count=15
+terminal_success_atomic_review=True
+terminal_error_atomic_blocked=True
+cancelled_atomic_blocked=True
+runtime_worker_execution=False
+external_network=False
+git_write=False
+validation_passed=True
+next=STEP_004I_B13Y_R26_BUILD_DETERMINISTIC_TASK_WORKER_SELECTOR

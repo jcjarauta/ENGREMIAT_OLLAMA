@@ -1,0 +1,63 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "objective_title":  "Canonical Project Task Worker Model",
+    "status":  "CLOSED",
+    "close_step":  "004I-B13Y-R31-R1",
+    "baseline_commit_before_close":  "98c3d81e7e8b691052d4fcb041fed3ea31df19a6",
+    "boundaries_completed":  [
+                                 "PTW-CONTRACT-001",
+                                 "PTW-VALIDATOR-001",
+                                 "PTW-STATE-ENGINE-001",
+                                 "PTW-WORKER-SELECTOR-001",
+                                 "PTW-ASSIGNMENT-PLANNER-001",
+                                 "PTW-DRY-RUN-EXECUTION-PLAN-001",
+                                 "PTW-SIMULATED-WORKER-LIFECYCLE-001",
+                                 "PTW-END-TO-END-CYCLE-001"
+                             ],
+    "modules":  [
+                    "validate-canonical-model.js",
+                    "canonical-state-transition-engine.js",
+                    "deterministic-task-worker-selector.js",
+                    "pure-local-assignment-planner.js",
+                    "dry-run-execution-plan.js",
+                    "simulated-worker-lifecycle.js",
+                    "canonical-end-to-end-cycle.js"
+                ],
+    "module_sha256":  {
+                          "validate-canonical-model.js":  "ED1F4BCE1B1F63995C45AD9CA01AC98B57ACB2699D2E9FBD5B05C2105DF4BBA3",
+                          "canonical-state-transition-engine.js":  "0E8CA6F83A02952AABF15F1F2E78010462779B1FC8A4CE3063FC3FDF50EA86E3",
+                          "deterministic-task-worker-selector.js":  "431C3C821240138C7D534E3D4D18AF35139E908F9C002CD49F4C9AED15B987A8",
+                          "pure-local-assignment-planner.js":  "0F9BFBF932D20FF0F95FA89DB688D0B5C87BFD54D11273AC5D10B792A2E1D40B",
+                          "dry-run-execution-plan.js":  "1E0BCBF7ECB8580205AA782542F041A489B898BED45F644B56CD962F58AEA24C",
+                          "simulated-worker-lifecycle.js":  "4E4E8AA53B97B177108D89CB48FCEF2B898C6B966439011086D8FBEFE1E38480",
+                          "canonical-end-to-end-cycle.js":  "57085A75F9258894A3FA7DEA0F92DA1CFA99A78E4A18F69D3D1A353A89372674"
+                      },
+    "evidence_reports_verified":  8,
+    "end_to_end_test_count":  16,
+    "end_to_end_passed_count":  16,
+    "final_task_status":  "REVIEW",
+    "final_execution_state":  "TERMINAL_SUCCESS",
+    "selected_worker_id":  "WORKER-LOCAL-001",
+    "deterministic_selection":  true,
+    "authorization_gate":  true,
+    "dry_run_contract":  true,
+    "success_error_cancelled_simulation":  true,
+    "hash_chain_verified":  true,
+    "runtime_worker_execution":  false,
+    "process_started":  false,
+    "command_executed":  false,
+    "external_network":  false,
+    "ollama_invoked":  false,
+    "cline_invoked":  false,
+    "google_api":  false,
+    "telegram":  false,
+    "objective_result":  "Deterministic auditable local control core for Project Task Worker selection assignment queueing lifecycle simulation and evidence.",
+    "next_objective_proposal_id":  "ENGREMIAT-CONTROLLED-LOCAL-SCRIPT-WORKER-ADAPTER-003",
+    "git_scope":  [
+                      "tools/engremiat-worker-model",
+                      "data/engremiat-canonical-project-task-worker-model-002"
+                  ],
+    "git_commit_policy":  "SCOPED_ONLY_NO_GIT_ADD_DOT",
+    "created_at":  "2026-06-14T22:40:32.2461331+02:00"
+}

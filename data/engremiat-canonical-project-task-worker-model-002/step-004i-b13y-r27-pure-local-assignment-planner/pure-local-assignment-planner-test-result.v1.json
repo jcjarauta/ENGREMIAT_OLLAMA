@@ -1,0 +1,73 @@
+{
+  "valid": true,
+  "test_count": 13,
+  "passed_count": 13,
+  "results": [
+    {
+      "name": "plan_created",
+      "passed": true,
+      "detail": "PLAN_READY"
+    },
+    {
+      "name": "correct_worker_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "execution_queued",
+      "passed": true,
+      "detail": "QUEUED"
+    },
+    {
+      "name": "worker_not_started",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "input_model_immutable",
+      "passed": true,
+      "detail": "input model changed"
+    },
+    {
+      "name": "two_events_recorded",
+      "passed": true,
+      "detail": "2"
+    },
+    {
+      "name": "authorization_blocks_plan",
+      "passed": true,
+      "detail": "AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "ready_status_required",
+      "passed": true,
+      "detail": "TASK_NOT_READY"
+    },
+    {
+      "name": "duplicate_queue_blocked",
+      "passed": true,
+      "detail": "EXECUTION_ALREADY_PLANNED"
+    },
+    {
+      "name": "offline_worker_no_go",
+      "passed": true,
+      "detail": "NO_ELIGIBLE_WORKER"
+    },
+    {
+      "name": "unsupported_mode_no_go",
+      "passed": true,
+      "detail": "NO_ELIGIBLE_WORKER"
+    },
+    {
+      "name": "lower_load_worker_planned",
+      "passed": true,
+      "detail": "WORKER-LOCAL-002"
+    },
+    {
+      "name": "missing_task_blocked",
+      "passed": true,
+      "detail": "TASK_NOT_FOUND"
+    }
+  ],
+  "tested_at": "2026-06-14T20:30:01.833Z"
+}

@@ -1,0 +1,78 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "DRYRUN-VALIDATE-PTW-001-TASK-PTW-001",
+  "planner_id": "PTW-DRY-RUN-EXECUTION-PLAN-001",
+  "project_id": "PROJECT-PTW-001",
+  "task_id": "TASK-PTW-001",
+  "worker_id": "WORKER-LOCAL-001",
+  "worker_type": "LOCAL_SCRIPT",
+  "execution_mode": "READ_ONLY",
+  "operation_id": "VALIDATE-PTW-001",
+  "operation": "VALIDATE",
+  "risk": "READ_ONLY",
+  "inputs": [
+    "CANONICAL_MODEL"
+  ],
+  "outputs": [
+    "VALIDATION_RESULT"
+  ],
+  "validation": [
+    "EXIT_CODE_ZERO",
+    "RESULT_VALID_TRUE"
+  ],
+  "evidence": [
+    "VALIDATION_JSON",
+    "SHA256"
+  ],
+  "rollback": "NOT_REQUIRED",
+  "timeout_seconds": 60,
+  "environment": {
+    "scope": "LOCAL_ONLY",
+    "network": false
+  },
+  "authorization": {
+    "task_authorization_state": "AUTHORIZED",
+    "execution_authorization_required": false,
+    "execution_authorization_status": "READY_FOR_SEPARATE_EXECUTION_GATE",
+    "execution_authorized": false
+  },
+  "safety": {
+    "dry_run": true,
+    "runtime_execution": false,
+    "worker_started": false,
+    "external_network": false,
+    "destructive_operation": false,
+    "automatic_commit": false,
+    "automatic_push": false
+  },
+  "assignment": {
+    "decision": "PLAN_READY",
+    "selection_score": 160,
+    "candidate_count": 1,
+    "task_status": "READY",
+    "execution_state": "QUEUED",
+    "events": [
+      {
+        "type": "WORKER_ASSIGNED",
+        "task_id": "TASK-PTW-001",
+        "worker_id": "WORKER-LOCAL-001",
+        "actor": "ASSIGNMENT_PLANNER"
+      },
+      {
+        "type": "EXECUTION_STATE_TRANSITION",
+        "task_id": "TASK-PTW-001",
+        "from": "NOT_STARTED",
+        "to": "QUEUED",
+        "actor": "ASSIGNMENT_PLANNER",
+        "automatic_task_transition": null
+      }
+    ]
+  },
+  "expected_terminal_states": [
+    "TERMINAL_SUCCESS",
+    "TERMINAL_ERROR",
+    "CANCELLED"
+  ],
+  "next_required_action": "SEPARATE_EXECUTION_GATE",
+  "integrity_sha256": "CF62B121044D69B161382CE4B9697669D7780CA1564EE04390923BDD1E1E1926"
+}

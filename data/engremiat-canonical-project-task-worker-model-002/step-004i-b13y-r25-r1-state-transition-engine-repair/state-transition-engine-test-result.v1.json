@@ -1,0 +1,128 @@
+{
+  "valid": true,
+  "test_count": 15,
+  "passed_count": 15,
+  "results": [
+    {
+      "name": "authorization_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "queue_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "in_progress_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "running_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "terminal_success_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "terminal_success_auto_review",
+      "passed": true,
+      "detail": "REVIEW"
+    },
+    {
+      "name": "completed_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "terminal_task_cannot_restart",
+      "passed": true,
+      "detail": "TASK_TRANSITION_NOT_ALLOWED"
+    },
+    {
+      "name": "queue_requires_authorization",
+      "passed": true,
+      "detail": "EXECUTION_AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "worker_requires_capabilities",
+      "passed": true,
+      "detail": "WORKER_CAPABILITY_MISMATCH"
+    },
+    {
+      "name": "worker_must_be_available",
+      "passed": true,
+      "detail": "WORKER_NOT_AVAILABLE"
+    },
+    {
+      "name": "review_requires_success",
+      "passed": true,
+      "detail": "REVIEW_REQUIRES_TERMINAL_SUCCESS"
+    },
+    {
+      "name": "terminal_error_allowed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "terminal_error_auto_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    },
+    {
+      "name": "cancelled_auto_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    }
+  ],
+  "final_model": {
+    "schema_version": "1.0",
+    "projects": [
+      {
+        "project_id": "PROJECT-PTW-001",
+        "title": "Canonical worker model",
+        "status": "ACTIVE",
+        "objective": "Validate the first Project-Task-Worker contract",
+        "task_ids": [
+          "TASK-PTW-001"
+        ]
+      }
+    ],
+    "tasks": [
+      {
+        "task_id": "TASK-PTW-001",
+        "project_id": "PROJECT-PTW-001",
+        "title": "Validate canonical contract",
+        "status": "COMPLETED",
+        "required_capabilities": [
+          "JSON_VALIDATION",
+          "LOCAL_READ_ONLY"
+        ],
+        "eligible_worker_ids": [
+          "WORKER-LOCAL-001"
+        ],
+        "authorization_state": "AUTHORIZED",
+        "execution_state": "TERMINAL_SUCCESS"
+      }
+    ],
+    "workers": [
+      {
+        "worker_id": "WORKER-LOCAL-001",
+        "worker_type": "LOCAL_SCRIPT",
+        "status": "AVAILABLE",
+        "capabilities": [
+          "JSON_VALIDATION",
+          "LOCAL_READ_ONLY"
+        ],
+        "execution_modes": [
+          "READ_ONLY"
+        ]
+      }
+    ]
+  },
+  "tested_at": "2026-06-14T20:24:41.155Z"
+}

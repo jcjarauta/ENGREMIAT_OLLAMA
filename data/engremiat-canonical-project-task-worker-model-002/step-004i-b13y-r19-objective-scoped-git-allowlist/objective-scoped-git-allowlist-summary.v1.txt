@@ -1,0 +1,13 @@
+﻿step=004I-B13Y-R19
+status_entry_count=252
+normalized_untracked_count=252
+allowlist_count=231
+exclusion_count=21
+manifest_included=True
+invalid_allowlist_count=0
+missing_on_disk_count=0
+all_inventory_entries_classified=True
+allowlist_sha256=5532F6E4BF9A7912454B1B2252CAFF6DEEC1DC5AC58D6D7BB368AC4483B93B64
+git_write=False
+validation_passed=True
+next=STEP_004I_B13Y_R20_PREPARE_HUMAN_DECISION_FOR_EXPLICIT_SCOPED_GIT_ADD

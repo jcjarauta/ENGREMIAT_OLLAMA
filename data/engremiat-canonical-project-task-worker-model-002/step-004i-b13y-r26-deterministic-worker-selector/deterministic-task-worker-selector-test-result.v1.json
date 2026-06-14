@@ -1,0 +1,68 @@
+{
+  "valid": true,
+  "test_count": 12,
+  "passed_count": 12,
+  "results": [
+    {
+      "name": "single_worker_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "read_only_mode_selected",
+      "passed": true,
+      "detail": "READ_ONLY"
+    },
+    {
+      "name": "lower_load_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-002"
+    },
+    {
+      "name": "preferred_worker_selected",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "authorization_gate_blocks",
+      "passed": true,
+      "detail": "AUTHORIZATION_REQUIRED"
+    },
+    {
+      "name": "offline_worker_blocked",
+      "passed": true,
+      "detail": "NO_ELIGIBLE_WORKER"
+    },
+    {
+      "name": "capability_mismatch_blocked",
+      "passed": true,
+      "detail": "MODEL_INVALID"
+    },
+    {
+      "name": "unsupported_mode_blocked",
+      "passed": true,
+      "detail": "NO_ELIGIBLE_WORKER"
+    },
+    {
+      "name": "undeclared_worker_blocked",
+      "passed": true,
+      "detail": "NO_ELIGIBLE_WORKER"
+    },
+    {
+      "name": "dynamic_eligibility_allowed",
+      "passed": true,
+      "detail": "WORKER-LOCAL-001"
+    },
+    {
+      "name": "completed_task_blocked",
+      "passed": true,
+      "detail": "TASK_TERMINAL"
+    },
+    {
+      "name": "stable_id_tiebreaker",
+      "passed": true,
+      "detail": "WORKER-LOCAL-000"
+    }
+  ],
+  "tested_at": "2026-06-14T20:25:40.229Z"
+}

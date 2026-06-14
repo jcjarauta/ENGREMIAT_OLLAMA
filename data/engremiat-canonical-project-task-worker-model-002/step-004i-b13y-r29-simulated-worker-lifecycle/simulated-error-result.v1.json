@@ -1,0 +1,107 @@
+{
+  "schema_version": "1.0",
+  "simulation_id": "SIM-DRYRUN-VALIDATE-PTW-001-TASK-PTW-001-ERROR",
+  "simulator_id": "PTW-SIMULATED-WORKER-LIFECYCLE-001",
+  "plan_id": "DRYRUN-VALIDATE-PTW-001-TASK-PTW-001",
+  "task_id": "TASK-PTW-001",
+  "project_id": "PROJECT-PTW-001",
+  "worker_id": "WORKER-LOCAL-001",
+  "worker_type": "LOCAL_SCRIPT",
+  "outcome": "ERROR",
+  "terminal_execution_state": "TERMINAL_ERROR",
+  "final_task_status": "BLOCKED",
+  "events": [
+    {
+      "sequence": 1,
+      "type": "SIMULATION_GATE_OPENED",
+      "task_id": "TASK-PTW-001",
+      "worker_id": "WORKER-LOCAL-001",
+      "real_execution": false
+    },
+    {
+      "sequence": 2,
+      "type": "TASK_STATUS_TRANSITION",
+      "task_id": "TASK-PTW-001",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "actor": "SIMULATED_WORKER"
+    },
+    {
+      "sequence": 3,
+      "type": "EXECUTION_STATE_TRANSITION",
+      "task_id": "TASK-PTW-001",
+      "from": "QUEUED",
+      "to": "RUNNING",
+      "actor": "SIMULATED_WORKER",
+      "automatic_task_transition": null
+    },
+    {
+      "sequence": 4,
+      "type": "EXECUTION_STATE_TRANSITION",
+      "task_id": "TASK-PTW-001",
+      "from": "RUNNING",
+      "to": "TERMINAL_ERROR",
+      "actor": "SIMULATED_WORKER",
+      "automatic_task_transition": {
+        "from": "IN_PROGRESS",
+        "to": "BLOCKED"
+      }
+    }
+  ],
+  "final_model": {
+    "schema_version": "1.0",
+    "projects": [
+      {
+        "project_id": "PROJECT-PTW-001",
+        "title": "Canonical worker model",
+        "status": "ACTIVE",
+        "objective": "Validate the first Project-Task-Worker contract",
+        "task_ids": [
+          "TASK-PTW-001"
+        ]
+      }
+    ],
+    "tasks": [
+      {
+        "task_id": "TASK-PTW-001",
+        "project_id": "PROJECT-PTW-001",
+        "title": "Validate canonical contract",
+        "status": "BLOCKED",
+        "required_capabilities": [
+          "JSON_VALIDATION",
+          "LOCAL_READ_ONLY"
+        ],
+        "eligible_worker_ids": [
+          "WORKER-LOCAL-001"
+        ],
+        "authorization_state": "AUTHORIZED",
+        "execution_state": "TERMINAL_ERROR"
+      }
+    ],
+    "workers": [
+      {
+        "worker_id": "WORKER-LOCAL-001",
+        "worker_type": "LOCAL_SCRIPT",
+        "status": "AVAILABLE",
+        "capabilities": [
+          "JSON_VALIDATION",
+          "LOCAL_READ_ONLY"
+        ],
+        "execution_modes": [
+          "READ_ONLY"
+        ]
+      }
+    ]
+  },
+  "safety": {
+    "simulation_only": true,
+    "runtime_execution": false,
+    "worker_started": false,
+    "process_started": false,
+    "external_network": false,
+    "filesystem_operation": false,
+    "command_executed": false
+  },
+  "next_required_action": "REPLAN_OR_HUMAN_REVIEW",
+  "integrity_sha256": "BCCE98D09D4928A6C96EAEA13BFE2A485F99B48BA29FD2E1E8FBCF952164B740"
+}

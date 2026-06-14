@@ -1,0 +1,44 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R22-R1",
+    "repairs_step":  "004I-B13Y-R22",
+    "operation":  "AUDIT_LOCAL_COMMIT_AND_REMOTE_CONFIGURATION",
+    "head_sha":  "98c3d81e7e8b691052d4fcb041fed3ea31df19a6",
+    "parent_sha":  "2cc897de76f9d6c05274a3dbaa602c7bcf4ea43b",
+    "branch":  "main",
+    "commit_subject":  "feat(worker-model): add canonical project-task-worker baseline",
+    "local_commit_preserved":  true,
+    "committed_path_count":  231,
+    "allowlist_count":  231,
+    "commit_scope_exact":  true,
+    "missing_allowed_paths":  [
+
+                              ],
+    "unexpected_committed_paths":  [
+
+                                   ],
+    "excluded_committed_paths":  [
+
+                                 ],
+    "staged_path_count":  0,
+    "remote_count":  0,
+    "remotes":  [
+
+                ],
+    "origin_present":  false,
+    "upstream":  "",
+    "push_attempted_by_this_step":  false,
+    "remote_modified":  false,
+    "git_commit":  false,
+    "git_push":  false,
+    "git_fetch":  false,
+    "git_reset":  false,
+    "git_clean":  false,
+    "git_checkout":  false,
+    "git_write":  false,
+    "classification":  "LOCAL_COMMIT_COMPLETE_NO_REMOTE_CONFIGURED",
+    "validation_passed":  true,
+    "next":  "STEP_004I_B13Y_R22_R2_CONFIGURE_REMOTE_IDENTITY",
+    "created_at":  "2026-06-14T22:17:03.1719198+02:00"
+}

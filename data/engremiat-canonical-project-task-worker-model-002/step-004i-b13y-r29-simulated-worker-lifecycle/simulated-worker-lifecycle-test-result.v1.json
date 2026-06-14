@@ -1,0 +1,98 @@
+{
+  "valid": true,
+  "test_count": 18,
+  "passed_count": 18,
+  "results": [
+    {
+      "name": "success_simulation_completed",
+      "passed": true,
+      "detail": "SIMULATION_COMPLETE"
+    },
+    {
+      "name": "success_terminal_state",
+      "passed": true,
+      "detail": "TERMINAL_SUCCESS"
+    },
+    {
+      "name": "success_moves_to_review",
+      "passed": true,
+      "detail": "REVIEW"
+    },
+    {
+      "name": "success_has_four_events",
+      "passed": true,
+      "detail": "4"
+    },
+    {
+      "name": "success_integrity_valid",
+      "passed": true,
+      "detail": "C576145FE7F768323020A2E60D4D48CDEB159DE55A2F84658CAD014950C86E5D"
+    },
+    {
+      "name": "success_no_real_execution",
+      "passed": true,
+      "detail": "false"
+    },
+    {
+      "name": "error_simulation_completed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "error_terminal_state",
+      "passed": true,
+      "detail": "TERMINAL_ERROR"
+    },
+    {
+      "name": "error_moves_to_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    },
+    {
+      "name": "error_integrity_valid",
+      "passed": true,
+      "detail": "BCCE98D09D4928A6C96EAEA13BFE2A485F99B48BA29FD2E1E8FBCF952164B740"
+    },
+    {
+      "name": "cancel_simulation_completed",
+      "passed": true,
+      "detail": "OK"
+    },
+    {
+      "name": "cancel_terminal_state",
+      "passed": true,
+      "detail": "CANCELLED"
+    },
+    {
+      "name": "cancel_moves_to_blocked",
+      "passed": true,
+      "detail": "BLOCKED"
+    },
+    {
+      "name": "cancel_integrity_valid",
+      "passed": true,
+      "detail": "5B60B997AF2B17F22DF56806AD7861EC80E56736D35EDB5E56FDFA4971C7E965"
+    },
+    {
+      "name": "invalid_outcome_blocked",
+      "passed": true,
+      "detail": "OUTCOME_INVALID"
+    },
+    {
+      "name": "unsafe_plan_blocked",
+      "passed": true,
+      "detail": "PLAN_NOT_SAFE_DRY_RUN"
+    },
+    {
+      "name": "non_queued_plan_blocked",
+      "passed": true,
+      "detail": "PLAN_NOT_QUEUED"
+    },
+    {
+      "name": "missing_gate_blocked",
+      "passed": true,
+      "detail": "EXECUTION_GATE_MISSING"
+    }
+  ],
+  "tested_at": "2026-06-14T20:34:20.159Z"
+}

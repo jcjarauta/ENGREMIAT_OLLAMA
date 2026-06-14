@@ -1,0 +1,13 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-canonical-project-task-worker-model-002",
+    "step":  "004I-B13Y-R25",
+    "status":  "ERROR",
+    "message":  "Las pruebas del motor fallaron con exit=1",
+    "execution_stopped":  true,
+    "runtime_worker_execution":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "next":  "REPAIR_STEP_004I_B13Y_R25",
+    "created_at":  "2026-06-14T22:23:04.7092318+02:00"
+}
