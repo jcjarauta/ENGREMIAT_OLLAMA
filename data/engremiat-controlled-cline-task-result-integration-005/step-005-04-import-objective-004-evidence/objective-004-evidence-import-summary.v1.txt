@@ -1,0 +1,11 @@
+RESULTADO: evidencia verificada del objetivo 004 importada al modelo canónico.
+IMPORT_ID:
+IMPORT-423ef1c4a4df124c22053b52
+REGISTROS: EXECUTION, RESULT, REVIEW y EVIDENCE.
+IDEMPOTENCIA: replay duplicado detectado sin crear un segundo conjunto de registros.
+ESTADO DE TAREA:
+NOT_COMPLETED
+.
+SEGURIDAD: no se invocó Cline, no se ejecutaron tareas, no hubo red ni escritura Git.
+CUENTA ATRÁS: quedan 2 bloques para validar la cadena completa y cerrar el objetivo.
+SIGUIENTE: validar relaciones, invariantes, trazabilidad e idempotencia extremo a extremo.

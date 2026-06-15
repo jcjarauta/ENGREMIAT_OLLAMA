@@ -1,0 +1,42 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective_id":  "ENGREMIAT_CONTROLLED_CLINE_TASK_RESULT_INTEGRATION_005",
+    "blocks_total":  6,
+    "blocks":  [
+                   {
+                       "block":  "005-01",
+                       "title":  "Definir objetivo y verificar fuente",
+                       "status":  "COMPLETED"
+                   },
+                   {
+                       "block":  "005-02",
+                       "title":  "Diseñar esquemas canónicos de ejecución, resultado, revisión y evidencia",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  "005-03",
+                       "title":  "Construir importador idempotente desde evidencia Cline",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  "005-04",
+                       "title":  "Importar localmente la ejecución verificada del objetivo 004",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  "005-05",
+                       "title":  "Validar relaciones, hashes, duplicados y estados canónicos",
+                       "status":  "PENDING"
+                   },
+                   {
+                       "block":  "005-06",
+                       "title":  "Auditar, cerrar Git scoped y definir el siguiente objetivo",
+                       "status":  "PENDING"
+                   }
+               ],
+    "current_block":  "005-01",
+    "next_block":  "005-02",
+    "runtime_execution_allowed":  false,
+    "git_close_only_at_final_block":  true,
+    "created_at":  "2026-06-15T05:58:45.2475004+02:00"
+}

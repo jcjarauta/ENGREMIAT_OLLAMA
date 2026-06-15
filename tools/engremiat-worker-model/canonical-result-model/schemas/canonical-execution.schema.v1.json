@@ -1,0 +1,116 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schemas/canonical-execution.v1.json",
+    "title":  "Canonical Worker Execution",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "schema_version",
+                     "execution_id",
+                     "project_id",
+                     "task_id",
+                     "worker_id",
+                     "attempt_number",
+                     "authorization_id",
+                     "provider",
+                     "adapter_id",
+                     "terminal_state",
+                     "authorization_consumed",
+                     "automatic_retry",
+                     "automatic_continuation",
+                     "immutable",
+                     "source_execution_ref",
+                     "created_at"
+                 ],
+    "properties":  {
+                       "schema_version":  {
+                                              "const":  "1.0"
+                                          },
+                       "execution_id":  {
+                                            "type":  "string",
+                                            "pattern":  "^EXEC-[A-Z0-9-]+$"
+                                        },
+                       "project_id":  {
+                                          "type":  "string",
+                                          "minLength":  1
+                                      },
+                       "task_id":  {
+                                       "type":  "string",
+                                       "minLength":  1
+                                   },
+                       "worker_id":  {
+                                         "type":  "string",
+                                         "minLength":  1
+                                     },
+                       "attempt_number":  {
+                                              "type":  "integer",
+                                              "minimum":  1
+                                          },
+                       "authorization_id":  {
+                                                "type":  "string",
+                                                "minLength":  1
+                                            },
+                       "provider":  {
+                                        "type":  "string",
+                                        "minLength":  1
+                                    },
+                       "adapter_id":  {
+                                          "type":  "string",
+                                          "minLength":  1
+                                      },
+                       "started_at":  {
+                                          "type":  [
+                                                       "string",
+                                                       "null"
+                                                   ]
+                                      },
+                       "finished_at":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "duration_ms":  {
+                                           "type":  [
+                                                        "integer",
+                                                        "null"
+                                                    ],
+                                           "minimum":  0
+                                       },
+                       "terminal_state":  {
+                                              "enum":  [
+                                                           "PENDING",
+                                                           "RUNNING",
+                                                           "TERMINAL_SUCCESS",
+                                                           "TERMINAL_ERROR",
+                                                           "CANCELLED"
+                                                       ]
+                                          },
+                       "exit_code":  {
+                                         "type":  [
+                                                      "integer",
+                                                      "null"
+                                                  ]
+                                     },
+                       "authorization_consumed":  {
+                                                      "type":  "boolean"
+                                                  },
+                       "automatic_retry":  {
+                                               "const":  false
+                                           },
+                       "automatic_continuation":  {
+                                                      "const":  false
+                                                  },
+                       "immutable":  {
+                                         "const":  true
+                                     },
+                       "source_execution_ref":  {
+                                                    "type":  "string",
+                                                    "minLength":  1
+                                                },
+                       "created_at":  {
+                                          "type":  "string",
+                                          "minLength":  1
+                                      }
+                   }
+}

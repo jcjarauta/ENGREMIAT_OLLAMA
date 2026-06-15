@@ -1,0 +1,29 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-03",
+    "classification":  "IDEMPOTENT_CLINE_EVIDENCE_IMPORTER_BUILT_AND_TESTED",
+    "validation_passed":  true,
+    "importer":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\tools\\engremiat-worker-model\\canonical-result-model\\import-cline-evidence.js",
+    "tests":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\tools\\engremiat-worker-model\\canonical-result-model\\test-import-cline-evidence.js",
+    "canonical_schema_count":  4,
+    "test_count":  35,
+    "passed_count":  35,
+    "duplicate_import_idempotent":  true,
+    "deterministic_fingerprints":  true,
+    "canonical_records":  [
+                              "EXECUTION",
+                              "RESULT",
+                              "REVIEW",
+                              "EVIDENCE"
+                          ],
+    "real_objective_004_import_deferred_to_step_005_04":  true,
+    "runtime_task_execution":  false,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "next":  "STEP_005_04_IMPORT_VERIFIED_OBJECTIVE_004_CLINE_EVIDENCE"
+}

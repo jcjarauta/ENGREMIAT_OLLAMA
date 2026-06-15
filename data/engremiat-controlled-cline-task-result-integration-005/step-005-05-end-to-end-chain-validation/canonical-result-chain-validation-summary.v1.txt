@@ -1,0 +1,20 @@
+RESULTADO: cadena canónica validada tras corregir exclusivamente la expectativa incorrecta del test.
+REPARACIÓN: el validador contiene 29 controles; el test esperaba erróneamente un mínimo de 30.
+CONTROLES DE CADENA:
+29
+/
+29
+.
+PRUEBAS REPARADAS:
+22
+/
+22
+.
+IDENTITY_DIGEST:
+1e2e6f3aebdc942a36a7cb65a7eace54f9df1214bf0a9d94ff40c068eda88fad
+.
+ESTADO RESULTADO: REVIEW.
+ESTADO TAREA: NOT_COMPLETED; requiere revisión humana.
+SEGURIDAD: no se invocó Cline, no se ejecutaron tareas, no hubo red ni escritura Git.
+CUENTA ATRÁS: queda 1 bloque para cerrar el objetivo 005.
+SIGUIENTE: consolidar evidencias, auditar el alcance local y preparar el cierre Git.

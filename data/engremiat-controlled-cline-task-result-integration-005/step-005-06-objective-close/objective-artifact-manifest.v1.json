@@ -1,0 +1,193 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-06-R1",
+    "generated_from_verified_local_state":  true,
+    "step_005_01_resolved_path":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\objective-definition-result.v1.json",
+    "artifact_count":  36,
+    "required_artifact_count":  17,
+    "missing_artifact_count":  0,
+    "hash_algorithm":  "SHA256",
+    "artifacts":  [
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\cline-task-result-integration-objective.v1.json",
+                          "bytes":  3717,
+                          "sha256":  "8b918f1b1101672ea8c2ba92b52c06491f3ab308719b97bb9b4702ea429c0d58"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\cline-task-result-integration-roadmap.v1.json",
+                          "bytes":  1764,
+                          "sha256":  "7cf8151290b28c95711cfcd20a4d202df7d32ccdfd63a336df4d80256264a10c"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\objective-definition-error.v1.json",
+                          "bytes":  543,
+                          "sha256":  "a2c94c71e08fa9160ecf47476793dcf9cf459d062621fd9918e2cd6695427fb4"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\objective-definition-result.v1.json",
+                          "bytes":  1338,
+                          "sha256":  "127fe7f8a131b77bcc948d86dc2bb54af5616d8d2376543707c76805706c550b"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\objective-definition-summary.v1.txt",
+                          "bytes":  716,
+                          "sha256":  "54a38cf0043e3f15d8cd30dd51d0e10b7f8e9dbef2197faeefe4a07b90db3f07"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\source-objective-live-git-verification.v1.json",
+                          "bytes":  14870,
+                          "sha256":  "f1b28115b4d8cf59cde8c7d987022511acf1c20a726bf64a049283e366ca2fe3"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-02-canonical-schemas\\canonical-schema-build-repair-error.v1.json",
+                          "bytes":  669,
+                          "sha256":  "e01119d3091cb4de64f439e24e3037e5a44f28b7782d54ffc1190183a5ff75de"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-02-canonical-schemas\\canonical-schema-build-result.v1.json",
+                          "bytes":  2390,
+                          "sha256":  "9c0da2a930c352e14d6ee08f076a671a8eff99587942e1e94a66d9c7d20400d5"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-02-canonical-schemas\\canonical-schema-build-summary.v1.txt",
+                          "bytes":  715,
+                          "sha256":  "7facaade439f8ce6f493d5ce98fda5f372e3c79f150c534662fcb7e3639b2b41"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-02-canonical-schemas\\canonical-schema-test-result.v1.json",
+                          "bytes":  1746,
+                          "sha256":  "f8f5fbe7d885329676d7ffd3e31867cd13876644d8f78b6ebe06807d130a2be5"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-02-canonical-schemas\\validate-canonical-schemas.test.js",
+                          "bytes":  3243,
+                          "sha256":  "da9cd318646a85eaf7856cc20cfb70b55d5f596ba30c55c90f7c2a1ff851dca9"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-03-idempotent-cline-evidence-importer\\cline-evidence-importer-build-result.v1.json",
+                          "bytes":  1303,
+                          "sha256":  "c4a5d7bd4f64e3d8754c45f5819d47d8fdf49e2c3847ed4395dc6fbc01a757d9"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-03-idempotent-cline-evidence-importer\\cline-evidence-importer-build-summary.v1.txt",
+                          "bytes":  405,
+                          "sha256":  "c6df1e0949bd2bb053e034115de181000ad16b2c421d511adbbb7c21abf7d2f6"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-03-idempotent-cline-evidence-importer\\cline-evidence-importer-test-result.v1.json",
+                          "bytes":  810,
+                          "sha256":  "cdbd80323623ded08e0e072dc34de3e1848b2930fcbd304e02fde196856acf0a"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-04-import-objective-004-evidence\\canonical-import\\canonical-cline-import.v1.json",
+                          "bytes":  3538,
+                          "sha256":  "89909614d79cf4f9cf3a33ac5035060de7ebf85722e6546fa8fb0807ecc64cf7"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-04-import-objective-004-evidence\\canonical-import\\canonical-import-store.v1.json",
+                          "bytes":  3976,
+                          "sha256":  "4ba124ea65335470fca341e506d3f1fbfc77db8e4e91e4b3cf718202358205d3"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-04-import-objective-004-evidence\\objective-004-evidence-discovery.v1.json",
+                          "bytes":  17086,
+                          "sha256":  "ea63ce4454850c594a2986be3184251e03d7e80de77acc1452a1908a4245868a"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-04-import-objective-004-evidence\\objective-004-evidence-import-result.v1.json",
+                          "bytes":  1936,
+                          "sha256":  "2d2eb2cebe8f37f3fd3e5d77532abfa3276080dcc42a17acc9f52d53250f41a6"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-04-import-objective-004-evidence\\objective-004-evidence-import-summary.v1.txt",
+                          "bytes":  570,
+                          "sha256":  "87a99345939efa0555526553c56a21c683c3124c2397d880ac8c2a61628126c5"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-test-result.v1.json",
+                          "bytes":  897,
+                          "sha256":  "81c0660cfe3a04950b090dc4e66e264828875c55676c75467d895402c12f2a10"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-validation.v1.json",
+                          "bytes":  2716,
+                          "sha256":  "11984707a4b75a263b16c1aee98c67e524888f7c69b63d016a1ff39b87dd2d5f"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-validation-error.v1.json",
+                          "bytes":  511,
+                          "sha256":  "6ca5f68eb679f8e3ef881643ae22bc8c9469eec136e62578a5dde21779e2374c"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-validation-repair-result.v1.json",
+                          "bytes":  2359,
+                          "sha256":  "cf2c1ffd9775f9464bb44d3be31b57101149284dc642edfdeac8e21298ab4cd1"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-validation-result.v1.json",
+                          "bytes":  2359,
+                          "sha256":  "cf2c1ffd9775f9464bb44d3be31b57101149284dc642edfdeac8e21298ab4cd1"
+                      },
+                      {
+                          "path":  "data\\engremiat-controlled-cline-task-result-integration-005\\step-005-05-end-to-end-chain-validation\\canonical-result-chain-validation-summary.v1.txt",
+                          "bytes":  683,
+                          "sha256":  "7c559f23fb6baa921162cfc88deaa35e86b005e1dc6bcfa3656e473abe66cd2b"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\import-cline-evidence.js",
+                          "bytes":  7503,
+                          "sha256":  "5349b5902aa8ac4b2d8182cf1e5ed8834f075e8264b4e335ddbd882d2fcfb188"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\import-verified-objective-004-evidence.js",
+                          "bytes":  6585,
+                          "sha256":  "74fecfa00a16bba99dd9b99eebd3f921c25a89ad028a9592e597c7de751f221c"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\schemas\\canonical-evidence.schema.v1.json",
+                          "bytes":  3729,
+                          "sha256":  "d98bc515f6e189142132be8845eb8d5e619d18b772bbacb15ec753905121595d"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\schemas\\canonical-execution.schema.v1.json",
+                          "bytes":  5808,
+                          "sha256":  "d8f79acb88d273771899723ceecf9ed5b1341bb38fc0f7fa3f31d28625718146"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\schemas\\canonical-result.schema.v1.json",
+                          "bytes":  3532,
+                          "sha256":  "d73fff4197b6d393925d10aedd4ef084ce701a6a3ba02575bf668f0f28155d13"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\schemas\\canonical-result-relations.v1.json",
+                          "bytes":  2887,
+                          "sha256":  "41878fb4aa36b36fc511e41297c3b9db6b96e301ae92c5218563527f0b0b9c57"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\schemas\\canonical-review.schema.v1.json",
+                          "bytes":  4531,
+                          "sha256":  "6cef0b69e94be2dbcee73c64d0617c998ab1c113d5bba7212fd6aa8bf1e7383f"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\test-canonical-result-chain.js",
+                          "bytes":  5434,
+                          "sha256":  "84045e85407acbfdf6a4f17d4788007e9f1f693ce3ab73d222353207cb0914c9"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\test-import-cline-evidence.js",
+                          "bytes":  5874,
+                          "sha256":  "883b926788d80d1a54a6cc39bede7790d4854933ea47e6097471e7936a7ffeb7"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\validate-canonical-result-chain.js",
+                          "bytes":  6007,
+                          "sha256":  "de5ed8f9c221242fee8125a90e4db3c1dec87f3cb59a99fdac66bcb592c81e94"
+                      },
+                      {
+                          "path":  "tools\\engremiat-worker-model\\canonical-result-model\\validate-canonical-schemas.js",
+                          "bytes":  3865,
+                          "sha256":  "b8681ca0d5f15dff09512bd43075f3e06f01b6c79cb9629bbaff8316ed026431"
+                      }
+                  ]
+}

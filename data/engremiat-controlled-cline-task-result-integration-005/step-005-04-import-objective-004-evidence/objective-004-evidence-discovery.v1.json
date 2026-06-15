@@ -1,0 +1,382 @@
+{
+  "schema_version": "1.0.0",
+  "scanned_json_files": 371,
+  "evaluated_json_files": 40,
+  "qualification_threshold": 65,
+  "qualified_candidate_count": 1,
+  "top_score": 85,
+  "top_candidate_count": 1,
+  "decision": "UNIQUE_HIGH_CONFIDENCE_CANDIDATE",
+  "candidates": [
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r30-end-to-end-canonical-cycle\\canonical-end-to-end-success-cycle.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r30-end-to-end-canonical-cycle/canonical-end-to-end-success-cycle.v1.json",
+      "score": 85,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE",
+        "TERMINAL_SUCCESS_STATUS"
+      ],
+      "status": "OK",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r28-dry-run-execution-plan\\sample-dry-run-execution-plan.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r28-dry-run-execution-plan/sample-dry-run-execution-plan.v1.json",
+      "score": 55,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "READY",
+      "task_id": "TASK-PTW-001",
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r29-simulated-worker-lifecycle\\prepared-simulation-input.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r29-simulated-worker-lifecycle/prepared-simulation-input.v1.json",
+      "score": 55,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "READY",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r28-dry-run-execution-plan\\dry-run-execution-plan-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r28-dry-run-execution-plan/dry-run-execution-plan-test-result.v1.json",
+      "score": 50,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r25-r1-state-transition-engine-repair\\state-transition-engine-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r25-r1-state-transition-engine-repair/state-transition-engine-test-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "ACTIVE",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r26-deterministic-worker-selector\\deterministic-task-worker-selector-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r26-deterministic-worker-selector/deterministic-task-worker-selector-test-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r29-simulated-worker-lifecycle\\simulated-cancelled-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r29-simulated-worker-lifecycle/simulated-cancelled-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "ACTIVE",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r29-simulated-worker-lifecycle\\simulated-error-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r29-simulated-worker-lifecycle/simulated-error-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "ACTIVE",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r29-simulated-worker-lifecycle\\simulated-success-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r29-simulated-worker-lifecycle/simulated-success-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": "ACTIVE",
+      "task_id": "TASK-PTW-001",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r29-simulated-worker-lifecycle\\simulated-worker-lifecycle-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r29-simulated-worker-lifecycle/simulated-worker-lifecycle-test-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r30-end-to-end-canonical-cycle\\canonical-end-to-end-cycle-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r30-end-to-end-canonical-cycle/canonical-end-to-end-cycle-test-result.v1.json",
+      "score": 45,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TERMINAL_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\negative-authorization-validation-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r24-pure-local-validator/negative-authorization-validation-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": "Execution requires AUTHORIZED or NOT_REQUIRED."
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\negative-project-validation-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r24-pure-local-validator/negative-project-validation-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": "Project PROJECT-MISSING does not exist."
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\negative-worker-validation-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r24-pure-local-validator/negative-worker-validation-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": "Worker WORKER-LOCAL-001 lacks capability JSON_VALIDATION."
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r24-pure-local-validator\\positive-validation-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r24-pure-local-validator/positive-validation-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r27-pure-local-assignment-planner\\pure-local-assignment-planner-test-result.v1.json",
+      "relative": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r27-pure-local-assignment-planner/pure-local-assignment-planner-test-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "TASK_REFERENCE",
+        "OBJECTIVE_002_MODEL_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-04-non-executing-cline-task-preflight\\sample-cline-task-preflight-result.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-04-non-executing-cline-task-preflight/sample-cline-task-preflight-result.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE"
+      ],
+      "status": null,
+      "task_id": "TASK-CLINE-004-SMOKE-001",
+      "objective_id": "Create a harmless evidence file proving one controlled Cline task boundary.",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-05-single-controlled-task-dispatch-gate\\controlled-cline-task-preflight.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-05-single-controlled-task-dispatch-gate/controlled-cline-task-preflight.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE"
+      ],
+      "status": null,
+      "task_id": "TASK-CLINE-004-SMOKE-001",
+      "objective_id": "Produce one harmless local JSON evidence file through a single controlled Cline task.",
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r2-r1-direct-bin-interface-inspection\\cline-direct-bin-interface-inspection.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-06r2-r1-direct-bin-interface-inspection/cline-direct-bin-interface-inspection.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r2-static-cline-cli-interface-discovery\\cline-cli-static-interface-inspection.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-06r2-static-cline-cli-interface-discovery/cline-cli-static-interface-inspection.v1.json",
+      "score": 40,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE",
+        "EVIDENCE_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-04-non-executing-cline-task-preflight\\cline-task-preflight-test-result.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-04-non-executing-cline-task-preflight/cline-task-preflight-test-result.v1.json",
+      "score": 30,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-05-single-controlled-task-dispatch-gate\\cline-cli-task-interface-candidates.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-05-single-controlled-task-dispatch-gate/cline-cli-task-interface-candidates.v1.json",
+      "score": 30,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-05-single-controlled-task-dispatch-gate\\single-controlled-cline-task-gate.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-05-single-controlled-task-dispatch-gate/single-controlled-cline-task-gate.v1.json",
+      "score": 30,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE"
+      ],
+      "status": "READY_FOR_HUMAN_REVIEW_OF_EXACT_CLI_INVOCATION",
+      "task_id": "TASK-CLINE-004-SMOKE-001",
+      "objective_id": null,
+      "summary": null
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r4-final-invocation-validation-and-authorization\\isolated-cline-smoke-workspace\\cline-controlled-smoke-output.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-06r4-final-invocation-validation-and-authorization/isolated-cline-smoke-workspace/cline-controlled-smoke-output.v1.json",
+      "score": 30,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE"
+      ],
+      "status": null,
+      "task_id": "TASK-CLINE-004-SMOKE-001",
+      "objective_id": null,
+      "summary": "CONTROLLED_CLINE_TASK_SMOKE_OK"
+    },
+    {
+      "file": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-worker-adapter-004\\step-004-06r5-authorized-controlled-cline-task\\controlled-cline-process-result.v1.json",
+      "relative": "engremiat-controlled-cline-worker-adapter-004/step-004-06r5-authorized-controlled-cline-task/controlled-cline-process-result.v1.json",
+      "score": 30,
+      "reasons": [
+        "OBJECTIVE_004_REFERENCE",
+        "CLINE_REFERENCE",
+        "TASK_REFERENCE"
+      ],
+      "status": null,
+      "task_id": null,
+      "objective_id": null,
+      "summary": null
+    }
+  ]
+}

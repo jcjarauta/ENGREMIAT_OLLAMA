@@ -1,0 +1,17 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-06-R1",
+    "decision":  "UNIQUE_VALID_STEP_005_01_ARTIFACT_RESOLVED",
+    "previous_assumed_path":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-canonical-objective\\canonical-objective-result.v1.json",
+    "resolved_path":  "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-objective-definition\\objective-definition-result.v1.json",
+    "resolved_score":  115,
+    "resolved_valid":  true,
+    "candidate_count":  2,
+    "resolution_reasons":  [
+                               "STEP_005_01_R1_REFERENCE",
+                               "CANONICAL_OBJECTIVE_REFERENCE",
+                               "VALIDATED_EVIDENCE",
+                               "OBJECTIVE_005_REFERENCE"
+                           ]
+}

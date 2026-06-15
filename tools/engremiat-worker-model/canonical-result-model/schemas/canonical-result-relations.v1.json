@@ -1,0 +1,73 @@
+﻿{
+    "schema_version":  "1.0",
+    "contract_id":  "CANONICAL-CLINE-RESULT-RELATIONS-005-001",
+    "nodes":  [
+                  "PROJECT",
+                  "TASK",
+                  "WORKER",
+                  "EXECUTION",
+                  "RESULT",
+                  "REVIEW",
+                  "EVIDENCE"
+              ],
+    "edges":  [
+                  {
+                      "from":  "PROJECT",
+                      "to":  "TASK",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "task.project_id"
+                  },
+                  {
+                      "from":  "TASK",
+                      "to":  "EXECUTION",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "execution.task_id"
+                  },
+                  {
+                      "from":  "WORKER",
+                      "to":  "EXECUTION",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "execution.worker_id"
+                  },
+                  {
+                      "from":  "EXECUTION",
+                      "to":  "RESULT",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "result.execution_id"
+                  },
+                  {
+                      "from":  "RESULT",
+                      "to":  "REVIEW",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "review.result_id"
+                  },
+                  {
+                      "from":  "EXECUTION",
+                      "to":  "EVIDENCE",
+                      "cardinality":  "1:N",
+                      "foreign_key":  "evidence.execution_id"
+                  },
+                  {
+                      "from":  "RESULT",
+                      "to":  "EVIDENCE",
+                      "cardinality":  "0:N",
+                      "foreign_key":  "evidence.result_id"
+                  }
+              ],
+    "invariants":  [
+                       "EXECUTION_IS_IMMUTABLE",
+                       "RESULT_IS_IMMUTABLE",
+                       "REVIEW_HISTORY_IS_APPEND_ONLY",
+                       "EVIDENCE_REFERENCES_RELATIVE_PATH_ONLY",
+                       "EVIDENCE_CONTENT_IS_NOT_EMBEDDED",
+                       "TERMINAL_SUCCESS_DOES_NOT_IMPLY_TASK_COMPLETED",
+                       "SUCCESSFUL_RESULT_DEFAULTS_TO_REVIEW",
+                       "AUTHORIZATION_IS_CONSUMED_PER_EXECUTION",
+                       "DUPLICATE_SOURCE_EXECUTION_IMPORT_IS_IDEMPOTENT",
+                       "PROVIDER_METADATA_IS_ISOLATED"
+                   ],
+    "provider_specific_namespace":  "result.provider_metadata",
+    "default_success_review_state":  "PENDING",
+    "default_success_task_status":  "REVIEW",
+    "created_at":  "2026-06-15T06:02:13.9363475+02:00"
+}

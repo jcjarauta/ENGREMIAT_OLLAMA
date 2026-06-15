@@ -1,0 +1,19 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-06",
+    "objective_closed":  false,
+    "validation_passed":  false,
+    "message":  "Faltan artefactos requeridos: C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-controlled-cline-task-result-integration-005\\step-005-01-canonical-objective\\canonical-objective-result.v1.json",
+    "execution_stopped":  true,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "git_add_executed":  false,
+    "commit_executed":  false,
+    "push_executed":  false,
+    "next":  "REPAIR_STEP_005_06"
+}

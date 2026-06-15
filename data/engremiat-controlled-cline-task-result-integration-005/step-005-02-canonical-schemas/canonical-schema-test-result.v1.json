@@ -1,0 +1,94 @@
+{
+  "valid": true,
+  "test_count": 20,
+  "passed_count": 20,
+  "tests": [
+    {
+      "name": "bundle_valid",
+      "passed": true
+    },
+    {
+      "name": "schema_count_four",
+      "passed": true
+    },
+    {
+      "name": "relation_nodes_seven",
+      "passed": true
+    },
+    {
+      "name": "relation_edges_seven",
+      "passed": true
+    },
+    {
+      "name": "execution_immutable",
+      "passed": true
+    },
+    {
+      "name": "result_immutable",
+      "passed": true
+    },
+    {
+      "name": "review_append_only",
+      "passed": true
+    },
+    {
+      "name": "evidence_not_embedded",
+      "passed": true
+    },
+    {
+      "name": "evidence_secret_free",
+      "passed": true
+    },
+    {
+      "name": "retry_disabled",
+      "passed": true
+    },
+    {
+      "name": "continuation_disabled",
+      "passed": true
+    },
+    {
+      "name": "terminal_states_defined",
+      "passed": true
+    },
+    {
+      "name": "review_pending_defined",
+      "passed": true
+    },
+    {
+      "name": "success_defaults_review",
+      "passed": true
+    },
+    {
+      "name": "terminal_success_separate_from_completion",
+      "passed": true
+    },
+    {
+      "name": "idempotency_defined",
+      "passed": true
+    },
+    {
+      "name": "provider_metadata_isolated",
+      "passed": true
+    },
+    {
+      "name": "authorization_per_execution",
+      "passed": true
+    },
+    {
+      "name": "evidence_hash_required",
+      "passed": true
+    },
+    {
+      "name": "result_hash_required",
+      "passed": true
+    }
+  ],
+  "cline_invoked": false,
+  "process_started": false,
+  "task_dispatched": false,
+  "prompt_submitted": false,
+  "external_network": false,
+  "git_write": false,
+  "created_at": "2026-06-15T04:02:14.075Z"
+}

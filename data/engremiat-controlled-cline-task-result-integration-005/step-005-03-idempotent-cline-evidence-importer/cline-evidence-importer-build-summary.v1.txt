@@ -1,0 +1,9 @@
+RESULTADO: importador idempotente de evidencia Cline construido y validado.
+PRUEBAS:
+35
+/
+35
+ superadas.
+SEGURIDAD: no se invocó Cline, no se ejecutaron tareas y no hubo red ni escritura Git.
+CUENTA ATRÁS: quedan 3 bloques para importar la evidencia real, validar la cadena y cerrar el objetivo.
+SIGUIENTE: localizar e importar de forma controlada la evidencia verificada del objetivo 004.

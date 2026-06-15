@@ -1,0 +1,12 @@
+﻿{
+    "schema_version":  "1.0.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-GIT-CLOSE",
+    "validation_passed":  false,
+    "message":  "git diff --cached --check detectó errores",
+    "execution_stopped":  true,
+    "commit_executed":  false,
+    "push_executed":  false,
+    "external_network":  false,
+    "next":  "REPAIR_STEP_005_GIT_CLOSE"
+}

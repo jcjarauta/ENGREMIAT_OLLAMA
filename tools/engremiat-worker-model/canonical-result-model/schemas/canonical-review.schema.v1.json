@@ -1,0 +1,86 @@
+﻿{
+    "$schema":  "https://json-schema.org/draft/2020-12/schema",
+    "$id":  "engremiat://schemas/canonical-review.v1.json",
+    "title":  "Canonical Result Review",
+    "type":  "object",
+    "additionalProperties":  false,
+    "required":  [
+                     "schema_version",
+                     "review_id",
+                     "result_id",
+                     "task_id",
+                     "review_state",
+                     "reviewer_type",
+                     "decision_reason",
+                     "reviewed_at",
+                     "execution_terminal_state",
+                     "task_status_after_review",
+                     "immutable_history",
+                     "created_at"
+                 ],
+    "properties":  {
+                       "schema_version":  {
+                                              "const":  "1.0"
+                                          },
+                       "review_id":  {
+                                         "type":  "string",
+                                         "pattern":  "^REVIEW-[A-Z0-9-]+$"
+                                     },
+                       "result_id":  {
+                                         "type":  "string",
+                                         "pattern":  "^RESULT-[A-Z0-9-]+$"
+                                     },
+                       "task_id":  {
+                                       "type":  "string",
+                                       "minLength":  1
+                                   },
+                       "review_state":  {
+                                            "enum":  [
+                                                         "PENDING",
+                                                         "APPROVED",
+                                                         "REJECTED",
+                                                         "CHANGES_REQUESTED"
+                                                     ]
+                                        },
+                       "reviewer_type":  {
+                                             "enum":  [
+                                                          "HUMAN",
+                                                          "POLICY_ENGINE"
+                                                      ]
+                                         },
+                       "decision_reason":  {
+                                               "type":  [
+                                                            "string",
+                                                            "null"
+                                                        ]
+                                           },
+                       "reviewed_at":  {
+                                           "type":  [
+                                                        "string",
+                                                        "null"
+                                                    ]
+                                       },
+                       "execution_terminal_state":  {
+                                                        "enum":  [
+                                                                     "TERMINAL_SUCCESS",
+                                                                     "TERMINAL_ERROR",
+                                                                     "CANCELLED"
+                                                                 ]
+                                                    },
+                       "task_status_after_review":  {
+                                                        "enum":  [
+                                                                     "REVIEW",
+                                                                     "COMPLETED",
+                                                                     "BLOCKED",
+                                                                     "ACTIVE"
+                                                                 ]
+                                                    },
+                       "immutable_history":  {
+                                                 "const":  true
+                                             },
+                       "created_at":  {
+                                          "type":  "string",
+                                          "minLength":  1
+                                      }
+                   }
+}

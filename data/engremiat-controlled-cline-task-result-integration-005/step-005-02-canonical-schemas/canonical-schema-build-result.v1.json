@@ -1,0 +1,55 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective":  "engremiat-controlled-cline-task-result-integration-005",
+    "step":  "005-02-R2",
+    "repairs_steps":  [
+                          "005-02",
+                          "005-02-R1"
+                      ],
+    "repair_reasons":  [
+                           "ORDERED_ATTRIBUTE_INVALID_AS_PARAMETER_TYPE",
+                           "PARSE_ERROR_ARTIFACT_WAS_NEVER_CREATED"
+                       ],
+    "source_step":  "005-01-R1",
+    "schema_count":  4,
+    "schemas":  [
+                    "EXECUTION",
+                    "RESULT",
+                    "REVIEW",
+                    "EVIDENCE"
+                ],
+    "schema_hashes":  {
+                          "canonical-execution.schema.v1.json":  "D8F79ACB88D273771899723CEECF9ED5B1341BB38FC0F7FA3F31D28625718146",
+                          "canonical-result.schema.v1.json":  "D73FFF4197B6D393925D10AEDD4EF084CE701A6A3BA02575BF668F0F28155D13",
+                          "canonical-review.schema.v1.json":  "6CEF0B69E94BE2DBCEE73C64D0617C998AB1C113D5BBA7212FD6AA8BF1E7383F",
+                          "canonical-evidence.schema.v1.json":  "D98BC515F6E189142132BE8845EB8D5E619D18B772BBACB15EC753905121595D"
+                      },
+    "relation_contract_created":  true,
+    "relation_node_count":  7,
+    "relation_edge_count":  7,
+    "invariant_count":  10,
+    "validator_created":  true,
+    "node_check_validator_ok":  true,
+    "node_check_test_ok":  true,
+    "test_count":  20,
+    "passed_count":  20,
+    "execution_immutable":  true,
+    "result_immutable":  true,
+    "review_history_append_only":  true,
+    "evidence_content_embedded":  false,
+    "secret_values_present":  false,
+    "terminal_success_separate_from_task_completion":  true,
+    "default_success_task_status":  "REVIEW",
+    "duplicate_import_idempotent":  true,
+    "provider_metadata_isolated":  true,
+    "cline_invoked":  false,
+    "process_started":  false,
+    "task_dispatched":  false,
+    "prompt_submitted":  false,
+    "external_network":  false,
+    "git_write":  false,
+    "classification":  "CANONICAL_EXECUTION_RESULT_REVIEW_AND_EVIDENCE_SCHEMAS_BUILT_AND_TESTED",
+    "validation_passed":  true,
+    "next":  "STEP_005_03_BUILD_IDEMPOTENT_CLINE_EVIDENCE_IMPORTER",
+    "created_at":  "2026-06-15T06:02:14.1698653+02:00"
+}

@@ -1,0 +1,95 @@
+{
+  "duplicate": false,
+  "import_id": "IMPORT-423ef1c4a4df124c22053b52",
+  "importer_version": "1.0.0",
+  "records": {
+    "evidence": {
+      "content_embedded": false,
+      "content_sha256": "1afe208e1e65be558b5ea6088614335ed82696532d56d8fa10f6c3d0f2e3f470",
+      "created_at": "1970-01-01T00:00:00.000Z",
+      "evidence_id": "EVIDENCE-52a0c0e2281cbf321409038e",
+      "execution_id": "EXEC-3211badef4094b3c8778567c",
+      "immutable": true,
+      "import_id": "IMPORT-423ef1c4a4df124c22053b52",
+      "result_id": "RESULT-bd1337427afaf357486aa9e9",
+      "schema_version": "1.0.0",
+      "secret_values_present": false,
+      "source_fingerprint": "ebd0ca8bba726084558363b0ca8c45a217d3065be47e5ae3f0c1d51df8222d01",
+      "source_reference": "C:\\Users\\pc\\desktop\\engremiat_ollama\\data\\engremiat-canonical-project-task-worker-model-002\\step-004i-b13y-r30-end-to-end-canonical-cycle\\canonical-end-to-end-success-cycle.v1.json",
+      "source_type": "CLINE_VERIFIED_EVIDENCE"
+    },
+    "execution": {
+      "created_at": "1970-01-01T00:00:00.000Z",
+      "execution_id": "EXEC-3211badef4094b3c8778567c",
+      "execution_status": "ok",
+      "immutable": true,
+      "import_id": "IMPORT-423ef1c4a4df124c22053b52",
+      "objective_id": "Validate the first Project-Task-Worker contract",
+      "provider": "cline",
+      "provider_execution_ref": "OBJECTIVE-004-VERIFIED-EVIDENCE",
+      "provider_metadata": {
+        "discovery_reasons": [
+          "OBJECTIVE_004_REFERENCE",
+          "CLINE_REFERENCE",
+          "TERMINAL_REFERENCE",
+          "TASK_REFERENCE",
+          "EVIDENCE_REFERENCE",
+          "OBJECTIVE_002_MODEL_REFERENCE",
+          "TERMINAL_SUCCESS_STATUS"
+        ],
+        "discovery_score": 85,
+        "source_relative_path": "engremiat-canonical-project-task-worker-model-002/step-004i-b13y-r30-end-to-end-canonical-cycle/canonical-end-to-end-success-cycle.v1.json"
+      },
+      "schema_version": "1.0.0",
+      "task_id": "TASK-PTW-001",
+      "terminal": true
+    },
+    "result": {
+      "created_at": "1970-01-01T00:00:00.000Z",
+      "execution_id": "EXEC-3211badef4094b3c8778567c",
+      "immutable": true,
+      "import_id": "IMPORT-423ef1c4a4df124c22053b52",
+      "result_id": "RESULT-bd1337427afaf357486aa9e9",
+      "result_status": "REVIEW",
+      "schema_version": "1.0.0",
+      "summary": "Verified Cline evidence discovered from objective 004",
+      "task_completion_status": "NOT_COMPLETED",
+      "task_id": "TASK-PTW-001",
+      "terminal_execution_success": true
+    },
+    "review": {
+      "append_only": true,
+      "created_at": "1970-01-01T00:00:00.000Z",
+      "decision": null,
+      "import_id": "IMPORT-423ef1c4a4df124c22053b52",
+      "result_id": "RESULT-bd1337427afaf357486aa9e9",
+      "review_id": "REVIEW-cf511ca726c32d0235d858e6",
+      "review_status": "PENDING_HUMAN_REVIEW",
+      "revision": 1,
+      "schema_version": "1.0.0",
+      "task_id": "TASK-PTW-001"
+    }
+  },
+  "relations": [
+    {
+      "from": "EXEC-3211badef4094b3c8778567c",
+      "to": "RESULT-bd1337427afaf357486aa9e9",
+      "type": "PRODUCES"
+    },
+    {
+      "from": "RESULT-bd1337427afaf357486aa9e9",
+      "to": "REVIEW-cf511ca726c32d0235d858e6",
+      "type": "REQUIRES_REVIEW"
+    },
+    {
+      "from": "EVIDENCE-52a0c0e2281cbf321409038e",
+      "to": "EXEC-3211badef4094b3c8778567c",
+      "type": "SUPPORTS_EXECUTION"
+    },
+    {
+      "from": "EVIDENCE-52a0c0e2281cbf321409038e",
+      "to": "RESULT-bd1337427afaf357486aa9e9",
+      "type": "SUPPORTS_RESULT"
+    }
+  ]
+}

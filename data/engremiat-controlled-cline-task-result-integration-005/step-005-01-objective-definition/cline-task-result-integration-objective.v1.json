@@ -1,0 +1,68 @@
+﻿{
+    "schema_version":  "1.0",
+    "objective_id":  "ENGREMIAT_CONTROLLED_CLINE_TASK_RESULT_INTEGRATION_005",
+    "objective_slug":  "engremiat-controlled-cline-task-result-integration-005",
+    "title":  "Integrar resultados controlados de Cline en el modelo canónico de Engremiat",
+    "purpose":  "Transformar una ejecución Cline verificada en entidades canónicas enlazadas, neutrales respecto al proveedor y auditables.",
+    "source_objective":  "ENGREMIAT_CONTROLLED_CLINE_WORKER_ADAPTER_004",
+    "source_commit":  "9840b40e75ce2563a0ba6d4eccf69efdf88472a7",
+    "source_commit_message":  "feat(cline-adapter): close controlled Cline worker adapter",
+    "source_remote_synced":  true,
+    "canonical_chain":  [
+                            "PROJECT",
+                            "TASK",
+                            "WORKER",
+                            "EXECUTION",
+                            "RESULT",
+                            "REVIEW",
+                            "EVIDENCE"
+                        ],
+    "required_entities":  {
+                              "project":  "Proyecto propietario de la tarea",
+                              "task":  "Unidad controlada de trabajo",
+                              "worker":  "Adaptador Cline identificado",
+                              "execution":  "Intento autorizado e inmutable",
+                              "result":  "Salida normalizada independiente del proveedor",
+                              "review":  "Estado y decisión humana posterior",
+                              "evidence":  "Archivos, hashes y validaciones enlazados"
+                          },
+    "design_principles":  [
+                              "PROVIDER_NEUTRAL_CANONICAL_MODEL",
+                              "IMMUTABLE_EXECUTION_RECORD",
+                              "RESULT_SEPARATED_FROM_EXECUTION",
+                              "REVIEW_REQUIRED_AFTER_SUCCESS",
+                              "EVIDENCE_REFERENCED_BY_HASH",
+                              "NO_RAW_SECRET_VALUES",
+                              "NO_AUTOMATIC_SECOND_DISPATCH",
+                              "DENY_BY_DEFAULT"
+                          ],
+    "acceptance_criteria":  [
+                                "ONE_VERIFIED_CLINE_EXECUTION_CAN_BE_IMPORTED",
+                                "ALL_CANONICAL_IDS_ARE_DETERMINISTIC_OR_EXPLICIT",
+                                "EXECUTION_AND_RESULT_REMAIN_IMMUTABLE",
+                                "REVIEW_STATE_IS_SEPARATE_FROM_TERMINAL_PROCESS_STATE",
+                                "EVIDENCE_CHAIN_VALIDATES_HASHES_AND_REFERENCES",
+                                "DUPLICATE_IMPORT_IS_IDEMPOTENT",
+                                "PROVIDER_SPECIFIC_FIELDS_ARE_ISOLATED",
+                                "NO_CLINE_PROCESS_IS_STARTED_DURING_INTEGRATION"
+                            ],
+    "out_of_scope":  [
+                         "NEW_CLINE_TASK_EXECUTION",
+                         "AUTOMATIC_TASK_CONTINUATION",
+                         "GOOGLE_SHEETS_WRITE",
+                         "TELEGRAM_WRITE",
+                         "DATABASE_MIGRATION",
+                         "GIT_COMMIT_OR_PUSH_BEFORE_FINAL_BLOCK"
+                     ],
+    "safety":  {
+                   "cline_invoked":  false,
+                   "process_started":  false,
+                   "task_dispatched":  false,
+                   "prompt_submitted":  false,
+                   "external_network":  false,
+                   "git_write":  false,
+                   "secrets_read":  false
+               },
+    "status":  "DEFINED",
+    "created_at":  "2026-06-15T05:58:45.2475004+02:00"
+}
