@@ -1,0 +1,12 @@
+'use strict';
+const fs=require('fs');
+const path=require('path');
+const {normalizeEditorCall}=require('./editor-contract-adapter');
+const inputPath=path.resolve(process.argv[2]);
+const outputPath=path.resolve(process.argv[3]);
+const raw=fs.readFileSync(inputPath,'utf8').replace(/^\uFEFF/,'');
+const input=JSON.parse(raw);
+const normalized=normalizeEditorCall(input.arguments||input);
+const result={schema_version:'1.0',mode:'SHADOW_ONLY',tool:'editor',provider_contract:'anthropic.text_editor_20250728',normalized_from:normalized.normalized_from,strategy:normalized.strategy,provider_arguments:normalized.arguments,execution_allowed:false,file_write_executed:false,git_write:false,external_network:false};
+fs.writeFileSync(outputPath,JSON.stringify(result,null,2),'utf8');
+process.stdout.write(JSON.stringify(result));
